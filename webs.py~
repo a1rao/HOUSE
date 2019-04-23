@@ -1,0 +1,33 @@
+from bs4 import BeautifulSoup
+import requests
+import pandas as pd
+
+# Scrapping details
+headers = {'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'}
+url = 'https://www.apartments.com/la-regencia-san-diego-ca/2l067qb/'
+src = requests.get(url, headers=headers)
+soup = BeautifulSoup(src.text, 'html.parser')
+
+# Find monthly fees
+results = soup.find('div', attrs = {'class':'monthlyFees'})
+
+# Get description
+fees = results.find_all('div', attrs = {'class':'descriptionWrapper'})
+
+# Store descriptions
+records = []
+
+# Extract fees information
+for i in fees:
+    descriptions = i.find_all('span')
+    fee_name = descriptions[0].text
+    fee_cost = descriptions[1].text
+    records.append((fee_name, fee_cost))
+
+print(records)
+
+# save as csv
+df = pd.DataFrame(records, clomuns=['Rent Type', 'Cost'])
+df.to_csv('recurring_rent.csv', index=False, encoding='utf-8')
+
+
