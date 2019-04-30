@@ -27,7 +27,7 @@ for i in fees:
 print(records)
 
 # save as csv
-df = pd.DataFrame(records, clomuns=['Rent Type', 'Cost'])
+df = pd.DataFrame(records, columns=['Rent Type', 'Cost'])
 df.to_csv('recurring_rent.csv', index=False, encoding='utf-8')
 
 
