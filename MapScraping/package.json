@@ -1,0 +1,15 @@
+{
+  "name": "mapscraping",
+  "version": "1.0.0",
+  "description": "scrapes from google maps",
+  "main": "MapScrape.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "googlemaps": "^1.12.0"
+  }
+}
