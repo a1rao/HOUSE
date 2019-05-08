@@ -1,6 +1,34 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Register extends Component {
+const LoginView = ({ onSubmit }) => {
+    return (
+        <div>
+            <h1>Login</h1>
+            <form onSubmit={onSubmit}>
+                <label>
+                    Email
+                    <input
+                        name="email"
+                        type="email"
+                        placeholder="Email"
+                    />
+                </label>
+                <label>
+                    Password
+                    <input
+                        name="password"
+                        type="password"
+                        placeholder="Password"
+                    />
+                </label>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    );
+};
+
+
+/*class RegisterView extends Component {
     constructor(props){
         super(props);
         this.state={
@@ -20,10 +48,6 @@ class Register extends Component {
         const userID = 12345;
         event.preventDefault();
         this.firebaseRef.child(username).set({email, password, username});
-            /*email: this.state.email,
-            password: this.state.password,
-            username: this.state.username
-        });*/
         this.setState({email: '', password: '', username:''});
     }
 
@@ -43,6 +67,6 @@ class Register extends Component {
             </div>
         );
     }
-}
+}*/
 
-export default Register;
+export default LoginView;
