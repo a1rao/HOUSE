@@ -1,12 +1,12 @@
+// This file is working
 var googleMapsClient = require('@google/maps').createClient({
 	key: 'AIzaSyBTD132iHKIXtMExAf6ZOfX9AMWFAaRm6Y',
 });
 
 
-
 googleMapsClient.distanceMatrix({
 	//origins: ['Regents La Jolla', 'La Regencia', '10201 Camino Ruiz, San Diego, CA 92126'],
-	origins: ['10210 Camino Ruiz, San Diego, CA 92126'],
+	origins: ['10210 Camino Ruiz, San Diego, CA 92126'], // Origins can be either address or name
 	destinations: ['University of California San Diego'],
 	mode: 'driving',
 }, function(err, response){
