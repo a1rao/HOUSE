@@ -1,9 +1,13 @@
+/*
 const googleMapsClient = require('@google/maps').createClient({
-    key : 'AlzaSyBOItxSbHWVs44HvGno_ALoVcDEFMVOSPQ'
-});
+    key : 'AIzaSyAqJJmxy1kZpqY6fzB2ktwd762QDociYpc',
+});*/
+
+// Need to insert src in the script tag//
+// <script src = "https://maps.googleapis.com/maps/api/js?AIzaSyBTD132iHKIXtMExAf6ZOfX9AMWFAaRm6Y"></script>
 
 function getDistance(address, campus) {
-    var distance = new googleMapsClient..DistanceMatrixService();
+    var distance = new google.maps.DistanceMatrixService();
     distance.getDistanceMatrix({
         origins: address,
         destination: campus,
@@ -24,4 +28,4 @@ function getDistance(address, campus) {
     });
 }
 
-getDistance('Regents La Jolla','9500 Gilman Dr, La Jolla, CA 92093');
+getDistance('Regents La Jolla','University of California San Diego');
