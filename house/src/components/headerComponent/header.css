@@ -1,4 +1,12 @@
 .header {
     text-align: center;
     color: blue;
+    width: 100%;
+    padding: 40px;
+    font-size: 3em;
+    background-color: #666699;
+    color: white;
+    font-family: Verdana;
+    margin: 0;
+
 }

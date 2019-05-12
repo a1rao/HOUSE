@@ -6,7 +6,7 @@ class Footer extends React.Component {
 
         return (
             <footer className="footer">
-                Helping Off-campus University Students Everywhere
+                HOUSE: Housing Off-campus University Students Everywhere
             </footer>
         );
     }

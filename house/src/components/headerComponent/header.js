@@ -6,7 +6,7 @@ class Header extends React.Component {
 
         return (
             <header className="header">
-                HOUSE
+                Login
             </header>
         );
     }

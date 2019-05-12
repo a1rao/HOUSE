@@ -9,7 +9,7 @@ class Login extends React.Component {
 
             <form action='action_page.php'>
                         <div className="imgcontainer">
-                            <img src="https://i.ibb.co/4mtXX0X/House-logo.png" alt="Avatar" className="avatar"/>
+                            <img src="https://i.ibb.co/n0MjXts/House-logo.png" alt="Avatar" className="avatar"/>
                         </div>
 
                         <div className="container">
