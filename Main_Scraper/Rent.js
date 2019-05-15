@@ -10,7 +10,12 @@ module.exports = function scrapeRent(url)  {
             console.log('Size: ' + $('li._33L2a', html).text());
             console.log('Bedroom: ' + $('li[data-tid=pdpKeyInfo_bedText]', html).text());
             console.log('Bathroom: ' + $('li[data-tid=pdpKeyInfo_bathText]', html).text());
+            console.log('Contact info: ' + $('a.Iw8EN',html).text());
+            console.log('Description: ' + $('div.vxm57',html).text());
+            console.log('Building type: ' + $('span[data-tid=pdp-property-details-building-type-content]', html).text());
+            console.log('Managed by: ' + $('span[data-tid=pdp-property-details-managed-by-name]',html).text());
 
+            console.log("Type exit or Ctrl-d to exit or input another link here : ");
             //console.log(html);
         })
         .catch(function(err) {
