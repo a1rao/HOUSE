@@ -1,27 +1,25 @@
-.App {
+.LoginScreen {
 
 }
 
 .top {
-  position: fixed;
   width: 100%;
-  top: 0px;
+  top: 50px;
+  text-align: center;
+  position: fixed;
 }
 
 .bottom {
   position: fixed;
   bottom: 0px;
   width: 100%;
+  text-align: center;
 }
 
 .login {
   width: 50%;
   height: 50%;
-  position: absolute;
-  top: 0%;
-  bottom: 15%;
-  left: 0%;
-  right: 0%;
-  margin: auto;
+  position: fixed;
+  text-align: center;
 
 }

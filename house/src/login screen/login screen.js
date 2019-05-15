@@ -1,22 +1,18 @@
 import React from 'react';
-import './App.css';
+import './login screen.css';
 import Header from './components/headerComponent/header';
 import Footer from './components/footerComponent/footer';
 import Login from './components/loginComponent/login';
 
-class App extends React.Component {
+class LoginScreen extends React.Component {
   render() {
 
     return (
-        <div className="App">
+        <div className="LoginScreen">
 
-          <div className="top">
             <Header />
-          </div>
 
-          <div className="login">
-            <Login />
-          </div>
+            <Login className="login"/>
 
           <div className="bottom">
             <Footer />
@@ -28,4 +24,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default LoginScreen;

@@ -5,9 +5,12 @@ class Header extends React.Component {
     render() {
 
         return (
-            <header className="header">
-                Login
-            </header>
+
+            <div className="top">
+                <header className="header">
+                    Login
+                </header>
+            </div>
         );
     }
 }
