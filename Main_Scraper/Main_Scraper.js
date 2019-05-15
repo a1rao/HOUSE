@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 // import {scrapeRentals} from 'Rentals.js';
 
 const scrapeRentals = require('./Rentals.js');
 const scrapeRent = require('./Rent.js');
 const scrapeCraigslist= require('./Craigslist');
+=======
+const scrapeRentals = require('./Rentals.js');
+const scrapeRent = require('./Rent.js');
+const scrapeCraigslist = require('./Craigslist.js');
+>>>>>>> 5857171e8e3861bcaf9fc7e225c97e3ab151b4c1
 const scrapeTrulia = require('./Trulia.js');
 const scrapeApartments = require('./Apartments.js')
 
@@ -46,8 +52,14 @@ inputObject.on('data', function(data)  {
         } else {
             console.log("We cannot scrape from this link.")
         }
+<<<<<<< HEAD
     }
 
     console.log("Type exit or Ctrl-d to exit or input another link here : ");
 });
 
+=======
+
+    }
+});
+>>>>>>> 5857171e8e3861bcaf9fc7e225c97e3ab151b4c1

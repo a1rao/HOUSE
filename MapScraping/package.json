@@ -10,6 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "@google/maps": "^0.5.5",
-    "googlemaps": "^1.12.0"
+    "fetch": "^1.1.0",
+    "googlemaps": "^1.12.0",
+    "node-fetch": "^2.5.0",
+    "request": "^2.88.0"
   }
 }
