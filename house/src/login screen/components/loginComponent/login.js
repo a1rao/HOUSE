@@ -10,7 +10,7 @@ class Login extends React.Component {
             <div className="loginComponent">
                 <form action='action_page.php'>
                     <div className="imgcontainer">
-                        <img src="https://i.ibb.co/n0MjXts/House-logo.png" alt="Avatar" className="avatar"/>
+                        <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon" alt="Avatar" className="avatar"/>
                     </div>
 
                     <div className="centerContainer">
