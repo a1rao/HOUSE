@@ -1,12 +1,19 @@
-.LoginScreen {
-
-}
-
 .top {
   width: 100%;
-  top: 50px;
+  top: 0px;
   text-align: center;
   position: fixed;
+}
+
+img.backgroundImage {
+  width: 1920px;
+  height: 930px;
+}
+
+img.houseLogo {
+  position: relative;
+  left: -895px;
+  width: 7%;
 }
 
 .bottom {

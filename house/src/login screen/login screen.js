@@ -10,7 +10,12 @@ class LoginScreen extends React.Component {
     return (
         <div className="LoginScreen">
 
-            <Header />
+            <div className="top">
+                <Header />
+                <img src="https://i.ibb.co/Gv2WHXK/House-logo-2.png" alt="our logo" className="houseLogo"/>
+            </div>
+
+            <img src="https://i.ibb.co/FBPJSQG/painted-ladies-blur.png" alt="It is blurry" className="backgroundImage"/>
 
             <Login className="login"/>
 
