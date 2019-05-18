@@ -1,15 +1,13 @@
 import React from 'react';
-import './login.css';
-import {BrowserRouter as Router, Link, NavLink, Redirect} from 'react-router-dom';
-import Route from 'react-router-dom/Route';
+import './registration.css';
 
-class Login extends React.Component {
+class Registration extends React.Component {
 
     render() {
 
         return (
 
-            <div className="loginComponent">
+            <div className="registrationComponent">
                 <form action='action_page.php'>
                     <div className="imgcontainer">
                         <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon" alt="Avatar" className="avatar"/>
@@ -18,11 +16,11 @@ class Login extends React.Component {
                     <div className="centerContainer">
 
                         <div className="container">
-                            <label htmlFor="uname"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Valid Email" name="uname" required/>
+                            <label htmlFor="fname"><b>Enter Your First Name</b></label>
+                            <input type="text" placeholder="" name="fname" required/>
 
-                            <label htmlFor="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required/>
+                            <label htmlFor="lname"><b>Enter Your Last Name</b></label>
+                            <input type="text" placeholder="" name="lname" required/>
 
                             <button type="submit">Login</button>
 
@@ -37,5 +35,4 @@ class Login extends React.Component {
     }
 }
 
-/*export default withRouter(Login);*/
-export default Login;
+export default Registration;

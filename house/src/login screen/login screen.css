@@ -1,32 +1,31 @@
 .top {
-  width: 100%;
-  top: 0px;
-  text-align: center;
-  position: fixed;
+    width: 100%;
+    top: 0px;
+    text-align: center;
+    position: fixed;
 }
 
-img.backgroundImage {
-  width: 1920px;
-  height: 930px;
+.houseLogoContainer {
+    z-index: 1;
+    position: relative;
 }
 
 img.houseLogo {
-  position: relative;
-  left: -895px;
-  width: 7%;
+    min-height: 5%;
+    max-height: 60px;
 }
 
 .bottom {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
 }
 
 .login {
-  width: 50%;
-  height: 50%;
-  position: fixed;
-  text-align: center;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    text-align: center;
 
 }
