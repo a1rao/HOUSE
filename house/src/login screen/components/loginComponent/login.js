@@ -1,7 +1,6 @@
 import React from 'react';
 import './login.css';
-import {BrowserRouter as Router, Link, NavLink, Redirect} from 'react-router-dom';
-import Route from 'react-router-dom/Route';
+import {Link, NavLink} from 'react-router-dom';
 
 class Login extends React.Component {
 
@@ -26,7 +25,11 @@ class Login extends React.Component {
 
                             <button type="submit">Login</button>
 
-                            <button type="button" className="cancelbtn">New User?</button>
+                            <div className="wrapRButton">
+                                <a href="/register" className="rButton"> New User? </a>
+
+                            </div>
+
                             <span className="psw">Forgot <a href="#">password?</a></span>
                         </div>
                     </div>
