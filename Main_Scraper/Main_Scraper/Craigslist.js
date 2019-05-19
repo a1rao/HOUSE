@@ -1,5 +1,5 @@
-//module.exports = function scrapeCraigslist(url)  {
-function scrape(url) {
+module.exports = function scrapeCraigslist(url)  {
+
 
     const rp = require('request-promise');
     const $ = require('cheerio');
@@ -25,4 +25,3 @@ function scrape(url) {
         });
 }
 
-scrape('https://sandiego.craigslist.org/ssd/apa/d/national-city-2-bedroom-1-bath/6880128949.html')

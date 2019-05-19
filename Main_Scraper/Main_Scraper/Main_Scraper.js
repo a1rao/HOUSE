@@ -2,7 +2,9 @@ const scrapeRentals = require('./Rentals.js');
 const scrapeRent = require('./Rent.js');
 const scrapeCraigslist = require('./Craigslist.js');
 const scrapeTrulia = require('./Trulia.js');
-const scrapeApartments = require('./Apartments.js')
+const scrapeApartments = require('./Apartments.js');
+const Listing = require('./Listing.js');
+const Test = require('./Test.js')
 
 // creates a standard input object
 const inputObject = process.stdin;
@@ -34,7 +36,17 @@ inputObject.on('data', function(data)  {
         if (siteInfo === "rentals") {
             scrapeRentals(data);
         } else if (siteInfo === 'rent') {
-            scrapeRent(data);
+            var l = scrapeRent(data)
+
+            function hello() {
+                console.log("1 " + l.address)
+            }
+            // $(document).bind('function_scrapeRent_complete', hello);
+            setTimeout(hello, 3000)
+
+            // var l = Test();
+            // console.log("in main");
+            // console.log(l)
         } else if (siteInfo === 'trulia') {
             scrapeTrulia(data);
         } else if (siteInfo === "craigslist") {
@@ -44,6 +56,5 @@ inputObject.on('data', function(data)  {
         } else {
             console.log("We cannot scrape from this link.")
         }
-
     }
 });

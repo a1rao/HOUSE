@@ -21,6 +21,7 @@ module.exports = function scrapeRentals(url) {
             console.log('Contact info: ' + $('a._1c0U0 span', html).text());
             console.log('Description : ' + $('div[data-tid="listing_text"]', html).text());
 
+
             console.log("Type exit or Ctrl-d to exit or input another link here : ");
             //console.log(html);
         })
