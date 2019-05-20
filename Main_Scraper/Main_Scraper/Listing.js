@@ -1,9 +1,10 @@
 module.exports =  class Listing {
 
     constructor(url, address, price, bed, bath, area, deposit, type, contact_name, contact_email, contact_number,
-                distance_to_campus, pets, smoking, parking, lease_period, description) {
+                distance_to_campus, pets, smoking, parking, lease_period, description, int_price, int_bed, int_bath,
+                int_area) {
 
-        console.log("started initializing l at " + new Date().getTime())
+        //console.log("started initializing l at " + new Date().getTime())
         this._url = url;
         this._address = address;
         this._price = price;
@@ -21,7 +22,11 @@ module.exports =  class Listing {
         this._parking = parking;
         this._lease_period = lease_period;
         this._description = description;
-        console.log("l was initialized at " + new Date().getTime())
+        this._int_price = int_price;
+        this._int_bed = int_bed;
+        this._int_bath = int_bath;
+        this._int_area = int_area;
+        //console.log("l was initialized at " + new Date().getTime())
     }
 
     get url() {
@@ -160,5 +165,32 @@ module.exports =  class Listing {
         this._description = value;
     }
 
+    get int_area() {
+        return this._int_area;
+    }
 
+    set int_area(value) {
+        this._int_area = value;
+    }
+    get int_bath() {
+        return this._int_bath;
+    }
+
+    set int_bath(value) {
+        this._int_bath = value;
+    }
+    get int_bed() {
+        return this._int_bed;
+    }
+
+    set int_bed(value) {
+        this._int_bed = value;
+    }
+    get int_price() {
+        return this._int_price;
+    }
+
+    set int_price(value) {
+        this._int_price = value;
+    }
 };

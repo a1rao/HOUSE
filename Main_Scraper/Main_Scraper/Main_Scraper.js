@@ -32,9 +32,9 @@ const Listing = require('./Listing.js');
 // }
 async function main(data)  {
 
-    console.log("Before Initializing l " + new Date().getTime())
+    //console.log("Before Initializing l " + new Date().getTime())
     var l = new Listing(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);
-    console.log("after initializing l " + new Date().getTime())
+    //console.log("after initializing l " + new Date().getTime())
     console.log("running...\n");
 
     // const readline = require('readline').createInterface({
@@ -84,9 +84,9 @@ async function main(data)  {
         if (siteInfo === "rentals") {
             scrapeRentals(data);
         } else if (siteInfo === 'rent') {
-            console.log("calling srapeRent at " + new Date().getTime())
+            //console.log("calling srapeRent at " + new Date().getTime())
             await scrapeRent(data,l);
-            console.log("returned from function scrapeRent at " + new Date().getTime())
+            //console.log("returned from function scrapeRent at " + new Date().getTime())
 
             // var retVal = function hello() {
             //     return l;
@@ -112,14 +112,15 @@ async function main(data)  {
 // setTimeout(r, 10000);
 
 async function fuckThisShit() {
-    console.log("Before calling main() " + new Date().getTime())
+    //console.log("Before calling main() " + new Date().getTime())
     var ret = await main('https://www.rent.com/california/la-jolla-houses/8891-nottingham-pl-4-r2978423');
-    console.log("Returned from main() at " + new Date().getTime())
+    //console.log("Returned from main() at " + new Date().getTime())
 
-    setTimeout(() => {
-        console.log("------------------------- address ---------------" + ret.address);
-        console.log("------------------------- price ---------------" + ret.price);
-    }, 10000)
+    //setTimeout(() => {
+    console.log("------------------------- address ---------------" + ret.address);
+    console.log("------------------------- price --------------- " + (ret.price));
+    console.log("------------------------- int_price --------------- " + ret.int_price);
+    //}, 10000)
 }
 
 fuckThisShit();

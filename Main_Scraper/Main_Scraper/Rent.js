@@ -1,15 +1,15 @@
 const Listing = require('./Listing.js');
 
 module.exports = async function scrapeRent(url, l)  {
-    console.log("entered function srapeRent " + new Date().getTime())
+    //console.log("entered function srapeRent " + new Date().getTime())
     const rp = require('request-promise');
     const $ = require('cheerio');
     //const url = 'https://www.rent.com/california/la-jolla-houses/366-forward-st-unit-f-4-r2821756';
     //var l = new Listing(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
-    console.log("calling function rp at " + new Date().getTime())
+    //console.log("calling function rp at " + new Date().getTime())
     await rp(url)
         .then(function(html) {
-            console.log("entered .then() of rp at " + new Date().getTime())
+            //console.log("entered .then() of rp at " + new Date().getTime())
             console.log('Address: ' + $('h1._1BHOX', html).text());
             console.log('Price: ' + $('div.Pdhh_', html).text());
             console.log('Area: ' + $('li._33L2a', html).text());
@@ -24,6 +24,7 @@ module.exports = async function scrapeRent(url, l)  {
 
             l.address = $('h1._1BHOX', html).text();
             l.price = $('div.Pdhh_', html).text();
+            l.int_price = l.price.replace(/[^0-9.]/g, "");
             l.area = $('li._33L2a', html).text();
             l.bed = $('li[data-tid=pdpKeyInfo_bedText]', html).text();
             l.bath = $('li[data-tid=pdpKeyInfo_bathText]', html).text();
@@ -31,12 +32,12 @@ module.exports = async function scrapeRent(url, l)  {
             l.description = $('div.vxm57',html).text();
             l.type = $('span[data-tid=pdp-property-details-building-type-content]', html).text();
             l.contact_name = $('span[data-tid=pdp-property-details-managed-by-name]',html).text();
-            console.log("finished executing .then() of rp at " + new Date().getTime())
+            //console.log("finished executing .then() of rp at " + new Date().getTime())
         })
         .catch(function(err) {
             console.log(err);
         });
-    console.log("finished executing function scrapeRent at " + new Date().getTime())
+    //console.log("finished executing function scrapeRent at " + new Date().getTime())
     return l;
 };
 
