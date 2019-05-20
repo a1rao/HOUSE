@@ -3,6 +3,7 @@ module.exports =  class Listing {
     constructor(url, address, price, bed, bath, area, deposit, type, contact_name, contact_email, contact_number,
                 distance_to_campus, pets, smoking, parking, lease_period, description) {
 
+        console.log("started initializing l at " + new Date().getTime())
         this._url = url;
         this._address = address;
         this._price = price;
@@ -20,6 +21,7 @@ module.exports =  class Listing {
         this._parking = parking;
         this._lease_period = lease_period;
         this._description = description;
+        console.log("l was initialized at " + new Date().getTime())
     }
 
     get url() {
