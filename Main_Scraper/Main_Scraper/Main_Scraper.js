@@ -33,9 +33,10 @@ const Listing = require('./Listing.js');
 async function main(data)  {
 
     //console.log("Before Initializing l " + new Date().getTime())
-    var l = new Listing(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);
+    var l = new Listing('NA','NA','NA','NA','NA','NA','NA','NA','NA','NA','NA','NA','NA','NA','NA','NA','NA','NA','NA',
+                        'NA','NA');
     //console.log("after initializing l " + new Date().getTime())
-    console.log("running...\n");
+    //console.log("running...\n");
 
     // const readline = require('readline').createInterface({
     //     input: process.stdin,
@@ -73,13 +74,13 @@ async function main(data)  {
         console.log("Exited");
         process.exit();
     } else {
-        console.log("Input Data2: " + data);
+        //console.log("URl to scrape: " + data);
 
         // splitting the string to get the text between www. and .com
         const userInputSplitted = data.split(".", 2);
         const siteInfo = userInputSplitted[1];
 
-        console.log("Site to Search: " + siteInfo);
+        //console.log("Site to Scrape: " + siteInfo);
 
         if (siteInfo === "rentals") {
             scrapeRentals(data);
@@ -113,14 +114,38 @@ async function main(data)  {
 
 async function fuckThisShit() {
     //console.log("Before calling main() " + new Date().getTime())
-    var ret = await main('https://www.rent.com/california/la-jolla-houses/8891-nottingham-pl-4-r2978423');
+    //var ret = await main('https://www.rent.com/california/la-jolla-houses/8891-nottingham-pl-4-r2978423');
+    //var ret = await main('https://www.rent.com/california/san-diego-apartments/axiom-la-jolla-4-462064');
+    var ret = await main('https://www.rent.com/california/la-jolla-apartments/solazzo-apartment-homes-4-427067');
+    //var ret = await main('https://www.rent.com/california/san-diego-apartments/olympus-corsair-4-100048895');
+    //var ret = await main('https://www.rent.com/california/san-diego-apartments/la-jolla-palms-4-442619');
     //console.log("Returned from main() at " + new Date().getTime())
 
     //setTimeout(() => {
+    console.log("---------------------Object returned--------------");
+    console.log("------------------------- url --------------- " + ret.url);
     console.log("------------------------- address ---------------" + ret.address);
-    console.log("------------------------- price --------------- " + (ret.price));
+    console.log("------------------------- price --------------- " + ret.price);
     console.log("------------------------- int_price --------------- " + ret.int_price);
+    console.log("------------------------- bed --------------- " + ret.bed);
+    console.log("------------------------- int_bed --------------- " + ret.int_bed);
+    console.log("------------------------- bath --------------- " + ret.bath);
+    console.log("------------------------- int_bath --------------- " + ret.int_bath);
+    console.log("------------------------- Area --------------- " + ret.area);
+    console.log("------------------------- int_Area --------------- " + ret.int_area);
+    console.log("------------------------- type --------------- " + ret.type);
+    console.log("------------------------- deposit --------------- " + ret.deposit);
+    console.log("------------------------- contact_name --------------- " + ret.contact_name);
+    console.log("------------------------- contact_email --------------- " + ret.contact_email);
+    console.log("------------------------- contact_number --------------- " + ret.contact_number);
+    console.log("------------------------- distance_to_campus --------------- " + ret.distance_to_campus);
+    console.log("------------------------- pets --------------- " + ret.pets);
+    console.log("------------------------- smoking --------------- " + ret.smoking);
+    console.log("------------------------- parking --------------- " + ret.parking);
+    console.log("------------------------- lease_period --------------- " + ret.lease_period);
+    console.log("------------------------- description --------------- " + ret.description);
     //}, 10000)
+    return ret;
 }
 
 fuckThisShit();
