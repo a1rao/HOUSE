@@ -19,7 +19,6 @@ class LoginContainer extends Component {
     };
 
     render() {
-        //return <h1>LOL THIS IS NOT IT</h1>;
         return <LoginView onSubmit={this.handleSignUp} />;
     }
 }

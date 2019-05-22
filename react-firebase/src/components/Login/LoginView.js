@@ -1,6 +1,42 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+import './LoginStyle.css';
 
 const LoginView = ({ onSubmit }) => {
+    //render() {
+
+        return (
+
+            <div className="loginComponent">
+                <form onSubmit={onSubmit} >
+                    <div className="imgcontainer">
+                        <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon" alt="Avatar" className="avatar"/>
+                    </div>
+
+                    <div className="centerContainer">
+
+                        <div className="container">
+                            <label htmlFor="uname"><b>Email</b></label>
+                            <input type="text" name = "email" placeholder="Enter Valid Email"  required/>
+
+                            <label htmlFor="psw"><b>Password</b></label>
+                            <input type="password"  name="password" placeholder="Enter Password"  required/>
+
+                            <button type="submit">Login</button>
+
+                            <div className="wrapRButton">
+                                <a href="/register" className="rButton"> New User? </a>
+
+                            </div>
+
+                            <span className="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        )
+};/*
     return (
         <div>
             <h1>Login</h1>
@@ -23,50 +59,12 @@ const LoginView = ({ onSubmit }) => {
                 </label>
                 <button type="submit">Login</button>
             </form>
+            <h4> Don't have an account? <Link to='/register'> Register now</Link></h4>
         </div>
     );
-};
+};*/
 
 
-/*class RegisterView extends Component {
-    constructor(props){
-        super(props);
-        this.state={
-            email:'',
-            password:'',
-            username:''
-        };
-        this.firebaseRef = this.props.db.database().ref("userInfo");
-    }
 
-    componentWillUnmount() {
-        this.firebaseRef.off();
-    }
-
-    pushToFirebase(event) {
-        const {email, password, username} = this.state;
-        const userID = 12345;
-        event.preventDefault();
-        this.firebaseRef.child(username).set({email, password, username});
-        this.setState({email: '', password: '', username:''});
-    }
-
-    render(){
-        return(
-            <div>
-                <label>Email</label>
-                <input onChange = {e => this.setState({email:e.target.value})} />
-                <br />
-                <label>Password</label>
-                <input type = "password" onChange = {e => this.setState({password:e.target.value})} />
-                <br />
-                <label>Username</label>
-                <input onChange = {e => this.setState({username:e.target.value})} />
-                <br />
-                <button onClick={this.pushToFirebase.bind(this)}>Register</button>
-            </div>
-        );
-    }
-}*/
 
 export default LoginView;

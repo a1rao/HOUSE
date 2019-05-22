@@ -1,5 +1,5 @@
-//module.exports = function scrapeTrulia(url)  {
-function scrape(url)  {
+module.exports = function scrapeTrulia(url)  {
+
 
     const rp = require('request-promise');
     const $ = require('cheerio');
@@ -23,4 +23,3 @@ function scrape(url)  {
         });
 }
 
-scrape('https://www.trulia.com/p/ca/san-diego/9588-ronda-ave-san-diego-ca-92123--2079915973')

@@ -1,72 +1,68 @@
 import React from 'react';
+import "./RegisterStyle.css"
 
 const RegisterView = ({ onSubmit }) => {
     return (
-        <div>
-            <h1>Register</h1>
+        <div className="registrationComponent">
             <form onSubmit={onSubmit}>
-                <label>
-                    Email
-                    <input
-                        name="email"
-                        type="email"
-                        placeholder="Email"
-                    />
-                </label>
-                <label>
-                    Password
-                    <input
-                        name="password"
-                        type="password"
-                        placeholder="Password"
-                    />
-                </label>
-                <button type="submit">Register</button>
+                <div className="imgcontainer">
+                    <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon" alt="Avatar" className="avatar"/>
+                </div>
+
+                <div className="centerContainer">
+
+                    <div className="container">
+                        <label htmlFor="fname"><b>Enter Your First Name</b></label>
+                        <input type="text" name="fname"  placeholder="Enter First Name" required/>
+
+                        <label htmlFor="lname"><b>Enter Your Last Name</b></label>
+                        <input type="text" name="lname" placeholder="Enter Last Name" required/>
+
+                        <label htmlFor="campus"><b>Enter Your College Campus</b></label>
+                        <input type="text" name="campus" placeholder="Enter College Campus" required/>
+
+                        <label htmlFor="email"><b>Enter Valid Email Address</b></label>
+                        <input type="text" name="email" placeholder="Enter Email"  required/>
+
+                        <label htmlFor="pword"><b>Enter Password</b></label>
+                        <input type="password" name="password" placeholder="Enter Password"  required/>
+
+                        <label htmlFor="repeatPword"><b>Re-Enter Password</b></label>
+                        <input type="password" name="password2" placeholder="Re-Enter Password"  required/>
+
+                        <button type="submit">Register</button>
+
+                    </div>
+                </div>
             </form>
         </div>
+
     );
 };
 
 
-/*class RegisterView extends Component {
-    constructor(props){
-        super(props);
-        this.state={
-            email:'',
-            password:'',
-            username:''
-        };
-        this.firebaseRef = this.props.db.database().ref("userInfo");
-    }
+/*<div>
+    <h1>Register</h1>
+    <form onSubmit={onSubmit}>
+        <label>
+            Email
+            <input
+                name="email"
+                type="email"
+                placeholder="Email"
+            />
+        </label>
+        <label>
+            Password
+            <input
+                name="password"
+                type="password"
+                placeholder="Password"
+            />
+        </label>
+        <button type="submit">Register</button>
+    </form>
+</div>*/
 
-    componentWillUnmount() {
-        this.firebaseRef.off();
-    }
-
-    pushToFirebase(event) {
-        const {email, password, username} = this.state;
-        const userID = 12345;
-        event.preventDefault();
-        this.firebaseRef.child(username).set({email, password, username});
-        this.setState({email: '', password: '', username:''});
-    }
-
-    render(){
-        return(
-            <div>
-                <label>Email</label>
-                <input onChange = {e => this.setState({email:e.target.value})} />
-                <br />
-                <label>Password</label>
-                <input type = "password" onChange = {e => this.setState({password:e.target.value})} />
-                <br />
-                <label>Username</label>
-                <input onChange = {e => this.setState({username:e.target.value})} />
-                <br />
-                <button onClick={this.pushToFirebase.bind(this)}>Register</button>
-            </div>
-        );
-    }
-}*/
 
 export default RegisterView;

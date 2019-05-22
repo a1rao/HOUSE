@@ -1,5 +1,4 @@
-//module.exports = function scrapeApartments(url)  {
-function scrapeApartments(url)  {
+module.exports = function scrapeApartments(url)  {
     const rp = require('request-promise');
     const $ = require('cheerio');
     //const url = 'https://www.apartments.com/avalon-la-jolla-colony-san-diego-ca/ktr63f8/';
@@ -21,4 +20,3 @@ function scrapeApartments(url)  {
         });
 }
 
-scrapeApartments('https://www.apartments.com/avalon-la-jolla-colony-san-diego-ca/ktr63f8/');

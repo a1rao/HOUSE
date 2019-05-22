@@ -6,19 +6,20 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Register from './components/Register/index.js';
 import Login from './components/Login/index.js';
-import Home from './components/Home';
+import Home from './components/Home/HomeView';
 import PrivateRoute from './PrivateRoute';
 import app from './base';
 
 
 class App extends Component {
 
-    state = {loading:true, authenticated:false, user:null};
+    // Default state when user opens website
+    state = {loading:false, authenticated:false, user:null};
 
+    // Check whether user has signed up or not
   componentWillMount() {
       app.auth().onAuthStateChanged(user=> {
           if(user){
-              //console.log("user is logged in");
               this.setState({authenticated: true, currentUser:user, loading:false});
           } else {
               this.setState({authenticated:false, currentUser:null, loading:false});
@@ -31,14 +32,9 @@ class App extends Component {
       if(loading){
           return <p>Loading...</p>;
       }
-      /*if(!this.state.currentUser){
-          return <h1>yes user</h1>;
-      }*/
+
       return (
-          /*<div>
-            <RegisterView db={firebase}/>
-             <Login db={firebase}/>
-            </div>*/
+        // Set page depending on authentication
          <Router>
                 <div>
                     <PrivateRoute exact path = '/' component = {Home} authenticated={authenticated} />
