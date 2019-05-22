@@ -14,7 +14,7 @@ import app from './base';
 class App extends Component {
 
     // Default state when user opens website
-    state = {loading:false, authenticated:false, user:null};
+    state = {loading:true, authenticated:false, user:null};
 
     // Check whether user has signed up or not
   componentWillMount() {
@@ -37,7 +37,7 @@ class App extends Component {
         // Set page depending on authentication
          <Router>
                 <div>
-                    <PrivateRoute exact path = '/' component = {Home} authenticated={authenticated} />
+                    <PrivateRoute exact path = '/' component = {Home} authenticated={authenticated}/>
                     <Route exact path = '/login' component = {Login}/>
                     <Route exact path = '/register' component = {Register}/>
                 </div>
@@ -45,5 +45,7 @@ class App extends Component {
       );
   }
 }
+
+//this.state.authenticated} />
 
 export default App;

@@ -1,0 +1,31 @@
+.top {
+    width: 100%;
+    top: 0px;
+    text-align: center;
+    position: fixed;
+}
+
+.houseLogoContainer {
+    z-index: 1;
+    position: relative;
+}
+
+img.houseLogo {
+    min-height: 5%;
+    max-height: 60px;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.registrationScreen {
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    text-align: center;
+
+}

@@ -1,29 +1,38 @@
 import React, { Component } from "react";
 import app from "../../base";
 
+var database = app.database();
+
 function CreateFolder(){
     // Get user input
-    var x = document.getElementById("insertName");
+    var userInput = document.getElementById("insertName");
     var uid = app.auth().currentUser.uid;
 
     // Add folder to database
-    app.database().ref('users/'+ uid + '/folders/'+ x.elements[0].value).set({
-        //"listing1" : x.elements[0].value
+    var folderName = userInput.elements[0].value;
+    database.ref('users/'+ uid + '/folders/'+ folderName).set({
+        "listing1" : folderName
     });
 
     // Reset fields
-    x.reset();
+    userInput.reset();
 }
 
-//const HomeView = () =>{
+// Todo
+function SaveListing(){
+}
+
+
 class HomeView extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { items:[]};
+        this.state = {
+            items: []
+        };
 
-        var uid = app.auth().currentUser.uid;
-        app.database().ref('users/' + uid).on('value', dataSnapshot => {
+        this.firebaseRef = app.database().ref('users/');
+        this.firebaseRef.on('value', dataSnapshot => {
             let items = [];
             dataSnapshot.forEach(childSnapshot => {
                 let item = childSnapshot.val();
@@ -33,15 +42,44 @@ class HomeView extends Component {
             this.setState({items});
         });
 
-        /* My shitty code
-        var uid = app.auth().currentUser.uid;
-        var ref = app.database().ref('users/' + uid);
-        ref.once('value').then(function (snapshot) {
-            firstname = snapshot.child('/first').key;
-            lastname = snapshot.child('/last').key;
+        /*this.state = {
+            firstName:'',
+            lastName:''
+        };*/
+
+        /* Load user first and last name from database (Does not work)
+        let uid = app.auth().currentUser.uid;
+        console.error(uid);
+        app.database().ref('users/' + uid).on('value', dataSnapshot=> {
+            const userObject = dataSnapshot.val();
+            //let firstName = userObject.first;
+            this.setState({firstName: 'WHY'});
+            //this.state.lastName=userObject.last;
         });*/
 
+
+
     }
+
+    componentWillUnmount() {
+        this.firebaseRef.off();
+    }
+
+    /*async componentDidMount() {
+        // Load user first and last name from database (Does not work)
+        let uid = app.auth().currentUser.uid;
+        console.error(uid);
+        await app.database().ref('users/' + uid).once('value').then(dataSnapshot => {
+            const userObject = dataSnapshot.val();
+            console.log(userObject);
+            //this.fn = userObject.first;
+            //this.ln = userObject.last;
+            this.setState({firstName: userObject.first});
+            //this.state.lastname=userObject.last;
+        });
+
+        this.setState({firstName: 'KILL ME'});
+    }*/
 
     render() {
         const records = this.state.items.map(items =>
@@ -50,25 +88,29 @@ class HomeView extends Component {
                 <td style={{width: '200px', textAlign: 'center'}}>{items.last}</td>
             </tr>
         );
-
         return (
             <div>
-                /*<h4>Welcome, {this.state.items.first} {this.state.items.last}</h4>*/
-                <tbody>records: {records}</tbody>
-                <h1>Insert URL:</h1>
+                <tbody>
+                {records}
+                </tbody>
                 <form id="insertName">
-                    Enter Folder Name:
                     <input
                         name="folderName"
-                        type="folderName"
+                        type="text"
                         placeholder="Enter Folder Name"/>
                 </form>
                 <button onClick={CreateFolder}>Create folder</button>
-                <button>Add to folder</button>
+                <form id="insertURL">
+                    <input
+                        name="url"
+                        type="text"
+                        placeholder="Enter Listing URL"/>
+                </form>
+                <button onClick={SaveListing}>Add to folder</button>
             </div>
         );
     }
 
 };
-
+//<h4>{this.state.firstName}</h4>
 export default HomeView;

@@ -6,18 +6,22 @@ import firebase from "firebase";
 import HomeView from "./HomeView";
 
 class HomeContainer extends Component {
-    componentDidMount() {
-        var uid = app.auth().currentUser.uid;
-        var firstname = "lol";
-        var lastname = "what";
-        app.database().ref('users/' + uid).once('value').then(function(snapshot) {
-            firstname = snapshot.child('/first').key;
-            lastname = snapshot.child('/last').key;
+
+    /*componentDidMount() {
+        let uid = app.auth().currentUser.uid;
+        console.error(uid);
+        this.dbref.ref('users/' + uid).once('value').then(dataSnapshot => {
+            const userObject = dataSnapshot.val();
+            console.log(userObject);
+            this.fn = userObject.first;
+            this.ln = userObject.last;
+            //this.setState({firstName: userObject.first});
+            //this.state.lastname=userObject.last;
         });
-    }
+    }*/
 
     render() {
-        return <HomeView />;
+        //return <HomeView />;
     }
 }
 

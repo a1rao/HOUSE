@@ -3,7 +3,11 @@ import { withRouter } from "react-router";
 import app from "../../base";
 import firebase from "firebase";
 
-import RegisterView from "./RegisterView";
+import './RegisterComponents/RegMain.css';
+import Header from './RegisterComponents/RegHeader.js';
+import Footer from './RegisterComponents/RegFooter.js';
+import Registration from './RegisterComponents/RegForm.js';
+import BackGroundImage from './RegisterComponents/RegBackground.js';
 
 class RegisterContainer extends Component {
     handleSignUp = async event => {
@@ -26,7 +30,28 @@ class RegisterContainer extends Component {
     };
 
     render() {
-        return <RegisterView onSubmit={this.handleSignUp} />;
+        return(
+            <div className="Registration">
+
+                <div className="top">
+                    <Header />
+                </div>
+
+                <div className="houseLogoContainer">
+                    <img src="https://i.ibb.co/Gv2WHXK/House-logo-2.png" alt="our logo" className="houseLogo"/>
+                </div>
+
+                <BackGroundImage className="imageContainer" />
+
+                <Registration className="registrationScreen" onSubmit={this.handleSignUp}/>
+
+                <div className="bottom">
+                    <Footer />
+                </div>
+
+            </div>
+        );
+        //return <RegForm onSubmit={this.handleSignUp} />;
     }
 }
 

@@ -1,12 +1,12 @@
 import React from 'react';
-import "./RegisterStyle.css"
+import "./RegForm.css"
 
-const RegisterView = ({ onSubmit }) => {
+const RegForm = ({ onSubmit }) => {
     return (
         <div className="registrationComponent">
             <form onSubmit={onSubmit}>
                 <div className="imgcontainer">
-                    <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon" alt="Avatar" className="avatar"/>
+                    <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon"  className="avatar"/>
                 </div>
 
                 <div className="centerContainer">
@@ -65,4 +65,4 @@ const RegisterView = ({ onSubmit }) => {
 </div>*/
 
 
-export default RegisterView;
+export default RegForm;

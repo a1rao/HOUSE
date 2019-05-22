@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import './LoginStyle.css';
+import './LoginForm.css';
 
-const LoginView = ({ onSubmit }) => {
+const LoginForm = ({ onSubmit }) => {
     //render() {
 
         return (
@@ -10,7 +10,7 @@ const LoginView = ({ onSubmit }) => {
             <div className="loginComponent">
                 <form onSubmit={onSubmit} >
                     <div className="imgcontainer">
-                        <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon" alt="Avatar" className="avatar"/>
+                        <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon"  className="avatar"/>
                     </div>
 
                     <div className="centerContainer">
@@ -67,4 +67,4 @@ const LoginView = ({ onSubmit }) => {
 
 
 
-export default LoginView;
+export default LoginForm;

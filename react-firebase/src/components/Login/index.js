@@ -2,7 +2,12 @@ import React, { Component } from "react";
 import { withRouter } from "react-router";
 import app from "../../base";
 
-import LoginView from "../Login/LoginView";
+import './LoginComponents/LoginMain.css';
+import Header from './LoginComponents/LoginHeader.js';
+import Footer from './LoginComponents/LoginFooter.js';
+import Login from './LoginComponents/LoginForm.js';
+import BackGroundImage from './LoginComponents/LoginBackground.js';
+
 
 class LoginContainer extends Component {
     handleSignUp = async event => {
@@ -19,9 +24,34 @@ class LoginContainer extends Component {
     };
 
     render() {
-        return <LoginView onSubmit={this.handleSignUp} />;
+
+        return (
+
+            <div className="LoginScreen">
+
+                <div className="top">
+                    <Header />
+                </div>
+
+                <div className="houseLogoContainer">
+                    <img src="https://i.ibb.co/Gv2WHXK/House-logo-2.png" alt="our logo" className="houseLogo"/>
+                </div>
+
+                <BackGroundImage className="imageContainer" />
+
+                <Login className="login" onSubmit={this.handleSignUp}/>
+
+                <div className="bottom">
+                    <Footer />
+                </div>
+
+            </div>
+
+        );
     }
 }
+
+// return <LoginView onSubmit={this.handleSignUp} />;
 
 export default withRouter(LoginContainer);
 

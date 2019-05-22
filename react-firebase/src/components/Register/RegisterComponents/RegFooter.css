@@ -1,0 +1,11 @@
+.footer {
+    color: blue;
+    width: 100%;
+    font-size: 24px;
+    background-color: #666699;
+    color: white;
+    font-family: Verdana;
+    margin: 0;
+    display: inline-block;
+
+}
