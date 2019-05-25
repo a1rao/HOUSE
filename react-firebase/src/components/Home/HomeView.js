@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import app from "../../base";
 import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
 import AddNewURL from '../Listings/addURL/AddNewURL';
-
-var database = app.database();
+import NavigationBar from './homeComponents/NavigationBar';
 
 
 class HomeView extends Component {
@@ -13,6 +12,10 @@ class HomeView extends Component {
 
         return (
             <div>
+
+                {/*Navigation bar at the top of the screen. */}
+                <NavigationBar/>
+
                 {/* Code for creating a new folder. */}
                 <AddNewFolder/>
 

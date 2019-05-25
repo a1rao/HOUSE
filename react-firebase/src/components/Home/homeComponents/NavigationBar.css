@@ -1,0 +1,11 @@
+.searchBar {
+    display: inline-block;
+}
+
+.searchBarWrap {
+    text-align: center;
+}
+
+.mr-sm-2 {
+    width: 100%;
+}

@@ -8,7 +8,7 @@ const LoginForm = ({ onSubmit }) => {
         return (
 
             <div className="loginComponent">
-                <form onSubmit={onSubmit} >
+                <form onSubmit={onSubmit} className="loginForm">
                     <div className="imgcontainer">
                         <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon"  className="avatar"/>
                     </div>
@@ -17,12 +17,12 @@ const LoginForm = ({ onSubmit }) => {
 
                         <div className="container">
                             <label htmlFor="uname"><b>Email</b></label>
-                            <input type="text" name = "email" placeholder="Enter Valid Email"  required/>
+                            <input type="text" name = "email" placeholder="Enter Valid Email"  required className="inputLogin"/>
 
                             <label htmlFor="psw"><b>Password</b></label>
-                            <input type="password"  name="password" placeholder="Enter Password"  required/>
+                            <input type="password"  name="password" placeholder="Enter Password"  required className="inputLogin"/>
 
-                            <button type="submit">Login</button>
+                            <button type="submit" className="loginButton">Login</button>
 
                             <div className="wrapRButton">
                                 <a href="/register" className="rButton"> New User? </a>
