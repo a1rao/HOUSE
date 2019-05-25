@@ -1,19 +1,9 @@
-.registerForm {
+/* Bordered form */
+form {
     /*border: 3px solid #f1f1f1; */
     border-width: 3px;
     border-color: black;
     border-style: solid;
-}
-
-/* Full width inputs */
-.inputRegister {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    text-align: left;
 }
 
 .registrationComponent {
@@ -26,8 +16,19 @@
     position: absolute;
 }
 
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: left;
+}
+
 /* Set a style for all buttons */
-.registerButton {
+button {
     background-color: lightseagreen;
     color: white;
     padding: 14px 20px;
@@ -38,10 +39,9 @@
 }
 
 /* Add a hover effect for buttons */
-.registerButton:hover {
+button:hover {
     opacity: 0.8;
 }
-
 
 /* Extra style for the cancel button (red) */
 .cancelbtn {
