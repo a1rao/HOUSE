@@ -1,6 +1,3 @@
-
-
-
 // Todo
 function SaveListing(){
 

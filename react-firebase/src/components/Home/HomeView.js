@@ -1,54 +1,48 @@
 import React, { Component } from "react";
 import app from "../../base";
-import CreateFolder from '../Folders/folderActions/CreateFolder';
-import SaveListing from '../Listings/listingActions/SaveListing';
+import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
+import AddNewURL from '../Listings/addURL/AddNewURL';
 
 var database = app.database();
 
 
 class HomeView extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            items: []
-        };
-
-        this.firebaseRef = app.database().ref('users/');
-        this.firebaseRef.on('value', dataSnapshot => {
-            let items = [];
-            dataSnapshot.forEach(childSnapshot => {
-                let item = childSnapshot.val();
-                item['.key'] = childSnapshot.key;
-                items.push(item);
-            });
-            this.setState({items});
-        });
-
-        /*this.state = {
-            firstName:'',
-            lastName:''
-        };*/
-
-        /* Load user first and last name from database (Does not work)
-        let uid = app.auth().currentUser.uid;
-        console.error(uid);
-        app.database().ref('users/' + uid).on('value', dataSnapshot=> {
-            const userObject = dataSnapshot.val();
-            //let firstName = userObject.first;
-            this.setState({firstName: 'WHY'});
-            //this.state.lastName=userObject.last;
-        });*/
 
 
+    render() {
 
+        return (
+            <div>
+                {/* Code for creating a new folder. */}
+                <AddNewFolder/>
+
+                {/*Code for adding a new listing. */}
+                <AddNewURL/>
+
+            </div>
+        );
     }
+}
 
-    componentWillUnmount() {
-        this.firebaseRef.off();
-    }
+export default HomeView;
 
-    /*async componentDidMount() {
+/*this.state = {
+        firstName:'',
+        lastName:''
+    };*/
+
+/* Load user first and last name from database (Does not work)
+let uid = app.auth().currentUser.uid;
+console.error(uid);
+app.database().ref('users/' + uid).on('value', dataSnapshot=> {
+    const userObject = dataSnapshot.val();
+    //let firstName = userObject.first;
+    this.setState({firstName: 'WHY'});
+    //this.state.lastName=userObject.last;
+});*/
+
+
+/*async componentDidMount() {
         // Load user first and last name from database (Does not work)
         let uid = app.auth().currentUser.uid;
         console.error(uid);
@@ -64,36 +58,4 @@ class HomeView extends Component {
         this.setState({firstName: 'KILL ME'});
     }*/
 
-    render() {
-        const records = this.state.items.map(items =>
-            <tr key={items.first}>
-                <td style={{width: '200px', textAlign: 'center'}}>{items.first}</td>
-                <td style={{width: '200px', textAlign: 'center'}}>{items.last}</td>
-            </tr>
-        );
-        return (
-            <div>
-                <tbody>
-                {records}
-                </tbody>
-                <form id="insertName">
-                    <input
-                        name="folderName"
-                        type="text"
-                        placeholder="Enter Folder Name"/>
-                </form>
-                <button onClick={CreateFolder}>Create folder</button>
-                <form id="insertURL">
-                    <input
-                        name="url"
-                        type="text"
-                        placeholder="Enter Listing URL"/>
-                </form>
-                <button onClick={SaveListing}>Add to folder</button>
-            </div>
-        );
-    }
-
-};
 //<h4>{this.state.firstName}</h4>
-export default HomeView;
