@@ -1,0 +1,22 @@
+.top {
+    text-align: center;
+    top: 0%;
+    width: 100%;
+    /*width: 20%;
+      margin-left: 750px;
+      top: 15%;
+     */
+}
+
+.header {
+    color: blue;
+    width: 100%;
+    font-size: 50px;
+    background-color: #666699;
+    color: white;
+    font-family: Verdana;
+    margin: 0;
+    display: inline-block;
+    z-index: 0;
+
+}
