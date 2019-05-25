@@ -1,26 +1,9 @@
 import React, { Component } from "react";
 import app from "../../base";
+import CreateFolder from '../Folders/folderActions/CreateFolder';
+import SaveListing from '../Listings/listingActions/SaveListing';
 
 var database = app.database();
-
-function CreateFolder(){
-    // Get user input
-    var userInput = document.getElementById("insertName");
-    var uid = app.auth().currentUser.uid;
-
-    // Add folder to database
-    var folderName = userInput.elements[0].value;
-    database.ref('users/'+ uid + '/folders/'+ folderName).set({
-        "listing1" : folderName
-    });
-
-    // Reset fields
-    userInput.reset();
-}
-
-// Todo
-function SaveListing(){
-}
 
 
 class HomeView extends Component {
