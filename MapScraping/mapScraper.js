@@ -6,10 +6,24 @@ var googleMapsClient = require('@google/maps').createClient({
 	key: 'AIzaSyBTD132iHKIXtMExAf6ZOfX9AMWFAaRm6Y',
 });
 
-function distance(name, dest, callback){
+const key: 'AIzaSyBTD132iHKIXtMExAf6ZOfX9AMWFAaRm6Y',
+/*
+ * distance
+ * - Takes in a name for origin and destination and returns the distance and 
+ *   duration between origin and destination
+ *
+ *  Parameter: 	ori	- The name of origin
+ *  		dest	- The name of destination
+ *  		callback- The callback function
+ *
+ *  Return:	Returns dis and dur to the callback function
+ *  		dis	- The distance (in miles) between origin and destination
+ *  		dur	- The travel time between origin and destination
+ * */
+function distance(ori, dest, callback){
 	googleMapsClient.distanceMatrix({
 		//origins: ['Regents La Jolla', 'La Regencia', '10201 Camino Ruiz, San Diego, CA 92126'],
-		origins: [name], // Can be either address or name
+		origins: [ori], // Can be either address or name
 		destinations: [dest],
 		mode: 'driving',
 		units: 'imperial',
@@ -22,25 +36,7 @@ function distance(name, dest, callback){
 			var dist = jsresult[0].distance.text;
 			var dur = jsresult[0].duration.text;
 			callback(dist, dur);
-			/*
-			for( var i = 0; i < origin.length; i++){
-				var jsresult = response.json.rows[i].elements;
-				for( var j = 0; j < jsresult.length; j++){
-					var dist = jsresult[j].distance.text;
-					var dur = jsresult[j].duration.text;
-					var from = origin[i];
-					var to = destination[j];
-					
-					callback(dist, dur);
-					
-					console.log("From: "+from);
-					console.log("To: "+to);
-					console.log("Distance: "+distance);
-					console.log("Duration: "+duration+"\n");
-				}
-			}*/
 
-			
 		}
 		else{
 			console.log(err);
@@ -51,8 +47,26 @@ function distance(name, dest, callback){
 
 
 /* 
- * One photo can be displayed using the photo reference
- * Input can be name or address
+ * getphoto
+ * - Returns a photo reference to be used to display an image
+ *
+ * Parameters: 	name	- Name or address of the place where image needs to be 
+ * 			  searched for
+ *
+ * Return: 	Returns name, photo_html, photo_attirbute to a callback function
+ * 		name		- Name of the place
+ *		photo_html	- The html attribute for that photo
+ *		photo_ref	- The photo reference needed to display the image
+ *
+ * USING PHOTO REFERENCE:
+ *
+ * https://maps.googleapis.com/maps/api/place/photo?maxwidth[maxheight]=ENTER_NUMBER&photoreference=PHOTO_REF&key=API_KEY
+ *
+ * Choose either maxheight or maxwidth. They both take in a value between 1 and 1600
+ * 
+ * Eg:
+ * https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photoreference=CmRaAAAAOc-VYh-SbVK-7vAWp9vRTueIxclf61j8aLs_5prcv2IsXwKjHIuVxN2TO2hrNTEBOirUWXbGg88PRUiXNpd6-5u_JswAVRPQsiLCqDbT32qM7E7Z1l2o9G0HZL-gPDQSEhAWUuU0QCMlJWI5F8Zsrq4dGhTIvBqyiuJfcH3cqGN0BCKrDuihMQ&key=AIzaSyBTD132iHKIXtMExAf6ZOfX9AMWFAaRm6Y
+ *
  * */
 function getPhoto(name, callback){
 	googleMapsClient.findPlace({
@@ -65,6 +79,7 @@ function getPhoto(name, callback){
 			var photo_html = response.json.candidates[0].photos[0].html_attributions;
 			var photo_ref = response.json.candidates[0].photos[0].photo_reference;
 			
+			// Return to callback function
 			callback(name, photo_html, photo_ref);
 		}
 		else{
@@ -74,28 +89,51 @@ function getPhoto(name, callback){
 }
 
 
-/* Geocode address
- * Shows formatted address, Lat, and Lng
+/* 
+ * geoCode
+ * - Converts the name/address of a place to its lattitude and longitude format
+ *
+ * Parameter: 	add	- The address of a place
+ * 		callback- The function to call after api call (grocerySearch)
+ * 		cb2	- The callback function to be passed into grocerySearch
+ *
+ * Return:	none. Lattitude and longitude will be used in grocerySearch
  * */
 function geoCode(add, callback, cb2){
 	
+	// Call geocode API
 	googleMapsClient.geocode({
 		address: add,
 	}, function(err, response){
+		// Handle JSON response
 		if(!err){
+			// Formatted address (used when needed)
 			var address = response.json.results[0].formatted_address;
+			// Lattitude
 			var lat = response.json.results[0].geometry.location.lat;
+			// Longitude
 			var lng = response.json.results[0].geometry.location.lng;
+			
 			callback(lat, lng, cb2);
 		}
+
+		// Error in calling API
 		else{
 			console.log(err);
 		}
 	});
-
 }
 
 
+/*
+ * grocerySearch
+ * - Search for grocery stores within 2000 meters of a location
+ *
+ * Parameter: 	lat	- The lattitude of location to search for
+ * 		lng	- The longitude of location to search for
+ *
+ * Return:	list	- A list of grocery stores within 2000 meter radius 
+ * */
 function grocerySearch(lat, lng, callback){
 
 	googleMapsClient.placesNearby({
@@ -103,6 +141,7 @@ function grocerySearch(lat, lng, callback){
 		keyword: 'supermarket',
 		radius: 2000,
 	}, function(err, response){
+		// Store grocery stores in an array
 		var list = [];
 
 		if(!err){
@@ -111,26 +150,27 @@ function grocerySearch(lat, lng, callback){
 				list.push(name);
 			}
 			callback(list);	
-
 		}
 		else{
 			console.log(err);
 		}
 	});
-
 }
 
 
-/*
+/* How to call?
+// If you want to get distance:
 distance(listing_name, campus, function dist_log(dist,dur){
 	console.log(dist + ", " + dur);
 });
 
+// If you want to get grocery stores:
 geoCode(listing_name, grocerySearch, function grocers(lists){
 	console.log(lists);
 });
 
 
+// If you wanna get photo reference:
 getPhoto(listing_name, function photo_log(name, html, ref){
 	console.log(name);
 	console.log(ref);
