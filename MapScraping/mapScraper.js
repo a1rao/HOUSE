@@ -6,7 +6,8 @@ var googleMapsClient = require('@google/maps').createClient({
 	key: 'AIzaSyBTD132iHKIXtMExAf6ZOfX9AMWFAaRm6Y',
 });
 
-const key: 'AIzaSyBTD132iHKIXtMExAf6ZOfX9AMWFAaRm6Y',
+module.exports = {
+//const key: 'AIzaSyBTD132iHKIXtMExAf6ZOfX9AMWFAaRm6Y',
 /*
  * distance
  * - Takes in a name for origin and destination and returns the distance and 
@@ -20,30 +21,30 @@ const key: 'AIzaSyBTD132iHKIXtMExAf6ZOfX9AMWFAaRm6Y',
  *  		dis	- The distance (in miles) between origin and destination
  *  		dur	- The travel time between origin and destination
  * */
-function distance(ori, dest, callback){
-	googleMapsClient.distanceMatrix({
-		//origins: ['Regents La Jolla', 'La Regencia', '10201 Camino Ruiz, San Diego, CA 92126'],
-		origins: [ori], // Can be either address or name
-		destinations: [dest],
-		mode: 'driving',
-		units: 'imperial',
-	}, function (err, response){
-		if(!err){
-			var origin = response.json.origin_addresses;
-			var destination = response.json.destination_addresses;
+	distance: function(ori, dest, callback){
+		googleMapsClient.distanceMatrix({
+			//origins: ['Regents La Jolla', 'La Regencia', '10201 Camino Ruiz, San Diego, CA 92126'],
+			origins: [ori], // Can be either address or name
+			destinations: [dest],
+			mode: 'driving',
+			units: 'imperial',
+		}, function (err, response){
+			if(!err){
+				var origin = response.json.origin_addresses;
+				var destination = response.json.destination_addresses;
 		
-			var jsresult = response.json.rows[0].elements;
-			var dist = jsresult[0].distance.text;
-			var dur = jsresult[0].duration.text;
-			callback(dist, dur);
+				var jsresult = response.json.rows[0].elements;
+				var dist = jsresult[0].distance.text;
+				var dur = jsresult[0].duration.text;
+				callback(dist, dur);
 
-		}
-		else{
-			console.log(err);
-		}
-	});
+			}
+			else{
+				console.log(err);
+			}
+		});
 
-}
+	},
 
 
 /* 
@@ -68,25 +69,25 @@ function distance(ori, dest, callback){
  * https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photoreference=CmRaAAAAOc-VYh-SbVK-7vAWp9vRTueIxclf61j8aLs_5prcv2IsXwKjHIuVxN2TO2hrNTEBOirUWXbGg88PRUiXNpd6-5u_JswAVRPQsiLCqDbT32qM7E7Z1l2o9G0HZL-gPDQSEhAWUuU0QCMlJWI5F8Zsrq4dGhTIvBqyiuJfcH3cqGN0BCKrDuihMQ&key=AIzaSyBTD132iHKIXtMExAf6ZOfX9AMWFAaRm6Y
  *
  * */
-function getPhoto(name, callback){
-	googleMapsClient.findPlace({
-		input: name,
-		inputtype: "textquery",
-		fields: ['name', 'photos'],
-	}, function(err, response){
-		if(!err){
-			var name = response.json.candidates[0].name;
-			var photo_html = response.json.candidates[0].photos[0].html_attributions;
-			var photo_ref = response.json.candidates[0].photos[0].photo_reference;
+	getPhoto: function(name, callback){
+		googleMapsClient.findPlace({
+			input: name,
+			inputtype: "textquery",
+			fields: ['name', 'photos'],
+		}, function(err, response){
+			if(!err){
+				var name = response.json.candidates[0].name;
+				var photo_html = response.json.candidates[0].photos[0].html_attributions;
+				var photo_ref = response.json.candidates[0].photos[0].photo_reference;
 			
-			// Return to callback function
-			callback(name, photo_html, photo_ref);
-		}
-		else{
-			console.log(err);
-		}
-	});
-}
+				// Return to callback function
+				callback(name, photo_html, photo_ref);
+			}
+			else{
+				console.log(err);
+			}
+		});
+	},
 
 
 /* 
@@ -99,30 +100,29 @@ function getPhoto(name, callback){
  *
  * Return:	none. Lattitude and longitude will be used in grocerySearch
  * */
-function geoCode(add, callback, cb2){
+	groceryStore: function(add, cb){
 	
-	// Call geocode API
-	googleMapsClient.geocode({
-		address: add,
-	}, function(err, response){
-		// Handle JSON response
-		if(!err){
-			// Formatted address (used when needed)
-			var address = response.json.results[0].formatted_address;
-			// Lattitude
-			var lat = response.json.results[0].geometry.location.lat;
-			// Longitude
-			var lng = response.json.results[0].geometry.location.lng;
+		// Call geocode API
+		googleMapsClient.geocode({
+			address: add,
+		}, function(err, response){
+			// Handle JSON response
+			if(!err){
+				// Formatted address (used when needed)
+				var address = response.json.results[0].formatted_address;
+				
+				var lat = response.json.results[0].geometry.location.lat;
+				var lng = response.json.results[0].geometry.location.lng;
 			
-			callback(lat, lng, cb2);
-		}
-
-		// Error in calling API
-		else{
-			console.log(err);
-		}
-	});
-}
+				grocerySearch(lat, lng, cb);
+			}
+			// Error in calling API
+			else{
+				console.log(err);
+			}
+		});
+	}
+};
 
 
 /*
@@ -149,6 +149,7 @@ function grocerySearch(lat, lng, callback){
 				var name = response.json.results[i].name;
 				list.push(name);
 			}
+			console.log('here');
 			callback(list);	
 		}
 		else{
