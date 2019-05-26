@@ -149,7 +149,6 @@ function grocerySearch(lat, lng, callback){
 				var name = response.json.results[i].name;
 				list.push(name);
 			}
-			console.log('here');
 			callback(list);	
 		}
 		else{
