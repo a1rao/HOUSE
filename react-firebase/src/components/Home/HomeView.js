@@ -1,70 +1,51 @@
 import React, { Component } from "react";
 import app from "../../base";
-
-var database = app.database();
-
-function CreateFolder(){
-    // Get user input
-    var userInput = document.getElementById("insertName");
-    var uid = app.auth().currentUser.uid;
-
-    // Add folder to database
-    var folderName = userInput.elements[0].value;
-    database.ref('users/'+ uid + '/folders/'+ folderName).set({
-        "listing1" : ""
-    });
-
-    // Reset fields
-    userInput.reset();
-}
-
-// Todo
-function SaveListing(){
-}
+import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
+import AddNewURL from '../Listings/addURL/AddNewURL';
+import NavigationBar from './homeComponents/NavigationBar';
 
 
 class HomeView extends Component {
-    constructor(props) {
-        super(props);
 
-        // Store user information
-        this.state = {
-            firstName:'',
-            lastName:'',
-            folders: []
-        };
 
-        // Load user first and last name from database (Does not work)
-        let uid = app.auth().currentUser.uid;
-        console.log("THISSS", uid);
-        this.firebase = app.database().ref('users/' + uid);
-        this.firebase.on('value', dataSnapshot=> {
-            const userObject = dataSnapshot.val();
-            this.setState({
-                firstName: userObject.first,
-                lastName: userObject.last
-            });
-        });
+    render() {
 
-        // Get folders
-        this.firebase = app.database().ref('users/' + uid + '/folders/')
-        this.firebase.on('value', dataSnapshot => {
-            let items =[];
-            console.log(dataSnapshot);
-            dataSnapshot.forEach(childSnapshot => {
-                items.push(childSnapshot.key);
-                console.log(childSnapshot.key);
-            })
-            this.setState({folders: items})
-        })
+        return (
+            <div>
 
+                {/*Navigation bar at the top of the screen. */}
+                <NavigationBar/>
+
+                {/* Code for creating a new folder. */}
+                <AddNewFolder/>
+
+                {/*Code for adding a new listing. */}
+                <AddNewURL/>
+
+            </div>
+        );
     }
+}
 
-    componentWillUnmount() {
-        this.firebaseRef.off();
-    }
+export default HomeView;
 
-    /*async componentDidMount() {
+/*this.state = {
+        firstName:'',
+        lastName:''
+    };*/
+
+/* Load user first and last name from database (Does not work)
+let uid = app.auth().currentUser.uid;
+console.error(uid);
+app.database().ref('users/' + uid).on('value', dataSnapshot=> {
+    const userObject = dataSnapshot.val();
+    //let firstName = userObject.first;
+    this.setState({firstName: 'WHY'});
+    //this.state.lastName=userObject.last;
+});*/
+
+
+/*async componentDidMount() {
         // Load user first and last name from database (Does not work)
         let uid = app.auth().currentUser.uid;
         console.error(uid);
@@ -80,42 +61,4 @@ class HomeView extends Component {
         this.setState({firstName: 'KILL ME'});
     }*/
 
-    render() {
-        const allFolders = this.state.folders.map((eachFolder) =>
-            <li key = {eachFolder}>
-                {eachFolder}
-            </li>
-        );
-
-        return (
-            <div>
-                <h4>{this.state.firstName} {this.state.lastName}</h4>
-                <h4>Folders: <ul>{allFolders}</ul></h4>
-                <form id="insertName">
-                    <input
-                        name="folderName"
-                        type="text"
-                        placeholder="Enter Folder Name"/>
-                </form>
-                <button onClick={CreateFolder}>Create folder</button>
-                <form id="insertURL">
-                    <input
-                        name="url"
-                        type="text"
-                        placeholder="Enter Listing URL"/>
-                </form>
-                <button onClick={SaveListing}>Add to folder</button>
-            </div>
-        );
-    }
-
-};
 //<h4>{this.state.firstName}</h4>
-/*<tbody> {records} </tbody>*/
-/*        const records = this.state.items.map(items =>
-            <tr key={items.uid}>
-                <td style={{width: '200px', textAlign: 'center'}}>{items.first}</td>
-                <td style={{width: '200px', textAlign: 'center'}}>{items.last}</td>
-            </tr>
-        );*/
-export default HomeView;

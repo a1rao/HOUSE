@@ -41,7 +41,7 @@ class RegisterContainer extends Component {
                     <img src="https://i.ibb.co/Gv2WHXK/House-logo-2.png" alt="our logo" className="houseLogo"/>
                 </div>
 
-                <BackGroundImage className="imageContainer" />s
+                <BackGroundImage className="imageContainer" />
 
                 <Registration className="registrationScreen" onSubmit={this.handleSignUp}/>
 
@@ -51,6 +51,7 @@ class RegisterContainer extends Component {
 
             </div>
         );
+        //return <RegForm onSubmit={this.handleSignUp} />;
     }
 }
 

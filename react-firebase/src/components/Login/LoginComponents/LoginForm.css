@@ -1,4 +1,4 @@
-form {
+.loginForm {
     /*border: 3px solid #f1f1f1; */
     border-width: 3px;
     border-color: black;
@@ -27,8 +27,8 @@ a:hover {
     position: absolute;
 }
 
-/* Full-width inputs */
-input[type=text], input[type=password] {
+/*Full width inputs */
+.inputLogin {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -39,7 +39,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
+.loginButton {
     background-color: lightseagreen;
     color: white;
     padding: 14px 20px;
@@ -49,8 +49,7 @@ button {
     width: 100%;
 }
 
-/* Add a hover effect for buttons */
-button:hover {
+.loginButton:hover {
     opacity: 0.8;
 }
 
@@ -62,6 +61,13 @@ button:hover {
     color: white;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+}
+
+/* Add a hover effect for buttons */
+.rButton:hover {
+    opacity: 0.8;
+    color: white;
     text-decoration: none;
 }
 
@@ -78,7 +84,7 @@ button:hover {
 }
 
 /* Avatar image */
-img.avatar {
+.avatar {
     min-height: 50%;
     max-height: 200px;
     border-radius: 50%;
