@@ -26,21 +26,25 @@ module.exports = async function scrapeRent(url, l)  {
                         $('div[data-tid="pdpKeyInfo_citystatezip"]', html).text();
             l.price = $('div[data-tid=pdpKeyInfo_price]', html).text();
             l.price = l.price.split('(', 1)[0];
-            l.int_price = l.price.replace(/[^0-9.]/g, "");
+            l.int_price = Number(l.price.split('-',1)[0].replace(/[^0-9.]/g, ""));
             l.area = $('li._33L2a', html).text();
-            l.int_area = l.area.split('-',1)[0].replace(/[^0-9.]/g, "");
+            l.int_area = Number(l.area.split('-',1)[0].replace(/[^0-9.]/g, ""));
             l.bed = $('li[data-tid=pdpKeyInfo_bedText]', html).text();
-            l.int_bed = l.bed.split('-',1)[0];
-            l.int_bed = l.int_bed[0].replace(/[^0-9.]/g, "");
+            l.int_bed = Number(l.bed.split('-',1)[0][0].replace(/[^0-9.]/g, ""));
             l.bath = $('li[data-tid=pdpKeyInfo_bathText]', html).text();
-            l.int_bath = l.bath.split("-",1)[0];
-            l.int_bath = l.int_bath[0].replace(/[^0-9.]/g, "");;
+            l.int_bath = Number(l.bath.split("-",1)[0][0].replace(/[^0-9.]/g, ""));
             // no deposit info
             l.type = $('span[data-tid=pdp-property-details-building-type-content]', html).text();
             l.contact_name = $('span[data-tid=pdp-property-details-managed-by-name]',html).text();
             // no email info
-            l.contact_number = $('a.Iw8EN',html).text().replace(/[^0-9.]/g, "");
+            l.contact_number = $('a.Iw8EN',html).text();
             l.pets = $('div[data-tid="pdpPetPolicyList"] h3._3AGyf', html).text();
+            for(var i = 0; i < l.pets.length;i++)  {
+                if(l.pets[i] === l.pets[i].toUpperCase())  {
+                    l.pets = l.pets.substring(0,i) + " " + l.pets.substring(i);
+                    i++;
+                }
+            }
             // no smoking
             l.parking = $('h3._3AGyf[data-tid="category-header-4"]', html).text();
             if(l.parking === "Parking" )  {
@@ -106,6 +110,10 @@ module.exports = async function scrapeRent(url, l)  {
             if(l.description === "") {
                 l.description = "NA";
             }
+
+            // console.log("\n\n\n\n");
+            // console.log(JSON.stringify(l));
+            // console.log("\n\n\n\n");
         })
         .catch(function(err) {
             console.log(err);
