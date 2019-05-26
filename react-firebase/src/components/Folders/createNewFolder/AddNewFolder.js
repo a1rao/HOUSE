@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import CreateFolder from "./CreateFolder";
 import app from '../../../base';
 
 
@@ -26,25 +25,17 @@ class AddNewFolder extends Component {
         });
     }
 
+    // Reset fields
+    userInput.reset();
+}
 
-    componentWillUnmount() {
-        this.firebaseRef.off();
-    }
+// Contains the frontend for the create folder functionality.
+class AddNewFolder extends Component {
 
        render() {
 
-           const records = this.state.items.map(items =>
-               <tr key={items.first}>
-                   <td style={{width: '200px', textAlign: 'center'}}>{items.first}</td>
-                   <td style={{width: '200px', textAlign: 'center'}}>{items.last}</td>
-               </tr>
-           );
-
         return(
             <div className="newFolder">
-                <tbody>
-                {records}
-                </tbody>
                 <form id="insertName">
                     <input
                         name="folderName"
