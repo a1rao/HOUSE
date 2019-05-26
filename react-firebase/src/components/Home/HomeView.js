@@ -16,9 +16,6 @@ class HomeView extends Component {
                 {/*Navigation bar at the top of the screen. */}
                 <NavigationBar/>
 
-                {/* Code for creating a new folder. */}
-                <AddNewFolder/>
-
                 {/*Code for adding a new listing. */}
                 <AddNewURL/>
 

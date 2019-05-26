@@ -31,7 +31,7 @@ class AddNewFolder extends Component {
                         type="text"
                         placeholder="Enter Folder Name"/>
                 </form>
-                <button onClick={CreateFolder}>Create folder</button>
+                <button onClick={CreateFolder}>Create New Folder</button>
             </div>
         );
     };
