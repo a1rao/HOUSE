@@ -39,7 +39,7 @@ module.exports = async function scrapeTrulia(url, l)  {
             // no parking
             // no lease
             l.description =  $('p[id="propertyDescription"]', html).text().replace(/\s\s+/g, "");
-
+            l.contact_name = "none";
 
             if(l.url === "") {
                 l.url = "NA";
