@@ -6,6 +6,8 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import app from '../../../base';
+import './NavigationBar.css';
+import AddNewFolder from '../../Folders/createNewFolder/AddNewFolder';
 
 
 
@@ -65,22 +67,27 @@ class NavigationBar extends Component {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
                             <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#link">Link</Nav.Link>
-                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                            <Nav.Link href="#link">Compare</Nav.Link>
+                            <NavDropdown title="My Folders" id="basic-nav-dropdown">
                                 {allFolders}
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                <AddNewFolder />
                             </NavDropdown>
                         </Nav>
 
                         <div className="searchBarWrapper">
-                            <Form form-inline className="searchBar">
-                                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                            <Form inline className="searchBar">
+                                <FormControl type="text" placeholder="Enter Listing URL" className="mr-sm-2" />
                                 <Button variant="outline-success">Search</Button>
                             </Form>
                         </div>
+
+                        <div className="logoutButton">
+                            <Button onClick="#">Logout</Button>
+                        </div>
+
                     </Navbar.Collapse>
-                </Navbar>;
+                </Navbar>
             </div>
             );
         }
