@@ -2,28 +2,17 @@ import React, {Component} from "react";
 import app from '../../../base';
 
 
+// Add new folder to database
+function CreateFolder(){
+    // Get user input
+    var userInput = document.getElementById("insertName");
+    var uid = app.auth().currentUser.uid;
 
-// Contains the frontend for the create folder functionality.
-class AddNewFolder extends Component {
-
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            items: []
-        };
-
-        this.firebaseRef = app.database().ref('users/');
-        this.firebaseRef.on('value', dataSnapshot => {
-            let items = [];
-            dataSnapshot.forEach(childSnapshot => {
-                let item = childSnapshot.val();
-                item['.key'] = childSnapshot.key;
-                items.push(item);
-            });
-            this.setState({items});
-        });
-    }
+    // Add folder to database
+    var folderName = userInput.elements[0].value;
+    app.database().ref('users/'+ uid + '/folders/'+ folderName).set({
+        "listing1" :  ""
+    });
 
     // Reset fields
     userInput.reset();
