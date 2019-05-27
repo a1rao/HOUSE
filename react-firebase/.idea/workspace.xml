@@ -78,11 +78,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="290">
+              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <marker date="1559001371602" expanded="true" signature="381:983" ph="..." />
+                <marker date="1559001465299" expanded="true" signature="373:969" ph="..." />
               </folding>
             </state>
           </provider>
@@ -303,7 +303,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94591000" />
+    <option name="totallyTimeSpent" value="94669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -657,11 +657,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="290">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1559001371602" expanded="true" signature="381:983" ph="..." />
+            <marker date="1559001465299" expanded="true" signature="373:969" ph="..." />
           </folding>
         </state>
       </provider>
