@@ -8,6 +8,7 @@ import Register from './components/Register/index.js';
 import Login from './components/Login/index.js';
 import Home from './components/Home/HomeView';
 import HelpPage from './components/Help Page/HelpPage';
+import ComparisonPage from './components/Comparison Page/ComparisonPage';
 import PrivateRoute from './PrivateRoute';
 import app from './base';
 
@@ -42,6 +43,7 @@ class App extends Component {
                     <Route exact path = '/login' component = {Login}/>
                     <Route exact path = '/register' component = {Register}/>
                     <Route exact path = '/help' component = {HelpPage} />
+                    <Route exact path = '/compare' component = {ComparisonPage} />
                 </div>
          </Router>
       );

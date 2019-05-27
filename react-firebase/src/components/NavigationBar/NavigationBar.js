@@ -67,7 +67,7 @@ class NavigationBar extends Component {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
                             <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="#link">Compare</Nav.Link>
+                            <Nav.Link href="/compare">Compare</Nav.Link>
                             <NavDropdown title="My Folders" id="basic-nav-dropdown">
                                 {allFolders}
                                 <NavDropdown.Divider />
