@@ -1,28 +1,27 @@
 import React, {Component} from "react";
 import app from "../../../base";
 
-// To Do
+// Save listing url from Add To Folder button
+
 function SaveListing(){
     // Get user input
     var userInput = document.getElementById("insertURL");
     var url = userInput.elements[0].value;
     var selectedFolder = "TEST";
 
-    // Add listing to "listings" table
-    var databaseref = app.database().ref('listings/');
-    console.log(url);
+    // Push listing to folder specified by folder
+    var uid = app.auth().currentUser.uid;
+    var databaseref = app.database().ref('users/' + uid + '/folders/' + selectedFolder);
     var listingKey = databaseref.push().key;
+    databaseref.child(listingKey).set({'id':listingKey});
+
+    // Add listing to "listings" table
+   databaseref = app.database().ref('listings/');
     databaseref.child(listingKey).set({
         'url' : url,
-        'price': 2700
+        'price': 0,
+        'address': ""
 
-    });
-
-    // Add listing to folder specified by folder
-    var uid = app.auth().currentUser.uid;
-    databaseref = app.database().ref('users/' + uid + '/folders/' + selectedFolder);
-    databaseref.set({
-        'listing' : listingKey
     });
 
     // Reset fields

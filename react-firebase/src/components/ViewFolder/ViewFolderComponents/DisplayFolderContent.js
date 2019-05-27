@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import app from "../../../base";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
-function getListings(){
 
-
-}
+// Display each listing from folder that is currently selected
+// For testing purposes, this folder is:  TEST
 
 class DisplayFolderContent extends Component{
 
@@ -17,32 +17,29 @@ class DisplayFolderContent extends Component{
             'eachListing' : []
         };
 
-
+        // Get listing id's
         function getIDs(cb) {
-            // Get listing id's
             let uid = app.auth().currentUser.uid;
-            const prom1 = app.database().ref('users/' + uid + '/folders/' + 'TEST').on('value', dataSnapshot => {
-                //const userObject = dataSnapshot.val();
+            let databaseref = app.database().ref('users/' + uid + '/folders/' + 'TEST')
+            databaseref.on('value', dataSnapshot => {
                 let items = [];
                 dataSnapshot.forEach(childSnapshot => {
-                    let item = childSnapshot.val();
+                    let item = childSnapshot.key;
                     console.log("id", item);
                     items.push(item);
                 });
                 this.setState({allIDs: items});
-                console.log("state: ", this.state.allIDs);
 
+                // Callback function
                 cb();
 
             });
         }
+        let first = getIDs.bind(this);
 
-        let lol = getIDs.bind(this);
-
+        // Get each listing info
         function getInfo() {
-            // Get each listing info
             let items = [];
-            console.log("should be after", this.state.allIDs);
             this.state.allIDs.forEach(id => {
                 app.database().ref('listings/' + id).once('value', dataSnapshot => {
                     let listing = dataSnapshot.val();
@@ -52,23 +49,27 @@ class DisplayFolderContent extends Component{
             });
             this.setState({eachListing: items});
         }
+        let second = getInfo.bind(this);
 
-        let lol2 = getInfo.bind(this);
-
-
-
-
-        lol(lol2);
+        // Make second function call after the first one is done
+        first(second);
 
     }
 
     componentWillUnmount() {
-        //this.firebase.off();
+        app.database().off();
     }
 
     render(){
+        // display each listing in folder TODO
+        const allListings = this.state.eachListing.map((listing) =>
+            <p>{listing.url}</p>
+        );
+
         return(
-            <h1> is anything here </h1>
+            <div>
+                <h1>{allListings}</h1>
+            </div>
         );
     }
 
