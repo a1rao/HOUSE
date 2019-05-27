@@ -5,6 +5,10 @@ import app from "../../../base";
  * Functions that will perform queries to get information from the database
  */
 
+/* To import functions, add this to your file header:
+ * import fetchData from '../../Backend/Database/GetFromDb.js';
+ */
+
 const func = {
     // Get IDs of saved listings in
     getIDs: function(cb)
@@ -31,7 +35,7 @@ const func = {
     let items = [];
     console.log("allIDs:", this.state.allIDs);
     this.state.allIDs.forEach(id => {
-        app.database().ref('listings/' + id).once('value', dataSnapshot => {
+        app.database().ref('listings/' + id).on('value', dataSnapshot => {
             let listing = dataSnapshot.val();
             items.push(listing);
             console.log("info:", listing);
@@ -71,9 +75,7 @@ const func = {
 
 export default func;
 
-/* TO import funcitons, add this to your file header:
- import fetchData from '../../Backend/Database/GetFromDb.js';
- */
+
 
 
 
