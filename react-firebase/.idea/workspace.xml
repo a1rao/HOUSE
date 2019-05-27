@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2592616e-3d7d-4baf-b3f5-cb40db4e0775" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Listings/addURL/SaveListing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
@@ -69,13 +64,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
+        <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+            <state relative-caret-position="345">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <marker date="1559000769267" expanded="true" signature="323:926" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <marker date="1559001371602" expanded="true" signature="381:983" ph="..." />
               </folding>
             </state>
           </provider>
@@ -156,9 +163,9 @@
         <option value="$PROJECT_DIR$/src/components/Home/HomeView.js" />
         <option value="$PROJECT_DIR$/src/components/Home/homeComponents/NavigationBar.js" />
         <option value="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" />
-        <option value="$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js" />
         <option value="$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js" />
         <option value="$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js" />
+        <option value="$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js" />
       </list>
     </option>
   </component>
@@ -220,30 +227,7 @@
               <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Listings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Listings" type="462c0819:PsiDirectoryNode" />
-              <item name="addURL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="ViewFolder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ViewFolder" type="462c0819:PsiDirectoryNode" />
-              <item name="ViewFolderComponents" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -319,7 +303,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94424000" />
+    <option name="totallyTimeSpent" value="94591000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,20 +316,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.501006" side_tool="true" weight="0.20468278" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49899396" visible="true" weight="0.16389728" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49899396" visible="true" weight="0.16389728" />
       <window_info id="Structure" order="6" sideWeight="0.501006" side_tool="true" weight="0.20468278" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.503937" side_tool="true" weight="0.28796563" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Messages" order="3" />
       <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="5" sideWeight="0.496063" visible="true" weight="0.24212034" />
+      <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.496063" visible="true" weight="0.24212034" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.36103153" />
       <window_info anchor="bottom" id="Run" order="8" />
@@ -583,16 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Register/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -610,17 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <marker date="1559000769267" expanded="true" signature="323:926" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,6 +641,27 @@
           <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1559001371602" expanded="true" signature="381:983" ph="..." />
           </folding>
         </state>
       </provider>
