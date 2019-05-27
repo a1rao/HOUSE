@@ -13,9 +13,9 @@ function SaveListing(){
     console.log(url);
     var listingKey = databaseref.push().key;
     databaseref.child(listingKey).set({
-        'name': 'yay im not homeless anymore',
-        'address' : 'offcampus',
+        'url' : url,
         'price': 2700
+
     });
 
     // Add listing to folder specified by folder
