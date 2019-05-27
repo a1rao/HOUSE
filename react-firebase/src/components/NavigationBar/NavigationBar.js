@@ -5,9 +5,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
-import app from '../../../base';
+import app from '../../base';
 import './NavigationBar.css';
-import AddNewFolder from '../../Folders/createNewFolder/AddNewFolder';
+import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
 
 
 
@@ -66,7 +66,7 @@ class NavigationBar extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
+                            <Nav.Link href="/">Home</Nav.Link>
                             <Nav.Link href="#link">Compare</Nav.Link>
                             <NavDropdown title="My Folders" id="basic-nav-dropdown">
                                 {allFolders}
@@ -80,6 +80,10 @@ class NavigationBar extends Component {
                                 <FormControl type="text" placeholder="Enter Listing URL" className="mr-sm-2" />
                                 <Button variant="outline-success">Search</Button>
                             </Form>
+                        </div>
+
+                        <div className="help">
+                            <Nav.Link href="/help">Need Help?</Nav.Link>
                         </div>
 
                         <div className="logoutButton">

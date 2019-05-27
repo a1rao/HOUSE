@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import app from "../../base";
-import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
 import AddNewURL from '../Listings/addURL/AddNewURL';
-import NavigationBar from './homeComponents/NavigationBar';
+import NavigationBar from '../NavigationBar/NavigationBar';
 
 
 class HomeView extends Component {
