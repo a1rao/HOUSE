@@ -10,7 +10,7 @@ class HelpPage extends Component {
             <div>
                 <NavigationBar />
 
-                <Jumbotron className="j">
+                <Jumbotron>
                         <h1 className="helpHeader">Help Page</h1>
                 </Jumbotron>
 
