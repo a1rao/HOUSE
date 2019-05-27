@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import app from '../../../base';
 import './NavigationBar.css';
 import AddNewFolder from '../../Folders/createNewFolder/AddNewFolder';
-
+import fetchData from '../../Backend/Database/GetFromDb.js';
 
 
 class NavigationBar extends Component {
@@ -24,27 +24,14 @@ class NavigationBar extends Component {
         };
 
         // Get user first and last name from database
-        let uid = app.auth().currentUser.uid;
-        this.firebase = app.database().ref('users/' + uid);
-        this.firebase.on('value', dataSnapshot=> {
-            const userObject = dataSnapshot.val();
-            this.setState({
-                firstName: userObject.first,
-                lastName: userObject.last
-            });
-        });
+        let getName = fetchData.getName.bind(this);
+        getName();
+
 
         // Get folders
-        this.firebase = app.database().ref('users/' + uid + '/folders/')
-        this.firebase.on('value', dataSnapshot => {
-            let items =[];
-            console.log(dataSnapshot);
-            dataSnapshot.forEach(childSnapshot => {
-                items.push(childSnapshot.key);
-                console.log(childSnapshot.key);
-            })
-            this.setState({folders: items})
-        })
+        let getFolders = fetchData.getFolderNames.bind(this);
+        getFolders();
+
 
     }
 

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import app from "../../../base";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import fetchData from '../../Backend/Database/GetFromDb.js';
 
 
 // Display each listing from folder that is currently selected
@@ -18,38 +19,12 @@ class DisplayFolderContent extends Component{
         };
 
         // Get listing id's
-        function getIDs(cb) {
-            let uid = app.auth().currentUser.uid;
-            let databaseref = app.database().ref('users/' + uid + '/folders/' + 'TEST')
-            databaseref.on('value', dataSnapshot => {
-                let items = [];
-                dataSnapshot.forEach(childSnapshot => {
-                    let item = childSnapshot.key;
-                    console.log("id", item);
-                    items.push(item);
-                });
-                this.setState({allIDs: items});
 
-                // Callback function
-                cb();
-
-            });
-        }
-        let first = getIDs.bind(this);
+        let first = fetchData.getIDs.bind(this);
 
         // Get each listing info
-        function getInfo() {
-            let items = [];
-            this.state.allIDs.forEach(id => {
-                app.database().ref('listings/' + id).once('value', dataSnapshot => {
-                    let listing = dataSnapshot.val();
-                    items.push(listing);
-                    console.log("info:", listing);
-                });
-            });
-            this.setState({eachListing: items});
-        }
-        let second = getInfo.bind(this);
+
+        let second = fetchData.getAllListings.bind(this);
 
         // Make second function call after the first one is done
         first(second);
