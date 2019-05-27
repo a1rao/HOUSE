@@ -1,3 +1,6 @@
+//const distanceToCampus = require('./testMapScrapper.js');
+
+const map_scrape = require('./mapScraper.js');
 module.exports = async function scrapeRent(url, l)  {
     //console.log("entered function srapeRent " + new Date().getTime())
     const rp = require('request-promise');
@@ -111,6 +114,8 @@ module.exports = async function scrapeRent(url, l)  {
                 l.description = "NA";
             }
 
+
+
             // console.log("\n\n\n\n");
             // console.log(JSON.stringify(l));
             // console.log("\n\n\n\n");
@@ -118,6 +123,10 @@ module.exports = async function scrapeRent(url, l)  {
         .catch(function(err) {
             console.log(err);
         });
+     await map_scrape.distance('University of California San Diego', l.address,l);
+    //
+     await map_scrape.getPhoto(l.address, l);
+
     //console.log("finished executing function scrapeRent at " + new Date().getTime())
 };
 

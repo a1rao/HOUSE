@@ -99,5 +99,8 @@ module.exports = async function scrapeTrulia(url, l)  {
         .catch(function(err) {
             console.log(err);
         });
+
+    await map_scrape.distance('University of California San Diego', l.address,l);
+    await map_scrape.getPhoto(l.address, l);
 };
 
