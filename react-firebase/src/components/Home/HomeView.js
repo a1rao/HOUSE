@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import app from "../../base";
 import AddNewURL from '../Listings/addURL/AddNewURL';
-import NavigationBar from '../NavigationBar/NavigationBar';
+import NavigationBar from './homeComponents/NavigationBar';
+import ViewFolder from '../ViewFolder/ViewFolderComponents/DisplayFolderContent.js'
 
 
 class HomeView extends Component {
@@ -17,6 +18,10 @@ class HomeView extends Component {
 
                 {/*Code for adding a new listing. */}
                 <AddNewURL/>
+
+                {/*Test ViewFolder*/}
+                <ViewFolder/>
+
 
             </div>
         );
