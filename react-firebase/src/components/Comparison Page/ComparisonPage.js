@@ -1,11 +1,17 @@
 import React, {Component} from 'react';
 import Table from 'react-bootstrap/Table';
+import '../NavigationBar/NavigationBar.js';
+import NavigationBar from "../NavigationBar/NavigationBar";
 
 class ComparisonPage extends Component {
 
     render() {
         return (
+
             <div>
+                <h1> hello pls </h1>
+                <NavigationBar />
+
                 <Table striped bordered hover>
                     <thead>
                     <tr>
