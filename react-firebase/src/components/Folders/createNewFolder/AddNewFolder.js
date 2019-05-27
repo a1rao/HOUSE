@@ -10,9 +10,13 @@ function CreateFolder(){
 
     // Add folder to database
     var folderName = userInput.elements[0].value;
-    app.database().ref('users/'+ uid + '/folders/'+ folderName).set({
-        "listing1" :  ""
-    });
+
+    if(folderName.length > 0) {
+        app.database().ref('users/'+ uid + '/folders/'+ folderName).set({
+            "listing1" :  ""
+        });
+    }
+
 
     // Reset fields
     userInput.reset();
