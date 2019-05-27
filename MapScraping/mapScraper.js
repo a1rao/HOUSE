@@ -7,7 +7,6 @@ var googleMapsClient = require('@google/maps').createClient({
 });
 
 module.exports = {
-//const key: 'AIzaSyBTD132iHKIXtMExAf6ZOfX9AMWFAaRm6Y',
 /*
  * distance
  * - Takes in a name for origin and destination and returns the distance and 
@@ -26,7 +25,8 @@ module.exports = {
 			//origins: ['Regents La Jolla', 'La Regencia', '10201 Camino Ruiz, San Diego, CA 92126'],
 			origins: [ori], // Can be either address or name
 			destinations: [dest],
-			mode: 'driving',
+			mode: 'transit',
+			transit_mode: 'bus',
 			units: 'imperial',
 		}, function (err, response){
 			if(!err){
@@ -156,23 +156,3 @@ function grocerySearch(lat, lng, callback){
 		}
 	});
 }
-
-
-/* How to call?
-// If you want to get distance:
-distance(listing_name, campus, function dist_log(dist,dur){
-	console.log(dist + ", " + dur);
-});
-
-// If you want to get grocery stores:
-geoCode(listing_name, grocerySearch, function grocers(lists){
-	console.log(lists);
-});
-
-
-// If you wanna get photo reference:
-getPhoto(listing_name, function photo_log(name, html, ref){
-	console.log(name);
-	console.log(ref);
-});
-*/

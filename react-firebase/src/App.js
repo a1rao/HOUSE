@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Register from './components/Register/index.js';
 import Login from './components/Login/index.js';
 import Home from './components/Home/HomeView';
+import HelpPage from './components/Help Page/HelpPage';
 import PrivateRoute from './PrivateRoute';
 import app from './base';
 
@@ -40,6 +41,7 @@ class App extends Component {
                     <PrivateRoute exact path = '/' component = {Home} authenticated={authenticated}/>
                     <Route exact path = '/login' component = {Login}/>
                     <Route exact path = '/register' component = {Register}/>
+                    <Route exact path = '/help' component = {HelpPage} />
                 </div>
          </Router>
       );
