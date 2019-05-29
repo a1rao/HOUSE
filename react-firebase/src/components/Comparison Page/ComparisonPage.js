@@ -6,16 +6,23 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 class ComparisonPage extends Component {
 
     render() {
+
+        var text = '{ "employees" : [' +
+            '{ "firstName":"Gary" , "lastName":"Mollestme" },' +
+            '{ "firstName":"Anna" , "lastName":"Smith" },' +
+            '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
+        var obj = JSON.parse(text);
+
         return (
 
             <div>
-                <h1> hello pls </h1>
                 <NavigationBar />
 
                 <Table striped bordered hover>
                     <thead>
                     <tr>
-                        <th>#</th>
+                        <th>Stuff</th>
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Username</th>
@@ -24,9 +31,9 @@ class ComparisonPage extends Component {
                     <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>{obj.employees[0].firstName}</td>
+                        <td>{obj.employees[0].lastName}</td>
+                        <td>@garyrocks</td>
                     </tr>
                     <tr>
                         <td>2</td>
