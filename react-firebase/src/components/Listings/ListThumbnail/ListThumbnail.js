@@ -36,7 +36,7 @@ class ListThumbnail extends Component {
         // display each listing in folder TODO
         // allListings is a list of
         const allListings = this.state.eachListing.map((listing) =>
-            <div>
+            <div className="thumbnail">
                 <p>url: {listing.url}</p>
                 <p>price: {listing.price}</p>
                 <p>address: {listing.address}</p>
