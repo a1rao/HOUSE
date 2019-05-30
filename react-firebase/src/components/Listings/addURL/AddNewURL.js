@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import app from "../../../base";
+import saveData from '../../Backend/Database/SaveToDb.js';
 
 // Save listing url from Add To Folder button
 
@@ -9,20 +10,10 @@ function SaveListing(){
     var url = userInput.elements[0].value;
     var selectedFolder = "TEST";
 
-    // Push listing to folder specified by folder
-    var uid = app.auth().currentUser.uid;
-    var databaseref = app.database().ref('users/' + uid + '/folders/' + selectedFolder);
-    var listingKey = databaseref.push().key;
-    databaseref.child(listingKey).set({'id':listingKey});
+    // Call SaveToDb function to save listing to db
+    const saveToDb = saveData.saveListing;
+    saveToDb(selectedFolder, url);
 
-    // Add listing to "listings" table
-   databaseref = app.database().ref('listings/');
-    databaseref.child(listingKey).set({
-        'url' : url,
-        'price': 0,
-        'address': ""
-
-    });
 
     // Reset fields
     userInput.reset();
@@ -32,6 +23,7 @@ function SaveListing(){
 class AddNewURL extends Component {
 
     render() {
+
         return(
             <div>
                 <form id = "insertURL">

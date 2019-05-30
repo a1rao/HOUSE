@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="caddbebb-1a20-4ea3-a738-0e9191d69f68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+=======
+    <list default="true" id="7be0f6c5-c485-4cfe-a3d5-875e1e78e381" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> b584dc06638d65a6f3336e454d17ad4c1482609d
     </list>
+    <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="react-firebase" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/components/Home/HomeView.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -33,6 +34,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+>>>>>>> b584dc06638d65a6f3336e454d17ad4c1482609d
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -41,10 +47,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+>>>>>>> b584dc06638d65a6f3336e454d17ad4c1482609d
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -54,67 +67,14 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/DisplayLogin.js" />
-        <option value="$PROJECT_DIR$/src/components/UserInfo.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Register.js" />
-        <option value="$PROJECT_DIR$/src/components/Firabase.js" />
-        <option value="$PROJECT_DIR$/src/components/Login.js" />
-        <option value="$PROJECT_DIR$/src/components/LoginView/Login.js" />
-        <option value="$PROJECT_DIR$/src/components/LoginView/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Login/Login.js" />
-        <option value="$PROJECT_DIR$/src/base.js" />
-        <option value="$PROJECT_DIR$/src/components/CreateFolder.js" />
-        <option value="$PROJECT_DIR$/src/components/Login/LoginStyle.css" />
-        <option value="$PROJECT_DIR$/src/components/Home.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
-        <option value="$PROJECT_DIR$/src/components/Register/RegisterStyle.css" />
-        <option value="$PROJECT_DIR$/src/PrivateRoute.js" />
-        <option value="$PROJECT_DIR$/src/components/Login/LoginMainStyle.css" />
-        <option value="$PROJECT_DIR$/src/components/Login/LoginView.js" />
-        <option value="$PROJECT_DIR$/src/components/Login/LoginHeaderStyle.css" />
-        <option value="$PROJECT_DIR$/src/components/Login/LoginHeader.js" />
-        <option value="$PROJECT_DIR$/src/components/Login/LoginFooterStyle.css" />
-        <option value="$PROJECT_DIR$/src/components/Login/LoginBackground.css" />
-        <option value="$PROJECT_DIR$/src/components/Login/LoginBackground.js" />
-        <option value="$PROJECT_DIR$/src/components/Login/LoginFooter.js" />
-        <option value="$PROJECT_DIR$/src/components/Login/LoginMain.js" />
-        <option value="$PROJECT_DIR$/src/components/Login/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Register/RegisterView.js" />
-        <option value="$PROJECT_DIR$/src/components/Register/RegBackground.css" />
-        <option value="$PROJECT_DIR$/src/components/Register/RegBackground.js" />
-        <option value="$PROJECT_DIR$/src/components/Register/RegFooter.css" />
-        <option value="$PROJECT_DIR$/src/components/Register/RegFooter.js" />
-        <option value="$PROJECT_DIR$/src/components/Register/RegHeader.css" />
-        <option value="$PROJECT_DIR$/src/components/Register/RegHeader.js" />
-        <option value="$PROJECT_DIR$/src/components/Register/RegMain.css" />
-        <option value="$PROJECT_DIR$/src/components/Register/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginBackground.js" />
-        <option value="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginBackground.css" />
-        <option value="$PROJECT_DIR$/src/components/Home/index.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/Folders/createNewFolder/AddNewFolder.js" />
-        <option value="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/index.js" />
-        <option value="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/displayFolderContent.js" />
-        <option value="$PROJECT_DIR$/src/components/ViewFolder/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/HomeView.js" />
-        <option value="$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js" />
         <option value="$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" />
         <option value="$PROJECT_DIR$/src/components/Home/homeComponents/NavigationBar.js" />
         <option value="$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js" />
@@ -126,8 +86,15 @@
     <option name="y" value="85" />
     <option name="width" value="1094" />
     <option name="height" value="591" />
+=======
+      </list>
+    </option>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
+>>>>>>> b584dc06638d65a6f3336e454d17ad4c1482609d
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -159,6 +126,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Backend" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
             </path>
             <path>
               <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
@@ -182,6 +150,8 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="ViewFolder" type="462c0819:PsiDirectoryNode" />
               <item name="ViewFolderComponents" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> b584dc06638d65a6f3336e454d17ad4c1482609d
             </path>
           </expand>
           <select />
@@ -193,24 +163,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/Register/RegisterComponents" />
-      <recent name="$PROJECT_DIR$/src/components/Login/LoginComponents" />
-      <recent name="$PROJECT_DIR$/src/components/Home" />
-      <recent name="$PROJECT_DIR$/src/components/LoginView" />
-      <recent name="$PROJECT_DIR$/src/components/Register" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -229,10 +184,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="caddbebb-1a20-4ea3-a738-0e9191d69f68" name="Default Changelist" comment="" />
-      <created>1556930231023</created>
+      <changelist id="7be0f6c5-c485-4cfe-a3d5-875e1e78e381" name="Default Changelist" comment="" />
+      <created>1559018499466</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1556930231023</updated>
       <workItem from="1556930236233" duration="18786000" />
       <workItem from="1557295858360" duration="315000" />
@@ -254,10 +210,16 @@
       <workItem from="1558908091478" duration="13391000" />
       <workItem from="1558993671271" duration="3910000" />
       <workItem from="1559097167263" duration="590000" />
+=======
+      <updated>1559018499466</updated>
+      <workItem from="1559018500992" duration="203000" />
+      <workItem from="1559170245364" duration="224000" />
+>>>>>>> b584dc06638d65a6f3336e454d17ad4c1482609d
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="95657000" />
   </component>
   <component name="TodoView">
@@ -303,12 +265,49 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+=======
+    <option name="totallyTimeSpent" value="427000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16012084" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="SciView" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+>>>>>>> b584dc06638d65a6f3336e454d17ad4c1482609d
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/Firebase.js" />
     <entry file="file://$PROJECT_DIR$/src/components/CreateFolder.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.development.js" />
@@ -487,49 +486,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js">
+>>>>>>> b584dc06638d65a6f3336e454d17ad4c1482609d
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="12" selection-start-column="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Folders/createNewFolder/CreateFolder.js" />
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/Listings/addURL/SaveListing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/homeComponents/NavigationBar.css" />
     <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Folders/createNewFolder/AddNewFolder.js">
@@ -602,25 +571,16 @@
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+>>>>>>> b584dc06638d65a6f3336e454d17ad4c1482609d
           </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

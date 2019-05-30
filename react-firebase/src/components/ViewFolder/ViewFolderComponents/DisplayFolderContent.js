@@ -38,12 +38,16 @@ class DisplayFolderContent extends Component{
     render(){
         // display each listing in folder TODO
         const allListings = this.state.eachListing.map((listing) =>
-            <p>{listing.url}</p>
+            <div>
+                <p>url: {listing.url}</p>
+                <p>price: {listing.price}</p>
+                <p>address: {listing.address}</p>
+            </div>
         );
 
         return(
             <div>
-                <h1>{allListings}</h1>
+                <p>{allListings}</p>
             </div>
         );
     }
