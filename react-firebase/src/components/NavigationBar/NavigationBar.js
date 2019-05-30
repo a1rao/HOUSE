@@ -7,8 +7,8 @@ import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import app from '../../base';
 import './NavigationBar.css';
-import AddNewFolder from '../../Folders/createNewFolder/AddNewFolder';
-import fetchData from '../../Backend/Database/GetFromDb.js';
+import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
+import fetchData from '../Backend/Database/GetFromDb.js';
 
 
 class NavigationBar extends Component {

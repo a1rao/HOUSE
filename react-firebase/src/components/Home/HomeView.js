@@ -22,8 +22,8 @@ class HomeView extends Component {
                 {/*Code for the list thumbnail.*/}
                 <ListThumbnail />
 
-                {/*Test ViewFolder*/}
-                <ViewFolder/>
+                {/*Test ViewFolder
+                <ViewFolder/>*/}
 
 
             </div>
