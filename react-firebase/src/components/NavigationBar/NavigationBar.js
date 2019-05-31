@@ -21,7 +21,8 @@ class NavigationBar extends Component {
         this.state = {
             firstName:'',
             lastName:'',
-            folders: []
+            folders: [],
+            url:''
         };
 
         // Get user first and last name from database
@@ -52,10 +53,13 @@ class NavigationBar extends Component {
         }
     };
 
-    handleScrape = async event => {
+    readURL = async event => {
         event.preventDefault();
-        const { url } = event.target.elements;
-        console.log("scraping from " + url.value);
+        this.setState({url:event.target.value})
+    }
+
+    handleScrape = async event => {
+        console.log("scraping from " + this.state.url);
     }
 
 
@@ -82,7 +86,10 @@ class NavigationBar extends Component {
                         </Nav>
 
                         <div className="searchBarWrapper">
-                            <SearchForm onSubmit={this.handleScrape} />
+                            <Form inline className="searchBar">
+                                <FormControl type="text" name="url" placeholder="Enter Listing URL" onChange={this.readURL} className="mr-sm-2"/>
+                                <Button variant="outline-success" onClick={this.handleScrape} type="button">Search</Button>
+                            </Form>
                         </div>
 
                         <div className="help">
