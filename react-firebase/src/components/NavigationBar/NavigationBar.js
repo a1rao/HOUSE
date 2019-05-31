@@ -9,6 +9,7 @@ import app from '../../base';
 import './NavigationBar.css';
 import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
 import fetchData from '../Backend/Database/GetFromDb.js';
+import SearchForm from "../Scraping/SearchForm";
 
 
 class NavigationBar extends Component {
@@ -46,11 +47,16 @@ class NavigationBar extends Component {
                 .signOut().then(function() {
                     console.log("signed out");
             });
-        /*    this.props.history.push("/")); */
         } catch (error) {
             alert(error);
         }
     };
+
+    handleScrape = async event => {
+        event.preventDefault();
+        const { url } = event.target.elements;
+        console.log("scraping from " + url.value);
+    }
 
 
     render() {
@@ -76,10 +82,7 @@ class NavigationBar extends Component {
                         </Nav>
 
                         <div className="searchBarWrapper">
-                            <Form inline className="searchBar">
-                                <FormControl type="text" placeholder="Enter Listing URL" className="mr-sm-2" />
-                                <Button variant="outline-success">Search</Button>
-                            </Form>
+                            <SearchForm onSubmit={this.handleScrape} />
                         </div>
 
                         <div className="help">
