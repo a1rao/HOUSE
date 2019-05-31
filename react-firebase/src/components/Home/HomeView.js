@@ -4,6 +4,7 @@ import AddNewURL from '../Listings/addURL/AddNewURL';
 import NavigationBar from '../NavigationBar/NavigationBar';
 import ViewFolder from '../ViewFolder/ViewFolderComponents/DisplayFolderContent.js';
 import ListThumbnail from '../Listings/ListThumbnail/ListThumbnail';
+import ListingCard from '../Listings/Listing Card/ListingCard';
 
 class HomeView extends Component {
 

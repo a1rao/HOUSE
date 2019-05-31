@@ -9,6 +9,7 @@ import app from '../../base';
 import './NavigationBar.css';
 import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
 import fetchData from '../Backend/Database/GetFromDb.js';
+import ListingCard from '../Listings/Listing Card/ListingCard';
 
 
 class NavigationBar extends Component {
@@ -20,7 +21,7 @@ class NavigationBar extends Component {
         this.state = {
             firstName:'',
             lastName:'',
-            folders: []
+            folders: [],
         };
 
         // Get user first and last name from database
@@ -32,9 +33,7 @@ class NavigationBar extends Component {
         let getFolders = fetchData.getFolderNames.bind(this);
         getFolders();
 
-
     }
-
    /* componentWillUnmount() {
         this.firebaseRef.off();
     } */
@@ -78,7 +77,7 @@ class NavigationBar extends Component {
                         <div className="searchBarWrapper">
                             <Form inline className="searchBar">
                                 <FormControl type="text" placeholder="Enter Listing URL" className="mr-sm-2" />
-                                <Button variant="outline-success">Search</Button>
+                                <ListingCard />
                             </Form>
                         </div>
 
@@ -87,7 +86,7 @@ class NavigationBar extends Component {
                         </div>
 
                         <div className="logoutButton">
-                            <Button onClick={this.handleSignOut}>Logout</Button>
+                            <Button variant="outline-info" onClick={this.handleSignOut}>Logout</Button>
                         </div>
 
                     </Navbar.Collapse>
