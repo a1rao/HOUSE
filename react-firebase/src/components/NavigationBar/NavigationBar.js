@@ -35,9 +35,22 @@ class NavigationBar extends Component {
 
     }
 
-    componentWillUnmount() {
+   /* componentWillUnmount() {
         this.firebaseRef.off();
-    }
+    } */
+
+    handleSignOut = async event => {
+        event.preventDefault();
+        try {
+            app.auth()
+                .signOut().then(function() {
+                    console.log("signed out");
+            });
+        /*    this.props.history.push("/")); */
+        } catch (error) {
+            alert(error);
+        }
+    };
 
 
     render() {
@@ -74,7 +87,7 @@ class NavigationBar extends Component {
                         </div>
 
                         <div className="logoutButton">
-                            <Button onClick="#">Logout</Button>
+                            <Button onClick={this.handleSignOut}>Logout</Button>
                         </div>
 
                     </Navbar.Collapse>
