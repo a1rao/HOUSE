@@ -9,7 +9,11 @@ import app from '../../base';
 import './NavigationBar.css';
 import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
 import fetchData from '../Backend/Database/GetFromDb.js';
+<<<<<<< HEAD
+import SearchForm from "../Scraping/SearchForm";
+=======
 import ListingCard from '../Listings/Listing Card/ListingCard';
+>>>>>>> 4ee8e29e31be8866aa7f943a766f66d1c8c1c551
 
 
 class NavigationBar extends Component {
@@ -22,6 +26,10 @@ class NavigationBar extends Component {
             firstName:'',
             lastName:'',
             folders: [],
+<<<<<<< HEAD
+            url:''
+=======
+>>>>>>> 4ee8e29e31be8866aa7f943a766f66d1c8c1c551
         };
 
         // Get user first and last name from database
@@ -45,11 +53,19 @@ class NavigationBar extends Component {
                 .signOut().then(function() {
                     console.log("signed out");
             });
-        /*    this.props.history.push("/")); */
         } catch (error) {
             alert(error);
         }
     };
+
+    readURL = async event => {
+        event.preventDefault();
+        this.setState({url:event.target.value})
+    }
+
+    handleScrape = async event => {
+        console.log("scraping from " + this.state.url);
+    }
 
 
     render() {
@@ -76,8 +92,13 @@ class NavigationBar extends Component {
 
                         <div className="searchBarWrapper">
                             <Form inline className="searchBar">
+<<<<<<< HEAD
+                                <FormControl type="text" name="url" placeholder="Enter Listing URL" onChange={this.readURL} className="mr-sm-2"/>
+                                <Button variant="outline-success" onClick={this.handleScrape} type="button">Search</Button>
+=======
                                 <FormControl type="text" placeholder="Enter Listing URL" className="mr-sm-2" />
                                 <ListingCard />
+>>>>>>> 4ee8e29e31be8866aa7f943a766f66d1c8c1c551
                             </Form>
                         </div>
 
