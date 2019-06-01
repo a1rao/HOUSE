@@ -8,36 +8,81 @@ import './ComparisonPage.css';
 
 class ComparisonPage extends Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+
+            list1: [
+                {name: <a href="">''</a>},
+                {address: ''},
+                {image: ''},
+                {distance_to_campus: ''},
+                {num_bedrooms: ''},
+                {num_bathrooms: ''},
+                {distance_grocery_store: ''},
+                {distance_bus_stop: ''},
+                {driving_time: ''},
+                {transit_time: ''},
+                {original_url: ''},
+            ],
+
+            list2: [
+                {name: <a href="">''</a>},
+                {address: ''},
+                {image: ''},
+                {distance_to_campus: ''},
+                {num_bedrooms: ''},
+                {num_bathrooms: ''},
+                {distance_grocery_store: ''},
+                {distance_bus_stop: ''},
+                {driving_time: ''},
+                {transit_time: ''},
+                {original_url: ''},
+            ],
+
+            list3: [
+                {name: <a href="">''</a>},
+                {address: ''},
+                {image: ''},
+                {distance_to_campus: ''},
+                {num_bedrooms: ''},
+                {num_bathrooms: ''},
+                {distance_grocery_store: ''},
+                {distance_bus_stop: ''},
+                {driving_time: ''},
+                {transit_time: ''},
+                {original_url: ''},
+            ],
+
+            list4: [
+                {name: <a href="">''</a>},
+                {address: ''},
+                {image: ''},
+                {distance_to_campus: ''},
+                {num_bedrooms: ''},
+                {num_bathrooms: ''},
+                {distance_grocery_store: ''},
+                {distance_bus_stop: ''},
+                {driving_time: ''},
+                {transit_time: ''},
+                {original_url: ''},
+            ],
+        }
+    }
+
     render() {
-
-        var text = '{ "employees" : [' +
-            '{ "firstName":"Gary" , "lastName":"Mollestme" },' +
-            '{ "firstName":"Anna" , "lastName":"Smith" },' +
-            '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
-
-        var obj = JSON.parse(text);
 
         return (
 
             <div>
 
-                <NavigationBar />
+                <NavigationBar/>
 
-                <Dropdown className="sortByParent">
-                    <Dropdown.Toggle variant="primary" id="dropdown-basic">
-                        Sort By
-                    </Dropdown.Toggle>
-
-                    <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
-
-                <Table striped bordered hover size = "lg">
+                <Table striped bordered hover size="lg">
                     <thead>
                     <tr>
+                        <th>Key</th>
                         <th><Button variant="success">Add New Listing</Button></th>
                         <th><Button variant="success">Add New Listing</Button></th>
                         <th><Button variant="success">Add New Listing</Button></th>
@@ -46,28 +91,23 @@ class ComparisonPage extends Component {
                     </thead>
                     <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>{obj.employees[0].firstName}</td>
-                        <td>{obj.employees[0].lastName}</td>
-                        <td>@garyrocks</td>
+                        <td className="tableHead">Image</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <td className="tableHead">Name</td>
+
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td colSpan="2">Larry the Bird</td>
-                        <td>@twitter</td>
+                        <td className="tableHead">Address</td>
+                    </tr>
+                    <tr>
+                        <td className="tableHead" Hello></td>
                     </tr>
                     </tbody>
                 </Table>
             </div>
         );
     }
-
 }
 
 export default ComparisonPage;

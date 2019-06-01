@@ -1,3 +1,7 @@
 .sortByParent {
     text-align: center;
 }
+
+.tableHead {
+    font-weight: bold;
+}

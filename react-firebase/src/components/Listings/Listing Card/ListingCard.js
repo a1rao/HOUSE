@@ -16,7 +16,7 @@ class ListingCard extends Component {
 
         this.state = {
             show: false,
-            url:''
+            url:'',
         };
     }
 
