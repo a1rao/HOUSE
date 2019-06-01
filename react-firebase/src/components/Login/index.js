@@ -21,7 +21,7 @@ class LoginContainer extends Component {
         } catch (error) {
             alert(error);
         }
-    };
+    }
 
     render() {
 

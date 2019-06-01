@@ -28,9 +28,9 @@ class ListThumbnail extends Component {
 
     }
 
-    componentWillUnmount() {
-        app.database().off();
-    }
+  //  componentWillUnmount()
+  //      app.database().off();
+  //  }
 
     render(){
         // display each listing in folder TODO

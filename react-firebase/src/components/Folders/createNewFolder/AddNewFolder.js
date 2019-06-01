@@ -5,11 +5,11 @@ import app from '../../../base';
 // Add new folder to database
 function CreateFolder(){
     // Get user input
-    var userInput = document.getElementById("insertName");
-    var uid = app.auth().currentUser.uid;
+    let userInput = document.getElementById("insertName");
+    let uid = app.auth().currentUser.uid;
 
     // Add folder to database
-    var folderName = userInput.elements[0].value;
+    let folderName = userInput.elements[0].value;
 
     if(folderName.length > 0) {
         app.database().ref('users/'+ uid + '/folders/'+ folderName).set({
