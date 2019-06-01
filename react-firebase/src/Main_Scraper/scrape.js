@@ -3,7 +3,8 @@ const Main_Scraper = require('./Main_Scraper.js');
 module.exports = async function scrape(url) {
     //console.log("Before calling main() " + new Date().getTime())
     // var ret1 = await main('https://www.rent.com/california/la-jolla-houses/8891-nottingham-pl-4-r2978423');
-    var ret = await new Main_Scraper();
+
+    let ret = await new Main_Scraper();
     setTimeout(function(){},5000)
     await ret.scrape('https://www.rent.com/california/san-diego-apartments/axiom-la-jolla-4-462064');
     // var ret3 = await main('https://www.rent.com/california/la-jolla-apartments/solazzo-apartment-homes-4-427067');

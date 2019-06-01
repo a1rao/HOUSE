@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import NavigationBar from '../../NavigationBar/NavigationBar';
+import FormControl from "react-bootstrap/FormControl";
 
 const scrape = require('../../../Main_Scraper/scrape');
 
@@ -15,7 +16,13 @@ class ListingCard extends Component {
 
         this.state = {
             show: false,
+            url:''
         };
+    }
+
+    readURL = async event => {
+        event.preventDefault();
+        this.setState({url:event.target.value})
     }
 
     handleClose() {
@@ -27,14 +34,25 @@ class ListingCard extends Component {
     }
 
     handleScrape = async event => {
-        console.log("scraping from " + this.state.url);
-        const temp = await scrape(this.state.url);
-        this.handleShow();
+
+            let url = this.state.url + "";
+
+            console.log("The passed in variable: " + this.state.url);
+
+            console.log("The local variable: " + url);
+
+            if(url.length > 0) {
+                console.log("scraping from " + this.state.url);
+                const temp = await scrape(this.state.url);
+                this.handleShow();
+            }
     }
 
     render() {
         return (
             <div>
+                <FormControl type="text" name="url" placeholder="Enter Listing URL" onChange={this.readURL} className="mr-sm-2"/>
+
                 <Button variant="outline-success" onClick={this.handleScrape}>
                     Search
                 </Button>

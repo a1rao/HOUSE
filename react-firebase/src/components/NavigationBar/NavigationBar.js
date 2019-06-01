@@ -24,7 +24,6 @@ class NavigationBar extends Component {
             firstName:'',
             lastName:'',
             folders: [],
-            url:''
         };
 
         // Get user first and last name from database
@@ -53,11 +52,6 @@ class NavigationBar extends Component {
         }
     };
 
-    readURL = async event => {
-        event.preventDefault();
-        this.setState({url:event.target.value})
-    }
-
 
     render() {
         // Create new drop down element for each folder
@@ -83,7 +77,6 @@ class NavigationBar extends Component {
 
                         <div className="searchBarWrapper">
                             <Form inline className="searchBar">
-                                <FormControl type="text" name="url" placeholder="Enter Listing URL" onChange={this.readURL} className="mr-sm-2"/>
                                 <ListingCard />
                             </Form>
                         </div>
