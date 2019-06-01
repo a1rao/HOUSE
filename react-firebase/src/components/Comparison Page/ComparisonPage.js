@@ -14,9 +14,9 @@ class ComparisonPage extends Component {
         this.state = {
 
             list1: [
+                {image: ''},
                 {name: <a href="">''</a>},
                 {address: ''},
-                {image: ''},
                 {distance_to_campus: ''},
                 {num_bedrooms: ''},
                 {num_bathrooms: ''},
@@ -101,7 +101,28 @@ class ComparisonPage extends Component {
                         <td className="tableHead">Address</td>
                     </tr>
                     <tr>
-                        <td className="tableHead" Hello></td>
+                        <td className="tableHead">Distance to Campus</td>
+                    </tr>
+                    <tr>
+                        <td className="tableHead">Number of Bedrooms</td>
+                    </tr>
+                    <tr>
+                        <td className="tableHead">Number of Bathrooms</td>
+                    </tr>
+                    <tr>
+                        <td className="tableHead">Distance to Grocery Store</td>
+                    </tr>
+                    <tr>
+                        <td className="tableHead">Distance to Bus Stop</td>
+                    </tr>
+                    <tr>
+                        <td className="tableHead">Driving Time to Campus</td>
+                    </tr>
+                    <tr>
+                        <td className="tableHead">Transit Time to Campus</td>
+                    </tr>
+                    <tr>
+                        <td className="tableHead">Original URL</td>
                     </tr>
                     </tbody>
                 </Table>
