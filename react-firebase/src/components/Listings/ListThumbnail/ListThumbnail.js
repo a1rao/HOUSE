@@ -34,7 +34,8 @@ class ListThumbnail extends Component {
 
     render(){
         // display each listing in folder TODO
-        // allListings is a list of
+        // allListings is a list of saved listings in the user's folder
+        // ERROR: only displays most recent listing with the className: "thumbnail"
         const allListings = this.state.eachListing.map((listing) =>
             <div className="thumbnail">
                 <p>url: {listing.url}</p>
