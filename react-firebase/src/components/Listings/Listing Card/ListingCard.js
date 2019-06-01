@@ -37,10 +37,6 @@ class ListingCard extends Component {
 
             let url = this.state.url + "";
 
-            console.log("The passed in variable: " + this.state.url);
-
-            console.log("The local variable: " + url);
-
             if(url.length > 0) {
                 console.log("scraping from " + this.state.url);
                 const temp = await scrape(this.state.url);

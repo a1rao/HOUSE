@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import Table from 'react-bootstrap/Table';
 import '../NavigationBar/NavigationBar.js';
 import NavigationBar from "../NavigationBar/NavigationBar";
+import Button from 'react-bootstrap/Button';
+import Dropdown from 'react-bootstrap/Dropdown';
+import './ComparisonPage.css';
 
 class ComparisonPage extends Component {
 
@@ -17,15 +20,28 @@ class ComparisonPage extends Component {
         return (
 
             <div>
+
                 <NavigationBar />
 
-                <Table striped bordered hover>
+                <Dropdown className="sortByParent">
+                    <Dropdown.Toggle variant="primary" id="dropdown-basic">
+                        Sort By
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+
+                <Table striped bordered hover size = "lg">
                     <thead>
                     <tr>
-                        <th>Stuff</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
+                        <th><Button variant="success">Add New Listing</Button></th>
+                        <th><Button variant="success">Add New Listing</Button></th>
+                        <th><Button variant="success">Add New Listing</Button></th>
+                        <th><Button variant="success">Add New Listing</Button></th>
                     </tr>
                     </thead>
                     <tbody>
