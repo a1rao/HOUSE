@@ -9,8 +9,9 @@ import app from '../../base';
 import './NavigationBar.css';
 import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
 import fetchData from '../Backend/Database/GetFromDb.js';
-import SearchForm from "../Scraping/SearchForm";
 import ListingCard from '../Listings/Listing Card/ListingCard';
+
+
 
 
 class NavigationBar extends Component {
@@ -57,10 +58,6 @@ class NavigationBar extends Component {
         this.setState({url:event.target.value})
     }
 
-    handleScrape = async event => {
-        console.log("scraping from " + this.state.url);
-    }
-
 
     render() {
         // Create new drop down element for each folder
@@ -87,8 +84,6 @@ class NavigationBar extends Component {
                         <div className="searchBarWrapper">
                             <Form inline className="searchBar">
                                 <FormControl type="text" name="url" placeholder="Enter Listing URL" onChange={this.readURL} className="mr-sm-2"/>
-                                <Button variant="outline-success" onClick={this.handleScrape} type="button">Search</Button>
-                                <FormControl type="text" placeholder="Enter Listing URL" className="mr-sm-2" />
                                 <ListingCard />
                             </Form>
                         </div>

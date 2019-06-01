@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import NavigationBar from '../../NavigationBar/NavigationBar';
+
+const scrape = require('../../../Main_Scraper/scrape');
 
 
 class ListingCard extends Component {
@@ -23,10 +26,16 @@ class ListingCard extends Component {
         this.setState({ show: true });
     }
 
+    handleScrape = async event => {
+        console.log("scraping from " + this.state.url);
+        const temp = await scrape(this.state.url);
+        this.handleShow();
+    }
+
     render() {
         return (
-            <>
-                <Button variant="outline-success" onClick={this.handleShow}>
+            <div>
+                <Button variant="outline-success" onClick={this.handleScrape}>
                     Search
                 </Button>
 
@@ -34,7 +43,8 @@ class ListingCard extends Component {
                     <Modal.Header closeButton>
                         <Modal.Title>Modal heading</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                    <Modal.Body>Woohoo, you're reading this text in a modal!
+                    </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.handleClose}>
                             Close
@@ -44,9 +54,11 @@ class ListingCard extends Component {
                         </Button>
                     </Modal.Footer>
                 </Modal>
-            </>
+            </div>
         );
     }
+
+
 }
 
 export default ListingCard;
