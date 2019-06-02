@@ -27,6 +27,7 @@ module.exports = async function scrapeRent(url, l)  {
 
             //console.log("Type exit or Ctrl-d to exit or input another link here : ");
             l.url = url;
+            l.title = $('h1[data-tid="property-title"]', html).text();
             l.address = $('h1[data-tid="property-title"]', html).text() + ", " +
                         $('div[data-tid="pdpKeyInfo_citystatezip"]', html).text();
             l.price = $('div[data-tid=pdpKeyInfo_price]', html).text();
