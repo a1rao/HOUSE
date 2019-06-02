@@ -55,9 +55,9 @@ class ListingCard extends Component {
             if(url.length > 0) {
                 console.log("scraping from " + this.state.url);
                 listingInfo = await scrape(this.state.url);
-                let data = JSON.parse(listingInfo);
+                //let data = JSON.parse(listingInfo);
                 this.handleShow();
-                setTimeout(function(){console.log("this is inside of data: \n");},6000)
+                setTimeout(function(){console.log("this is inside of data: \n" + listingInfo.l.price);},6000)
             }
     }
 

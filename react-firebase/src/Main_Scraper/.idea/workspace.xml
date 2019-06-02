@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/Trulia.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="263">
-              <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="103" selection-end-column="45" />
+              <caret line="103" column="37" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -50,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/Rent.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -149,17 +149,6 @@
         </RuleState>
       </list>
     </option>
-  </component>
-  <component name="RunManager" selected="Node.js.Example.js">
-    <recent_temporary>
-      <list>
-        <item itemvalue="Node.js.Example.js" />
-        <item itemvalue="Node.js.Main_Scraper.js" />
-        <item itemvalue="Node.js.Rent.js" />
-        <item itemvalue="Node.js.Listing.js" />
-        <item itemvalue="Node.js.Trulia.js" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -296,7 +285,7 @@
     <entry file="file://$PROJECT_DIR$/Rent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -310,7 +299,7 @@
     <entry file="file://$PROJECT_DIR$/Trulia.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
-          <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="103" selection-end-column="45" />
+          <caret line="103" column="37" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
         </state>
       </provider>
     </entry>
