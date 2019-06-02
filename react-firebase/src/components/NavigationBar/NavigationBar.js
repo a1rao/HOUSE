@@ -12,8 +12,6 @@ import fetchData from '../Backend/Database/GetFromDb.js';
 import ListingCard from '../Listings/Listing Card/ListingCard';
 
 
-
-
 class NavigationBar extends Component {
 
     constructor(props) {
@@ -37,9 +35,10 @@ class NavigationBar extends Component {
         getFolders();
 
     }
-   /* componentWillUnmount() {
+
+    /*componentWillUnmount() {
         this.firebaseRef.off();
-    } */
+    }*/
 
     handleSignOut = async event => {
         event.preventDefault();
@@ -62,13 +61,13 @@ class NavigationBar extends Component {
     render() {
         // Create new drop down element for each folder
         const allFolders = this.state.folders.map((eachFolder) =>
-            <NavDropdown.Item href="#action/3.1">{eachFolder}</NavDropdown.Item>
+            <NavDropdown.Item href="/folderView">{eachFolder}</NavDropdown.Item>
         );
 
         return (
             <div>
                 <Navbar bg="light" expand="lg">
-                    <Navbar.Brand href="#home">{this.state.firstName} {this.state.lastName}</Navbar.Brand>
+                    <Navbar.Brand href="/">{this.state.firstName} {this.state.lastName}</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">

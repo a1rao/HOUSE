@@ -14,6 +14,8 @@ class ComparisonPage extends Component {
 
         var obj = JSON.parse(text);
 
+        console.log("render compare page");
+
         return (
 
             <div>
