@@ -17,6 +17,7 @@ module.exports = async function scrapeTrulia(url, l)  {
             //console.log("Type exit or Ctrl-d to exit or input another link here : ");
 
             l.url = url;
+            l.title = $('div.h2.typeEmphasize.pan.man.defaultLineHeight span', html).text().trim().replace(/\s\s+/g, "");
             l.address = $('div.h2.typeEmphasize.pan.man.defaultLineHeight span', html).text().trim() + " " +
                         $('span.h6.typeWeightNormal.pts.typeLowlight.xxsHidden', html).text().trim();
             //l.address = l.address.split('(',1)[0].trim();

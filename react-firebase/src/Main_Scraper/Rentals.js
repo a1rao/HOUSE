@@ -25,6 +25,7 @@ module.exports = async function scrapeRentals(url, l) {
             //console.log("Type exit or Ctrl-d to exit or input another link here : ");
             //console.log(html);
             l.url = url;
+            l.title = $('div._3nu1d', html).text();
             l.address = $('div._3nu1d', html).text() + " " + $('div._2yfo0', html).text();
             l.price = $('div._2EN5B', html).text();
             l.price = l.price.split('/',1)[0];

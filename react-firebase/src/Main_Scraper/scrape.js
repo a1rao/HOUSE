@@ -6,7 +6,7 @@ module.exports = async function scrape(url) {
 
     let ret = await new Main_Scraper();
     setTimeout(function(){},5000)
-    await ret.scrape('https://www.rent.com/california/san-diego-apartments/axiom-la-jolla-4-462064');
+    await ret.scrape(url);
     // var ret3 = await main('https://www.rent.com/california/la-jolla-apartments/solazzo-apartment-homes-4-427067');
     // var ret4 = await main('https://www.rent.com/california/san-diego-apartments/olympus-corsair-4-100048895');
     // var ret5 = await main('https://www.rent.com/california/san-diego-apartments/la-jolla-palms-4-442619');
@@ -28,6 +28,7 @@ module.exports = async function scrape(url) {
     //setTimeout(() => {
     function printl() {
         console.log("---------------------Object returned--------------");
+        console.log("-------------------------Title------------------" + ret.l.title);
         console.log("------------------------- url --------------- " + ret.l.url);
         console.log("------------------------- photo --------------- " + ret.l.photo);
         console.log("------------------------- address ---------------" + ret.l.address);
