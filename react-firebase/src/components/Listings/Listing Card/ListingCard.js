@@ -76,7 +76,6 @@ class ListingCard extends Component {
                 console.log("scraping from " + this.state.url);
                 var listingInfo;
                 listingInfo = await scrape(this.state.url);
-                this.handleShow();
                 setTimeout(function(){
 
                     console.log("after scraping: " + listingInfo.price);
@@ -103,6 +102,8 @@ class ListingCard extends Component {
                     },6000);
 
             }
+
+            setTimeout(that.handleShow, 7000);
     };
 
     render() {
