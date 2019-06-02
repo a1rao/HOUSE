@@ -5,7 +5,8 @@ module.exports = async function scrapeTrulia(url, l)  {
     const $ = require('cheerio');
     //const url = 'https://www.trulia.com/c/ca/san-diego/west-park-7777-westside-dr-san-diego-ca-92108--2079753904';
 
-    await rp(url)
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    await rp(proxyurl + url)
         .then(function(html) {
             // console.log('Address: ' + $('span.h6.typeWeightNormal.pts.typeLowlight.xxsHidden', html).text().trim());
             // console.log('Bedrooms : ' + $('li.iconBed', html).text().trim());

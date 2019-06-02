@@ -4,7 +4,8 @@ module.exports = async function scrapeRentals(url, l) {
     const $ = require('cheerio');
     //const url = 'https://www.rentals.com/Apartments/California/San-Diego/2030733';
 
-    await rp(url)
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    await rp(proxyurl + url)
         .then(function (html) {
             // console.log('Address: ' + $('div._3nu1d', html).text() + " " + $('div._2yfo0', html).text());
             // console.log('Price: ' + $('div._2EN5B', html).text());

@@ -3,7 +3,8 @@ module.exports = async function scrapeApartments(url, l)  {
     const $ = require('cheerio');
     //const url = 'https://www.apartments.com/avalon-la-jolla-colony-san-diego-ca/ktr63f8/';
 
-    await rp(url)
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    await rp(proxyurl + url)
         .then(function(html) {
             // console.log('Address: ' + $('div.propertyAddress h2', html).text().trim());
             // console.log('Bedrooms: ' + $('.rentRollupSection span.beds', html).text());
