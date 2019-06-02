@@ -125,9 +125,9 @@ module.exports = async function scrapeRent(url, l)  {
         .catch(function(err) {
             console.log(err);
         });
-     await map_scrape.distance('University of California San Diego', l.address,l);
+     //await map_scrape.distance('University of California San Diego', l.address,l);
     //
-     await map_scrape.getPhoto(l.address, l);
+     //await map_scrape.getPhoto(l.address, l);
 
     //console.log("finished executing function scrapeRent at " + new Date().getTime())
 };

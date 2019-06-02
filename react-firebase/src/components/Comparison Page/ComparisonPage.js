@@ -24,7 +24,6 @@ class ComparisonPage extends Component {
                 {distance_bus_stop: ''},
                 {driving_time: ''},
                 {transit_time: ''},
-                {original_url: ''},
             ],
 
             list2: [
@@ -101,6 +100,9 @@ class ComparisonPage extends Component {
                         <td className="tableHead">Address</td>
                     </tr>
                     <tr>
+                        <td className="tableHead">Price</td>
+                    </tr>
+                    <tr>
                         <td className="tableHead">Distance to Campus</td>
                     </tr>
                     <tr>
@@ -108,6 +110,9 @@ class ComparisonPage extends Component {
                     </tr>
                     <tr>
                         <td className="tableHead">Number of Bathrooms</td>
+                    </tr>
+                    <tr>
+                        <td className="tableHead">Square Footage</td>
                     </tr>
                     <tr>
                         <td className="tableHead">Distance to Grocery Store</td>
@@ -120,9 +125,6 @@ class ComparisonPage extends Component {
                     </tr>
                     <tr>
                         <td className="tableHead">Transit Time to Campus</td>
-                    </tr>
-                    <tr>
-                        <td className="tableHead">Original URL</td>
                     </tr>
                     </tbody>
                 </Table>

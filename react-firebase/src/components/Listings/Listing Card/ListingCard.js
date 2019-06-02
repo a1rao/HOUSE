@@ -5,9 +5,10 @@ import NavigationBar from '../../NavigationBar/NavigationBar';
 import FormControl from "react-bootstrap/FormControl";
 
 const scrape = require('../../../Main_Scraper/scrape');
-
+var listingInfo;
 
 class ListingCard extends Component {
+
     constructor(props, context) {
         super(props, context);
 
@@ -17,6 +18,20 @@ class ListingCard extends Component {
         this.state = {
             show: false,
             url:'',
+            listing: [
+                {image: ''},
+                {name: ''},
+                {address: ''},
+                {price: ''},
+                {num_bedrooms: ''},
+                {num_bathrooms: ''},
+                {distance_to_campus: ''},
+                {lease_policy: ''},
+                {parking: ''},
+                {smoking: ''},
+                {pet_policy: ''},
+                {description: ''},
+            ]
         };
     }
 
@@ -39,8 +54,10 @@ class ListingCard extends Component {
 
             if(url.length > 0) {
                 console.log("scraping from " + this.state.url);
-                const temp = await scrape(this.state.url);
+                listingInfo = await scrape(this.state.url);
+                let data = JSON.parse(listingInfo);
                 this.handleShow();
+                setTimeout(function(){console.log("this is inside of data: \n");},6000)
             }
     }
 

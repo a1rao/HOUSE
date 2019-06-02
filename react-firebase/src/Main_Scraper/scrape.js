@@ -145,5 +145,5 @@ module.exports = async function scrape(url) {
     // console.log("------------------------- lease_period --------------- " + ret5.lease_period);
     // console.log("------------------------- description --------------- " + ret5.description);
     //}, 10000)
-    return JSON.stringify(ret);
+    return ret;
 };
