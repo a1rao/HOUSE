@@ -20,7 +20,7 @@ class ListingCard extends Component {
             url:'',
             listing: [
                 {image: ''},
-                {name: ''},
+                {title: ''},
                 {address: ''},
                 {price: ''},
                 {num_bedrooms: ''},
@@ -48,6 +48,23 @@ class ListingCard extends Component {
         this.setState({ show: true });
     }
 
+    updateListingInfo(listInfo) {
+
+        this.setState({image: 'NA'});
+        this.setState({title: listInfo.title});
+        this.setState( {address: listInfo.address});
+        this.setState({price: listInfo.price});
+        this.setState({num_bedrooms: listInfo.bed});
+        this.setState({num_bathrooms: listInfo.bath});
+        this.setState({distance_to_campus: 'NA'});
+        this.setState({lease_policy: listInfo.lease_period});
+        this.setState({parking: listInfo.parking});
+        this.setState({smoking: listInfo.smoking});
+        this.setState({pet_policy: listInfo.pets});
+        this.setState({description: listInfo.description});
+
+    }
+
     handleScrape = async event => {
 
             let url = this.state.url + "";
@@ -55,9 +72,10 @@ class ListingCard extends Component {
             if(url.length > 0) {
                 console.log("scraping from " + this.state.url);
                 listingInfo = await scrape(this.state.url);
-                //let data = JSON.parse(listingInfo);
                 this.handleShow();
-                setTimeout(function(){console.log("this is inside of data: \n" + listingInfo.price);},6000)
+                setTimeout(function(){
+                    this.updateListingInfo(listingInfo);},6000);
+
             }
     }
 
