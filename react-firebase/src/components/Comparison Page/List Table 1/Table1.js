@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import fetchData from '../../Backend/Database/GetFromDb';
+import Table from "react-bootstrap/Table";
 
 var allFolders = '';
 var allListings = '';
@@ -17,6 +18,7 @@ class Table1 extends Component {
             allIDs: [],
             folders: [],
             eachListing: [],
+            selected: {"name": "This is a test name."},
             showFolders: false,
             showListings: false,
         };
@@ -70,14 +72,30 @@ class Table1 extends Component {
     }
 
     handleAddToTable = async event => {
+        this.setState({listing1: event});
         console.log("we are able to select a specific listing : " + event._address);
     }
 
-
+    getNameElement = () => {
+        return (
+            <h1>"FUCK THIS"</h1>
+        );
+    }
 
     render() {
+        console.log("RENDERING THE TABLE COMPONENT");
         return (
             <>
+
+                {/*<Table striped bordered hover size="lg">*/}
+                {/*    <thead>*/}
+                {/*    <tr>*/}
+                {/*        <Button variant="primary" onClick={this.handleShowFolders}> Add New Listing*/}
+                {/*        </Button>*/}
+                {/*    </tr>*/}
+                {/*    <tr>{this.state.selected._title}</tr>*/}
+                {/*    </thead>*/}
+                {/*</Table>*/}
                 <Button variant="primary" onClick={this.handleShowFolders}> Add New Listing
                 </Button>
 
@@ -116,6 +134,7 @@ class Table1 extends Component {
                     {/*//         Save Changes*/}
                     {/*//     </Button>*/}
                     {/*// </Modal.Footer>*/}
+
             </>
         );
     }

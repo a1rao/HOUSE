@@ -7,7 +7,7 @@ import NavigationBar from "../../NavigationBar/NavigationBar";
 import Modal from 'react-bootstrap/Modal';
 import Button from "react-bootstrap/Button";
 
-// Display all listing thumbnails from folder that is currently selected
+// Display all listing thumbnails from folder that is currently listing1
 // For testing purposes, this folder is:  TEST
 
 class DisplayFolderContent extends Component{
