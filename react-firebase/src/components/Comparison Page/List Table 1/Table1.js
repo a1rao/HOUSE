@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import fetchData from '../../Backend/Database/GetFromDb';
 
 var allFolders = '';
+var allListings = '';
 
 class Table1 extends Component {
 
@@ -13,13 +14,18 @@ class Table1 extends Component {
 
         this.state = {
             tableNumber: '1',
+            allIDs: [],
             folders: [],
+            eachListing: [],
             showFolders: false,
             showListings: false,
         };
 
         let getFolders = fetchData.getFolderNames.bind(this);
         getFolders();
+
+        this._getIDs = fetchData.getIDs.bind(this);
+        this._getListings = fetchData.getAllListings.bind(this);
     }
 
     handleShowFolders = async event =>{
@@ -43,13 +49,28 @@ class Table1 extends Component {
 
     handleShowListings = async folder => {
         console.log(folder);
+        await this._getIDs(this._getListings, folder);
 
-        this.setState({showListings: true});
+
+        setTimeout(() => {
+
+            console.log(this.state.allIDs);
+            console.log(this.state.eachListing);
+            const all = this.state.eachListing.map((listing) =>
+                    <Button variant="outline-success" onClick={() => this.handleAddToTable(listing)}>{listing._title}</Button>
+            );
+            allListings = all;
+            this.setState({showListings: true});
+    }, 1000 + 100*this.state.allIDs.length);
 
     }
 
     handleCloseListings = async event => {
         this.setState({showListings: false});
+    }
+
+    handleAddToTable = async event => {
+        console.log("we are able to select a specific listing : " + event._address);
     }
 
 
@@ -82,7 +103,7 @@ class Table1 extends Component {
                         <Modal.Title>Select a Listing</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        Hello
+                        {allListings}
                     </Modal.Body>
                 </Modal>
 

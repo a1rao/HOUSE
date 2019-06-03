@@ -23,7 +23,7 @@ const func = {
             });
             this.setState({'allIDs': items});
             // Callback function
-            cb();
+            setTimeout(() => {cb();}, 1000);
 
         });
     },
@@ -32,7 +32,7 @@ const func = {
     getAllListings: function(cb)
     {
         let items = [];
-        //console.log("allIDs:", this.state.allIDs);
+        console.log("allIDs:", this.state.allIDs);
         this.state.allIDs.forEach(id => {
               app.database().ref('listings/' + id).on('value', dataSnapshot => {
                   let listing = dataSnapshot.val();
@@ -44,7 +44,7 @@ const func = {
             console.log("eachlisting in db:", items);
             this.setState({eachListing: items});
             this.setState({done : true});
-        }.bind(this), 50*this.state.allIDs.length)
+        }.bind(this), 100*this.state.allIDs.length)
 
     },
 
