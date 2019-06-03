@@ -115,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/Main_Scraper/Trulia.js" />
         <option value="$PROJECT_DIR$/src/Main_Scraper/Rent.js" />
         <option value="$PROJECT_DIR$/src/components/ViewFolder/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Listings/ListThumbnail/ListThumbnail.js" />
         <option value="$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeView.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
@@ -137,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,7 +230,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -239,7 +238,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
@@ -275,8 +276,7 @@
     <option name="totallyTimeSpent" value="34727000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -462,7 +462,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

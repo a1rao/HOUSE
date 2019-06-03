@@ -72,13 +72,10 @@ const func = {
             });
             this.setState({folders: items})
         });
-    }
+    },
+
+
+
 };
 
 export default func;
-
-
-
-
-
-

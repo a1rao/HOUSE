@@ -10,9 +10,9 @@ import NavigationBar from "../../NavigationBar/NavigationBar";
 
 class DisplayFolderContent extends Component{
 
+
     constructor(props) {
         super(props);
-
         // Store user information
         this.state = {
             allIDs: null,
@@ -28,10 +28,14 @@ class DisplayFolderContent extends Component{
         // Make second function call after the first one is done
         first(second);
 
+    componentDidMount() {
+        this.getDataFromDb();
     }
 
     render(){
 
+
+        // Make sure component one mounting
         if(this.state.done === 0){
             return (
                 <div>
@@ -54,8 +58,6 @@ class DisplayFolderContent extends Component{
             </div>
         );
     }
-
-
 
 
 
