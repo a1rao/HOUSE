@@ -30,8 +30,10 @@ class DisplayFolderContent extends Component{
         };
 
         // Get listing id'showScraping
-        folderName = new NavigationBar(props);
-        folderName = folderName.returnName();
+        // folderName = new NavigationBar(props);
+        // folderName = folderName.returnName();
+
+        folderName = localStorage.getItem("viewFolderName");
         // Get listing id's
         let first = fetchData.getIDs.bind(this);
         // Get each listing info
@@ -47,7 +49,7 @@ class DisplayFolderContent extends Component{
         this.setColumn4 = this.setColumn4.bind(this);
         //this.formatListing = this.formatListing.bind(this);
         // Make second function call after the first one is done
-        first(second,"TEST");
+        first(second,folderName);
         console.log("IN DISPLAyFOlder " + folderName)
 
     }
@@ -91,7 +93,7 @@ class DisplayFolderContent extends Component{
 
 
     deleteListing = event => {
-        saveData.removeListing("TEST", this.state.l);
+        saveData.removeListing(folderName, this.state.l);
         this.handleCloseListing();
     }
 
