@@ -11,6 +11,7 @@ class Table1 extends Component {
 
         this.state = {
             show: false,
+            tableNumber: '1',
         };
     }
 
@@ -30,7 +31,7 @@ class Table1 extends Component {
 
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title>Table {this.state.tableNumber}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
                     <Modal.Footer>

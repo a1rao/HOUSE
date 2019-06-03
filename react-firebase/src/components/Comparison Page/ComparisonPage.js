@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Table from 'react-bootstrap/Table';
-import '../house/react-firebase/src/components/NavigationBar/NavigationBar.js';
-import NavigationBar from "../NavigationBar/NavigationBar";
+import NavigationBar from '../NavigationBar/NavigationBar';
 import Table1 from './List Table 1/Table1';
 import Table2 from './List Table 2/Table2';
 import Table3 from './List Table 3/Table3';
