@@ -5,7 +5,7 @@ import NavigationBar from '../../NavigationBar/NavigationBar';
 import FormControl from "react-bootstrap/FormControl";
 
 const scrape = require('../../../Main_Scraper/scrape');
-var listingInfo;
+
 
 class ListingCard extends Component {
 
@@ -18,27 +18,30 @@ class ListingCard extends Component {
         this.state = {
             show: false,
             url:'',
-            listing: [
-                {image: ''},
-                {title: ''},
-                {address: ''},
-                {price: ''},
-                {num_bedrooms: ''},
-                {num_bathrooms: ''},
-                {distance_to_campus: ''},
-                {lease_policy: ''},
-                {parking: ''},
-                {smoking: ''},
-                {pet_policy: ''},
-                {description: ''},
-            ]
+            image: '',
+            title: '',
+            address: '',
+            price: '',
+            bed: '',
+            bath: '',
+            area: '',
+            type: '',
+            distance_to_campus: '',
+            contact_name: '',
+            contact_number: '',
+            deposit:'',
+            lease_policy: '',
+            parking: '',
+            smoking: '',
+            pet: '',
+            description: '',
         };
     }
 
     readURL = async event => {
         event.preventDefault();
         this.setState({url:event.target.value})
-    }
+    };
 
     handleClose() {
         this.setState({ show: false });
@@ -48,36 +51,58 @@ class ListingCard extends Component {
         this.setState({ show: true });
     }
 
-    updateListingInfo(listInfo) {
-
-        this.setState({image: 'NA'});
-        this.setState({title: listInfo.title});
-        this.setState( {address: listInfo.address});
-        this.setState({price: listInfo.price});
-        this.setState({num_bedrooms: listInfo.bed});
-        this.setState({num_bathrooms: listInfo.bath});
-        this.setState({distance_to_campus: 'NA'});
-        this.setState({lease_policy: listInfo.lease_period});
-        this.setState({parking: listInfo.parking});
-        this.setState({smoking: listInfo.smoking});
-        this.setState({pet_policy: listInfo.pets});
-        this.setState({description: listInfo.description});
-
-    }
+    // updateListingInfo(listInfo) {
+    //
+    //     this.setState({image: 'NA'});
+    //     this.setState({title: listInfo.title});
+    //     this.setState( {address: listInfo.address});
+    //     this.setState({price: listInfo.price});
+    //     this.setState({num_bedrooms: listInfo.bed});
+    //     this.setState({num_bathrooms: listInfo.bath});
+    //     this.setState({distance_to_campus: 'NA'});
+    //     this.setState({lease_policy: listInfo.lease_period});
+    //     this.setState({parking: listInfo.parking});
+    //     this.setState({smoking: listInfo.smoking});
+    //     this.setState({pet_policy: listInfo.pets});
+    //     this.setState({description: listInfo.description});
+    //
+    // }
 
     handleScrape = async event => {
-
+            var that = this;
             let url = this.state.url + "";
 
             if(url.length > 0) {
                 console.log("scraping from " + this.state.url);
+                var listingInfo;
                 listingInfo = await scrape(this.state.url);
-                this.handleShow();
-                setTimeout(function(){
-                    this.updateListingInfo(listingInfo);},6000);
+                setTimeout(function() {
+
+                        that.setState({image: listingInfo.photo});
+                        that.setState({title: listingInfo.title});
+                        that.setState({address: listingInfo.address});
+                        that.setState({price: listingInfo.price});
+                        that.setState({bed: listingInfo.bed});
+                        that.setState({bath: listingInfo.bath});
+                        that.setState({area: listingInfo.area});
+                        that.setState({type: listingInfo.type});
+                        that.setState({distance_to_campus: listingInfo.distance_to_campus});
+                        that.setState({contact_name: listingInfo.contact_name});
+                        that.setState({contact_number: listingInfo.contact_number});
+                        that.setState({lease_policy: listingInfo._lease_period});
+                        that.setState({deposit: listingInfo.deposit});
+                        that.setState({parking: listingInfo.parking});
+                        that.setState({smoking: listingInfo.smoking});
+                        that.setState({pet: listingInfo.pet});
+                        that.setState({description: listingInfo._description});
+                    }
+
+                    ,4000);
 
             }
-    }
+
+            setTimeout(that.handleShow, 5000);
+    };
 
     render() {
         return (
@@ -90,9 +115,29 @@ class ListingCard extends Component {
 
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title>{this.state.title}</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Woohoo, you're reading this text in a modal!
+                    <Modal.Body>
+                        URL : {this.state.url}
+                        <br/>
+                        PHOTO: {this.state.image}
+                        <br/>
+                        TITLE: {this.state.title}
+                        <br/>
+                        ADDRESS:{this.state.address}
+                        <br/>
+                        PRICE: {this.state.price}
+                        <br/>
+                        BEDS: {this.state.bed}
+                        <br/>
+                        BATH: {this.state.bath}
+                        <br/>
+                        AREA: {this.state.area}
+                        <br/>
+                        DISTANCE TO CAMPUS: {this.state.distance_to_campus}
+                        <br/>
+                        TYPE: {this.state.type}
+                        <br/>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.handleClose}>
