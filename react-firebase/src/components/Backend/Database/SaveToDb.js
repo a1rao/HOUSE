@@ -6,7 +6,7 @@ import app from "../../../base";
  */
 
 /* To import functions, add this to your file header:
- * import fetchData from '../../Backend/Database/SaveToDb.js';
+ * import saveData from '../../Backend/Database/SaveToDb.js';
  */
 
 const func = {
