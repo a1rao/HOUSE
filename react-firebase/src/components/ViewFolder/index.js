@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import NavigationBar from "../Home/homeComponents/NavigationBar";
+import NavigationBar from "../NavigationBar/NavigationBar.js";
 import DisplayFolderContent from "./ViewFolderComponents/DisplayFolderContent.js";
 
 
