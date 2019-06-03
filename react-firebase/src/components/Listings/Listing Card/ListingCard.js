@@ -236,7 +236,7 @@ class ListingCard extends Component {
                             Close
                         </Button>
                         <Button variant="primary" onClick= {this.handleSave}>
-                            Save Changes
+                            Save Listing
                         </Button>
                     </Modal.Footer>
                 </Modal>
@@ -277,5 +277,3 @@ class ListingCard extends Component {
 
 
 }
-
-export default ListingCard;
