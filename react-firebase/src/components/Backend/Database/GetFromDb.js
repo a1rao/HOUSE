@@ -32,12 +32,14 @@ const func = {
     getAllListings: function(cb)
     {
         let items = [];
-        //console.log("allIDs:", this.state.allIDs);
+        console.log("allIDs:", this.state.allIDs);
         this.state.allIDs.forEach(id => {
               app.database().ref('listings/' + id).on('value', dataSnapshot => {
                   let listing = dataSnapshot.val();
-                  items.push(listing);
-                  console.log('push:', listing);
+                  if (listing != null) {
+                      items.push(listing);
+                      console.log('push:', listing);
+                  }
               });
         });
         setTimeout(function() {
