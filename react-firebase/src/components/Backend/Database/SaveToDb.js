@@ -18,6 +18,7 @@ const func = {
         var uid = app.auth().currentUser.uid;
         var databaseref = app.database().ref('users/' + uid + '/folders/' + selectedFolder);
         var listingKey = databaseref.push().key;
+        l._id = listingKey;
         databaseref.child(listingKey).set({'url':url});
 
         // Add listing to "listings" table
@@ -26,6 +27,17 @@ const func = {
         console.log("saving");
 
 
+    },
+
+    removeListing: function(selectedFolder, l) {
+        let uid = app.auth().currentUser.uid;
+        let databaseref = app.database().ref('users/' + uid + '/folders/' + selectedFolder + '/' + l._id);
+        console.log(databaseref.toString());
+        databaseref.remove().then(function() {
+            console.log("listing removed from folder");
+        }).catch(function(error) {
+            console.log("eat my fucking ass cuz this listing aint getting deleted");
+        });
     }
 
 };

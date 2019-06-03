@@ -9,9 +9,9 @@ import './NavigationBar.css';
 import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
 import fetchData from '../Backend/Database/GetFromDb.js';
 import ListingCard from '../Listings/Listing Card/ListingCard';
-import NavLink from "react-bootstrap/NavLink";
+//import NavLink from "react-bootstrap/NavLink";
 
-
+let folderName;
 class NavigationBar extends Component {
 
     constructor(props) {
@@ -36,12 +36,24 @@ class NavigationBar extends Component {
         // Get folders
         let getFolders = fetchData.getFolderNames.bind(this);
         getFolders();
+        this.saveName = this.saveName.bind(this);
+        this.returnName = this.returnName.bind(this);
 
     }
 
     /*componentWillUnmount() {
         this.firebaseRef.off();
     }*/
+
+    saveName(folder) {
+        //event.preventDefault();
+        localStorage.setItem("viewFolderName", folder);
+        folderName =  folder;
+        console.log("Clicked: " + folderName)
+    }
+    returnName() {
+        return folderName;
+    }
 
     handleSignOut = async event => {
         event.preventDefault();
@@ -59,10 +71,12 @@ class NavigationBar extends Component {
     render() {
         // Create new drop down element for each folder
         const allFolders = this.state.folders.map((eachFolder) =>
-            <NavDropdown.Item href="/folderView" >{eachFolder}</NavDropdown.Item>
+            <NavDropdown.Item onClick= {() => this.saveName(eachFolder)} href="/folderView/">{eachFolder}</NavDropdown.Item>
         );
 
+        console.log("IN Navi" + folderName)
         return (
+
             <div>
                 <Navbar bg="light" expand="lg">
                     <Navbar.Brand href="/">{this.state.firstName} {this.state.lastName}</Navbar.Brand>
@@ -107,3 +121,4 @@ class NavigationBar extends Component {
 //eventKey={eachFolder} onSelect={k => this.handleSelect(k)}
 
 export default NavigationBar;
+export {folderName};
