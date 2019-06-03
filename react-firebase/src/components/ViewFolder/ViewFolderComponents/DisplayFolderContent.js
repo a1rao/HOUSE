@@ -28,12 +28,10 @@ class DisplayFolderContent extends Component{
         // Make second function call after the first one is done
         first(second);
 
-    componentDidMount() {
-        this.getDataFromDb();
     }
 
-    render(){
 
+    render(){
 
         // Make sure component one mounting
         if(this.state.done === 0){
