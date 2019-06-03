@@ -5,3 +5,11 @@
 .tableHead {
     font-weight: bold;
 }
+
+.buttonParent {
+    text-align: center;
+}
+
+.buttons {
+    display: inline-block;
+}
