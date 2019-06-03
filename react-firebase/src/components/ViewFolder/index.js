@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import NavigationBar from "../NavigationBar/NavigationBar.js";
 import DisplayFolderContent from "./ViewFolderComponents/DisplayFolderContent.js";
+import {folderName} from "../NavigationBar/NavigationBar.js";
+
 
 
 class FolderView extends Component{
@@ -10,13 +12,13 @@ class FolderView extends Component{
 
                 {/*Display navigation bar*/}
                 <NavigationBar/>
-
                 {/*Display all listings in folder*/}
-                <DisplayFolderContent folderName="T1"/>
+                <DisplayFolderContent folder={folderName}/>
 
             </div>
 
         );
+
     }
 
 }
