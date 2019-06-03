@@ -269,7 +269,6 @@ class ListingCard extends Component {
                             Close
                         </Button>
                     </Modal.Footer>
-
                 </Modal>
             </div>
         );
