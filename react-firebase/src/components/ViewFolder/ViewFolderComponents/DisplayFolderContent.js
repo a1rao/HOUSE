@@ -37,31 +37,16 @@ class DisplayFolderContent extends Component{
         // Make sure component one mounting
         if(this.state.done === 0){
             console.log("IS 0");
-            return <div />
-        }
-
-        else {
-            // display each listing in folder TODO
-            // allListings is a list of saved listings in the user'showScraping folder
-            // ERROR: only displays most recent listing with the className: "thumbnail"
-
-            console.log("render all ids", this.state.allIDs);
-            console.log("render each listing", this.state.eachListing);
-            const allListings = this.state.eachListing.map((listing) =>
-                <div className="thumbnail">
-                    <p>url: {listing.url}</p>
-                    <p>price: {listing.price}</p>
-                    <p>address: {listing.address}</p>
-                </div>
-            );
-        console.log("allList", allListings);
-
             return (
                 <div>
                     <p>Loading...</p>
                 </div>
-            );}
+            );
+        }
 
+        // display each listing in folder TODO
+        // allListings is a list of saved listings in the user'showScraping folder
+        // ERROR: only displays most recent listing with the className: "thumbnail"
 
         const thumbnails = this.state.eachListing.map((listing) =>
             <div>
