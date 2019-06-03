@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2592616e-3d7d-4baf-b3f5-cb40db4e0775" name="Default Changelist" comment="" />
+    <list default="true" id="2592616e-3d7d-4baf-b3f5-cb40db4e0775" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +45,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
+            <state relative-caret-position="265">
               <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -82,7 +84,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/index.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Listings/Listing Card/ListingCard.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
@@ -98,6 +100,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>console</find>
+      <find>allFolders</find>
+      <find>showFolders</find>
+      <find>handleShowC</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,22 +188,14 @@
               <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ViewFolder" type="462c0819:PsiDirectoryNode" />
-              <item name="ViewFolderComponents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Main_Scraper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,10 +238,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35975000" />
+    <option name="totallyTimeSpent" value="35805000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -258,7 +255,7 @@
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Messages" order="3" />
       <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="5" sideWeight="0.496063" visible="true" weight="0.23925501" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="5" sideWeight="0.496063" visible="true" weight="0.27168575" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.36103153" />
       <window_info anchor="bottom" id="Run" order="8" />
@@ -342,13 +339,16 @@
     <entry file="file://$PROJECT_DIR$/src/components/Listings/ListThumbnail/ListThumbnail.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Register/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -365,10 +365,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        <state>
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -437,7 +436,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Listings/Listing Card/ListingCard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-436">
           <caret line="57" selection-start-line="57" selection-end-line="57" />
@@ -459,7 +458,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
+        <state relative-caret-position="265">
           <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />

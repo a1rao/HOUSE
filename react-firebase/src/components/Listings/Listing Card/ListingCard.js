@@ -7,6 +7,8 @@ import saveData from '../../Backend/Database/SaveToDb.js';
 import fetchData from '../../Backend/Database/GetFromDb';
 import NavDropdown from "react-bootstrap/NavDropdown";
 import {forEach} from "react-bootstrap/es/utils/ElementChildren";
+import './ListingCard.css';
+import Form from 'react-bootstrap/Form';
 
 
 
@@ -58,6 +60,13 @@ class ListingCard extends Component {
         event.preventDefault();
         this.setState({url:event.target.value})
     };
+
+    readFolder = async event => {
+        event.preventDefault();
+        this.setState({folder: event.target.value})
+
+        console.log("Folder name: " + this.state.folder)
+    }
 
     handleClose() {
         this.setState({ showMain: false });
@@ -131,6 +140,12 @@ class ListingCard extends Component {
     //     this.setState({description: listInfo.description});
     //
     // }
+    handleNewFolder = async event => {
+        saveData.saveListing(this.state.folder, l.url, l);
+        this.handleCloseFolders();
+        this.handleShowConfirm();
+
+    }
 
     handleScrape = async event => {
             var that = this;
@@ -221,7 +236,7 @@ class ListingCard extends Component {
                             Close
                         </Button>
                         <Button variant="primary" onClick= {this.handleSave}>
-                            Save Changes
+                            Save Listing
                         </Button>
                     </Modal.Footer>
                 </Modal>
@@ -231,6 +246,15 @@ class ListingCard extends Component {
                     </Modal.Header>
                     <Modal.Body>
                         {allFolders}
+                        <br/>
+                        <div className="searchBarWrap">
+                            <Form inline>
+                                <FormControl  className = "newFolder" type="text" name="folder" placeholder="Create a new folder" onChange={this.readFolder}/>
+                                <Button variant="outline-success" onClick={this.handleNewFolder}>
+                                    Save
+                                </Button>
+                            </Form>
+                        </div>
                     </Modal.Body>
                 </Modal>
                 <Modal show ={this.state.showConfirm} onHide={this.handleCloseConfirm}>
@@ -253,5 +277,4 @@ class ListingCard extends Component {
 
 
 }
-
 export default ListingCard;
