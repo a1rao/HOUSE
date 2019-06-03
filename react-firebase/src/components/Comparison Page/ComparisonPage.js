@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 import Table from 'react-bootstrap/Table';
 import NavigationBar from '../NavigationBar/NavigationBar';
-import Table1 from './List Table 1/Table1';
-import Table2 from './List Table 2/Table2';
-import Table3 from './List Table 3/Table3';
-import Table4 from './List Table 4/Table4';
 import './ComparisonPage.css';
 import Button from "react-bootstrap/Button";
 import fetchData from "../Backend/Database/GetFromDb";
