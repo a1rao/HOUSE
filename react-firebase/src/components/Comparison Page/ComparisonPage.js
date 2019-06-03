@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
 import Table from 'react-bootstrap/Table';
-import '../NavigationBar/NavigationBar.js';
+import '../house/react-firebase/src/components/NavigationBar/NavigationBar.js';
 import NavigationBar from "../NavigationBar/NavigationBar";
-import Button from 'react-bootstrap/Button';
-import Dropdown from 'react-bootstrap/Dropdown';
+import Table1 from './List Table 1/Table1';
+import Table2 from './List Table 2/Table2';
+import Table3 from './List Table 3/Table3';
+import Table4 from './List Table 4/Table4';
 import './ComparisonPage.css';
+
 
 class ComparisonPage extends Component {
 
@@ -72,8 +75,6 @@ class ComparisonPage extends Component {
 
     render() {
 
-        console.log("render compare page");
-
         return (
 
             <div>
@@ -83,11 +84,13 @@ class ComparisonPage extends Component {
                 <Table striped bordered hover size="lg">
                     <thead>
                     <tr>
+
                         <th>Key</th>
-                        <th><Button variant="success">Add New Listing</Button></th>
-                        <th><Button variant="success">Add New Listing</Button></th>
-                        <th><Button variant="success">Add New Listing</Button></th>
-                        <th><Button variant="success">Add New Listing</Button></th>
+                        <th><Table1 /></th>
+                        <th><Table2 /></th>
+                        <th><Table3 /></th>
+                        <th><Table4 /></th>
+
                     </tr>
                     </thead>
                     <tbody>
