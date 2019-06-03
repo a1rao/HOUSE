@@ -36,8 +36,10 @@ const func = {
         this.state.allIDs.forEach(id => {
               app.database().ref('listings/' + id).on('value', dataSnapshot => {
                   let listing = dataSnapshot.val();
-                  items.push(listing);
-                  console.log('push:', listing);
+                  if (listing != null) { // Ignore null listings aka 'listing1' ;)
+                      items.push(listing);
+                      console.log('push:', listing);
+                  }
               });
         });
         setTimeout(function() {
