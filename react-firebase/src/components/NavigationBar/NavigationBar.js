@@ -10,6 +10,7 @@ import './NavigationBar.css';
 import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
 import fetchData from '../Backend/Database/GetFromDb.js';
 import ListingCard from '../Listings/Listing Card/ListingCard';
+import DisplayFolderContents from '../ViewFolder/index.js';
 
 
 class NavigationBar extends Component {
@@ -22,7 +23,10 @@ class NavigationBar extends Component {
             firstName:'',
             lastName:'',
             folders: [],
-            url:''
+            url:'',
+            allIDs: null,
+            eachListing: null,
+            done: 0,
         };
 
         // Get user first and last name from database
@@ -61,7 +65,9 @@ class NavigationBar extends Component {
     render() {
         // Create new drop down element for each folder
         const allFolders = this.state.folders.map((eachFolder) =>
-            <NavDropdown.Item href="/folderView">{eachFolder}</NavDropdown.Item>
+            <NavDropdown.Item href='/folderView'>
+                {eachFolder}
+            </NavDropdown.Item>
         );
 
         return (
@@ -73,7 +79,7 @@ class NavigationBar extends Component {
                         <Nav className="mr-auto">
                             <Nav.Link href="/">Home</Nav.Link>
                             <Nav.Link href="/compare">Compare</Nav.Link>
-                            <NavDropdown title="My Folders" id="basic-nav-dropdown">
+                            <NavDropdown title="My Folders" id="basic-nav-dropdown" role="button">
                                 {allFolders}
                                 <NavDropdown.Divider />
                                 <AddNewFolder />
@@ -106,5 +112,7 @@ class NavigationBar extends Component {
 /*<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>*/
+
+//eventKey={eachFolder} onSelect={k => this.handleSelect(k)}
 
 export default NavigationBar;

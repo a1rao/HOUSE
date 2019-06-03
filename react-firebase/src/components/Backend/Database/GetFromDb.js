@@ -29,19 +29,20 @@ const func = {
     },
 
     // Get each listing info
-    getAllListings: function()
+    getAllListings: function(cb)
     {
     let items = [];
     //console.log("allIDs:", this.state.allIDs);
     this.state.allIDs.forEach(id => {
-        app.database().ref('listings/' + id).on('value', dataSnapshot => {
+          app.database().ref('listings/' + id).on('value', dataSnapshot => {
             let listing = dataSnapshot.val();
             items.push(listing);
-            //console.log("info:", listing);
         });
     });
-    this.setState({'eachListing': items});
-    this.setState({'done' : true});
+    this.setState({eachListing: items});
+    console.log("eachlisting in db:", this.state.eachListing[0]);
+    this.setState({done : true});
+    return items;
     },
 
     // Get user first and last name
