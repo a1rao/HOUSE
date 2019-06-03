@@ -44,7 +44,7 @@ const func = {
             console.log("eachlisting in db:", items);
             this.setState({eachListing: items});
             this.setState({done : true});
-        }.bind(this), 20*this.state.allIDs.length)
+        }.bind(this), 50*this.state.allIDs.length)
 
     },
 
