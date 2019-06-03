@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2592616e-3d7d-4baf-b3f5-cb40db4e0775" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/components/Comparison Page/List Table 1/Table1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Comparison Page/List Table 1/Table1.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" afterDir="false" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,6 +24,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/components/Home/HomeView.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -48,15 +53,28 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="969">
               <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="38" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.js">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1071">
               <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+=======
+            <state relative-caret-position="311">
+              <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -64,10 +82,17 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-368">
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -75,23 +100,57 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Comparison Page/List Table 1/Table1.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="68" column="24" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-436">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
+<<<<<<< HEAD
+=======
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.css">
+          <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Listings/Listing Card/ListingCard.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+=======
+            <state relative-caret-position="165">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -121,11 +180,14 @@
         <option value="$PROJECT_DIR$/src/Main_Scraper/Trulia.js" />
         <option value="$PROJECT_DIR$/src/Main_Scraper/Rent.js" />
         <option value="$PROJECT_DIR$/src/components/ViewFolder/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Listings/ListThumbnail/ListThumbnail.js" />
         <option value="$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeView.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js" />
+        <option value="$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.js" />
         <option value="$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js" />
         <option value="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Comparison Page/List Table 1/Table1.js" />
@@ -137,6 +199,15 @@
     <option name="y" value="-11" />
     <option name="width" value="1366" />
     <option name="height" value="768" />
+=======
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1366" />
+    <option name="height" value="745" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -167,6 +238,7 @@
               <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="Backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -212,8 +284,9 @@
               <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
               <item name="Listings" type="462c0819:PsiDirectoryNode" />
-              <item name="ListThumbnail" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
@@ -255,8 +328,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -282,12 +358,16 @@
       <updated>1559175726525</updated>
       <workItem from="1559175728698" duration="2561000" />
       <workItem from="1559190063125" duration="495000" />
-      <workItem from="1559419555385" duration="14031000" />
+      <workItem from="1559419555385" duration="27463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="21619000" />
+=======
+    <option name="totallyTimeSpent" value="35805000" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -297,7 +377,11 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.501006" side_tool="true" weight="0.20468278" />
       <window_info id="Designer" order="4" />
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49899396" visible="true" weight="0.17246597" />
+=======
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49899396" visible="true" weight="0.168429" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
       <window_info id="Structure" order="6" sideWeight="0.501006" side_tool="true" weight="0.20468278" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.503937" side_tool="true" weight="0.28796563" />
@@ -328,9 +412,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -389,6 +470,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Listings/ListThumbnail/ListThumbnail.css">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
@@ -396,6 +478,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Register/index.js">
+=======
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -414,10 +498,17 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/Listings/ListThumbnail/ListThumbnail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -433,6 +524,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/Listings/ListThumbnail/ListThumbnail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
@@ -444,55 +536,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
           <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/Listings/Listing Card/ListingCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="99" column="32" lean-forward="true" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeView.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="187">
           <caret line="65" selection-start-line="65" selection-end-line="65" />
+=======
+        <state relative-caret-position="400">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-368">
+=======
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -501,18 +634,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Listings/Listing Card/ListingCard.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state>
           <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+=======
+        <state relative-caret-position="-436">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/Comparison Page/List Table 1/Table1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="68" column="24" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

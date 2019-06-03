@@ -16,11 +16,11 @@ class Table4 extends Component {
     }
 
     handleClose() {
-        this.setState({ show: false });
+        this.setState({ showMain: false });
     }
 
     handleShow() {
-        this.setState({ show: true });
+        this.setState({ showMain: true });
     }
 
     render() {
@@ -29,7 +29,7 @@ class Table4 extends Component {
                 <Button variant="primary" onClick={this.handleShow}> Add New Listing
                 </Button>
 
-                <Modal show={this.state.show} onHide={this.handleClose}>
+                <Modal show={this.state.showMain} onHide={this.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>Table {this.state.tableNumber}</Modal.Title>
                     </Modal.Header>

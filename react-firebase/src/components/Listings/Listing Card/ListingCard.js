@@ -7,6 +7,8 @@ import saveData from '../../Backend/Database/SaveToDb.js';
 import fetchData from '../../Backend/Database/GetFromDb';
 import NavDropdown from "react-bootstrap/NavDropdown";
 import {forEach} from "react-bootstrap/es/utils/ElementChildren";
+import './ListingCard.css';
+import Form from 'react-bootstrap/Form';
 
 
 
@@ -25,10 +27,10 @@ class ListingCard extends Component {
         this.handleClose = this.handleClose.bind(this);
 
         this.state = {
-            show: false,
+            showMain: false,
             showFolders: false,
-            c: false,
-            s: false,
+            showConfirm: false,
+            showScraping: false,
             folders: [],
             folder:'',
             url:'',
@@ -59,12 +61,19 @@ class ListingCard extends Component {
         this.setState({url:event.target.value})
     };
 
+    readFolder = async event => {
+        event.preventDefault();
+        this.setState({folder: event.target.value})
+
+        console.log("Folder name: " + this.state.folder)
+    }
+
     handleClose() {
-        this.setState({ show: false });
+        this.setState({ showMain: false });
     }
 
     handleShow() {
-        this.setState({ show: true });
+        this.setState({ showMain: true });
         this.handleC();
     }
     handleSave = async event =>  {
@@ -80,7 +89,7 @@ class ListingCard extends Component {
         // });
     }
     handleCloseFolders = async event => {
-        this.handleShowConfirm();
+
         this.setState({showFolders: false})
 
     }
@@ -90,25 +99,26 @@ class ListingCard extends Component {
         console.log("In push")
         console.log(folder);
         this.handleCloseFolders();
+        this.handleShowConfirm();
     }
     handleS = async event => {
-        this.setState({s: true})
+        this.setState({showScraping: true})
 
         setTimeout(this.handleShow, 5000);
 
     }
     handleC = async event => {
-        this.setState({s: false})
+        this.setState({showScraping: false})
     }
 
     handleCloseConfirm = async event => {
-        this.setState({c: false})
+        this.setState({showConfirm: false})
         console.log("i shouldnt be here")
     }
 
     handleShowConfirm = async event => {
 
-        this.setState({c: true })
+        this.setState({showConfirm: true })
         console.log("i am here")
     }
 
@@ -130,6 +140,12 @@ class ListingCard extends Component {
     //     this.setState({description: listInfo.description});
     //
     // }
+    handleNewFolder = async event => {
+        saveData.saveListing(this.state.folder, l.url, l);
+        this.handleCloseFolders();
+        this.handleShowConfirm();
+
+    }
 
     handleScrape = async event => {
             var that = this;
@@ -183,13 +199,13 @@ class ListingCard extends Component {
                 <Button variant="outline-success" onClick={this.handleScrape}>
                     Search
                 </Button>
-                <Modal show={this.state.s} onHide = {this.handleC}>
+                <Modal show={this.state.showScraping} onHide = {this.handleC}>
                     <Modal.Header/>
                     <Modal.Title>Scraping...</Modal.Title>
                     <Modal.Body></Modal.Body>
                 </Modal>
 
-                <Modal show={this.state.show} onHide={this.handleClose}>
+                <Modal show={this.state.showMain} onHide={this.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>{this.state.title}</Modal.Title>
                     </Modal.Header>
@@ -230,9 +246,18 @@ class ListingCard extends Component {
                     </Modal.Header>
                     <Modal.Body>
                         {allFolders}
+                        <br/>
+                        <div className="searchBarWrap">
+                            <Form inline>
+                                <FormControl  className = "newFolder" type="text" name="folder" placeholder="Create a new folder" onChange={this.readFolder}/>
+                                <Button variant="outline-success" onClick={this.handleNewFolder}>
+                                    Save
+                                </Button>
+                            </Form>
+                        </div>
                     </Modal.Body>
                 </Modal>
-                <Modal show ={this.state.c} onHide={this.handleCloseConfirm}>
+                <Modal show ={this.state.showConfirm} onHide={this.handleCloseConfirm}>
                     <Modal.Header closeButton>
                         <Modal.Title>Listing Saved</Modal.Title>
                     </Modal.Header>

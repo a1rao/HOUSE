@@ -25,7 +25,7 @@ class Table1 extends Component {
     }
 
     handleClose() {
-        this.setState({ show: false });
+        this.setState({ showMain: false });
     }
 
     handleCloseFolders= async event=>{
@@ -33,6 +33,7 @@ class Table1 extends Component {
     }
 
     handleShow() {
+<<<<<<< HEAD
         this.setState({ show: true });
 
     }
@@ -43,6 +44,9 @@ class Table1 extends Component {
             <Button variant="outline-success" onClick={() => this.handlePush(eachFolder)}>{eachFolder}</Button>
         );
         allFolders = all;
+=======
+        this.setState({ showMain: true });
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
     }
 
 
@@ -53,6 +57,7 @@ class Table1 extends Component {
                 <Button variant="primary" onClick={this.handleChooseFolders}> Add New Listing
                 </Button>
 
+<<<<<<< HEAD
                 {/*<Modal show={this.state.show} onHide={this.handleClose}>*/}
                 {/*    <Modal.Header closeButton>*/}
                 {/*        <Modal.Title>Table {this.state.tableNumber}</Modal.Title>*/}
@@ -60,6 +65,9 @@ class Table1 extends Component {
                 {/*</Modal>*/}
 
                 <Modal show={this.state.showFolders} onHide={this.handleCloseFolders}>
+=======
+                <Modal show={this.state.showMain} onHide={this.handleClose}>
+>>>>>>> a0fa4313e8710401c1b506413f26f7a32d1b30af
                     <Modal.Header closeButton>
                         <Modal.Title>Select a Folder</Modal.Title>
                     </Modal.Header>
