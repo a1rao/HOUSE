@@ -3,10 +3,16 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import NavigationBar from '../../NavigationBar/NavigationBar';
 import FormControl from "react-bootstrap/FormControl";
+import saveData from '../../Backend/Database/SaveToDb.js';
+import fetchData from '../../Backend/Database/GetFromDb';
+import NavDropdown from "react-bootstrap/NavDropdown";
+import {forEach} from "react-bootstrap/es/utils/ElementChildren";
+
 
 const scrape = require('../../../Main_Scraper/scrape');
 
-
+var l = '';
+var allFolders = '';
 class ListingCard extends Component {
 
     constructor(props, context) {
@@ -17,6 +23,10 @@ class ListingCard extends Component {
 
         this.state = {
             show: false,
+            showFolders: false,
+            s: false,
+            folders: [],
+            folder:'',
             url:'',
             image: '',
             title: '',
@@ -36,6 +46,8 @@ class ListingCard extends Component {
             pet: '',
             description: '',
         };
+        let getFolders = fetchData.getFolderNames.bind(this);
+        getFolders();
     }
 
     readURL = async event => {
@@ -50,6 +62,29 @@ class ListingCard extends Component {
     handleShow() {
         this.setState({ show: true });
     }
+    handleSave = async event =>  {
+        this.handleClose();
+        this.setState({showFolders: true});
+        const all = this.state.folders.map((eachFolder) =>
+            <Button variant="outline-success" onClick={() => this.handlePush(eachFolder)}>{eachFolder}</Button>
+        );
+        allFolders = all;
+
+        // this.state.folders.forEach( function(element) {
+        //     <Button>{element}</Button>
+        // });
+    }
+    handleCloseFolders = async event => {
+        this.setState({showFolders: false})
+    }
+    handlePush = async (folder) =>  {
+
+        saveData.saveListing(folder, l.url, l);
+        console.log("In push")
+        console.log(folder);
+    }
+
+
 
     // updateListingInfo(listInfo) {
     //
@@ -95,16 +130,23 @@ class ListingCard extends Component {
                         that.setState({smoking: listingInfo.smoking});
                         that.setState({pet: listingInfo.pet});
                         that.setState({description: listingInfo._description});
-                    }
 
-                    ,4000);
+                        l = listingInfo;
+
+                        console.log(l)
+                        console.log(listingInfo)
+
+                    },4000);
 
             }
 
             setTimeout(that.handleShow, 5000);
     };
 
-    render() {
+    render(){
+
+
+
         return (
             <div>
                 <FormControl type="text" name="url" placeholder="Enter Listing URL" onChange={this.readURL} className="mr-sm-2"/>
@@ -112,7 +154,6 @@ class ListingCard extends Component {
                 <Button variant="outline-success" onClick={this.handleScrape}>
                     Search
                 </Button>
-
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>{this.state.title}</Modal.Title>
@@ -143,10 +184,18 @@ class ListingCard extends Component {
                         <Button variant="secondary" onClick={this.handleClose}>
                             Close
                         </Button>
-                        <Button variant="primary" onClick={this.handleClose}>
+                        <Button variant="primary" onClick= {this.handleSave}>
                             Save Changes
                         </Button>
                     </Modal.Footer>
+                </Modal>
+                <Modal show={this.state.showFolders} onHide={this.handleCloseFolders}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Select a Folder</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        {allFolders}
+                    </Modal.Body>
                 </Modal>
             </div>
         );

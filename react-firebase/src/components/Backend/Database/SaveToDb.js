@@ -12,9 +12,8 @@ import app from "../../../base";
 const func = {
 
     // Save scraped data from listing to database
-    saveListing: function(selectedFolder, url){
+    saveListing: function(selectedFolder, url, l){
 
-        selectedFolder = "TEST"; // Change this when done testing
         // Push listing to folder specified by folder
         var uid = app.auth().currentUser.uid;
         var databaseref = app.database().ref('users/' + uid + '/folders/' + selectedFolder);
@@ -23,12 +22,8 @@ const func = {
 
         // Add listing to "listings" table
         databaseref = app.database().ref('listings/');
-        databaseref.child(listingKey).set({
-            'url' : url,
-            'price': 0,
-            'address': ""
-
-        });
+        databaseref.child(listingKey).set(l);
+        console.log("saving");
 
 
     }

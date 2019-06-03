@@ -38,7 +38,7 @@ const func = {
         app.database().ref('listings/' + id).on('value', dataSnapshot => {
             let listing = dataSnapshot.val();
             items.push(listing);
-            console.log("info:", listing);
+            //console.log("info:", listing);
         });
     });
     this.setState({'eachListing': items});

@@ -20,9 +20,8 @@ class HomeView extends Component {
                 {/*Code for adding a new listing. */}
                 <AddNewURL/>
 
-                {/*Code for the list thumbnail.*/}
-                <ListThumbnail />
-
+                {/*Code for the list thumbnail.
+                    <ListThumbnail/>*/}
                 {/*Test ViewFolder
                 <ViewFolder/>*/}
 
