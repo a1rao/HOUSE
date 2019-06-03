@@ -20,10 +20,12 @@ class DisplayFolderContent extends Component{
         this.state = {
             showLoading: true,
             showListing: false,
+            showColumn: false,
             allIDs: null,
             eachListing: null,
             l: '',
             done: 0,
+            column:'',
         };
 
         // Get listing id'showScraping
@@ -36,6 +38,12 @@ class DisplayFolderContent extends Component{
         this.handleCloseLoading = this.handleCloseLoading.bind(this);
         this.printListing = this.printListing.bind(this);
         this.handleCloseListing = this.handleCloseListing.bind(this);
+        this.handleCloseColumn = this.handleCloseColumn.bind(this);
+        this.handleShowColumn = this.handleShowColumn.bind(this);
+        this.setColumn1 = this.setColumn1.bind(this);
+        this.setColumn2 = this.setColumn2.bind(this);
+        this.setColumn3 = this.setColumn3.bind(this);
+        this.setColumn4 = this.setColumn4.bind(this);
         //this.formatListing = this.formatListing.bind(this);
         // Make second function call after the first one is done
         first(second,"TEST");
@@ -50,11 +58,36 @@ class DisplayFolderContent extends Component{
         this.setState( {showListing: false })
     }
 
+    handleCloseColumn() {
+        this.setState( {showColumn: false})
+    }
+
     printListing(listing){
         this.setState({showListing: true})
        // console.log("DS JVSONVISNDOViNSOIDNVIOSNVD: "+ event)
         this.setState({l : listing})
     }
+    handleShowColumn() {
+        this.setState({showColumn: true})
+        this.handleCloseListing();
+    }
+    setColumn1() {
+        this.setState({column: 1})
+        this.handleCloseColumn();
+    }
+    setColumn2() {
+        this.setState({column: 2})
+        this.handleCloseColumn();
+    }
+    setColumn3() {
+        this.setState({column: 3})
+        this.handleCloseColumn();
+    }
+    setColumn4() {
+        this.setState({column: 4})
+        this.handleCloseColumn();
+    }
+
 
 
     render(){
@@ -137,17 +170,27 @@ class DisplayFolderContent extends Component{
                         <br/>
                         Description: {this.state.l._description}
                         <br/>
-
-
+                        <br/>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.handleCloseListing}>
                             Close
                         </Button>
-                        <Button variant = "primary" onClick ={this.handleCloseListing}>
-                            Add TO Compare Table
+                        <Button variant = "primary" onClick ={this.handleShowColumn}>
+                            Add To Compare Table
                         </Button>
                     </Modal.Footer>
+                </Modal>
+                <Modal show ={this.state.showColumn} onHide={this.handleCloseColumn}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Select a Column</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <Button onClick={this.setColumn1}> Column 1</Button>
+                        <Button onClick={this.setColumn2}> Column 2</Button>
+                        <Button onClick={this.setColumn3}> Column 3</Button>
+                        <Button onClick={this.setColumn4}> Column 4</Button>
+                    </Modal.Body>
                 </Modal>
 
             </div>
