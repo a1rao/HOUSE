@@ -5,7 +5,7 @@ module.exports = async function scrape(url) {
     // var ret1 = await main('https://www.rent.com/california/la-jolla-houses/8891-nottingham-pl-4-r2978423');
 
     let ret = await new Main_Scraper();
-    setTimeout(function(){},5000)
+    // setTimeout(function(){},5000)
     await ret.scrape(url);
     // var ret3 = await main('https://www.rent.com/california/la-jolla-apartments/solazzo-apartment-homes-4-427067');
     // var ret4 = await main('https://www.rent.com/california/san-diego-apartments/olympus-corsair-4-100048895');
@@ -23,7 +23,7 @@ module.exports = async function scrape(url) {
     // var ret4 = await main('https://www.trulia.com/p/ca/la-jolla/2342-via-siena-la-jolla-ca-92037--1011677623');
     // var ret5 = await main('https://www.trulia.com/c/ca/la-jolla/elan-beachcomber-8115-el-paseo-grande-la-jolla-ca-92037--1136376307');
 
-    setTimeout(printl, 5000);
+    // setTimeout(printl, 2000);
 
     //setTimeout(() => {
     function printl() {
@@ -51,6 +51,12 @@ module.exports = async function scrape(url) {
         console.log("------------------------- parking --------------- " + ret.l.parking);
         console.log("------------------------- lease_period --------------- " + ret.l.lease_period);
         console.log("------------------------- description --------------- " + ret.l.description);
+
+
+        console.log("\n\n---------------------- THIS JUST IN ---------------------\n")
+        console.log("------------------------- Distance to Campus -----------------" + ret.l.distance_to_campus);
+        console.log("------------------------- Travel Time by Bus -----------------" + ret.l.travel_time);
+        console.log("------------------------- Nearby Grocery Stores ----------------\n" + ret.l.grocery_stores);
 
     }
 

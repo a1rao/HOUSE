@@ -1,6 +1,3 @@
-//const distanceToCampus = require('./testMapScrapper.js');
-
-const map_scrape = require('./mapScraper.js');
 module.exports = async function scrapeRent(url, l)  {
     //console.log("entered function srapeRent " + new Date().getTime())
     const rp = require('request-promise');
@@ -9,7 +6,7 @@ module.exports = async function scrapeRent(url, l)  {
     //var l = new Listing(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
     //console.log("calling function rp at " + new Date().getTime())
 
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    const proxyurl = ""; //https://cors-anywhere.herokuapp.com/";
     await rp(proxyurl + url)
         .then(function(html) {
             //console.log("entered .then() of rp at " + new Date().getTime())
@@ -126,11 +123,6 @@ module.exports = async function scrapeRent(url, l)  {
         .catch(function(err) {
             console.log(err);
         });
-     //await map_scrape.distance('University of California San Diego', l.address,l);
-    //
-     //await map_scrape.getPhoto(l.address, l);
-
-    //console.log("finished executing function scrapeRent at " + new Date().getTime())
 };
 
 //scrape('https://www.rent.com/california/la-jolla-houses/8891-nottingham-pl-4-r2978423https://www.rent.com/california/la-jolla-houses/8891-nottingham-pl-4-r2978423')
