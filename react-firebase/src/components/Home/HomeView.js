@@ -17,10 +17,6 @@ class HomeView extends Component {
                 {/*Navigation bar at the top of the screen. */}
                 <NavigationBar/>
 
-                {/*Code for adding a new listing. */}
-                <AddNewURL/>
-
-
                 {/*Code for the list thumbnail.
                     <ListThumbnail/>*/}
               {/*Test list thumbnail.

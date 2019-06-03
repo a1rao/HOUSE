@@ -34,7 +34,7 @@ module.exports = class Main_Scraper {
         // });
         //
         // let data;
-        // await readline.question(`Input the Listing's link here: `, (data) => {
+        // await readline.question(`Input the Listing'showScraping link here: `, (data) => {
         //     data = data;
         //     console.log(`Input Data:  ${data}!`)
         //     readline.close()

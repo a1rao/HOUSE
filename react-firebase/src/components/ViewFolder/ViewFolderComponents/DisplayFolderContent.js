@@ -21,7 +21,7 @@ class DisplayFolderContent extends Component{
             'done': 0
         };
 
-        // Get listing id's
+        // Get listing id'showScraping
 
         let first = fetchData.getIDs.bind(this);
 
@@ -43,7 +43,7 @@ class DisplayFolderContent extends Component{
 
         else {
             // display each listing in folder TODO
-            // allListings is a list of saved listings in the user's folder
+            // allListings is a list of saved listings in the user'showScraping folder
             // ERROR: only displays most recent listing with the className: "thumbnail"
 
             console.log("render all ids", this.state.allIDs);

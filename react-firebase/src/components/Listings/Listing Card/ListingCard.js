@@ -25,10 +25,10 @@ class ListingCard extends Component {
         this.handleClose = this.handleClose.bind(this);
 
         this.state = {
-            show: false,
+            showMain: false,
             showFolders: false,
-            c: false,
-            s: false,
+            showConfirm: false,
+            showScraping: false,
             folders: [],
             folder:'',
             url:'',
@@ -60,11 +60,11 @@ class ListingCard extends Component {
     };
 
     handleClose() {
-        this.setState({ show: false });
+        this.setState({ showMain: false });
     }
 
     handleShow() {
-        this.setState({ show: true });
+        this.setState({ showMain: true });
         this.handleC();
     }
     handleSave = async event =>  {
@@ -80,7 +80,7 @@ class ListingCard extends Component {
         // });
     }
     handleCloseFolders = async event => {
-        this.handleShowConfirm();
+
         this.setState({showFolders: false})
 
     }
@@ -90,25 +90,26 @@ class ListingCard extends Component {
         console.log("In push")
         console.log(folder);
         this.handleCloseFolders();
+        this.handleShowConfirm();
     }
     handleS = async event => {
-        this.setState({s: true})
+        this.setState({showScraping: true})
 
         setTimeout(this.handleShow, 5000);
 
     }
     handleC = async event => {
-        this.setState({s: false})
+        this.setState({showScraping: false})
     }
 
     handleCloseConfirm = async event => {
-        this.setState({c: false})
+        this.setState({showConfirm: false})
         console.log("i shouldnt be here")
     }
 
     handleShowConfirm = async event => {
 
-        this.setState({c: true })
+        this.setState({showConfirm: true })
         console.log("i am here")
     }
 
@@ -183,13 +184,13 @@ class ListingCard extends Component {
                 <Button variant="outline-success" onClick={this.handleScrape}>
                     Search
                 </Button>
-                <Modal show={this.state.s} onHide = {this.handleC}>
+                <Modal show={this.state.showScraping} onHide = {this.handleC}>
                     <Modal.Header/>
                     <Modal.Title>Scraping...</Modal.Title>
                     <Modal.Body></Modal.Body>
                 </Modal>
 
-                <Modal show={this.state.show} onHide={this.handleClose}>
+                <Modal show={this.state.showMain} onHide={this.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>{this.state.title}</Modal.Title>
                     </Modal.Header>
@@ -232,7 +233,7 @@ class ListingCard extends Component {
                         {allFolders}
                     </Modal.Body>
                 </Modal>
-                <Modal show ={this.state.c} onHide={this.handleCloseConfirm}>
+                <Modal show ={this.state.showConfirm} onHide={this.handleCloseConfirm}>
                     <Modal.Header closeButton>
                         <Modal.Title>Listing Saved</Modal.Title>
                     </Modal.Header>

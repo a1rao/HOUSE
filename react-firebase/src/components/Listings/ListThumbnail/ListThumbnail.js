@@ -16,7 +16,7 @@
 {/*//             'eachListing' : []*/}
 {/*//         };*/}
 {/*//*/}
-{/*//         // Get listing id's*/}
+{/*//         // Get listing id'showScraping*/}
 {/*//*/}
 {/*//         let first = fetchData.getIDs.bind(this);*/}
 {/*//*/}
@@ -83,7 +83,7 @@
 {/*            'eachListing' : []*/}
 {/*        };*/}
 
-{/*        // Get listing id's*/}
+{/*        // Get listing id'showScraping*/}
 
 {/*        let first = fetchData.getIDs.bind(this);*/}
 
@@ -102,7 +102,7 @@
 
 {/*    render(){*/}
 {/*        // display each listing in folder TODO*/}
-{/*        // allListings is a list of saved listings in the user's folder*/}
+{/*        // allListings is a list of saved listings in the user'showScraping folder*/}
 {/*        // ERROR: only displays most recent listing with the className: "thumbnail"*/}
 {/*        const allListings = this.state.eachListing.map((listing) =>*/}
 {/*            <div>*/}

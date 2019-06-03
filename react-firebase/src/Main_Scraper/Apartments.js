@@ -88,7 +88,7 @@ module.exports = async function scrapeApartments(url, l)  {
             l.contact_number = $('#modalContactLead .contactPhone', html).text();
 
             var pets = $('[class=petPolicyDetails]', html).text().split("\n");
-            // replace(/\s\s/g, "");
+            // replace(/\showScraping\showScraping/g, "");
 
             // console.log(pets);
             // console.log("AFTER\n");
