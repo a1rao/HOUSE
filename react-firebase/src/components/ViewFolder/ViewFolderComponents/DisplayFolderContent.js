@@ -3,6 +3,7 @@ import app from "../../../base";
 import ListThumbnail from '../../Listings/ListThumbnail/ListThumbnail.js'
 import '../../Listings/ListThumbnail/ListThumbnail.css';
 import fetchData from "../../Backend/Database/GetFromDb";
+import saveData from "../../Backend/Database/SaveToDb"
 import NavigationBar from "../../NavigationBar/NavigationBar";
 import Modal from 'react-bootstrap/Modal';
 import Button from "react-bootstrap/Button";
@@ -23,7 +24,7 @@ class DisplayFolderContent extends Component{
             allIDs: null,
             eachListing: null,
             l: '',
-            done: 0,
+            done: 0
         };
 
         // Get listing id'showScraping
@@ -54,6 +55,11 @@ class DisplayFolderContent extends Component{
         this.setState({showListing: true})
        // console.log("DS JVSONVISNDOViNSOIDNVIOSNVD: "+ event)
         this.setState({l : listing})
+    }
+
+    deleteListing = event => {
+        saveData.removeListing("TEST", this.state.l);
+        this.handleCloseListing();
     }
 
 
@@ -137,15 +143,17 @@ class DisplayFolderContent extends Component{
                         <br/>
                         Description: {this.state.l._description}
                         <br/>
-
-
                     </Modal.Body>
+
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.handleCloseListing}>
                             Close
                         </Button>
                         <Button variant = "primary" onClick ={this.handleCloseListing}>
                             Add TO Compare Table
+                        </Button>
+                        <Button variant="primary" onClick ={this.deleteListing}>
+                            Remove from Folder
                         </Button>
                     </Modal.Footer>
                 </Modal>
