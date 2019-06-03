@@ -33,10 +33,12 @@ module.exports = async function scrapeRentals(url, l) {
             l.bed = $('span[data-tid=bed_bath_section]', html).text().split(',', 2);
             l.bath = l.bed[1];
             l.bed = l.bed[0];
-            l.int_bed = l.bed.split('-', 1)[0].replace(/[^0-9.Studio]/g, "");;
-            if(l.int_bed === "Studio" )  {
+
+            l.int_bed = l.bed.split('-', 1)[0].replace(/[^0-9.]/g, "");;
+            if(l.int_bed === "" )  {
                 l.int_bed = 0;
             }
+            console.log("Before converting bed count to int we have: " + l.int_bed);
             l.int_bed = Number(l.int_bed);
             l.int_bath = Number(l.bath.split('-',1)[0].replace(/[^0-9.]/g, ""));
             l.area =  $('.kYOWw', html).text().replace('•', "").trim();
