@@ -13,36 +13,39 @@ const func = {
     // Get IDs of saved listings in
     getIDs: function(cb)
     {
-    let uid = app.auth().currentUser.uid;
-    let databaseref = app.database().ref('users/' + uid + '/folders/' + 'TEST')
-    databaseref.on('value', dataSnapshot => {
-        let items = [];
-        dataSnapshot.forEach(childSnapshot => {
-            let item = childSnapshot.key;
-            items.push(item);
-        });
-        this.setState({'allIDs': items});
-        // Callback function
-        cb();
+        let uid = app.auth().currentUser.uid;
+        let databaseref = app.database().ref('users/' + uid + '/folders/' + 'TEST')
+        databaseref.on('value', dataSnapshot => {
+            let items = [];
+            dataSnapshot.forEach(childSnapshot => {
+                let item = childSnapshot.key;
+                items.push(item);
+            });
+            this.setState({'allIDs': items});
+            // Callback function
+            cb();
 
-    });
+        });
     },
 
     // Get each listing info
     getAllListings: function(cb)
     {
-    let items = [];
-    //console.log("allIDs:", this.state.allIDs);
-    this.state.allIDs.forEach(id => {
-          app.database().ref('listings/' + id).on('value', dataSnapshot => {
-            let listing = dataSnapshot.val();
-            items.push(listing);
+        let items = [];
+        //console.log("allIDs:", this.state.allIDs);
+        this.state.allIDs.forEach(id => {
+              app.database().ref('listings/' + id).on('value', dataSnapshot => {
+                  let listing = dataSnapshot.val();
+                  items.push(listing);
+                  console.log('push:', listing);
+              });
         });
-    });
-    this.setState({eachListing: items});
-    console.log("eachlisting in db:", this.state.eachListing[0]);
-    this.setState({done : true});
-    return items;
+        setTimeout(function() {
+            console.log("eachlisting in db:", items);
+            this.setState({eachListing: items});
+            this.setState({done : true});
+        }.bind(this), 20*this.state.allIDs.length)
+
     },
 
     // Get user first and last name
