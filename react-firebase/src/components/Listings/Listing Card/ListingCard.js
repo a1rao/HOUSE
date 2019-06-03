@@ -76,34 +76,32 @@ class ListingCard extends Component {
                 console.log("scraping from " + this.state.url);
                 var listingInfo;
                 listingInfo = await scrape(this.state.url);
-                setTimeout(function(){
+                setTimeout(function() {
 
-                    console.log("after scraping: " + listingInfo.price);
-                    that.setState({image: listingInfo.photo});
-                    that.setState({title: listingInfo.title});
-                    that.setState({address: listingInfo.address});
-                    that.setState({price: listingInfo.price});
-                    that.setState({bed: listingInfo.bed});
-                    that.setState({bath: listingInfo.address});
-                    that.setState({area: listingInfo.area});
-                    that.setState({type: listingInfo.type});
-                    that.setState({distance_to_campus: listingInfo.distance_to_campus});
-                    that.setState({contact_name: listingInfo.contact_name});
-                    that.setState({contact_number: listingInfo.contact_number});
-                    that.setState({lease_policy: listingInfo._lease_period});
-                    that.setState({deposit: listingInfo.deposit});
-                    that.setState({address: listingInfo.address});
-                    that.setState({parking: listingInfo.parking});
-                    that.setState({smoking: listingInfo.smoking});
-                    that.setState({pet: listingInfo.pet});
-                    that.setState({description: listingInfo._description});
-                    that.setState({address: listingInfo.address});
+                        that.setState({image: listingInfo.photo});
+                        that.setState({title: listingInfo.title});
+                        that.setState({address: listingInfo.address});
+                        that.setState({price: listingInfo.price});
+                        that.setState({bed: listingInfo.bed});
+                        that.setState({bath: listingInfo.bath});
+                        that.setState({area: listingInfo.area});
+                        that.setState({type: listingInfo.type});
+                        that.setState({distance_to_campus: listingInfo.distance_to_campus});
+                        that.setState({contact_name: listingInfo.contact_name});
+                        that.setState({contact_number: listingInfo.contact_number});
+                        that.setState({lease_policy: listingInfo._lease_period});
+                        that.setState({deposit: listingInfo.deposit});
+                        that.setState({parking: listingInfo.parking});
+                        that.setState({smoking: listingInfo.smoking});
+                        that.setState({pet: listingInfo.pet});
+                        that.setState({description: listingInfo._description});
+                    }
 
-                    },6000);
+                    ,4000);
 
             }
 
-            setTimeout(that.handleShow, 7000);
+            setTimeout(that.handleShow, 5000);
     };
 
     render() {
@@ -117,7 +115,7 @@ class ListingCard extends Component {
 
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title>{this.state.title}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         URL : {this.state.url}
