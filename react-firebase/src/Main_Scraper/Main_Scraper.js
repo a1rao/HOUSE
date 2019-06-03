@@ -1,35 +1,13 @@
-//const readline = require('readline');
-// const rl = readline.createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-// });
-//
-// // creates a standard input object
-// const inputObject = process.stdin;
-// // sets encoding
-// inputObject.setEncoding('utf-8');
-// get user's input
-// inputObject.on('data'){
-//     main(data);
-// }
-// async function getInputURL() {
-//     let ret;
-//     // await rl.question('Input URL here: ', (input) => {
-//     //     console.log("Called the fucking callback method right FUCKING HERE ---------------------")
-//     //     console.log(`Received: ${input}`);
-//     //     ret = input;
-//     // });
-//     ret = prompt("Input URL here: ")
-//     console.log("Why the fuck did I ome here even with the await tag before calling a function??????????????")
-//     return ret;
-// }
-
 const Listing = require('./Listing.js');
 const scrapeRentals = require('./Rentals.js');
 const scrapeRent = require('./Rent.js');
 const scrapeCraigslist = require('./Craigslist.js');
 const scrapeTrulia = require('./Trulia.js');
 const scrapeApartments = require('./Apartments.js');
+const mapScraper = require('../MapScraping/mapScraper.js');
+
+
+var campus = 'University of California San Diego';
 
 module.exports = class Main_Scraper {
     get l() {
@@ -42,8 +20,8 @@ module.exports = class Main_Scraper {
 
     constructor() {
 
-        this._l = new Listing('NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA',
-            'NA', 'NA');
+        this._l = new Listing(/*'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA',
+            'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA'*/);
     }
     async scrape(data) {
 
@@ -112,15 +90,14 @@ module.exports = class Main_Scraper {
             } else {
                 console.log("We cannot scrape from this link.")
             }
-        }
-        return JSON.stringify(this.l);
-    }
 
-// function r()  {
-//     console.log(" retval : " + ret)
-// }
-//
-// setTimeout(r, 10000);
+            // await mapScraper.distance(campus, this.l.address, this.l);
+            // await mapScraper.getPhoto(this.l.address, this.l);
+            // await mapScraper.groceryStore(this.l.address, this.l);
+
+        }
+        // return JSON.stringify(this.l);
+    }
 };
 
 

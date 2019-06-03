@@ -72,6 +72,8 @@ class ComparisonPage extends Component {
 
     render() {
 
+        console.log("render compare page");
+
         return (
 
             <div>

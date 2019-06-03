@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2abed1c8-b7f2-4273-91f1-789cd9c2e7f3" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/react-firebase/src/components/Listings/Listing Card/LoadingScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/scrape.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/scrape.js" afterDir="false" />
@@ -10,6 +11,994 @@
       <change beforePath="$PROJECT_DIR$/react-firebase/src/components/Home/HomeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-firebase/src/components/Home/HomeView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-firebase/src/components/Listings/ListThumbnail/ListThumbnail.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-firebase/src/components/Listings/ListThumbnail/ListThumbnail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-firebase/src/components/Listings/Listing Card/ListingCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-firebase/src/components/Listings/Listing Card/ListingCard.js" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/.tonic_example.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/dist/ajv.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/dist/ajv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/dist/ajv.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/ajv.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/ajv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/cache.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/compile/async.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/compile/equal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/compile/error_classes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/compile/formats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/compile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/compile/resolve.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/compile/rules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/compile/schema_obj.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/compile/ucs2length.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/compile/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/_limit.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/_limitItems.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/_limitLength.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/_limitProperties.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/allOf.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/anyOf.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/coerce.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/comment.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/const.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/contains.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/custom.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/defaults.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/definitions.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/dependencies.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/enum.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/errors.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/format.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/if.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/items.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/missing.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/multipleOf.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/not.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/oneOf.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/pattern.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/properties.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/propertyNames.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/ref.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/required.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/uniqueItems.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dot/validate.jst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/_limit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/_limitItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/_limitLength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/_limitProperties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/allOf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/anyOf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/const.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/contains.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/dependencies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/enum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/format.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/if.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/items.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/multipleOf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/not.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/oneOf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/pattern.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/properties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/propertyNames.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/ref.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/required.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/uniqueItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/dotjs/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/keyword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/refs/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/refs/json-schema-draft-04.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/refs/json-schema-draft-06.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/refs/json-schema-draft-07.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/lib/refs/json-schema-secure.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/scripts/.eslintrc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/scripts/bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/scripts/compile-dots.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/scripts/info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/scripts/prepare-tests" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/scripts/publish-built-version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/ajv/scripts/travis-gh-pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/asn1/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/asn1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/asn1/lib/ber/errors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/asn1/lib/ber/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/asn1/lib/ber/reader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/asn1/lib/ber/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/asn1/lib/ber/writer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/asn1/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/asn1/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/aws4/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/aws4/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/aws4/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/aws4/aws4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/aws4/lru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/aws4/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/extend/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/extend/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/extend/.jscs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/extend/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/extend/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/extend/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/extend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/extend/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/extend/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/extend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/fetch/test/fetch-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/jsbn/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/jsbn/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/jsbn/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/jsbn/example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/jsbn/example.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/jsbn/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/jsbn/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/jsprim/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/jsprim/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/jsprim/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/jsprim/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/jsprim/lib/jsprim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/jsprim/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/psl/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/psl/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/psl/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/psl/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/psl/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/psl/data/rules.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/psl/dist/psl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/psl/dist/psl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/psl/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/psl/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/psl/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/psl/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/lib/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/lib/stringify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/test/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/test/stringify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/qs/test/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/bin/sshpk-conv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/bin/sshpk-sign" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/bin/sshpk-verify" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/algs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/certificate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/dhe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/ed-compat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/errors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/fingerprint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/formats/auto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/formats/dnssec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/formats/openssh-cert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/formats/pem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/formats/pkcs1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/formats/pkcs8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/formats/putty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/formats/rfc4253.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/formats/ssh-private.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/formats/ssh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/formats/x509-pem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/formats/x509.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/identity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/key.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/private-key.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/signature.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/ssh-buffer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/man/man1/sshpk-conv.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/man/man1/sshpk-sign.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/man/man1/sshpk-verify.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/sshpk/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uri-js/src/uri.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/README_js.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/bin/uuid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/lib/bytesToUuid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/lib/md5-browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/lib/md5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/lib/rng-browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/lib/rng.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/lib/sha1-browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/lib/sha1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/lib/v35.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/v1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/v3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/v4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-firebase/src/MapScraping/node_modules/uuid/v5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/mapScraper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/mapScraper2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/.bin/googlemaps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/.bin/sshpk-conv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/.bin/sshpk-sign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/.bin/sshpk-verify" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/.bin/uuid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/bin/run.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/apis/directions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/apis/distance-matrix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/apis/elevation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/apis/geocode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/apis/geolocation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/apis/places.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/apis/roads.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/apis/timezone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/internal/attempt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/internal/circular-buffer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/internal/cli.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/internal/convert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/internal/make-api-call.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/internal/make-url-request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/internal/task.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/internal/throttled-queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/internal/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/internal/wait.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/lib/version.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/@google/maps/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/.tonic_example.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/dist/ajv.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/dist/ajv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/dist/ajv.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/ajv.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/ajv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/compile/async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/compile/equal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/compile/error_classes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/compile/formats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/compile/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/compile/resolve.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/compile/rules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/compile/schema_obj.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/compile/ucs2length.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/compile/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/_limit.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/_limitItems.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/_limitLength.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/_limitProperties.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/allOf.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/anyOf.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/coerce.def" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/comment.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/const.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/contains.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/custom.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/defaults.def" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/definitions.def" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/dependencies.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/enum.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/errors.def" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/format.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/if.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/items.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/missing.def" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/multipleOf.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/not.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/oneOf.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/pattern.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/properties.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/propertyNames.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/ref.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/required.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/uniqueItems.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dot/validate.jst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/_limit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/_limitItems.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/_limitLength.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/_limitProperties.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/allOf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/anyOf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/comment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/const.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/contains.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/dependencies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/enum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/format.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/if.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/items.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/multipleOf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/not.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/oneOf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/pattern.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/properties.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/propertyNames.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/ref.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/required.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/uniqueItems.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/dotjs/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/keyword.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/refs/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/refs/json-schema-draft-04.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/refs/json-schema-draft-06.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/refs/json-schema-draft-07.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/lib/refs/json-schema-secure.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/scripts/.eslintrc.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/scripts/bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/scripts/compile-dots.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/scripts/info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/scripts/prepare-tests" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/scripts/publish-built-version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ajv/scripts/travis-gh-pages" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asn1/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asn1/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asn1/lib/ber/errors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asn1/lib/ber/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asn1/lib/ber/reader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asn1/lib/ber/types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asn1/lib/ber/writer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asn1/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asn1/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/assert-plus/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/assert-plus/CHANGES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/assert-plus/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/assert-plus/assert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/assert-plus/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/bench.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/lib/abort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/lib/async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/lib/defer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/lib/iterate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/lib/readable_asynckit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/lib/readable_parallel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/lib/readable_serial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/lib/readable_serial_ordered.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/lib/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/lib/streamify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/lib/terminator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/parallel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/serial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/serialOrdered.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/asynckit/stream.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/aws-sign2/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/aws-sign2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/aws-sign2/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/aws-sign2/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/aws4/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/aws4/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/aws4/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/aws4/aws4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/aws4/lru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/aws4/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/bcrypt-pbkdf/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/bcrypt-pbkdf/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/bcrypt-pbkdf/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/bcrypt-pbkdf/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/bcrypt-pbkdf/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/biskviit/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/biskviit/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/biskviit/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/biskviit/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/biskviit/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/biskviit/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/biskviit/lib/biskviit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/biskviit/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/biskviit/test/biskviit-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/caseless/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/caseless/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/caseless/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/caseless/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/caseless/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/config/jshint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/src/check-types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/src/check-types.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/test/check-types.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/check-types/test/check-types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/combined-stream/License" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/combined-stream/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/combined-stream/lib/combined_stream.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/combined-stream/lib/defer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/combined-stream/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/core-util-is/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/core-util-is/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/core-util-is/float.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/core-util-is/lib/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/core-util-is/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/core-util-is/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/dashdash/CHANGES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/dashdash/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/dashdash/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/dashdash/etc/dashdash.bash_completion.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/dashdash/lib/dashdash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/dashdash/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/delayed-stream/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/delayed-stream/License" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/delayed-stream/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/delayed-stream/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/delayed-stream/lib/delayed_stream.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/delayed-stream/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ecc-jsbn/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ecc-jsbn/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ecc-jsbn/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ecc-jsbn/lib/LICENSE-jsbn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ecc-jsbn/lib/ec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ecc-jsbn/lib/sec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ecc-jsbn/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/ecc-jsbn/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/encoding/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/encoding/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/encoding/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/encoding/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/encoding/lib/encoding.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/encoding/lib/iconv-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/encoding/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/encoding/test/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extend/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extend/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extend/.jscs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extend/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extend/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extend/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extend/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extend/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extsprintf/.gitmodules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extsprintf/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extsprintf/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extsprintf/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extsprintf/Makefile.targ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extsprintf/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extsprintf/jsl.node.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extsprintf/lib/extsprintf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/extsprintf/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-deep-equal/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-deep-equal/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-deep-equal/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-deep-equal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-deep-equal/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/.eslintrc.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/benchmark/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/benchmark/test.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/example/key_cmp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/example/nested.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/example/str.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/example/value_cmp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/test/cmp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/test/nested.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/test/str.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fast-json-stable-stringify/test/to-json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/caching.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/example/fetchstream.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/example/fetchurl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/example/pipe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/lib/cookiejar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/lib/fetch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/fetch/test/fetch-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/forever-agent/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/forever-agent/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/forever-agent/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/forever-agent/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/form-data/License" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/form-data/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/form-data/README.md.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/form-data/lib/browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/form-data/lib/form_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/form-data/lib/populate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/form-data/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/form-data/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/getpass/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/getpass/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/getpass/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/getpass/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/getpass/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/getpass/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/config/constants.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/config/getDefault.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/directions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/distance.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/elevationFromLocations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/geocode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/placeAutocomplete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/placeDetails.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/placeSearchNearby.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/placeSearchText.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/reverseGeocode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/staticMap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/streetView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/timezone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/utils/assignParams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/utils/encodeNumber.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/utils/encodePolylines.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/utils/jsonParser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/utils/makeRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/utils/parseMarkers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/utils/parsePaths.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/utils/parseStyles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/lib/utils/travelUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/googlemaps/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/afterRequest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/beforeRequest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/browser.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/content.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/cookie.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/creator.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/entry.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/har.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/header.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/log.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/page.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/pageTimings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/postData.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/query.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/request.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/response.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/lib/timings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-schema/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-validator/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-validator/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-validator/lib/async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-validator/lib/error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-validator/lib/promise.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/har-validator/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/http-signature/.dir-locals.el" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/http-signature/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/http-signature/CHANGES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/http-signature/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/http-signature/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/http-signature/http_signing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/http-signature/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/http-signature/lib/parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/http-signature/lib/signer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/http-signature/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/http-signature/lib/verify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/http-signature/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/Changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/dbcs-codec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/dbcs-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/sbcs-codec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/sbcs-data-generated.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/sbcs-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/tables/big5-added.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/tables/cp936.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/tables/cp949.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/tables/cp950.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/tables/eucjp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/tables/gbk-added.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/tables/shiftjis.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/utf16.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/encodings/utf7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/lib/bom-handling.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/lib/extend-node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/lib/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/lib/streams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/iconv-lite/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/is-typedarray/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/is-typedarray/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/is-typedarray/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/is-typedarray/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/is-typedarray/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/isstream/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/isstream/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/isstream/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/isstream/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/isstream/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/isstream/isstream.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/isstream/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/isstream/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/jsbn/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/jsbn/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/jsbn/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/jsbn/example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/jsbn/example.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/jsbn/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/jsbn/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema-traverse/.eslintrc.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema-traverse/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema-traverse/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema-traverse/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema-traverse/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema-traverse/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema-traverse/spec/.eslintrc.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema-traverse/spec/fixtures/schema.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema-traverse/spec/index.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-00/hyper-schema" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-00/json-ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-00/links" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-00/schema" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-01/hyper-schema" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-01/json-ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-01/links" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-01/schema" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-02/hyper-schema" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-02/json-ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-02/links" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-02/schema" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-03/examples/address" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-03/examples/calendar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-03/examples/card" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-03/examples/geo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-03/examples/interfaces" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-03/hyper-schema" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-03/json-ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-03/links" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-03/schema" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-04/hyper-schema" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-04/links" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-04/schema" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-zyp-json-schema-03.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/draft-zyp-json-schema-04.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/lib/links.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/lib/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-schema/test/tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-stringify-safe/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-stringify-safe/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-stringify-safe/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-stringify-safe/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-stringify-safe/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-stringify-safe/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-stringify-safe/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-stringify-safe/test/mocha.opts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/json-stringify-safe/test/stringify_test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/jsprim/CHANGES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/jsprim/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/jsprim/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/jsprim/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/jsprim/lib/jsprim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/jsprim/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/mime-db/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/mime-db/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/mime-db/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/mime-db/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/mime-db/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/mime-db/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/mime-types/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/mime-types/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/mime-types/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/mime-types/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/mime-types/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/node-fetch/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/node-fetch/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/node-fetch/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/node-fetch/browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/node-fetch/lib/index.es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/node-fetch/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/node-fetch/lib/index.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/node-fetch/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/oauth-sign/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/oauth-sign/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/oauth-sign/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/oauth-sign/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/.tm_properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/lib/performance-now.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/lib/performance-now.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/src/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/src/performance-now.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/test/mocha.opts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/test/performance-now.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/test/scripts.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/test/scripts/delayed-call.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/test/scripts/delayed-require.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/test/scripts/difference.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/performance-now/test/scripts/initial-value.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/psl/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/psl/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/psl/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/psl/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/psl/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/psl/data/rules.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/psl/dist/psl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/psl/dist/psl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/psl/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/psl/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/psl/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/psl/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/punycode/LICENSE-MIT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/punycode/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/punycode/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/punycode/punycode.es6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/punycode/punycode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/lib/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/lib/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/test/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/test/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/qs/test/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/lib/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/lib/cookies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/lib/getProxyFromURI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/lib/har.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/lib/hawk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/lib/helpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/lib/multipart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/lib/oauth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/lib/querystring.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/lib/redirect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/lib/tunnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/dist/qs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/lib/formats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/lib/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/lib/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/test/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/test/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/test/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/test/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/node_modules/qs/test/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/request/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/safe-buffer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/safe-buffer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/safe-buffer/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/safe-buffer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/safe-buffer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/safer-buffer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/safer-buffer/Porting-Buffer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/safer-buffer/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/safer-buffer/dangerous.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/safer-buffer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/safer-buffer/safer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/safer-buffer/tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/bin/sshpk-conv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/bin/sshpk-sign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/bin/sshpk-verify" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/algs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/certificate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/dhe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/ed-compat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/errors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/fingerprint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/formats/auto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/formats/dnssec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/formats/openssh-cert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/formats/pem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/formats/pkcs1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/formats/pkcs8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/formats/putty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/formats/rfc4253.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/formats/ssh-private.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/formats/ssh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/formats/x509-pem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/formats/x509.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/identity.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/key.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/private-key.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/signature.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/ssh-buffer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/man/man1/sshpk-conv.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/man/man1/sshpk-sign.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/man/man1/sshpk-verify.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/sshpk/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tough-cookie/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tough-cookie/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tough-cookie/lib/cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tough-cookie/lib/memstore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tough-cookie/lib/pathMatch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tough-cookie/lib/permuteDomain.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tough-cookie/lib/pubsuffix-psl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tough-cookie/lib/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tough-cookie/node_modules/punycode/LICENSE-MIT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tough-cookie/node_modules/punycode/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tough-cookie/node_modules/punycode/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tough-cookie/node_modules/punycode/punycode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tough-cookie/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tunnel-agent/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tunnel-agent/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tunnel-agent/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tunnel-agent/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tweetnacl/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tweetnacl/AUTHORS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tweetnacl/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tweetnacl/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tweetnacl/PULL_REQUEST_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tweetnacl/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tweetnacl/nacl-fast.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tweetnacl/nacl-fast.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tweetnacl/nacl.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tweetnacl/nacl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tweetnacl/nacl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/tweetnacl/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/es5/uri.all.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/es5/uri.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/es5/uri.all.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/es5/uri.all.min.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/es5/uri.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/es5/uri.all.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/regexps-iri.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/regexps-iri.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/regexps-iri.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/regexps-uri.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/regexps-uri.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/regexps-uri.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/http.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/http.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/http.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/https.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/https.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/https.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/mailto.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/mailto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/mailto.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/urn-uuid.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/urn-uuid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/urn-uuid.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/urn.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/urn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/schemes/urn.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/uri.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/uri.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/uri.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/util.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/dist/esnext/util.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/rollup.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/src/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/src/punycode.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/src/regexps-iri.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/src/regexps-uri.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/src/schemes/http.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/src/schemes/https.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/src/schemes/mailto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/src/schemes/urn-uuid.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/src/schemes/urn.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/src/uri.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/src/util.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/tests/qunit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/tests/qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/tests/test-es5-min.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/tests/test-es5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/tests/tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uri-js/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/README_js.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/bin/uuid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/lib/bytesToUuid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/lib/md5-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/lib/md5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/lib/rng-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/lib/rng.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/lib/sha1-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/lib/sha1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/lib/v35.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/v1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/v3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/v4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/uuid/v5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/verror/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/verror/CHANGES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/verror/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/verror/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/verror/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/verror/lib/verror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/verror/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/waitress/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/waitress/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/waitress/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/node_modules/waitress/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapScraping/testMapScrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Example.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Example.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Listing.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Listing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Main_Scraper.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Main_Scraper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Rent.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Rent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/mapScraper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/mapScraper2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/scrape.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/scrape.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-firebase/src/Main_Scraper/testMapScrapper.js" beforeDir="false" />
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +1007,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react-firebase/src/components/Listings/Listing Card/ListingCard.js">
@@ -31,11 +1020,20 @@
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/Example.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/react-firebase/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -63,11 +1061,18 @@
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/Listing.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/react-firebase/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="86">
@@ -75,10 +1080,17 @@
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/react-firebase/src/MapScraping/mapScraper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react-firebase/src/components/Home/HomeView.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,6 +1099,13 @@
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/scrape.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="154" column="14" lean-forward="true" selection-start-line="154" selection-start-column="14" selection-end-line="154" selection-end-column="14" />
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
             </state>
           </provider>
         </entry>
@@ -94,6 +1113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react-firebase/src/components/Home/index.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -134,18 +1154,31 @@
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="264">
+              <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
       </list>
     </option>
+=======
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>di</find>
+      <find>url</find>
+      <find>ds</find>
+    </findStrings>
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -164,28 +1197,37 @@
         <option value="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Apartments.js" />
         <option value="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Rentals.js" />
         <option value="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Trulia.js" />
+        <option value="$PROJECT_DIR$/react-firebase/src/components/Listings/Listing Card/ListingCard.js" />
+        <option value="$PROJECT_DIR$/react-firebase/src/MapScraping/testMapScrapper.js" />
         <option value="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Rent.js" />
+        <option value="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Listing.js" />
+        <option value="$PROJECT_DIR$/react-firebase/src/MapScraping/mapScraper.js" />
+        <option value="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Main_Scraper.js" />
+        <option value="$PROJECT_DIR$/react-firebase/src/Main_Scraper/Example.js" />
         <option value="$PROJECT_DIR$/react-firebase/src/Main_Scraper/scrape.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/react-firebase/src/components/Listings/Listing Card/LoadingScreen.js" />
         <option value="$PROJECT_DIR$/react-firebase/src/components/Backend/Database/GetFromDb.js" />
         <option value="$PROJECT_DIR$/react-firebase/src/components/Listings/ListThumbnail/ListThumbnail.js" />
         <option value="$PROJECT_DIR$/react-firebase/src/components/Home/HomeView.js" />
         <option value="$PROJECT_DIR$/react-firebase/src/components/Backend/Database/SaveToDb.js" />
         <option value="$PROJECT_DIR$/react-firebase/src/components/Listings/Listing Card/ListingCard.js" />
+=======
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-264" />
-    <option name="y" value="-30" />
-    <option name="width" value="1920" />
-    <option name="height" value="1030" />
+    <option name="x" value="1905" />
+    <option name="width" value="1948" />
+    <option name="height" value="2075" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -299,7 +1341,11 @@
           <select />
         </subPane>
       </pane>
+=======
+      <pane id="ProjectPane" />
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,6 +1358,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aneesh K. Jalan\Desktop\CSE\110\HOUSE\react-firebase\src" />
       <recent name="C:\Users\Umang\IdeaProjects\Main_Scraper\hello\HOUSE\react-firebase\src" />
       <recent name="C:\Users\Umang\IdeaProjects\Main_Scraper\hello\HOUSE\react-firebase\src\components" />
     </key>
@@ -332,12 +1379,16 @@
     <configuration name="Example.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Example.js" working-dir="$PROJECT_DIR$/react-firebase/src/Main_Scraper">
       <method v="2" />
     </configuration>
-    <configuration name="testMapScrapper.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="testMapScrapper.js" working-dir="$PROJECT_DIR$/MapScraping">
+    <configuration name="scrape.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="scrape.js" working-dir="$PROJECT_DIR$/react-firebase/src/Main_Scraper">
+      <method v="2" />
+    </configuration>
+    <configuration name="testMapScrapper.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/react-firebase/src/MapScraping/testMapScrapper.js" working-dir="$PROJECT_DIR$/react-firebase/src/MapScraping">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.Example.js" />
+        <item itemvalue="Node.js.scrape.js" />
         <item itemvalue="Node.js.testMapScrapper.js" />
       </list>
     </recent_temporary>
@@ -357,13 +1408,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="31281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="24535000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="762" y="0" width="779" height="830" extended-state="0" />
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24765101" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.5228849" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -372,15 +1430,15 @@
       <window_info id="Learn" order="6" weight="0.3295302" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3014286" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -393,37 +1451,6 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Learn" order="0" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.24765101" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -433,8 +1460,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/react-firebase/src/components/NavigationBar/NavigationBar.js</url>
+<<<<<<< HEAD
           <line>16</line>
           <properties lambdaOrdinal="-1" />
+=======
+          <line>17</line>
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -457,6 +1488,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/testMapScrapper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -465,6 +1497,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/Example.js">
+=======
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/App.js">
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="92" selection-start-line="2" selection-start-column="92" selection-end-line="2" selection-end-column="92" />
@@ -488,6 +1523,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/MapScraping/testMapScrapper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -510,6 +1546,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/Rent.js">
+=======
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/node_modules/uuid/lib/rng-browser.js">
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
@@ -532,6 +1571,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/Trulia.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -566,6 +1606,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/react-firebase/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js">
+=======
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/.idea/workspace.xml">
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
@@ -595,6 +1638,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/react-firebase/src/components/Home/HomeView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -638,16 +1682,89 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/components/Listings/Listing Card/ListingCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="59" column="93" selection-start-line="59" selection-start-column="93" selection-end-line="59" selection-end-column="93" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react-firebase/src/components/Listings/Listing Card/ListingCard.js">
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/MapScraping/mapScraper2.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/testMapScrapper.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/mapScraper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2261">
+          <caret line="133" column="2" lean-forward="true" selection-start-line="133" selection-start-column="2" selection-end-line="133" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/Rent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/MapScraping/testMapScrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/Listing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/MapScraping/mapScraper.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="2635">
           <caret line="155" column="25" selection-start-line="155" selection-start-column="25" selection-end-line="155" selection-end-column="25" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="315">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/Example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/Main_Scraper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-firebase/src/Main_Scraper/scrape.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="154" column="14" lean-forward="true" selection-start-line="154" selection-start-column="14" selection-end-line="154" selection-end-column="14" />
+>>>>>>> bf58082c1f778ffd47bb89fc6c7299d1ba696271
         </state>
       </provider>
     </entry>
