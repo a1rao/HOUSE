@@ -277,3 +277,4 @@ class ListingCard extends Component {
 
 
 }
+export default ListingCard;

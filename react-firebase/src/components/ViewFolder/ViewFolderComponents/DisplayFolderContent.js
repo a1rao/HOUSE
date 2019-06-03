@@ -30,9 +30,9 @@ class DisplayFolderContent extends Component{
         // Get each listing info
         let second = fetchData.getAllListings.bind(this);
         this.handleCloseLoading = this.handleCloseLoading.bind(this);
-        this.formatListing = this.formatListing.bind(this);
+        //this.formatListing = this.formatListing.bind(this);
         // Make second function call after the first one is done
-        first(second);
+        first(second,this.props.folderName);
 
     }
 
@@ -40,20 +40,20 @@ class DisplayFolderContent extends Component{
         this.setState({ showLoading: false })
     }
 
-    formatListing(listing) {
-
-        let info = '';
-
-        info += 'Title: ' + listing._title + '\n';
-        info += 'Address: ' + listing._address + '\n';
-        info += 'Price: ' + listing._price + '\n';
-        info += 'Bed: ' + listing._bed + '\n';
-        info += 'Bath: ' + listing._bath + '\n';
-        info += 'Distance to Campus: ' + listing._distance_to_campus + '\n';
-
-        console.log("hello" + info);
-        return info;
-    }
+    // formatListing(listing) {
+    //
+    //     let info = '';
+    //
+    //     info += 'Title: ' + listing._title + '\n';
+    //     info += 'Address: ' + listing._address + '\n';
+    //     info += 'Price: ' + listing._price + '\n';
+    //     info += 'Bed: ' + listing._bed + '\n';
+    //     info += 'Bath: ' + listing._bath + '\n';
+    //     info += 'Distance to Campus: ' + listing._distance_to_campus + '\n';
+    //
+    //     console.log("hello" + info);
+    //     return info;
+    // }
 
 
     render(){

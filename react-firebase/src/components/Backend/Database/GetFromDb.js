@@ -11,10 +11,10 @@ import app from "../../../base";
 
 const func = {
     // Get IDs of saved listings in
-    getIDs: function(cb)
+    getIDs: function(cb, folderName)
     {
         let uid = app.auth().currentUser.uid;
-        let databaseref = app.database().ref('users/' + uid + '/folders/' + 'TEST')
+        let databaseref = app.database().ref('users/' + uid + '/folders/' + folderName)
         databaseref.on('value', dataSnapshot => {
             let items = [];
             dataSnapshot.forEach(childSnapshot => {

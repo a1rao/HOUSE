@@ -12,7 +12,7 @@ class FolderView extends Component{
                 <NavigationBar/>
 
                 {/*Display all listings in folder*/}
-                <DisplayFolderContent/>
+                <DisplayFolderContent folderName="T1"/>
 
             </div>
 
