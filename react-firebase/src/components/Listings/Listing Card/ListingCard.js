@@ -9,6 +9,9 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import {forEach} from "react-bootstrap/es/utils/ElementChildren";
 
 
+
+
+
 const scrape = require('../../../Main_Scraper/scrape');
 
 var l = '';
@@ -24,6 +27,7 @@ class ListingCard extends Component {
         this.state = {
             show: false,
             showFolders: false,
+            c: false,
             s: false,
             folders: [],
             folder:'',
@@ -61,6 +65,7 @@ class ListingCard extends Component {
 
     handleShow() {
         this.setState({ show: true });
+        this.handleC();
     }
     handleSave = async event =>  {
         this.handleClose();
@@ -75,13 +80,36 @@ class ListingCard extends Component {
         // });
     }
     handleCloseFolders = async event => {
+        this.handleShowConfirm();
         this.setState({showFolders: false})
+
     }
     handlePush = async (folder) =>  {
 
         saveData.saveListing(folder, l.url, l);
         console.log("In push")
         console.log(folder);
+        this.handleCloseFolders();
+    }
+    handleS = async event => {
+        this.setState({s: true})
+
+        setTimeout(this.handleShow, 5000);
+
+    }
+    handleC = async event => {
+        this.setState({s: false})
+    }
+
+    handleCloseConfirm = async event => {
+        this.setState({c: false})
+        console.log("i shouldnt be here")
+    }
+
+    handleShowConfirm = async event => {
+
+        this.setState({c: true })
+        console.log("i am here")
     }
 
 
@@ -140,7 +168,8 @@ class ListingCard extends Component {
 
             }
 
-            setTimeout(that.handleShow, 5000);
+           // setTimeout(that.handleShow, 5000);
+            that.handleS();
     };
 
     render(){
@@ -154,6 +183,12 @@ class ListingCard extends Component {
                 <Button variant="outline-success" onClick={this.handleScrape}>
                     Search
                 </Button>
+                <Modal show={this.state.s} onHide = {this.handleC}>
+                    <Modal.Header/>
+                    <Modal.Title>Scraping...</Modal.Title>
+                    <Modal.Body></Modal.Body>
+                </Modal>
+
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>{this.state.title}</Modal.Title>
@@ -165,7 +200,7 @@ class ListingCard extends Component {
                         <br/>
                         TITLE: {this.state.title}
                         <br/>
-                        ADDRESS:{this.state.address}
+                        ADDRESS: {this.state.address}
                         <br/>
                         PRICE: {this.state.price}
                         <br/>
@@ -196,6 +231,20 @@ class ListingCard extends Component {
                     <Modal.Body>
                         {allFolders}
                     </Modal.Body>
+                </Modal>
+                <Modal show ={this.state.c} onHide={this.handleCloseConfirm}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Listing Saved</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        Your Listing has been saved!!!!!!
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="primary" onClick={this.handleCloseConfirm}>
+                            Close
+                        </Button>
+                    </Modal.Footer>
+
                 </Modal>
             </div>
         );

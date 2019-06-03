@@ -20,8 +20,8 @@ module.exports = class Main_Scraper {
 
     constructor() {
 
-        this._l = new Listing(/*'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA',
-            'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA'*/);
+        this._l = new Listing('NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA',
+            'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA');
     }
     async scrape(data) {
 

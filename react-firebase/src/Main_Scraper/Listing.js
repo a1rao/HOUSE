@@ -1,36 +1,36 @@
 module.exports =  class Listing {
 
-    constructor(/*url, title, address, price, bed, bath, area, type, deposit, contact_name, contact_email, contact_number,
+    constructor(url, title, address, price, bed, bath, area, type, deposit, contact_name, contact_email, contact_number,
                 distance_to_campus, travel_time, pets, smoking, parking, lease_period, description, int_price, int_bed, int_bath,
-                int_area, photo_name, photo_ref, grocery_stores*/) {
+                int_area, photo_name, photo_ref, grocery_stores) {
 
         //console.log("started initializing l at " + new Date().getTime())
-        // this._url = url;
-        // this._title = title;
-        // this._address = address;
-        // this._price = price;
-        // this._bed = bed;
-        // this._bath = bath;
-        // this._area = area;
-        // this._type = type;
-        // this._deposit = deposit;
-        // this._contact_name = contact_name;
-        // this._contact_email = contact_email;
-        // this._contact_number = contact_number;
-        // this._distance_to_campus = distance_to_campus;
-        // this._travel_time = travel_time;
-        // this._pets = pets;
-        // this._smoking = smoking;
-        // this._parking = parking;
-        // this._lease_period = lease_period;
-        // this._description = description;
-        // this._int_price = int_price;
-        // this._int_bed = int_bed;
-        // this._int_bath = int_bath;
-        // this._int_area = int_area;
-        // this._photo_name = photo_name;
-        // this._photo_ref = photo_ref;
-        // this._grocery_stores = grocery_stores;
+        this._url = url;
+        this._title = title;
+        this._address = address;
+        this._price = price;
+        this._bed = bed;
+        this._bath = bath;
+        this._area = area;
+        this._type = type;
+        this._deposit = deposit;
+        this._contact_name = contact_name;
+        this._contact_email = contact_email;
+        this._contact_number = contact_number;
+        this._distance_to_campus = distance_to_campus;
+        this._travel_time = travel_time;
+        this._pets = pets;
+        this._smoking = smoking;
+        this._parking = parking;
+        this._lease_period = lease_period;
+        this._description = description;
+        this._int_price = int_price;
+        this._int_bed = int_bed;
+        this._int_bath = int_bath;
+        this._int_area = int_area;
+        this._photo_name = photo_name;
+        this._photo_ref = photo_ref;
+        this._grocery_stores = grocery_stores;
         //console.log("l was initialized at " + new Date().getTime())
     }
 
