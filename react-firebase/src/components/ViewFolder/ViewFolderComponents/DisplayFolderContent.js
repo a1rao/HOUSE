@@ -11,58 +11,79 @@ import fetchData from "../../Backend/Database/GetFromDb";
 
 class DisplayFolderContent extends Component{
 
+
     constructor(props) {
         super(props);
-
         // Store user information
         this.state = {
             'allIDs': null,
-            'eachListing' : null,
+            'eachListing': [],
             'done': 0
         };
 
-        // Get listing id's
+    }
 
-        let first = fetchData.getIDs.bind(this);
+    getDataFromDb(){
 
-        // Get each listing info
+        setTimeout(()=> {
+                // Get listing id's
+                let first = fetchData.getIDs.bind(this);
 
-        let second = fetchData.getAllListings.bind(this);
+                // Get each listing info
+                let second = fetchData.getAllListings.bind(this);
 
-        // Make second function call after the first one is done
-        first(second);
+                // Make second function call after the first one is done
+                first(second);
+            },0);
+    }
 
+
+    componentDidMount() {
+        this.getDataFromDb();
     }
 
     render(){
 
+
+        // Make sure component one mounting
         if(this.state.done === 0){
             console.log("IS 0");
             return <div />
         }
 
-        else {
+
             // display each listing in folder TODO
             // allListings is a list of saved listings in the user's folder
             // ERROR: only displays most recent listing with the className: "thumbnail"
-
-            console.log("render all ids", this.state.allIDs);
-            console.log("render each listing", this.state.eachListing);
-            const allListings = this.state.eachListing.map((listing) =>
+        console.log("state DONEEE", this.state.done);
+        console.log("render all ids", this.state.allIDs);
+        console.log("each listing has: ", this.state.eachListing);
+        console.log("render each listing", this.state.eachListing.length);
+            /*const allListings = this.state.eachListing.map((listing) =>
                 <div className="thumbnail">
                     <p>url: {listing.url}</p>
                     <p>price: {listing.price}</p>
                     <p>address: {listing.address}</p>
                 </div>
-            );
-        console.log("allList", allListings);
+            );*/
 
+            //this.state.eachListing.push("Hey hey");
+            //this.state.eachListing.push("yo yo");
+            // WHY IS IT NOT SHOWING
             return (
-                <div >
-                    <p>{this.state.eachListing.map}</p>
+
+                <div className="thumbnail">
+                    {
+                        /*this.state.eachListing.map((listing, index) => {
+                            return (
+                                <p key={index}>{listing}</p>
+                            )
+                        })*/
+                        this.state.eachListing
+                    }
                 </div>
+
             );
-        }
     }
 
 
@@ -86,8 +107,6 @@ class DisplayFolderContent extends Component{
         // display each listing in folder TODO
 
     } ****/
-
-
 
 }
 

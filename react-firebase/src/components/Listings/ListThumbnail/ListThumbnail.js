@@ -44,24 +44,15 @@ class ListThumbnail extends Component {
             </div>
         );
 
+        console.log("hello");
+
         return(
-            <div>
+            <div className="thumbnail">
                 <p>{allListings}</p>
             </div>
         );
     }
 
-
-    render() {
-
-        return (
-            <div className="thumbnail">
-                <ol>
-
-                </ol>
-            </div>
-        );
-    }
 }
 
 export default ListThumbnail;

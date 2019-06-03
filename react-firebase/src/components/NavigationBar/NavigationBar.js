@@ -10,6 +10,7 @@ import './NavigationBar.css';
 import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
 import fetchData from '../Backend/Database/GetFromDb.js';
 import ListingCard from '../Listings/Listing Card/ListingCard';
+import NavLink from "react-bootstrap/NavLink";
 
 
 class NavigationBar extends Component {
@@ -61,7 +62,7 @@ class NavigationBar extends Component {
     render() {
         // Create new drop down element for each folder
         const allFolders = this.state.folders.map((eachFolder) =>
-            <NavDropdown.Item href="/folderView">{eachFolder}</NavDropdown.Item>
+            <NavDropdown.Item href="/folderView" >{eachFolder}</NavDropdown.Item>
         );
 
         return (

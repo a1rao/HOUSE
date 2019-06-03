@@ -11,37 +11,36 @@ import app from "../../../base";
 
 const func = {
     // Get IDs of saved listings in
-    getIDs: function(cb)
-    {
-    let uid = app.auth().currentUser.uid;
-    let databaseref = app.database().ref('users/' + uid + '/folders/' + 'TEST')
-    databaseref.on('value', dataSnapshot => {
-        let items = [];
-        dataSnapshot.forEach(childSnapshot => {
-            let item = childSnapshot.key;
-            items.push(item);
-        });
-        this.setState({'allIDs': items});
-        // Callback function
-        cb();
+    getIDs: function(cb) {
+            let uid = app.auth().currentUser.uid;
+            let databaseref = app.database().ref('users/' + uid + '/folders/' + 'TEST')
+            databaseref.on('value', dataSnapshot => {
+            let items = [];
+            dataSnapshot.forEach(childSnapshot => {
+                let item = childSnapshot.key;
+                items.push(item);
+            });
+            this.setState({'allIDs': items});
+            // Callback function
+                cb();
 
-    });
+        });
     },
 
     // Get each listing info
-    getAllListings: function()
-    {
-    let items = [];
+    getAllListings: function() {
+        let items = [];
     //console.log("allIDs:", this.state.allIDs);
-    this.state.allIDs.forEach(id => {
-        app.database().ref('listings/' + id).on('value', dataSnapshot => {
+        this.state.allIDs.forEach(id => {
+            app.database().ref('listings/' + id).on('value', dataSnapshot => {
             let listing = dataSnapshot.val();
             items.push(listing);
             //console.log("info:", listing);
+            });
         });
-    });
-    this.setState({'eachListing': items});
-    this.setState({'done' : true});
+        this.setState({'eachListing': items});
+        this.setState({'done' : true});
+
     },
 
     // Get user first and last name
@@ -68,7 +67,10 @@ const func = {
             });
             this.setState({folders: items})
         });
-    }
+    },
+
+
+
 };
 
 export default func;
