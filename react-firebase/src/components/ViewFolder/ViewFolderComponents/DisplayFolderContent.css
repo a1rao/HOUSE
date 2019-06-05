@@ -57,6 +57,26 @@
     border-bottom: solid 3px black;
 }
 
+.mBodyElementDescription {
+    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
+    width: 100%;
+    margin: 0 auto;
+    border: solid 2px midnightblue;
+}
+
 .mFoot {
     width: auto;
+}
+
+.mBodyElementTitle {
+    text-align: center;
+}
+
+.mBodyElementContent {
+    text-align: center;
+    font-weight: normal;
+}
+
+.listURL {
+    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
 }
