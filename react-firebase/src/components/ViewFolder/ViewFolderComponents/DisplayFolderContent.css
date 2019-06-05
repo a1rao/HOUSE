@@ -1,0 +1,17 @@
+.listThumbnail{
+    width: 400px;
+}
+
+.allThumbnails{
+    display: inline-block;
+    padding: 30px 25px;
+
+}
+
+.title{
+    display: block;
+    text-align: center;
+    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
+    padding-top: 20px;
+
+}
