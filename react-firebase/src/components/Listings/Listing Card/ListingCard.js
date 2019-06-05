@@ -251,7 +251,7 @@ class ListingCard extends Component {
                             <Form inline>
                                 <FormControl  className = "newFolder" type="text" name="folder" placeholder="Create a new folder" onChange={this.readFolder}/>
                                 <Button variant="outline-success" onClick={this.handleNewFolder}>
-                                    Save
+                                    Create
                                 </Button>
                             </Form>
                         </div>
