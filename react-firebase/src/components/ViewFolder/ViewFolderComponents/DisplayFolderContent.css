@@ -15,3 +15,11 @@
     padding-top: 20px;
 
 }
+
+.sortBar{
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 25px;
+
+}

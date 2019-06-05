@@ -5,11 +5,12 @@ import app from "../../../base";
 import './DisplayFolderContent.css';
 import fetchData from "../../Backend/Database/GetFromDb";
 import saveData from "../../Backend/Database/SaveToDb"
-import NavigationBar from "../../NavigationBar/NavigationBar";
 import Modal from 'react-bootstrap/Modal';
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import Dropdown from "react-bootstrap/ButtonGroup";
 
 // Display all listing thumbnails from folder that is currently listing1
 // For testing purposes, this folder is:  TEST
@@ -295,6 +296,10 @@ class DisplayFolderContent extends Component{
         return (
             <div>
                 <h1 className="title">{folderName}</h1>
+                <DropdownButton className="sortBar" title="Sort By" id="bg-nested-dropdown" variant="outline-info">
+                    <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
+                    <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+                </DropdownButton>
                 <p>{thumbnails}</p>
             </div>
         );
