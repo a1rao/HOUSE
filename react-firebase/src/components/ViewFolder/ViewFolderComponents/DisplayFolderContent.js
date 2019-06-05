@@ -189,14 +189,35 @@ class DisplayFolderContent extends Component{
                     Distance to Campus: {listing._distance_to_campus}
                 </Button>
 
-                <Modal show = {this.state.showListing} onHide={this.handleCloseListing}>
-                    <Modal.Header>
-                        <Modal.Title>{this.state.l._title}</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                        PHOTO: {this.state.l._photo_name}
+                <Modal show={this.state.showListing} onHide={this.handleCloseListing}>
+                    <div className="mHeader">
+                        <Modal.Header>
+                            <div className="mTitle">
+                                <Modal.Title>{this.state.l._title}</Modal.Title>
+                            </div>
+                        </Modal.Header>
+                    </div>
+                    <Modal.Body className="mBody">
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                PHOTO:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._photo_name}
+                            </div>
+                        </div>
                         <br/>
-                        ADDRESS: {this.state.l._address}
+                        <br/>
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                ADDRESS:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._address}
+                            </div>
+                        </div>
+                        <br/>
                         <br/>
                         PRICE: {this.state.l._price}
                         <br/>
@@ -230,20 +251,21 @@ class DisplayFolderContent extends Component{
                         <br/>
                         Description: {this.state.l._description}
                         <br/>
+                        <br/>
                     </Modal.Body>
 
-                    <Modal.Footer>
-                        <Button variant="secondary" onClick={this.handleCloseListing}>
-                            Close
-                        </Button>
-                        <Button variant = "primary" onClick ={this.handleShowColumn}>
+                    <Modal.Footer className="mFoot">
+                        <Button variant = "success" onClick ={this.handleShowColumn} size="sm">
                             Add to Compare Table
                         </Button>
-                        <Button variant="primary" onClick ={this.deleteListing}>
+                        <Button variant="info" onClick={this.handleShowFolders} size="sm">
+                            Move to different Folder
+                        </Button>
+                        <Button variant="danger" onClick ={this.deleteListing} size="sm">
                             Remove from Folder
                         </Button>
-                        <Button variant="primary" onClick={this.handleShowFolders}>
-                            Move to different Folder
+                        <Button variant="dark" onClick={this.handleCloseListing}size="sm">
+                            Close Window
                         </Button>
                     </Modal.Footer>
                 </Modal>
@@ -294,7 +316,7 @@ class DisplayFolderContent extends Component{
         );
 
         return (
-            <div>
+            <div className="grid">
                 <h1 className="title">{folderName}</h1>
                 <DropdownButton className="sortBar" title="Sort By" id="bg-nested-dropdown" variant="outline-info">
                     <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>

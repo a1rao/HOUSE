@@ -1,5 +1,6 @@
 .listThumbnail{
-    width: 400px;
+    width: 500px;
+    height: 350px;
 }
 
 .allThumbnails{
@@ -22,4 +23,40 @@
     padding-top: 5px;
     border-radius: 25px;
 
+}
+
+.grid {
+    margin-left: 6%;
+}
+
+.mTitle {
+    margin: 0 auto;
+    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
+    font-weight: bold;
+
+}
+
+.mBodyElement {
+    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
+    width: 50%;
+    margin: 0 auto;
+    border: solid 2px midnightblue;
+}
+
+.mBodyElementTitle {
+    text-align: center;
+}
+
+.mBodyElementContent {
+    text-align: center;
+    font-weight: normal;
+}
+
+.mBody {
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+}
+
+.mFoot {
+    width: auto;
 }
