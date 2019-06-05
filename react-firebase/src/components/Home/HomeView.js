@@ -5,6 +5,7 @@ import NavigationBar from '../NavigationBar/NavigationBar';
 import ViewFolder from '../ViewFolder/ViewFolderComponents/DisplayFolderContent.js';
 import ListThumbnail from '../Listings/ListThumbnail/ListThumbnail';
 import ListingCard from '../Listings/Listing Card/ListingCard';
+import '../Login/LoginComponents/LoginBackground.css';
 
 class HomeView extends Component {
 
@@ -16,6 +17,9 @@ class HomeView extends Component {
 
                 {/*Navigation bar at the top of the screen. */}
                 <NavigationBar/>
+                <div className="backgroundImageContainer">
+                    <img src="https://graphicriver.img.customer.envatousercontent.com/files/246062449/preview.jpg?auto=format&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=25ef6f5f977ada803a462772880e04c6" alt="It is blurry" className="backgroundImage"/>
+                </div>
 
                 {/*Code for the list thumbnail.
                     <ListThumbnail/>*/}
@@ -27,43 +31,10 @@ class HomeView extends Component {
 
                 <ViewFolder/>*/}
 
+
             </div>
         );
     }
 }
 
 export default HomeView;
-
-/*this.state = {
-        firstName:'',
-        lastName:''
-    };*/
-
-/* Load user first and last name from database (Does not work)
-let uid = app.auth().currentUser.uid;
-console.error(uid);
-app.database().ref('users/' + uid).on('value', dataSnapshot=> {
-    const userObject = dataSnapshot.val();
-    //let firstName = userObject.first;
-    this.setState({firstName: 'WHY'});
-    //this.state.lastName=userObject.last;
-});*/
-
-
-/*async componentDidMount() {
-        // Load user first and last name from database (Does not work)
-        let uid = app.auth().currentUser.uid;
-        console.error(uid);
-        await app.database().ref('users/' + uid).once('value').then(dataSnapshot => {
-            const userObject = dataSnapshot.val();
-            console.log(userObject);
-            //this.fn = userObject.first;
-            //this.ln = userObject.last;
-            this.setState({firstName: userObject.first});
-            //this.state.lastname=userObject.last;
-        });
-
-        this.setState({firstName: 'KILL ME'});
-    }*/
-
-//<h4>{this.state.firstName}</h4>

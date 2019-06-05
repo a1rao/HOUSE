@@ -39,7 +39,8 @@ class DisplayFolderContent extends Component{
             l: '',
             done: 0,
             column:'',
-            sort: false
+            sort: false,
+            dropdownOpen: false
         };
 
         // Get listing id'showScraping
@@ -60,6 +61,7 @@ class DisplayFolderContent extends Component{
         this.handleCloseFolders = this.handleCloseFolders.bind(this);
         this.handleCloseConfirm = this.handleCloseConfirm.bind(this);
         this.handleShowConfirm = this.handleShowConfirm.bind(this);
+        this.handleDropdown = this.handleDropdown.bind(this);
         this.sort = this.sort.bind(this);
         this.setColumn1 = this.setColumn1.bind(this);
         this.setColumn2 = this.setColumn2.bind(this);
@@ -169,6 +171,12 @@ class DisplayFolderContent extends Component{
         console.log("sort by", s, sorted);
     }
 
+
+    handleDropdown() {
+        this.setState({
+            dropdownOpen: !this.state.dropdownOpen
+        });
+    }
 
     render(){
 
@@ -318,15 +326,10 @@ class DisplayFolderContent extends Component{
         return (
             <div>
                 <h1 className="title">{folderName}</h1>
-                <DropdownButton id="dropdown-basic-button" title="Dropdown button">
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                </DropdownButton>
-                <Button onClick={() =>this.sort('_price')}>Sort By Price</Button>
-                <Button onClick={() =>this.sort('_area')}>Sort By Area</Button>
-                <Button onClick={() =>this.sort('_distance_to_campus')}>Sort By Distance</Button>
-                <Button onClick={() =>this.sort('_bed')}>Sort By Beds</Button>
+                <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_price')}>Sort By Price</Button>
+                <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_area')}>Sort By Area</Button>
+                <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_distance_to_campus')}>Sort By Distance</Button>
+                <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_bed')}>Sort By Beds</Button>
                 <p>{thumbnails}</p>
             </div>
         );

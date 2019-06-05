@@ -14,7 +14,7 @@ const func = {
                 return 0;
             });
         }
-        else if(s === "_int_area") {
+        else if(s === "_area") {
             listings.sort(function (a, b) {
                 if (a._int_area > b._int_area) {
                     return -1;
