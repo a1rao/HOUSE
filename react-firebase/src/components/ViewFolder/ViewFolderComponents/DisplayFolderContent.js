@@ -12,6 +12,7 @@ import Button from "react-bootstrap/Button";
 // For testing purposes, this folder is:  TEST
 
 var folderName = '';
+var allFolders = '';
 class DisplayFolderContent extends Component{
 
 
@@ -21,8 +22,11 @@ class DisplayFolderContent extends Component{
         this.state = {
             showLoading: true,
             showListing: false,
+            showFolders: false,
             showColumn: false,
+            showConfirm: false,
             allIDs: null,
+            folders: [],
             eachListing: null,
             l: '',
             done: 0,
@@ -43,6 +47,9 @@ class DisplayFolderContent extends Component{
         this.handleCloseListing = this.handleCloseListing.bind(this);
         this.handleCloseColumn = this.handleCloseColumn.bind(this);
         this.handleShowColumn = this.handleShowColumn.bind(this);
+        this.handleShowFolders = this.handleShowFolders.bind(this);
+        this.handleCloseFolders = this.handleCloseFolders.bind(this);
+        this.handleCloseConfirm = this.handleCloseConfirm.bind(this);
         this.setColumn1 = this.setColumn1.bind(this);
         this.setColumn2 = this.setColumn2.bind(this);
         this.setColumn3 = this.setColumn3.bind(this);
@@ -51,6 +58,8 @@ class DisplayFolderContent extends Component{
         // Make second function call after the first one is done
         first(second,folderName);
         console.log("IN DISPLAyFOlder " + folderName)
+        let getFolders = fetchData.getFolderNames.bind(this);
+        getFolders();
 
     }
 
@@ -60,11 +69,16 @@ class DisplayFolderContent extends Component{
     handleCloseListing() {
         this.setState( {showListing: false })
     }
-
+    handleCloseFolders() {
+        this.setState({showFolders: false})
+    }
     handleCloseColumn() {
         this.setState( {showColumn: false})
     }
 
+    handleCloseConfirm() {
+        this.setState({showConfirm:false});
+    }
     printListing(listing){
         this.setState({showListing: true})
        // console.log("DS JVSONVISNDOViNSOIDNVIOSNVD: "+ event)
@@ -73,6 +87,22 @@ class DisplayFolderContent extends Component{
     handleShowColumn() {
         this.setState({showColumn: true})
         this.handleCloseListing();
+    }
+    handleShowFolders() {
+        const all = this.state.folders.map((eachFolder) =>
+            <Button variant="outline-success" onClick={() => this.handlePush(eachFolder)}>{eachFolder}</Button>
+        );
+        allFolders = all;
+        this.setState({showFolders: true});
+        this.handleCloseListing();
+    }
+
+    handlePush = async (folder) =>  {
+
+        saveData.removeListing(folderName, this.state.l);
+        saveData.saveListing(folder, this.state.l, this.state.l);
+        this.handleCloseFolders();
+        this.setState({showConfirm:true})
     }
     setColumn1() {
         this.setState({column: 1})
@@ -95,8 +125,7 @@ class DisplayFolderContent extends Component{
     deleteListing = event => {
         saveData.removeListing(folderName, this.state.l);
         this.handleCloseListing();
-    }
-
+    };
 
     render(){
 
@@ -185,10 +214,13 @@ class DisplayFolderContent extends Component{
                             Close
                         </Button>
                         <Button variant = "primary" onClick ={this.handleShowColumn}>
-                            Add To Compare Table
+                            Add to Compare Table
                         </Button>
                         <Button variant="primary" onClick ={this.deleteListing}>
                             Remove from Folder
+                        </Button>
+                        <Button variant="primary" onClick={this.handleShowFolders}>
+                            Move to different Folder
                         </Button>
                     </Modal.Footer>
                 </Modal>
@@ -203,6 +235,27 @@ class DisplayFolderContent extends Component{
                         <Button onClick={this.setColumn4}> Column 4</Button>
                     </Modal.Body>
                 </Modal>
+                <Modal show={this.state.showFolders} onHide={this.handleCloseFolders}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Select a Folder</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        {allFolders}
+                    </Modal.Body>
+                </Modal>
+                <Modal show={this.state.showConfirm} onHide={this.handleCloseConfirm}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Listing Moved</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        Your Listing has been moved!!!!!!
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="primary" onClick={this.handleCloseConfirm}>
+                            Close
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
 
             </div>
         );
@@ -213,9 +266,6 @@ class DisplayFolderContent extends Component{
             </div>
         );
     }
-
-
-
 }
 
 export default DisplayFolderContent;
