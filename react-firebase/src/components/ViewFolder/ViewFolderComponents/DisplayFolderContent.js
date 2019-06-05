@@ -5,6 +5,7 @@ import app from "../../../base";
 import './DisplayFolderContent.css';
 import fetchData from "../../Backend/Database/GetFromDb";
 import saveData from "../../Backend/Database/SaveToDb"
+import sortFunc from "../../Backend/Sort.js"
 import Modal from 'react-bootstrap/Modal';
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -17,6 +18,7 @@ import Dropdown from "react-bootstrap/ButtonGroup";
 
 var folderName = '';
 var allFolders = '';
+var sorted = '';
 class DisplayFolderContent extends Component{
 
 
@@ -32,10 +34,12 @@ class DisplayFolderContent extends Component{
             folder:'',
             allIDs: null,
             folders: [],
+            prices: null,
             eachListing: null,
             l: '',
             done: 0,
             column:'',
+            sort: false
         };
 
         // Get listing id'showScraping
@@ -56,6 +60,7 @@ class DisplayFolderContent extends Component{
         this.handleCloseFolders = this.handleCloseFolders.bind(this);
         this.handleCloseConfirm = this.handleCloseConfirm.bind(this);
         this.handleShowConfirm = this.handleShowConfirm.bind(this);
+        this.sort = this.sort.bind(this);
         this.setColumn1 = this.setColumn1.bind(this);
         this.setColumn2 = this.setColumn2.bind(this);
         this.setColumn3 = this.setColumn3.bind(this);
@@ -157,6 +162,14 @@ class DisplayFolderContent extends Component{
         this.handleCloseListing();
     };
 
+    // Sorting Functions
+    sort(s){
+        sorted = sortFunc.sortPrice(this.state.eachListing, s);
+        this.setState({sort:true});
+        console.log("sort by", s, sorted);
+    }
+
+
     render(){
 
         // Make sure component one mounting
@@ -188,6 +201,8 @@ class DisplayFolderContent extends Component{
                     Address: {listing._address}
                     <br/>
                     Price: {listing._price}
+                    <br/>
+                    Sq. Footage: {listing._area}
                     <br/>
                     Bed: {listing._bed}
                     <br/>
@@ -303,15 +318,28 @@ class DisplayFolderContent extends Component{
         return (
             <div>
                 <h1 className="title">{folderName}</h1>
-                <DropdownButton className="sortBar" title="Sort By" id="bg-nested-dropdown" variant="outline-info">
-                    <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
-                    <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+                <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                 </DropdownButton>
+                <Button onClick={() =>this.sort('_price')}>Sort By Price</Button>
+                <Button onClick={() =>this.sort('_area')}>Sort By Area</Button>
+                <Button onClick={() =>this.sort('_distance_to_campus')}>Sort By Distance</Button>
+                <Button onClick={() =>this.sort('_bed')}>Sort By Beds</Button>
                 <p>{thumbnails}</p>
             </div>
         );
     }
 }
+// <DropdownButton className="sortBar" title="Sort By" id="dropdown-basic-button" variant="outline-info">
+//                     <Dropdown.Item href="#/action-1">Price</Dropdown.Item>
+//                 </DropdownButton>
 
+//                <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+//                     <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+//                     <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+//                     <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+//                 </DropdownButton>
 export default DisplayFolderContent;
 
