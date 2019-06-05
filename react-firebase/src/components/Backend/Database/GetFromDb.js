@@ -164,20 +164,20 @@ const func = {
         });
         setTimeout(function() {
             console.log("eachlisting in getListign:", items);
-            this.setState({eachListing: items});
+            this.setState({eachListing2: items});
             //this.setState({done : true});
-            console.log("please work: " + this.state.eachListing);
-            if(this.state.eachListing[0] != null) {
-                this.setState({listing1:this.state.eachListing[0]})
+            console.log("please work: " + this.state.eachListing2);
+            if(this.state.eachListing2[0] != null) {
+                this.setState({listing1:this.state.eachListing2[0]})
             }
-            if(this.state.eachListing[1] != null) {
-                this.setState({listing2:this.state.eachListing[1]})
+            if(this.state.eachListing2[1] != null) {
+                this.setState({listing2:this.state.eachListing2[1]})
             }
-            if(this.state.eachListing[2] != null) {
-                this.setState({listing3:this.state.eachListing[2]})
+            if(this.state.eachListing2[2] != null) {
+                this.setState({listing3:this.state.eachListing2[2]})
             }
-            if(this.state.eachListing[3] != null) {
-                this.setState({listing4:this.state.eachListing[3]})
+            if(this.state.eachListing2[3] != null) {
+                this.setState({listing4:this.state.eachListing2[3]})
             }
 
         }.bind(this), 100*this.state.allIDs.length)

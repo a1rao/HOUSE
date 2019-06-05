@@ -5,6 +5,7 @@ import './ComparisonPage.css';
 import Button from "react-bootstrap/Button";
 import fetchData from "../Backend/Database/GetFromDb";
 import Modal from "react-bootstrap/Modal";
+import saveData from "../Backend/Database/SaveToDb"
 
 var allFolders = '';
 var allListings = '';
@@ -18,6 +19,7 @@ class ComparisonPage extends Component {
             allIDs: [],
             folders: [],
             currentColumn: '1',
+            eachListing2: [],
             eachListing: [],
             listing1: '',
             listing2: '',
@@ -48,7 +50,7 @@ class ComparisonPage extends Component {
     }
 
     handleRemoveListing = async number => {
-
+        saveData.removeCompare(number);
     };
 
 
@@ -164,18 +166,23 @@ class ComparisonPage extends Component {
                         <th>
                             <Button variant="primary" onClick={() => this.handleShowFolders(2)}> Add New Listing
                             </Button>
-                            <Button variant="secondary" onClick={() => this.handleRemoveListing(1)}> Remove listing </Button>
+                            <Button variant="secondary" onClick={() => this.handleRemoveListing(2)}> Remove listing </Button>
                         </th>
                         <th>
                             <Button variant="primary" onClick={() => this.handleShowFolders(3)}> Add New Listing
                             </Button>
-                            <Button variant="secondary" onClick={() => this.handleRemoveListing(1)}> Remove listing </Button>
+                            <Button variant="secondary" onClick={() => this.handleRemoveListing(3)}> Remove listing </Button>
                         </th>
                         <th>
                             <Button variant="primary" onClick={() => this.handleShowFolders(4)}> Add New Listing
                             </Button>
-                            <Button variant="secondary" onClick={() => this.handleRemoveListing(1)}> Remove listing </Button>
+                            <Button variant="secondary" onClick={() => this.handleRemoveListing(4)}> Remove listing </Button>
                         </th>
+
+
+
+
+
 
                     </tr>
                     </thead>
