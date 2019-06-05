@@ -110,8 +110,10 @@ class DisplayFolderContent extends Component{
         this.handleCloseListing();
     }
     handleNewFolder = async event => {
-        saveData.removeListing(folderName, this.state.l);
-        saveData.saveListing(this.state.folder, this.state.l._url, this.state.l);
+        // saveData.removeListing(folderName, this.state.l);
+        // saveData.saveListing(this.state.folder, this.state.l._url, this.state.l);
+
+        saveData.removeAdd(folderName, this.state.folder, this.state.l);
         console.log(this.state.folder);
         this.handleCloseFolders();
         this.handleShowConfirm();
@@ -120,25 +122,30 @@ class DisplayFolderContent extends Component{
 
     handlePush = async (folder) =>  {
 
-        saveData.removeListing(folderName, this.state.l);
-        saveData.saveListing(folder, this.state.l._url, this.state.l);
+        // saveData.saveListing(folder, this.state.l._url, this.state.l);
+        // saveData.removeListing(folderName, this.state.l);
+        saveData.removeAdd(folderName, folder, this.state.l);
         this.handleCloseFolders();
         this.handleShowConfirm();
     }
     setColumn1() {
         this.setState({column: 1})
+        saveData.saveToCompare('1',this.state.l,this.state.l._url);
         this.handleCloseColumn();
     }
     setColumn2() {
         this.setState({column: 2})
+        saveData.saveToCompare('2',this.state.l, this.state.l._url);
         this.handleCloseColumn();
     }
     setColumn3() {
         this.setState({column: 3})
+        saveData.saveToCompare('3',this.state.l, this.state.l._url);
         this.handleCloseColumn();
     }
     setColumn4() {
-        this.setState({column: 4})
+        this.setState({column: 4});
+        saveData.saveToCompare('4',this.state.l, this.state.l._url);
         this.handleCloseColumn();
     }
 
