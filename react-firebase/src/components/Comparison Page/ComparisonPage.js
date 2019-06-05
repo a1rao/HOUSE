@@ -164,14 +164,17 @@ class ComparisonPage extends Component {
                         <th>
                             <Button variant="primary" onClick={() => this.handleShowFolders(2)}> Add New Listing
                             </Button>
+                            <Button variant="secondary" onClick={() => this.handleRemoveListing(1)}> Remove listing </Button>
                         </th>
                         <th>
                             <Button variant="primary" onClick={() => this.handleShowFolders(3)}> Add New Listing
                             </Button>
+                            <Button variant="secondary" onClick={() => this.handleRemoveListing(1)}> Remove listing </Button>
                         </th>
                         <th>
                             <Button variant="primary" onClick={() => this.handleShowFolders(4)}> Add New Listing
                             </Button>
+                            <Button variant="secondary" onClick={() => this.handleRemoveListing(1)}> Remove listing </Button>
                         </th>
 
                     </tr>
