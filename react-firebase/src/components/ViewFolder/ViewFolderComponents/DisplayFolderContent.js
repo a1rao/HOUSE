@@ -8,6 +8,8 @@ import saveData from "../../Backend/Database/SaveToDb"
 import NavigationBar from "../../NavigationBar/NavigationBar";
 import Modal from 'react-bootstrap/Modal';
 import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import FormControl from "react-bootstrap/FormControl";
 
 // Display all listing thumbnails from folder that is currently listing1
 // For testing purposes, this folder is:  TEST
@@ -26,6 +28,7 @@ class DisplayFolderContent extends Component{
             showFolders: false,
             showColumn: false,
             showConfirm: false,
+            folder:'',
             allIDs: null,
             folders: [],
             eachListing: null,
@@ -51,6 +54,7 @@ class DisplayFolderContent extends Component{
         this.handleShowFolders = this.handleShowFolders.bind(this);
         this.handleCloseFolders = this.handleCloseFolders.bind(this);
         this.handleCloseConfirm = this.handleCloseConfirm.bind(this);
+        this.handleShowConfirm = this.handleShowConfirm.bind(this);
         this.setColumn1 = this.setColumn1.bind(this);
         this.setColumn2 = this.setColumn2.bind(this);
         this.setColumn3 = this.setColumn3.bind(this);
@@ -62,6 +66,13 @@ class DisplayFolderContent extends Component{
         let getFolders = fetchData.getFolderNames.bind(this);
         getFolders();
 
+    }
+
+    readFolder = async event => {
+        event.preventDefault();
+        this.setState({folder: event.target.value})
+
+        console.log("Folder name: " + this.state.folder)
     }
 
     handleCloseLoading() {
@@ -76,7 +87,6 @@ class DisplayFolderContent extends Component{
     handleCloseColumn() {
         this.setState( {showColumn: false})
     }
-
     handleCloseConfirm() {
         this.setState({showConfirm:false});
     }
@@ -89,6 +99,9 @@ class DisplayFolderContent extends Component{
         this.setState({showColumn: true})
         this.handleCloseListing();
     }
+    handleShowConfirm() {
+        this.setState({showConfirm:true})
+    }
     handleShowFolders() {
         const all = this.state.folders.map((eachFolder) =>
             <Button variant="outline-success" onClick={() => this.handlePush(eachFolder)}>{eachFolder}</Button>
@@ -97,13 +110,21 @@ class DisplayFolderContent extends Component{
         this.setState({showFolders: true});
         this.handleCloseListing();
     }
+    handleNewFolder = async event => {
+        saveData.removeListing(folderName, this.state.l);
+        saveData.saveListing(this.state.folder, this.state.l._url, this.state.l);
+        console.log(this.state.folder);
+        this.handleCloseFolders();
+        this.handleShowConfirm();
+
+    }
 
     handlePush = async (folder) =>  {
 
         saveData.removeListing(folderName, this.state.l);
-        saveData.saveListing(folder, this.state.l, this.state.l);
+        saveData.saveListing(folder, this.state.l._url, this.state.l);
         this.handleCloseFolders();
-        this.setState({showConfirm:true})
+        this.handleShowConfirm();
     }
     setColumn1() {
         this.setState({column: 1})
@@ -243,6 +264,15 @@ class DisplayFolderContent extends Component{
                     <Modal.Body>
 
                         {allFolders}
+                        <br/>
+                        <div className="searchBarWrap">
+                            <Form inline>
+                                <FormControl  className = "newFolder" type="text" name="folder" placeholder="Create a new folder" onChange={this.readFolder}/>
+                                <Button variant="outline-success" onClick={this.handleNewFolder}>
+                                    Create
+                                </Button>
+                            </Form>
+                        </div>
                     </Modal.Body>
                 </Modal>
                 <Modal show={this.state.showConfirm} onHide={this.handleCloseConfirm}>
