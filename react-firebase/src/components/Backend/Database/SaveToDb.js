@@ -39,6 +39,7 @@ const func = {
             console.log("eat my fucking ass cuz this listing aint getting deleted");
         });
         var listingKey = l._id;
+        console.log("listing key : " + l);
         databaseref.child(listingKey).set({'url':url});
 
     },
@@ -73,6 +74,7 @@ const func = {
         databaseref.child(listingKey).set({'url':l._url});
     },
     removeCompare: function (column) {
+        console.log("------------------deleting0000000000000:   " + column);
         let uid = app.auth().currentUser.uid;
         let databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + column);
         databaseref.remove().then(function() {

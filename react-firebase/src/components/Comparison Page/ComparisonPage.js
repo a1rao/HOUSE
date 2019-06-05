@@ -98,15 +98,20 @@ class ComparisonPage extends Component {
     handleAddToTable = async (number, listing) => {
         if(number === 1){
             this.setState({listing1: listing});
+            saveData.saveToCompare('1',listing,listing._url);
+
         }
         else if(number === 2) {
             this.setState({listing2: listing});
+            saveData.saveToCompare('2',listing,listing._url);
         }
         else if(number === 3) {
             this.setState({listing3: listing});
+            saveData.saveToCompare('3',listing,listing._url);
         }
         else{
             this.setState({listing4: listing});
+            saveData.saveToCompare('4',listing,listing._url);
         }
         console.log("we are able to select a specific listing : " + listing._address);
         this.handleCloseListings();
