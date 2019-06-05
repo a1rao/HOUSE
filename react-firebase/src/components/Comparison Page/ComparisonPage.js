@@ -17,8 +17,8 @@ class ComparisonPage extends Component {
 
         this.state = {
             allIDs: [],
+            compareIDS: [],
             folders: [],
-            currentColumn: '1',
             eachListing2: [],
             eachListing: [],
             listing1: '',
@@ -32,7 +32,7 @@ class ComparisonPage extends Component {
         let getFolders = fetchData.getFolderNames.bind(this);
         getFolders();
 
-        this._getIDs = fetchData.getComparisonID.bind(this);
+        this._getIDs = fetchData.getIDs.bind(this);
         this._getListings = fetchData.getAllListings.bind(this);
 
         let first = fetchData.getComparisonID.bind(this);
