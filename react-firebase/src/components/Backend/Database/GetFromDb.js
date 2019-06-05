@@ -90,7 +90,7 @@ const func = {
             if(items.length == 0)
                 items.push(null);
 
-            this.setState({allIDs: items});
+            this.setState({compareIDs: items});
 
         });
         databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + 2);
@@ -104,7 +104,7 @@ const func = {
             if(items.length == 1)
                 items.push(null);
 
-            this.setState({allIDs: items});
+            this.setState({compareIDs: items});
         });
         databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + 3);
         databaseref.on('value', dataSnapshot => {
@@ -118,7 +118,7 @@ const func = {
             if(items.length === 2)
                 items.push(null);
 
-            this.setState({allIDs: items});
+            this.setState({compareIDs: items});
 
         });
         databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + 4);
@@ -132,10 +132,10 @@ const func = {
             if(items.length === 3)
                 items.push(null);
 
-            this.setState({allIDs: items});
+            this.setState({compareIDs: items});
         });
 
-        console.log("allIds in getId: " + this.state.allIDs)
+        console.log("allIds in getId: " + this.state.compareIDs)
         console.log("length------------------------------`-" + items)
         // Callback function
         setTimeout(() => {cb();}, 1000);
@@ -144,11 +144,11 @@ const func = {
     {
         let items = [];
         //console.log("allIDs:", this.state.allIDs);
-        if(this.state.allIDs === null) {
+        if(this.state.compareIDs === null) {
             return;
         }
-        console.log("all ids in get listing" + this.state.allIDs);
-        this.state.allIDs.forEach(id => {
+        console.log("all ids in get listing" + this.state.compareIDs);
+        this.state.compareIDs.forEach(id => {
             console.log("ids-----------: " + id);
 
             app.database().ref('listings/' + id).on('value', dataSnapshot => {
@@ -164,23 +164,23 @@ const func = {
         });
         setTimeout(function() {
             console.log("eachlisting in getListign:", items);
-            this.setState({eachListing: items});
+            this.setState({eachListing2: items});
             //this.setState({done : true});
-            console.log("please work: " + this.state.eachListing);
-            if(this.state.eachListing[0] != null) {
-                this.setState({listing1:this.state.eachListing[0]})
+            console.log("please work: " + this.state.eachListing2);
+            if(this.state.eachListing2[0] != null) {
+                this.setState({listing1:this.state.eachListing2[0]})
             }
-            if(this.state.eachListing[1] != null) {
-                this.setState({listing2:this.state.eachListing[1]})
+            if(this.state.eachListing2[1] != null) {
+                this.setState({listing2:this.state.eachListing2[1]})
             }
-            if(this.state.eachListing[2] != null) {
-                this.setState({listing3:this.state.eachListing[2]})
+            if(this.state.eachListing2[2] != null) {
+                this.setState({listing3:this.state.eachListing2[2]})
             }
-            if(this.state.eachListing[3] != null) {
-                this.setState({listing4:this.state.eachListing[3]})
+            if(this.state.eachListing2[3] != null) {
+                this.setState({listing4:this.state.eachListing2[3]})
             }
 
-        }.bind(this), 100*this.state.allIDs.length)
+        }.bind(this), 100*this.state.compareIDs.length)
 
     }
 };

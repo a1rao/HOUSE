@@ -5,6 +5,7 @@ import './ComparisonPage.css';
 import Button from "react-bootstrap/Button";
 import fetchData from "../Backend/Database/GetFromDb";
 import Modal from "react-bootstrap/Modal";
+import saveData from "../Backend/Database/SaveToDb"
 
 var allFolders = '';
 var allListings = '';
@@ -16,8 +17,9 @@ class ComparisonPage extends Component {
 
         this.state = {
             allIDs: [],
+            compareIDS: [],
             folders: [],
-            currentColumn: '1',
+            eachListing2: [],
             eachListing: [],
             listing1: '',
             listing2: '',
@@ -30,7 +32,7 @@ class ComparisonPage extends Component {
         let getFolders = fetchData.getFolderNames.bind(this);
         getFolders();
 
-        this._getIDs = fetchData.getComparisonID.bind(this);
+        this._getIDs = fetchData.getIDs.bind(this);
         this._getListings = fetchData.getAllListings.bind(this);
 
         let first = fetchData.getComparisonID.bind(this);
@@ -48,7 +50,7 @@ class ComparisonPage extends Component {
     }
 
     handleRemoveListing = async number => {
-
+        saveData.removeCompare(number);
     };
 
 
@@ -96,15 +98,20 @@ class ComparisonPage extends Component {
     handleAddToTable = async (number, listing) => {
         if(number === 1){
             this.setState({listing1: listing});
+            saveData.saveToCompare('1',listing,listing._url);
+
         }
         else if(number === 2) {
             this.setState({listing2: listing});
+            saveData.saveToCompare('2',listing,listing._url);
         }
         else if(number === 3) {
             this.setState({listing3: listing});
+            saveData.saveToCompare('3',listing,listing._url);
         }
         else{
             this.setState({listing4: listing});
+            saveData.saveToCompare('4',listing,listing._url);
         }
         console.log("we are able to select a specific listing : " + listing._address);
         this.handleCloseListings();
@@ -164,18 +171,23 @@ class ComparisonPage extends Component {
                         <th>
                             <Button variant="primary" onClick={() => this.handleShowFolders(2)}> Add New Listing
                             </Button>
-                            <Button variant="secondary" onClick={() => this.handleRemoveListing(1)}> Remove listing </Button>
+                            <Button variant="secondary" onClick={() => this.handleRemoveListing(2)}> Remove listing </Button>
                         </th>
                         <th>
                             <Button variant="primary" onClick={() => this.handleShowFolders(3)}> Add New Listing
                             </Button>
-                            <Button variant="secondary" onClick={() => this.handleRemoveListing(1)}> Remove listing </Button>
+                            <Button variant="secondary" onClick={() => this.handleRemoveListing(3)}> Remove listing </Button>
                         </th>
                         <th>
                             <Button variant="primary" onClick={() => this.handleShowFolders(4)}> Add New Listing
                             </Button>
-                            <Button variant="secondary" onClick={() => this.handleRemoveListing(1)}> Remove listing </Button>
+                            <Button variant="secondary" onClick={() => this.handleRemoveListing(4)}> Remove listing </Button>
                         </th>
+
+
+
+
+
 
                     </tr>
                     </thead>
