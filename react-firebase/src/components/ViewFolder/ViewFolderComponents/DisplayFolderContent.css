@@ -1,6 +1,6 @@
 .listThumbnail{
-    width: 500px;
-    height: 350px;
+    width: 400px;
+    height: 200px;
 }
 
 .allThumbnails{
@@ -12,7 +12,7 @@
 .title{
     display: block;
     text-align: center;
-    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
+    font-family: Cambria, "Apple Chancery", "Comic Sans MS", Palatino;
     padding-top: 20px;
 
 }

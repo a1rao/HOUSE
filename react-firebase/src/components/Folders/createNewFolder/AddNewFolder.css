@@ -1,0 +1,21 @@
+.enterNameForm{
+    position: relative;
+    width: 175px;
+    left: 1px;
+    padding: 0px;
+    margin: 2px;
+
+}
+
+.addNewButton {
+    position: relative;
+    left: 2px;
+    top: 3px;
+    padding: 4px;
+    margin: 1px;
+    width: 173px;
+    border-width: 1px;
+    border-color: lightgrey;
+    border-style: solid;
+    background-color: lightblue;
+}

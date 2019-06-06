@@ -91,6 +91,9 @@ module.exports = class Main_Scraper {
                 console.log("We cannot scrape from this link.")
             }
 
+            await mapScraper.getDistance(this.l.address, this.l);
+            await mapScraper.getPhotos(this.l.address, this.l);
+
             // await mapScraper.distance(campus, this.l.address, this.l);
             // await mapScraper.getPhoto(this.l.address, this.l);
             // await mapScraper.groceryStore(this.l.address, this.l);
