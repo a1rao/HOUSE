@@ -36,8 +36,10 @@ const func = {
         this.state.allIDs.forEach(id => {
               app.database().ref('listings/' + id).on('value', dataSnapshot => {
                   let listing = dataSnapshot.val();
-                  items.push(listing);
-                  console.log('push:', listing);
+                  if (listing != null) { // Ignore null listings aka 'listing1' ;)
+                      items.push(listing);
+                      console.log('push:', listing);
+                  }
               });
         });
         setTimeout(function() {
@@ -74,8 +76,113 @@ const func = {
         });
     },
 
+    getComparisonID: function(cb) {
+        let items = [];
+        let uid = app.auth().currentUser.uid;
+        let databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + 1);
+        databaseref.on('value', dataSnapshot => {
+            let item ='';
+            dataSnapshot.forEach(childSnapshot => {
+                item = childSnapshot.key;
+                items.push(item)
+                console.log("key when in getID: " + item);
+            });
+            if(items.length == 0)
+                items.push(null);
 
+            this.setState({compareIDs: items});
 
+        });
+        databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + 2);
+        databaseref.on('value', dataSnapshot => {
+            let item ='';
+            dataSnapshot.forEach(childSnapshot => {
+                item = childSnapshot.key;
+                items.push(item)
+                console.log("key when in getID: " + item);
+            });
+            if(items.length == 1)
+                items.push(null);
+
+            this.setState({compareIDs: items});
+        });
+        databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + 3);
+        databaseref.on('value', dataSnapshot => {
+            let item ='';
+            dataSnapshot.forEach(childSnapshot => {
+                item = childSnapshot.key;
+                items.push(item)
+                console.log("key when in getID: " + item);
+            });
+
+            if(items.length === 2)
+                items.push(null);
+
+            this.setState({compareIDs: items});
+
+        });
+        databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + 4);
+        databaseref.on('value', dataSnapshot => {
+            let item ='';
+            dataSnapshot.forEach(childSnapshot => {
+                item = childSnapshot.key;
+                items.push(item)
+                console.log("key when in getID: " + item);
+            });
+            if(items.length === 3)
+                items.push(null);
+
+            this.setState({compareIDs: items});
+        });
+
+        console.log("allIds in getId: " + this.state.compareIDs)
+        console.log("length------------------------------`-" + items)
+        // Callback function
+        setTimeout(() => {cb();}, 1000);
+    },
+    getListing: function()
+    {
+        let items = [];
+        //console.log("allIDs:", this.state.allIDs);
+        if(this.state.compareIDs === null) {
+            return;
+        }
+        console.log("all ids in get listing" + this.state.compareIDs);
+        this.state.compareIDs.forEach(id => {
+            console.log("ids-----------: " + id);
+
+            app.database().ref('listings/' + id).on('value', dataSnapshot => {
+                let listing = dataSnapshot.val();
+                if (listing != null) { // Ignore null listings aka 'listing1' ;)
+                    items.push(listing);
+                    console.log('push:', listing);
+                } else {
+                    items.push(null);
+                }
+            });
+
+        });
+        setTimeout(function() {
+            console.log("eachlisting in getListign:", items);
+            this.setState({eachListing2: items});
+            //this.setState({done : true});
+            console.log("please work: " + this.state.eachListing2);
+            if(this.state.eachListing2[0] != null) {
+                this.setState({listing1:this.state.eachListing2[0]})
+            }
+            if(this.state.eachListing2[1] != null) {
+                this.setState({listing2:this.state.eachListing2[1]})
+            }
+            if(this.state.eachListing2[2] != null) {
+                this.setState({listing3:this.state.eachListing2[2]})
+            }
+            if(this.state.eachListing2[3] != null) {
+                this.setState({listing4:this.state.eachListing2[3]})
+            }
+
+        }.bind(this), 100*this.state.compareIDs.length)
+
+    }
 };
 
 export default func;

@@ -202,10 +202,9 @@ class ListingCard extends Component {
                 <Button variant="outline-success" onClick={this.handleScrape}>
                     Search
                 </Button>
-                <Modal show={this.state.showScraping} onHide = {this.handleC}>
-                    <Modal.Header/>
-                    <Modal.Title>Scraping...</Modal.Title>
-                    <Modal.Body></Modal.Body>
+                <Modal className="addColor" show={this.state.showScraping} onHide = {this.handleC}>
+                    <Modal.Header className="scraping">Scraping your url...</Modal.Header>
+                    <Modal.Body className="tip"><b>TIP:</b> You can add listings to the comparison table while viewing the folders!</Modal.Body>
                 </Modal>
 
                 <Modal show={this.state.showMain} onHide={this.handleClose}>
@@ -257,7 +256,7 @@ class ListingCard extends Component {
                             <Form inline>
                                 <FormControl  className = "newFolder" type="text" name="folder" placeholder="Create a new folder" onChange={this.readFolder}/>
                                 <Button variant="outline-success" onClick={this.handleNewFolder}>
-                                    Save
+                                    Create
                                 </Button>
                             </Form>
                         </div>

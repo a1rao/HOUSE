@@ -1,5 +1,4 @@
 module.exports =  class Listing {
-
     constructor(url, title, address, price, bed, bath, area, type, deposit, contact_name, contact_email, contact_number,
                 distance_to_campus, travel_time, pets, smoking, parking, lease_period, description, int_price, int_bed, int_bath,
                 int_area, photo_name, photo_ref, grocery_stores) {
@@ -31,8 +30,8 @@ module.exports =  class Listing {
         this._photo_name = photo_name;
         this._photo_ref = photo_ref;
         this._grocery_stores = grocery_stores;
-        this._lat = "NA";
-        this._lng = "NA";
+        this._id = '';
+
         //console.log("l was initialized at " + new Date().getTime())
     }
 
@@ -238,4 +237,13 @@ module.exports =  class Listing {
     set travel_time(value) {
         this._travel_time = value;
     }
+
+    get id() {
+        return this._id;
+    }
+
+    set id(value) {
+        this._id = value;
+    }
+
 };

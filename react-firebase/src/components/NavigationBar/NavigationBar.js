@@ -47,6 +47,7 @@ class NavigationBar extends Component {
 
     saveName(folder) {
         //event.preventDefault();
+        localStorage.setItem("viewFolderName", folder);
         folderName =  folder;
         console.log("Clicked: " + folderName)
     }
