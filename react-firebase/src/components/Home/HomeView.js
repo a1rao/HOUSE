@@ -19,7 +19,7 @@ class HomeView extends Component {
                 <NavigationBar/>
 
                 <div className="backgroundImageContainer">
-                    <img src="https://github.com/a1rao/HOUSE/blob/master/react-firebase/src/components/Home/Background.jpg?raw=true" alt="a beautiful picture" className="backgroundImage"/>
+                    <img src="https://github.com/a1rao/HOUSE/blob/master/react-firebase/src/components/Home/Background_Bigger.jpg?raw=true" alt="a beautiful picture" className="backgroundImage"/>
                     {/*<img src="HomepageBackground.jpg" alt="https://graphicriver.img.customer.envatousercontent.com/files/246062449/preview.jpg?auto=format&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=25ef6f5f977ada803a462772880e04c6" alt="Pic blurry" className="backgroundImage" />*/}
                 </div>
 
