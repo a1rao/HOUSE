@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2592616e-3d7d-4baf-b3f5-cb40db4e0775" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/HomeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeView.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -48,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Home/HomeView.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+              <caret line="21" column="180" selection-start-line="21" selection-start-column="180" selection-end-line="21" selection-end-column="180" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -356,15 +355,15 @@
       <workItem from="1559190063125" duration="495000" />
       <workItem from="1559419555385" duration="27463000" />
       <workItem from="1559609528491" duration="2552000" />
-      <workItem from="1559793994682" duration="12900000" />
+      <workItem from="1559793994682" duration="13550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52792000" />
+    <option name="totallyTimeSpent" value="53442000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -611,7 +610,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/Home/HomeView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <caret line="21" column="180" selection-start-line="21" selection-start-column="180" selection-end-line="21" selection-end-column="180" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
