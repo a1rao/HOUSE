@@ -12,7 +12,7 @@
 .title{
     display: block;
     text-align: center;
-    font-family: Cambria, "Apple Chancery", "Comic Sans MS", Palatino;
+    font-family: 'Oxygen', sans-serif;
     padding-top: 20px;
 
 }
@@ -52,13 +52,13 @@ img.backgroundImage {
 
 .mTitle {
     margin: 0 auto;
-    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
+    font-family: 'Oxygen', sans-serif;
     font-weight: bold;
 
 }
 
 .mBodyElement {
-    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
+    font-family: 'Oxygen', sans-serif;
     width: 50%;
     margin: 0 auto;
     border: solid 2px midnightblue;
@@ -79,7 +79,7 @@ img.backgroundImage {
 }
 
 .mBodyElementDescription {
-    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
+    font-family: 'Oxygen', sans-serif;
     width: 100%;
     margin: 0 auto;
     border: solid 2px midnightblue;
@@ -99,5 +99,5 @@ img.backgroundImage {
 }
 
 .listURL {
-    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
+    font-family: 'Oxygen', sans-serif;
 }

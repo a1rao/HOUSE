@@ -235,7 +235,7 @@ class DisplayFolderContent extends Component{
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                PHOTO:
+                                Photo:
                             </div>
                             <div className="mBodyElementContent">
                                 {this.state.l._photo_name}
@@ -246,7 +246,7 @@ class DisplayFolderContent extends Component{
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                ADDRESS:
+                                Address:
                             </div>
                             <div className="mBodyElementContent">
                                 {this.state.l._address}
@@ -257,7 +257,7 @@ class DisplayFolderContent extends Component{
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                PRICE:
+                                Price:
                             </div>
                             <div className="mBodyElementContent">
                                 {this.state.l._price}
@@ -268,7 +268,7 @@ class DisplayFolderContent extends Component{
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                BEDS:
+                                Beds:
                             </div>
                             <div className="mBodyElementContent">
                                 {this.state.l._bed}
@@ -279,7 +279,7 @@ class DisplayFolderContent extends Component{
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                BATH:
+                                Bath:
                             </div>
                             <div className="mBodyElementContent">
                                 {this.state.l._bath}
@@ -290,7 +290,7 @@ class DisplayFolderContent extends Component{
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                AREA:
+                                Area:
                             </div>
                             <div className="mBodyElementContent">
                                 {this.state.l._area}
@@ -301,7 +301,7 @@ class DisplayFolderContent extends Component{
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                DISTANCE TO CAMPUS:
+                                Distance to Campus:
                             </div>
                             <div className="mBodyElementContent">
                                 {this.state.l._distance_to_campus}
@@ -312,7 +312,7 @@ class DisplayFolderContent extends Component{
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                TYPE:
+                                Type:
                             </div>
                             <div className="mBodyElementContent">
                                 {this.state.l._type}
