@@ -17,8 +17,9 @@ class HomeView extends Component {
 
                 {/*Navigation bar at the top of the screen. */}
                 <NavigationBar/>
+
                 <div className="backgroundImageContainer">
-                    <img src="https://graphicriver.img.customer.envatousercontent.com/files/246062449/preview.jpg?auto=format&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=25ef6f5f977ada803a462772880e04c6" alt="It is blurry" className="backgroundImage"/>
+                    <img src="https://graphicriver.img.customer.envatousercontent.com/files/246062449/preview.jpg?auto=format&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=25ef6f5f977ada803a462772880e04c6" alt="Pic blurry" className="backgroundImage" />
                 </div>
 
                 {/*Code for the list thumbnail.
