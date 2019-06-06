@@ -1,5 +1,6 @@
 .listThumbnail{
-    width: 400px;
+    width: 500px;
+    height: 350px;
 }
 
 .allThumbnails{
@@ -34,7 +35,6 @@ img.backgroundImage {
     bmin-height: 100%;
     min-width: 1024px;
 
-
     /* Set up proportionate scaling */
     width: 100%;
     height: 100%;
@@ -43,4 +43,61 @@ img.backgroundImage {
     position: fixed;
     top: 75px;
     left: 0;
+}
+
+
+.grid {
+    margin-left: 6%;
+}
+
+.mTitle {
+    margin: 0 auto;
+    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
+    font-weight: bold;
+
+}
+
+.mBodyElement {
+    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
+    width: 50%;
+    margin: 0 auto;
+    border: solid 2px midnightblue;
+}
+
+.mBodyElementTitle {
+    text-align: center;
+}
+
+.mBodyElementContent {
+    text-align: center;
+    font-weight: normal;
+}
+
+.mBody {
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+}
+
+.mBodyElementDescription {
+    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
+    width: 100%;
+    margin: 0 auto;
+    border: solid 2px midnightblue;
+}
+
+.mFoot {
+    width: auto;
+}
+
+.mBodyElementTitle {
+    text-align: center;
+}
+
+.mBodyElementContent {
+    text-align: center;
+    font-weight: normal;
+}
+
+.listURL {
+    font-family: "Apple Chancery", "Comic Sans MS", Palatino;
 }
