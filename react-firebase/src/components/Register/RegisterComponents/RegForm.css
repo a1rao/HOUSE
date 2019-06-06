@@ -60,18 +60,36 @@
 }
 
 
+
+
 .centerContainer {
     text-align: center;
 }
 
 /* Add padding to containers */
 .container {
+
+    padding: 15px;
     margin: 1px;
     display: inline-block;
+    min-height: 100%;
+    min-width: 50%;
+    max-height: 150%;
+    max-width: 700px;
     height: 200px;
     text-align: left;
 }
 
+/* Change styles for span and cancel button on extra small screens */
+/*@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}*/
 
 .container {
     background-color: #f1f1f1;
@@ -102,15 +120,4 @@
     max-height: 200px;
     border-radius: 50%;
     height: 100%;
-}*/
-
-/* Change styles for span and cancel button on extra small screens */
-/*@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
 }*/

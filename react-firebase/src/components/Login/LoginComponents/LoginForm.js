@@ -13,9 +13,9 @@ const LoginForm = ({ onSubmit }) => {
                         <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon"  className="avatar"/>
                     </div>
 
-                    <div className="centerContainer">
+                    <div className="centerContainerL">
 
-                        <div className="container">
+                        <div className="containerL">
                             <label htmlFor="uname"><b>Email</b></label>
                             <input type="text" name = "email" placeholder="Enter Valid Email"  required className="inputLogin"/>
 
