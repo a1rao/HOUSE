@@ -31,6 +31,8 @@ module.exports =  class Listing {
         this._photo_name = photo_name;
         this._photo_ref = photo_ref;
         this._grocery_stores = grocery_stores;
+        this._lat = "NA";
+        this._lng = "NA";
         //console.log("l was initialized at " + new Date().getTime())
     }
 
