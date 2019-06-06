@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import app from '../../../base';
+import './AddNewFolder.css';
 
 
 // Add new folder to database
@@ -29,13 +30,13 @@ class AddNewFolder extends Component {
 
         return(
             <div className="newFolder">
-                <form id="insertName">
+                <form id="insertName"  className={"enterNameForm"}>
                     <input
                         name="folderName"
                         type="text"
                         placeholder="Enter Folder Name"/>
                 </form>
-                <button onClick={CreateFolder}>Create New Folder</button>
+                <button onClick={CreateFolder} className="addNewButton">Create New Folder</button>
             </div>
         );
     };
