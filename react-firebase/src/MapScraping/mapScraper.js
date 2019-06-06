@@ -170,8 +170,12 @@ module.exports = {
 			}
 		});*/
 
+		console.log("Making distance request at :\n" +PROXY_URL + BASE_URL + DISTANCE + OUTPUT + UNITS + URL_SEPARATOR + ORIGIN
+			+ target.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR + DEST + FIXED_CAMPUS.replace(/ /g, "%20")
+			+ URL_SEPARATOR + API_KEY);
+
 		await makeRequest(PROXY_URL + BASE_URL + DISTANCE + OUTPUT + UNITS + URL_SEPARATOR + ORIGIN
-			+ target.replace(" ", "%20") + URL_SEPARATOR + DEST + FIXED_CAMPUS.replace(" ", "%20")
+			+ target.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR + DEST + FIXED_CAMPUS.replace(/ /g, "%20")
 			+ URL_SEPARATOR + API_KEY).then(function(body) {
 			console.log("We got here in DistanceQuery at " + (new Date().getTime()));
 			// console.log(body);
@@ -191,7 +195,9 @@ module.exports = {
 	},
 
 	getPhotos: function(address, l) {
-		makeRequest(PROXY_URL + BASE_URL + PLACE + PLACE_FROM_TEXT + OUTPUT + INPUT + address.replace(" ", "%20") + URL_SEPARATOR
+		console.log("Making Place Search Request at :\n" + PROXY_URL + BASE_URL + PLACE + PLACE_FROM_TEXT + OUTPUT + INPUT + address.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR
+			+ TEXT_QUERY + URL_SEPARATOR + PLACE_FIELDS + URL_SEPARATOR + API_KEY);
+		makeRequest(PROXY_URL + BASE_URL + PLACE + PLACE_FROM_TEXT + OUTPUT + INPUT + address.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR
 			+ TEXT_QUERY + URL_SEPARATOR + PLACE_FIELDS + URL_SEPARATOR + API_KEY).then(async function(body) {
 			console.log("We got here in PlaceSearchQuery at " + (new Date().getTime()));
 			// console.log(body);
@@ -200,6 +206,9 @@ module.exports = {
 			console.log(response);
 
 			var placeID = response.candidates[0].place_id;
+
+			console.log("Making Place Details Request at :\n" + PROXY_URL+ BASE_URL + PLACE + PLACE_DETAILS + OUTPUT + PLACE_ID + placeID + URL_SEPARATOR
+				+ DETAILS_FIELDS + URL_SEPARATOR + API_KEY);
 
 			await makeRequest(PROXY_URL+ BASE_URL + PLACE + PLACE_DETAILS + OUTPUT + PLACE_ID + placeID + URL_SEPARATOR
 				+ DETAILS_FIELDS + URL_SEPARATOR + API_KEY)
@@ -215,6 +224,9 @@ module.exports = {
 
 					l.photo_ref = /*PROXY_URL +*/ BASE_URL + PLACE + PLACE_PHOTO + PHOTO_WIDTH + URL_SEPARATOR
 						+ PHOTO_REF + ref + URL_SEPARATOR + API_KEY;
+
+					console.log("Photo reference being used is :\n" + BASE_URL + PLACE + PLACE_PHOTO + PHOTO_WIDTH + URL_SEPARATOR
+						+ PHOTO_REF + ref + URL_SEPARATOR + API_KEY);
 
 					await getStores(lat, lng, l);
 
