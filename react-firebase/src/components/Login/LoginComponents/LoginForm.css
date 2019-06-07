@@ -3,6 +3,7 @@
     border-width: 3px;
     border-color: black;
     border-style: solid;
+    background-color: #f1f1f1;
 }
 
 
@@ -80,7 +81,7 @@ a:hover {
     text-align: center;
     margin: 0 0 0 0;
     padding-top: 7px;
-    background-color: #ffff;
+    background-color: #f1f1f1;
 }
 
 /* Avatar image */
@@ -91,12 +92,12 @@ a:hover {
     height: 100%;
 }
 
-.centerContainer {
+.centerContainerL {
     text-align: center;
 }
 
 /* Add padding to containers */
-.container {
+.containerL {
 
     padding: 16px;
     display: inline-block;

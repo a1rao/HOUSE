@@ -12,6 +12,7 @@ import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/ButtonGroup";
+import Image from "react-bootstrap/Image";
 
 // Display all listing thumbnails from folder that is currently listing1
 // For testing purposes, this folder is:  TEST
@@ -219,64 +220,219 @@ class DisplayFolderContent extends Component{
                     Distance to Campus: {listing._distance_to_campus}
                 </Button>
 
-                <Modal show = {this.state.showListing} onHide={this.handleCloseListing}>
-                    <Modal.Header>
-                        <Modal.Title>{this.state.l._title}</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                        PHOTO: {this.state.l._photo_name}
+                <Modal show={this.state.showListing} onHide={this.handleCloseListing}>
+                    <div className="mHeader">
+                        <Modal.Header>
+                            <div className="mTitle">
+                                <Modal.Title>{this.state.l._title} <br/> </Modal.Title>
+                            </div>
+                            <div className="listURL">
+                                <a href={this.state.l._url}>Listing URL</a>
+                            </div>
+                        </Modal.Header>
+                    </div>
+
+                    <Modal.Body className="mBody">
+
+                        {/*<div className="mBodyElement">*/}
+                        {/*    <div className="mBodyElementTitle">*/}
+                        {/*        Photo:*/}
+                        {/*    </div>*/}
+                            {/*<div className="mBodyElementContent">*/}
+                                {/*{this.state.l._photo_name}*/}
+                             <div className = "mBodyElementImage">
+                                <Image src={this.state.l._photo_ref} height={200} />
+                             </div>
+                            {/*</div>*/}
+                        {/*</div>*/}
                         <br/>
-                        ADDRESS: {this.state.l._address}
                         <br/>
-                        PRICE: {this.state.l._price}
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Address:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._address}
+                            </div>
+                        </div>
                         <br/>
-                        BEDS: {this.state.l._bed}
                         <br/>
-                        BATH: {this.state.l._bath}
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Price:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._price}
+                            </div>
+                        </div>
                         <br/>
-                        AREA: {this.state.l._area}
                         <br/>
-                        DISTANCE TO CAMPUS: {this.state.l._distance_to_campus}
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Beds:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._bed}
+                            </div>
+                        </div>
                         <br/>
-                        TYPE: {this.state.l._type}
                         <br/>
-                        Deposit: {this.state.l._deposit}
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Bath:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._bath}
+                            </div>
+                        </div>
                         <br/>
-                        Lease Period: {this.state.l._lease_period}
                         <br/>
-                        Parking: {this.state.l._parking}
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Area:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._area}
+                            </div>
+                        </div>
                         <br/>
-                        Smoking: {this.state.l._smoking}
                         <br/>
-                        Pets: {this.state.l._pets}
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Distance to Campus:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._distance_to_campus}
+                            </div>
+                        </div>
                         <br/>
-                        Contact Name: {this.state.l._contact_name}
                         <br/>
-                        Contact Number: {this.state.l._contact_number}
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Type:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._type}
+                            </div>
+                        </div>
                         <br/>
-                        Contact Email: {this.state.l._contact_email}
                         <br/>
-                        URL : {this.state.l._url}
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Deposit:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._deposit}
+                            </div>
+                        </div>
                         <br/>
-                        Description: {this.state.l._description}
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Lease Period:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._lease_period}
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Parking:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._parking}
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Smoking:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._smoking}
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Pets:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._pets}
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Contact Name:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._contact_name}
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                Contact Email:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._contact_email}
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+
+
+                        <div className="mBodyElementDescription">
+                            <div className="mBodyElementTitle">
+                                Description:
+                            </div>
+                            <div className="mBodyElementContent">
+                                {this.state.l._description}
+                            </div>
+                        </div>
+                        <br/>
                         <br/>
                     </Modal.Body>
 
-                    <Modal.Footer>
-                        <Button variant="secondary" onClick={this.handleCloseListing}>
-                            Close
-                        </Button>
-                        <Button variant = "primary" onClick ={this.handleShowColumn}>
+                    <Modal.Footer className="mFoot">
+                        <Button variant = "success" onClick ={this.handleShowColumn} size="sm">
                             Add to Compare Table
                         </Button>
-                        <Button variant="primary" onClick ={this.deleteListing}>
+                        <Button variant="info" onClick={this.handleShowFolders} size="sm">
+                            Move to different Folder
+                        </Button>
+                        <Button variant="danger" onClick ={this.deleteListing} size="sm">
                             Remove from Folder
                         </Button>
-                        <Button variant="primary" onClick={this.handleShowFolders}>
-                            Move to different Folder
+                        <Button variant="dark" onClick={this.handleCloseListing}size="sm">
+                            Close Window
                         </Button>
                     </Modal.Footer>
                 </Modal>
+
+
                 <Modal show ={this.state.showColumn} onHide={this.handleCloseColumn}>
                     <Modal.Header closeButton>
                         <Modal.Title>Select a Column</Modal.Title>
@@ -324,7 +480,7 @@ class DisplayFolderContent extends Component{
         );
 
         return (
-            <div>
+            <div className="grid">
                 <h1 className="title">{folderName}</h1>
                 <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_price')}>Sort By Price</Button>
                 <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_area')}>Sort By Area</Button>

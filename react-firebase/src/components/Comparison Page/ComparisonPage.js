@@ -194,6 +194,10 @@ class ComparisonPage extends Component {
                     <tbody>
                     <tr>
                         <td className="tableHead">Image</td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
                     </tr>
                     <tr>
                         <td className="tableHead">Name</td>

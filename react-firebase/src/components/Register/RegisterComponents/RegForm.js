@@ -5,9 +5,7 @@ const RegForm = ({ onSubmit }) => {
     return (
         <div className="registrationComponent">
             <form onSubmit={onSubmit} className="registerForm">
-                <div className="imgcontainer">
-                    <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon"  className="avatar"/>
-                </div>
+
 
                 <div className="centerContainer">
 
@@ -30,6 +28,8 @@ const RegForm = ({ onSubmit }) => {
                         <label htmlFor="repeatPword"><b>Re-Enter Password</b></label>
                         <input type="password" name="password2" placeholder="Re-Enter Password"  required className="inputRegister"/>
 
+                        <button type="" className="placeholderButton"></button>
+
                         <button type="submit" className="registerButton">Register</button>
 
                     </div>
@@ -42,6 +42,11 @@ const RegForm = ({ onSubmit }) => {
 
 
 /*<div>
+
+<!--  <div className="imgcontainer"> -->
+               <!--     <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon"  className="avatar"/>-->
+               <!-- </div>-->
+
     <h1>Register</h1>
     <form onSubmit={onSubmit}>
         <label>

@@ -23,7 +23,7 @@ module.exports = async function scrape(url) {
     // var ret4 = await main('https://www.trulia.com/p/ca/la-jolla/2342-via-siena-la-jolla-ca-92037--1011677623');
     // var ret5 = await main('https://www.trulia.com/c/ca/la-jolla/elan-beachcomber-8115-el-paseo-grande-la-jolla-ca-92037--1136376307');
 
-    setTimeout(printl, 3000);
+    // setTimeout(printl, 3000);
     // setTimeout(printl, 2000);
 
     //setTimeout(() => {

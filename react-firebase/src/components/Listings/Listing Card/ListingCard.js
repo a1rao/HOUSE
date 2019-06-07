@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
 import NavigationBar from '../../NavigationBar/NavigationBar';
 import FormControl from "react-bootstrap/FormControl";
 import saveData from '../../Backend/Database/SaveToDb.js';
@@ -51,6 +52,7 @@ class ListingCard extends Component {
             smoking: '',
             pet: '',
             description: '',
+            stores: ''
         };
         let getFolders = fetchData.getFolderNames.bind(this);
         getFolders();
@@ -104,7 +106,7 @@ class ListingCard extends Component {
     handleS = async event => {
         this.setState({showScraping: true})
 
-        setTimeout(this.handleShow, 5000);
+        setTimeout(this.handleShow, 7000);
 
     }
     handleC = async event => {
@@ -157,7 +159,7 @@ class ListingCard extends Component {
                 listingInfo = await scrape(this.state.url);
                 setTimeout(function() {
 
-                        that.setState({image: listingInfo.photo});
+                        that.setState({image: listingInfo.photo_ref});
                         that.setState({title: listingInfo.title});
                         that.setState({address: listingInfo.address});
                         that.setState({price: listingInfo.price});
@@ -174,13 +176,14 @@ class ListingCard extends Component {
                         that.setState({smoking: listingInfo.smoking});
                         that.setState({pet: listingInfo.pet});
                         that.setState({description: listingInfo._description});
+                        that.setState({stores: listingInfo.grocery_stores});
 
                         l = listingInfo;
 
                         console.log(l)
                         console.log(listingInfo)
 
-                    },4000);
+                    },7000);
 
             }
 
@@ -211,7 +214,8 @@ class ListingCard extends Component {
                     <Modal.Body>
                         URL : {this.state.url}
                         <br/>
-                        PHOTO: {this.state.image}
+                        {/*PHOTO: {this.state.image}*/}
+                        <Image src={this.state.image}/>
                         <br/>
                         TITLE: {this.state.title}
                         <br/>
@@ -228,6 +232,8 @@ class ListingCard extends Component {
                         DISTANCE TO CAMPUS: {this.state.distance_to_campus}
                         <br/>
                         TYPE: {this.state.type}
+                        <br/>
+                        NEARBY STORES: {this.state.stores.toString()}
                         <br/>
                     </Modal.Body>
                     <Modal.Footer>
