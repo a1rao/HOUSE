@@ -9,6 +9,7 @@ import './NavigationBar.css';
 import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
 import fetchData from '../Backend/Database/GetFromDb.js';
 import ListingCard from '../Listings/Listing Card/ListingCard';
+import { withRouter } from 'react-router-dom';
 //import NavLink from "react-bootstrap/NavLink";
 
 let folderName;
@@ -42,7 +43,7 @@ class NavigationBar extends Component {
     }
 
     /*componentWillUnmount() {
-        this.firebaseRef.off();
+         this.firebaseRef.off();
     }*/
 
     saveName(folder) {
@@ -57,6 +58,7 @@ class NavigationBar extends Component {
 
     handleSignOut = async event => {
         event.preventDefault();
+        this.props.history.push("/");
         try {
             app.auth()
                 .signOut().then(function() {
@@ -120,5 +122,5 @@ class NavigationBar extends Component {
 
 //eventKey={eachFolder} onSelect={k => this.handleSelect(k)}
 
-export default NavigationBar;
+export default withRouter(NavigationBar);
 export {folderName};

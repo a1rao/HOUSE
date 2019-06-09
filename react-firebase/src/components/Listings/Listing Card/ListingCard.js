@@ -200,7 +200,7 @@ class ListingCard extends Component {
                 <FormControl type="text" name="url" placeholder="Enter Listing URL" onChange={this.readURL} className="mr-sm-2"/>
 
                 <Button variant="outline-success" onClick={this.handleScrape}>
-                    Search
+                    Scrape
                 </Button>
                 <Modal className="addColor" show={this.state.showScraping} onHide = {this.handleC}>
                     <Modal.Header className="scraping">Scraping your url...</Modal.Header>

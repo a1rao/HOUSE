@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import './LoginForm.css';
+import app from "../../../base";
+
+
 
 const LoginForm = ({ onSubmit }) => {
     //render() {
@@ -17,7 +20,7 @@ const LoginForm = ({ onSubmit }) => {
 
                         <div className="containerL">
                             <label htmlFor="uname"><b>Email</b></label>
-                            <input type="text" name = "email" placeholder="Enter Valid Email"  required className="inputLogin"/>
+                            <input type="text" name = "email" placeholder="Enter Valid Email" required pattern="\S+" required className="inputLogin"/>
 
                             <label htmlFor="psw"><b>Password</b></label>
                             <input type="password"  name="password" placeholder="Enter Password"  required className="inputLogin"/>
@@ -29,7 +32,7 @@ const LoginForm = ({ onSubmit }) => {
 
                             </div>
 
-                            <span className="psw">Forgot <a href="#">password?</a></span>
+                            <span className="psw"><a href="/resetPassword">Forgot password?</a></span>
                         </div>
                     </div>
                 </form>
