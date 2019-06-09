@@ -39,7 +39,6 @@ module.exports = async function scrapeApartments(url, l)  {
             l.bed = $('#rentRollupSection > span.beds.print', html).text();
             l.int_bed = Number(l.bed.split('-',1)[0].replace(/[^0-9.]/g, EMPTY));
 
-
             // Get number of baths
             var allBaths = $('[class=baths]', html).text().replace(/[^0-9.]/g, EMPTY);
             i = 0;
@@ -83,9 +82,8 @@ module.exports = async function scrapeApartments(url, l)  {
             l.contact_number = $('#modalContactLead .contactPhone', html).text();
             l.contact_name = $('[class=logoColumnContainer]', html)[0].children[0].next.attribs.alt;
 
-            var pets = $('[class=petPolicyDetails]', html).text().split("\n");
-
             // Get information on the pet policy
+            var pets = $('[class=petPolicyDetails]', html).text().split("\n");
             l.pets = EMPTY;
             for(i = 0; i < pets.length; i++) {
                 pets[i] = pets[i].replace(/\s\s+/g, EMPTY);
@@ -122,8 +120,10 @@ module.exports = async function scrapeApartments(url, l)  {
             // Get a general description
             l.description = $('[id=descriptionSection] p', html).text();
 
-
             // If certain information was not found, set it to default value
+            if(l.title === EMPTY) {
+                l.title = DEFAULT_VALUE;
+            }
             if(l.address === EMPTY) {
                 l.address = DEFAULT_VALUE;
             }
@@ -151,11 +151,17 @@ module.exports = async function scrapeApartments(url, l)  {
             if(l.int_area === EMPTY) {
                 l.int_area = DEFAULT_VALUE;
             }
+            if(l.deposit === EMPTY) {
+                l.deposit = DEFAULT_VALUE;
+            }
             if(l.type === EMPTY) {
                 l.type = DEFAULT_VALUE;
             }
             if(l.contact_name === EMPTY) {
                 l.contact_name = DEFAULT_VALUE;
+            }
+            if(l.contact_email === EMPTY) {
+                l.contact_email = DEFAULT_VALUE;
             }
             if(l.contact_number === EMPTY) {
                 l.contact_number = DEFAULT_VALUE;

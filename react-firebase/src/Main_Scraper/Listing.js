@@ -1,16 +1,10 @@
 module.exports =  class Listing {
-    get bus_stations() {
-        return this._bus_stations;
-    }
 
-    set bus_stations(value) {
-        this._bus_stations = value;
-    }
     constructor(url, title, address, price, bed, bath, area, type, deposit, contact_name, contact_email, contact_number,
                 distance_to_campus, travel_time, pets, smoking, parking, lease_period, description, int_price, int_bed, int_bath,
                 int_area, bus_stations, photo_ref, grocery_stores, distance) {
 
-        //console.log("started initializing l at " + new Date().getTime())
+        // Initialize Data Fields for the Listing object
         this._url = url;
         this._title = title;
         this._address = address;
@@ -39,8 +33,6 @@ module.exports =  class Listing {
         this._bus_stations = bus_stations;
         this._grocery_stores = grocery_stores;
         this._id = '';
-
-        //console.log("l was initialized at " + new Date().getTime())
     }
 
     get url() {
@@ -244,6 +236,14 @@ module.exports =  class Listing {
 
     set travel_time(value) {
         this._travel_time = value;
+    }
+
+    get bus_stations() {
+        return this._bus_stations;
+    }
+
+    set bus_stations(value) {
+        this._bus_stations = value;
     }
 
     get id() {
