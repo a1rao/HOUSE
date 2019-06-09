@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import './LoginForm.css';
+import app from "../../../base";
+
+
 
 const LoginForm = ({ onSubmit }) => {
     //render() {
@@ -29,7 +32,7 @@ const LoginForm = ({ onSubmit }) => {
 
                             </div>
 
-                            <span className="psw">Forgot <a href="#">password?</a></span>
+                            <span className="psw"><a href="/resetPassword">Forgot password?</a></span>
                         </div>
                     </div>
                 </form>
