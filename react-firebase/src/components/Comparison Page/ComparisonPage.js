@@ -57,10 +57,6 @@ class ComparisonPage extends Component {
         first(second);
     }
 
-    handleRemoveListing = async number => {
-        saveData.removeCompare(number);
-    };
-
     // State to show folders
     handleShowFolders = async number =>{
         this.setState({showFolders: true});
@@ -295,6 +291,15 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing4._distance_to_campus}</td>
                     </tr>
 
+                    {/*Listing's transit time to campus*/}
+                    <tr>
+                        <td className="tableHead">Transit Time to Campus (by Bus)</td>
+                        <td>{this.state.listing1._travel_time}</td>
+                        <td>{this.state.listing2._travel_time}</td>
+                        <td>{this.state.listing3._travel_time}</td>
+                        <td>{this.state.listing4._travel_time}</td>
+                    </tr>
+
                     {/*listing's bedroom detail for each column*/}
                     <tr>
                         <td className="tableHead">Number of Bedrooms</td>
@@ -376,13 +381,13 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing4._grocery_stores}</td>
                     </tr>
 
-                    {/*Listing's transit time to campus*/}
+                    {/*Listing's bus stops for each column*/}
                     <tr>
-                        <td className="tableHead">Transit Time to Campus</td>
-                        <td>{this.state.listing1._travel_time}</td>
-                        <td>{this.state.listing2._travel_time}</td>
-                        <td>{this.state.listing3._travel_time}</td>
-                        <td>{this.state.listing4._travel_time}</td>
+                        <td className="tableHead">Nearest Bus Stop</td>
+                        <td>{this.state.listing1._bus_stations}</td>
+                        <td>{this.state.listing2._bus_stations}</td>
+                        <td>{this.state.listing3._bus_stations}</td>
+                        <td>{this.state.listing4._bus_stations}</td>
                     </tr>
                     </tbody>
                 </Table>
