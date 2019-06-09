@@ -6,6 +6,9 @@ import Header from './ResetPasswordHeader.js';
 import BackGroundImage from './ResetPasswordBackground.js';
 import ResetPassword from "./ResetPassword";
 
+/**
+ * Render all ResetPassword components (header, logo, background, resetPassword form)
+ */
 class ResetPasswordContainer extends Component {
 
     render() {

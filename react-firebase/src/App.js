@@ -14,13 +14,16 @@ import ResetPassword from './components/ResetPassword/index.js';
 import PrivateRoute from './PrivateRoute';
 import app from './base';
 
-
+/**
+ * Define routes and track user login status for application
+ *
+ */
 class App extends Component {
 
     // Default state when user opens website
     state = {loading:true, authenticated:false, user:null};
 
-    // Check whether user has signed up or not
+    // Check whether user has logged in or not
   componentWillMount() {
       app.auth().onAuthStateChanged(user=> {
           if(user){
@@ -41,6 +44,7 @@ class App extends Component {
         // Set page depending on authentication
          <Router >
                 <div>
+                    {/* Route to user Home page only if they are logged in*/}
                     <PrivateRoute exact path = '/' component = {Home} authenticated={authenticated}/>
                     <Route exact path = '/login' component = {Login}/>
                     <Route exact path = '/register' component = {Register}/>
@@ -53,7 +57,5 @@ class App extends Component {
       );
   }
 }
-
-//this.state.authenticated} />
 
 export default App;

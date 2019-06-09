@@ -1,11 +1,11 @@
-/* HelpPage.js
- * Description on how the app can be used
- */
 import React, {Component} from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import './HelpPage.css';
 import '../NavigationBar/NavigationBar.js';
 import NavigationBar from "../NavigationBar/NavigationBar";
+/* HelpPage.js
+ * Description on how the app can be used
+ */
 
 class HelpPage extends Component {
     render() {

@@ -1,3 +1,7 @@
+/**
+ * Listing Class that sets all the fields using vales passed into the constructor
+ * Each field has a getter and setter
+ */
 module.exports =  class Listing {
 
     constructor(url, title, address, price, bed, bath, area, type, deposit, contact_name, contact_email, contact_number,

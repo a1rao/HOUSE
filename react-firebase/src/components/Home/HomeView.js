@@ -1,10 +1,12 @@
-/* HomeView.js
- * Code for the home page
- */
 import React, { Component } from "react";
 import NavigationBar from '../NavigationBar/NavigationBar';
 import './HomeView.css'
+/** HomeView.js
+ */
 
+/**
+ * Render all components displayed on the home page (navigation bar and background image)
+ */
 class HomeView extends Component {
 
     render() {

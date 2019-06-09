@@ -1,6 +1,7 @@
 import React from 'react';
 import "./RegForm.css"
 
+/** Take user input needed for registration */
 const RegForm = ({ onSubmit }) => {
     return (
         <div className="registrationComponent">

@@ -1,10 +1,10 @@
-/*  AddNewFolder.js
- *  Create a new folders and add listings in it
- */
 import React, {Component} from "react";
 import app from '../../../base';
 import './AddNewFolder.css';
 
+/** AddNewFolder.js
+ *  Create a new folders and add listings in it
+ */
 
 /** Add new folder to database*/
 function CreateFolder(){

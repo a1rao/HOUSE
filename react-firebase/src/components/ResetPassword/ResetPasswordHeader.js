@@ -1,6 +1,7 @@
 import React from 'react';
 import './ResetPasswordHeader.css';
 
+/** Reset Password header*/
 class Header extends React.Component {
     render() {
 
