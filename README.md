@@ -1,8 +1,4 @@
-# HOUSE
-
-*Introduction: A well organized description of the project and what it does.*
-
-# HOUSE - Housing Off Campus Students Everywhere
+# HOUSE - Housing Off-Campus University Students Everywhere
 
 The purpose of this web app is to help college students find housing.  Consolidating information and deciding where to live can be a hassle— HOUSE aims to facilitate the process by providing an easy way to save listings and make comparisons. Users can create an account and consequently login, retrieve password, and logout.  The main functionality of the app begins with a web scrape: the user inputs a housing listing link to the main scrape bar.  HOUSE then pulls up a “listing card”, which displays concise information about the listing.  Such information includes listing image, price, address, distance to campus, number of bedrooms, number of bathrooms, square footage, listing type, and nearby stores.  The user can save listings in folders as well as add them to the “comparison table”, which allows users to view multiple listings side by side to compare information.  Users can access their folders to view saved listings, as well as sort the listings in the folders by price, distance, and number of bedrooms.
 
@@ -40,4 +36,12 @@ If running on a local server, execute the following:
 
 *Known Bugs:*
 
-Sometimes, the background image for the home page may not display on Apple machines.
+Sometimes, the background image for the home page may not display on some machines.
+
+If you press enter while in a field on any page except Login, Register, or Forgot Password, the page will reload and all progress will be lost.
+
+Currently, all users default to having UCSD as their campus. Entering another value during registration will save that different value; but any map scraping will be done with reference to UCSD.
+
+When an account is deleted in the database, that email is no longer usable; a new account cannot use that email, and attempting to login will cause the site to crash.
+
+If an invalid URL is passed, garbage information is displayed.  
