@@ -4,7 +4,8 @@ import AddNewURL from '../Listings/addURL/AddNewURL';
 import NavigationBar from '../NavigationBar/NavigationBar';
 import ViewFolder from '../ViewFolder/ViewFolderComponents/DisplayFolderContent.js';
 import ListingCard from '../Listings/Listing Card/ListingCard';
-import '../Login/LoginComponents/LoginBackground.css';
+// import '../Login/LoginComponents/LoginBackground.css';
+import './HomeView.css'
 
 class HomeView extends Component {
 

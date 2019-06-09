@@ -186,31 +186,38 @@ class ComparisonPage extends Component {
                 <Table striped bordered hover size="lg">
                     <thead>
                     <tr>
+                            <th>
+                                <div className="buttonParent">
+                                    <Button variant={"secondary"} onClick={this.handleClear}
+                                            className="buttonz"> Clear Table </Button>
+                                </div>
+                            </th>
 
-                        <th>
-                            <Button variant={"secondary"} onClick={this.handleClear}> Clear Table </Button>
-                        </th>
-                        <th>
-                            <Button variant="primary" onClick={() => this.handleShowFolders(1)}> Add New Listing
-                            </Button>
-                            {/*<Button variant="secondary" onClick={() => this.handleRemoveListing(1)}> Remove listing </Button>*/}
-                        </th>
-                        <th>
-                            <Button variant="primary" onClick={() => this.handleShowFolders(2)}> Add New Listing
-                            </Button>
-                            {/*<Button variant="secondary" onClick={() => this.handleRemoveListing(2)}> Remove listing </Button>*/}
-                        </th>
-                        <th>
-                            <Button variant="primary" onClick={() => this.handleShowFolders(3)}> Add New Listing
-                            </Button>
-                            {/*<Button variant="secondary" onClick={() => this.handleRemoveListing(3)}> Remove listing </Button>*/}
-                        </th>
-                        <th>
-                            <Button variant="primary" onClick={() => this.handleShowFolders(4)}> Add New Listing
-                            </Button>
-                            {/*<Button variant="secondary" onClick={() => this.handleRemoveListing(4)}> Remove listing </Button>*/}
-                        </th>
+                            <th>
+                                <div className="buttonParent">
+                                    <Button variant="primary" onClick={() => this.handleShowFolders(1)}
+                                            className="buttonz"> Change Listing </Button>
+                                </div>
+                            </th>
+                            <th>
+                                <div className="buttonParent">
+                                    <Button variant="primary" onClick={() => this.handleShowFolders(2)}
+                                            className="buttonz"> Change Listing </Button>
+                                </div>
+                            </th>
 
+                            <th>
+                                <div className="buttonParent">
+                                    <Button variant="primary" onClick={() => this.handleShowFolders(3)}
+                                            className="buttonz"> Change Listing </Button>
+                                </div>
+                            </th>
+                            <th>
+                                <div className="buttonParent">
+                                    <Button variant="primary" onClick={() => this.handleShowFolders(4)}
+                                            className="buttonz"> Change Listing </Button>
+                                </div>
+                            </th>
 
 
 

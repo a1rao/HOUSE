@@ -203,6 +203,7 @@ class DisplayFolderContent extends Component{
         // ERROR: only displays most recent listing with the className: "thumbnail"
 
         const thumbnails = this.state.eachListing.map((listing) =>
+
             <div className = "allThumbnails">
                 <Button className="listThumbnail" variant="dark" size="sm"  onClick = {() => this.printListing(listing)} >
                     {listing._title}
@@ -322,6 +323,33 @@ class DisplayFolderContent extends Component{
                                 {this.state.l._type}
                             </div>
                         </div>
+
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                NEARBY STORES:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.l._grocery_stores}
+                            </div>
+                        </div>
+
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                NEARBY BUS STOPS:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.l._bus_stations}
+                            </div>
+                        </div>
+
                         <br/>
                         <br/>
 
@@ -475,19 +503,27 @@ class DisplayFolderContent extends Component{
                         </Button>
                     </Modal.Footer>
                 </Modal>
-
             </div>
         );
 
         return (
+
+
             <div className="backgroundImageContainer">
                 {/*<img src="" />*/}
-                <img src="https://github.com/a1rao/HOUSE/blob/master/react-firebase/src/components/ViewFolder/ViewFolderComponents/background.jpg?raw=true" alt="supp" className="backgroundImage"/>
+                <img src="https://github.com/a1rao/HOUSE/blob/master/react-firebase/src/components/ViewFolder/ViewFolderComponents/background_2.jpg?raw=true" alt="supp" className="backgroundImage"/>
                 <h1 className="title">{folderName}</h1>
-                <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_price')}>Sort By Price</Button>
-                <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_area')}>Sort By Area</Button>
-                <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_distance_to_campus')}>Sort By Distance</Button>
-                <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_bed')}>Sort By Beds</Button>
+
+
+                <div className="buttonParent">
+                    <div className="buttonz">
+                        <Button className="sortBar" variant="outline-dark" onClick={() =>this.sort('_price')}>Sort By Price</Button>
+                        <Button className="sortBar" variant="outline-dark" onClick={() =>this.sort('_area')}>Sort By Area</Button>
+                        <Button className="sortBar" variant="outline-dark" onClick={() =>this.sort('_distance_to_campus')}>Sort By Distance</Button>
+                        <Button className="sortBar" variant="outline-dark" onClick={() =>this.sort('_bed')}>Sort By Beds</Button>
+                    </div>
+                </div>
+
                 <p>{thumbnails}</p>
             </div>
         );

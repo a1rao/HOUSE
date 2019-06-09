@@ -2,8 +2,8 @@
     display: inline-block;
 }
 
-.searchBarWrap {
-    text-align: center;
+.searchBarWrapper {
+
 }
 
 .mr-sm-2 {
@@ -15,5 +15,8 @@
 }
 
 .help {
-    margin-left: 30%;
+    margin-left: 27%;
+}
+
+.bgImage {
 }

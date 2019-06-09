@@ -4,8 +4,10 @@
 }
 
 .allThumbnails{
-    display: inline-block;
+   /*display: inline-block;*/
+    display: inline-flex;
     padding: 30px 25px;
+    margin: 1%;
 
 }
 
@@ -13,7 +15,7 @@
     display: block;
     text-align: center;
     font-family: 'Oxygen', sans-serif;
-    padding-top: 20px;
+    padding-top: 0px;
 
 }
 
@@ -104,4 +106,12 @@ img.backgroundImage {
 
 .listURL {
     font-family: 'Oxygen', sans-serif;
+}
+
+.buttonz {
+    display: inline-block;
+}
+
+.buttonParent {
+
 }
