@@ -1,12 +1,10 @@
 .loginForm {
     /*border: 3px solid #f1f1f1; */
-    border-width: 3px;
+    border-width: 1px;
     border-color: black;
     border-style: solid;
-    background-color: #f1f1f1;
+    background-color: rgba(255,255,255,0.70);
 }
-
-
 
 .registerButton {
     border-width: 0px;
@@ -21,11 +19,19 @@ a:hover {
 .loginComponent {
     width: 500px;
     height: 150px;
-    top: 50%;
+    top: 60%;
     left: 50%;
     margin-left: -250px;
     margin-top: -255px;
     position: absolute;
+    opacity: 1.0;
+
+}
+
+/* "Email" and "Password" text */
+.labels{
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 /*Full width inputs */
@@ -37,6 +43,8 @@ a:hover {
     border: 1px solid #ccc;
     box-sizing: border-box;
     text-align: left;
+    opacity: 1.0;
+
 }
 
 /* Set a style for all buttons */
@@ -44,10 +52,9 @@ a:hover {
     background-color: lightseagreen;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
 }
 
 .loginButton:hover {
@@ -58,8 +65,7 @@ a:hover {
 .rButton {
     width: 100%;
     padding: 10px 30px;
-    background-color: dodgerblue;
-    color: white;
+    color: black;
     border: none;
     cursor: pointer;
     text-decoration: none;
@@ -68,7 +74,7 @@ a:hover {
 /* Add a hover effect for buttons */
 .rButton:hover {
     opacity: 0.8;
-    color: white;
+    color: blue;
     text-decoration: none;
 }
 
@@ -81,19 +87,18 @@ a:hover {
     text-align: center;
     margin: 0 0 0 0;
     padding-top: 7px;
-    background-color: #f1f1f1;
 }
 
 /* Avatar image */
 .avatar {
     min-height: 50%;
     max-height: 200px;
-    border-radius: 50%;
     height: 100%;
 }
 
 .centerContainerL {
     text-align: center;
+
 }
 
 /* Add padding to containers */
@@ -106,6 +111,13 @@ a:hover {
     max-height: 400px;
     max-width: 700px;
     text-align: left;
+}
+
+/* The "Create Account" text */
+span.createAccount {
+    float: left;
+    padding-top: 55px;
+    position: relative;
 }
 
 /* The "Forgot password" text */

@@ -1,3 +1,6 @@
+/* NavigationBar.js
+ * Contains the code and styling for the top navigation bar
+ */
 import React, {Component} from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,9 +13,12 @@ import AddNewFolder from '../Folders/createNewFolder/AddNewFolder';
 import fetchData from '../Backend/Database/GetFromDb.js';
 import ListingCard from '../Listings/Listing Card/ListingCard';
 import { withRouter } from 'react-router-dom';
-//import NavLink from "react-bootstrap/NavLink";
 
-let folderName;
+let folderName;     // Global variable to store folder's name
+
+/**
+ * Displays the navigation bar that contains path to Home page, Comparison page, Folder page, Search bar, and Logout
+ */
 class NavigationBar extends Component {
 
     constructor(props) {
@@ -42,28 +48,29 @@ class NavigationBar extends Component {
 
     }
 
-    /*componentWillUnmount() {
-         this.firebaseRef.off();
-    }*/
-
+    // Save the name of a folder into database and set folderName
     saveName(folder) {
         //event.preventDefault();
         localStorage.setItem("viewFolderName", folder);
         folderName =  folder;
-        console.log("Clicked: " + folderName)
     }
+
+    // Return name of folder
     returnName() {
         return folderName;
     }
 
+    // Handle ecent when user logs out
     handleSignOut = async event => {
         event.preventDefault();
+        // Force user to return to login page
         this.props.history.push("/login");
         window.location.reload();
+
+        // Sign out from the system
         try {
             app.auth()
                 .signOut().then(function() {
-                    console.log("signed out");
             });
         } catch (error) {
             alert(error);
@@ -77,7 +84,6 @@ class NavigationBar extends Component {
             <NavDropdown.Item onClick= {() => this.saveName(eachFolder)} href="/folderView/">{eachFolder}</NavDropdown.Item>
         );
 
-        console.log("IN Navi" + folderName)
         return (
 
             <div>
@@ -121,12 +127,6 @@ class NavigationBar extends Component {
         }
         }
 
-
-/*<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>*/
-
-//eventKey={eachFolder} onSelect={k => this.handleSelect(k)}
 
 export default withRouter(NavigationBar);
 export {folderName};

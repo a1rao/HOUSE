@@ -32,9 +32,6 @@ class ResetPassword extends Component {
 
             <div className="loginComponent">
                 <form className="loginForm">
-                    <div className="imgcontainer">
-                        <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon"  className="avatar"/>
-                    </div>
 
                     <div className="centerContainerL">
 

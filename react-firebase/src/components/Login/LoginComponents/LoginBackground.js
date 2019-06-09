@@ -1,6 +1,7 @@
 import React from 'react';
 import './LoginBackground.css';
 
+/* Background image component for login page */
 class BackGroundImage extends React.Component {
     render() {
 
@@ -13,6 +14,3 @@ class BackGroundImage extends React.Component {
 }
 
 export default BackGroundImage;
-
-//https://i.ibb.co/FBPJSQG/painted-ladies-blur.png
-//https://imgur.com/uxYgMNO

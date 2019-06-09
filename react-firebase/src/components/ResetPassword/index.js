@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router";
-import app from "../../base";
-import firebase from "firebase";
 
 import '../Register/RegisterComponents/RegMain.css';
 import Header from './ResetPasswordHeader.js';
-import Footer from './ResetPasswordFooter.js';
 import BackGroundImage from './ResetPasswordBackground.js';
 import ResetPassword from "./ResetPassword";
 
@@ -27,13 +24,8 @@ class ResetPasswordContainer extends Component {
 
                 <ResetPassword/>
 
-                <div className="bottom">
-                    <Footer />
-                </div>
-
             </div>
         );
-        //return <RegForm onSubmit={this.handleSignUp} />;
     }
 }
 

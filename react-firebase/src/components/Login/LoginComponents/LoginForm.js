@@ -6,32 +6,23 @@ import app from "../../../base";
 
 
 const LoginForm = ({ onSubmit }) => {
-    //render() {
-
         return (
 
             <div className="loginComponent">
                 <form onSubmit={onSubmit} className="loginForm">
-                    <div className="imgcontainer">
-                        <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon"  className="avatar"/>
-                    </div>
 
                     <div className="centerContainerL">
 
                         <div className="containerL">
-                            <label htmlFor="uname"><b>Email</b></label>
+                            <label htmlFor="uname" className="labels"><b>Email</b></label>
                             <input type="text" name = "email" placeholder="Enter Valid Email" required pattern="\S+" required className="inputLogin"/>
 
-                            <label htmlFor="psw"><b>Password</b></label>
+                            <label htmlFor="psw" className="labels"><b>Password</b></label>
                             <input type="password"  name="password" placeholder="Enter Password"  required className="inputLogin"/>
 
                             <button type="submit" className="loginButton">Login</button>
 
-                            <div className="wrapRButton">
-                                <a href="/register" className="rButton"> New User? </a>
-
-                            </div>
-
+                            <span className="createAccount"><a href="/register">Create Account</a></span>
                             <span className="psw"><a href="/resetPassword">Forgot password?</a></span>
                         </div>
                     </div>

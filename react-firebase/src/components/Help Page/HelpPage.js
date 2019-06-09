@@ -14,50 +14,49 @@ class HelpPage extends Component {
                         <h1 className="helpHeader">Help Page</h1>
                 </Jumbotron>
 
-                <b>Navigation Bar:</b>
+                <b>Navigation Bar</b>
+
                 <p>
-                    The Navigation Bar will be accessible from anywhere on the website once you are logged in.
-                    It can be expanded by pressing the three horizontal lines in the top right corner of the page.
-                    Once expanded, you will see a few items:
+                    The Navigation Bar is accessible from anywhere on the website once you are logged in.
+                    The help page below will cover the details of the website and its usage by going through each
+                    component in the Navigation Bar and explaining each part:
                 </p>
+
+                <b>Home Screen</b>
+
                 <p>
-                    The first one, "Home", is right below your name. Pressing this will bring you to the home page.
+                    The Home Screen can be accessed through the Home button on the Navigation Bar and is the default
+                    screen when you login. The Home Screen contains the group of acceptable websites to scrape from that
+                    our app supports (<a href="https://www.rent.com/">rent.com</a>, <a href="https://www.rentals.com/">rentals.com</a>, <a href="https://www.trulia.com/">trulia.com</a>, and <a href="https://www.apartments.com/">apartments.com</a>).
                 </p>
+
+                <b>My Folders</b>
                 <p>
-                    The second, "Compare", will bring you to the comparison page, where you can compare multiple
-                    listings side-by-side (see Comparing Listings).
-                </p>
-                <p>
-                    Under that will be a dropdown called "My Folders". This can be used to view all your folders and
-                    create new ones. When you click on one of your folders, it will bring you to the folder viewer
-                    (see Folder Viewer).
-                </p>
-                <p>
-                    Under this, you will see an option to "Enter Listing URL". Typing a valid URL into here and pressing
-                    "Scrape" will allow you to see the information from a listing in the URL.
-                </p>
-                <p>
-                    Lastly, you will see the "Need Help?" link, which brought you to this page, and the Logout button,
-                    which will log you out of your account.
+                    In the My Folders dropdown menu on the Navigation Bar, all of the folders that the user has created
+                    can be viewed there. A folder is a user named and generated spot where the user can save housing
+                    listings to store and use for later. At first when a user signs up for HOUSE, nothing will appear in
+                    the dropdown menu besides an area to create a new folder. To create a new blank folder, simply type
+                    in the name of the folder in the text box at the bottom of the My Folders tab. Then to create the
+                    folder, simply hit the "Create New Folder" button. When the user clicks one of the folders that is
+                    available to them on the dropdown menu, it will take them into the folder viewer where they can view
+                    their listings. To add listings into the folders, see the Scrape Listings tab just below.
 
                 </p>
 
-                <b>Comparing Listings</b>
+                <b>Scrape Listings</b>
                 <p>
-                    Once you are on the Comparison Page (see Navigation Bar), you will be able to view listings side by
-                    side in a table view. There are various different fields that will display in a grid-view. By
-                    pressing the "Add New Listing" button, you will be able to add different listings to the table to
-                    compare. You can then pick any listing in your folders. You can remove a listing from the comparison
-                    by clicking "Remove Listing".
+                    In the middle of the navigation bar, the user can input a URL from one of the websites listed in the
+                    Home Page to get a list of details regarding the listing that is scraped. When this happens, the
+                    user can either choose to save the listing into a folder that they have previously created, a folder
+                    that they can create at the time of the listing, or they can close the listing if they choose not to
+                    submit it. To add the folder, just simply select the folder desired, otherwise create a new folder
+                    with the create new folder tool provided below, or close the listing by hitting the close button or
+                    clicking outside the popup window.
                 </p>
 
-                <b>Folder Viewer</b>
+                <b>Logout</b>
                 <p>
-                    Once you are in the Folder Viewer (see Navigation Bar), you will be able to see the listings in the
-                    folder you selected. The listings that are in the folder will be viewable in small windows, showing
-                    important info (ie price, square footage, etc.). You will be able to click the different "Sort By"
-                    options to sort it by price, bedrooms, etc. In addition, you can click on the listings to see more
-                    information.
+                    To logout of your account, simply hit the logout button at the top right of the Navigation Bar.
                 </p>
             </div>
 

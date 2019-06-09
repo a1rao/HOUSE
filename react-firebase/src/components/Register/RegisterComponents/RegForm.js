@@ -10,22 +10,22 @@ const RegForm = ({ onSubmit }) => {
                 <div className="centerContainer">
 
                     <div className="container">
-                        <label htmlFor="fname"><b>Enter Your First Name</b></label>
+                        <label htmlFor="fname" className="labels"><b>First Name</b></label>
                         <input type="text" name="fname"  placeholder="Enter First Name" required className="inputRegister"/>
 
-                        <label htmlFor="lname"><b>Enter Your Last Name</b></label>
+                        <label htmlFor="lname" className="labels"><b>Last Name</b></label>
                         <input type="text" name="lname" placeholder="Enter Last Name" required className="inputRegister"/>
 
-                        <label htmlFor="campus"><b>Enter Your College Campus</b></label>
+                        <label htmlFor="campus" className="labels"><b>College Campus</b></label>
                         <input type="text" name="campus" placeholder="Enter College Campus" required className="inputRegister"/>
 
-                        <label htmlFor="email"><b>Enter Valid Email Address</b></label>
+                        <label htmlFor="email" className="labels"><b>Email Address</b></label>
                         <input type="text" name="email" placeholder="Enter Email"  required className="inputRegister"/>
 
-                        <label htmlFor="pword"><b>Enter Password</b></label>
+                        <label htmlFor="pword" className="labels"><b>Password</b></label>
                         <input type="password" name="password" placeholder="Enter Password"  required className="inputRegister"/>
 
-                        <label htmlFor="repeatPword"><b>Re-Enter Password</b></label>
+                        <label htmlFor="repeatPword" className="labels"><b>Re-Enter Password</b></label>
                         <input type="password" name="password2" placeholder="Re-Enter Password"  required className="inputRegister"/>
 
                         <button type="" className="placeholderButton"></button>
@@ -39,35 +39,6 @@ const RegForm = ({ onSubmit }) => {
 
     );
 };
-
-
-/*<div>
-
-<!--  <div className="imgcontainer"> -->
-               <!--     <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon"  className="avatar"/>-->
-               <!-- </div>-->
-
-    <h1>Register</h1>
-    <form onSubmit={onSubmit}>
-        <label>
-            Email
-            <input
-                name="email"
-                type="email"
-                placeholder="Email"
-            />
-        </label>
-        <label>
-            Password
-            <input
-                name="password"
-                type="password"
-                placeholder="Password"
-            />
-        </label>
-        <button type="submit">Register</button>
-    </form>
-</div>*/
 
 
 export default RegForm;
