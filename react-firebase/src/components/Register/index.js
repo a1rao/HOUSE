@@ -33,21 +33,14 @@ class RegisterContainer extends Component {
         return(
             <div className="Registration">
 
-                <div className="top">
-                    <Header />
-                </div>
-
                 <div className="houseLogoContainer">
-                    <img src="https://i.ibb.co/Gv2WHXK/House-logo-2.png" alt="our logo" className="houseLogo"/>
+                    <img src="https://github.com/a1rao/HOUSE/blob/master/HOUSE%20Logo.png?raw=true" alt="our logo" className="houseLogo"/>
                 </div>
 
                 <BackGroundImage className="imageContainer" />
 
                 <Registration className="registrationScreen" onSubmit={this.handleSignUp}/>
 
-                <div className="bottom">
-                    <Footer />
-                </div>
 
             </div>
         );

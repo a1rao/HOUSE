@@ -3,8 +3,8 @@ import { withRouter } from "react-router";
 import app from "../../base";
 
 import './LoginComponents/LoginMain.css';
-import Header from './LoginComponents/LoginHeader.js';
-import Footer from './LoginComponents/LoginFooter.js';
+import Header from './LoginComponents/LoginHeader.js'; //UNUSED delete pls
+import Footer from './LoginComponents/LoginFooter.js'; //UNUSED delete pls
 import Login from './LoginComponents/LoginForm.js';
 import BackGroundImage from './LoginComponents/LoginBackground.js';
 
@@ -29,22 +29,13 @@ class LoginContainer extends Component {
         return (
 
             <div className="LoginScreen">
-
-                <div className="top">
-                    <Header />
-                </div>
-
                 <div className="houseLogoContainer">
-                    <img src="https://i.ibb.co/Gv2WHXK/House-logo-2.png" alt="our logo" className="houseLogo"/>
+                    <img src="https://github.com/a1rao/HOUSE/blob/master/HOUSE%20Logo.png?raw=true" alt="our logo" className="houseLogo"/>
                 </div>
 
                 <BackGroundImage className="imageContainer" />
 
                 <Login className="login" onSubmit={this.handleSignUp}/>
-
-                <div className="bottom">
-                    <Footer />
-                </div>
 
             </div>
 
