@@ -10,6 +10,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import {forEach} from "react-bootstrap/es/utils/ElementChildren";
 import './ListingCard.css';
 import Form from 'react-bootstrap/Form';
+import app from "../../../base";
 
 
 
@@ -144,6 +145,10 @@ class ListingCard extends Component {
     //
     // }
     handleNewFolder = async event => {
+        let uid = app.auth().currentUser.uid;
+        app.database().ref('users/'+ uid + '/folders/'+ this.state.folder).set({
+            "listing1" :  ""
+        });
         saveData.saveListing(this.state.folder, l.url, l);
         this.handleCloseFolders();
         this.handleShowConfirm();
