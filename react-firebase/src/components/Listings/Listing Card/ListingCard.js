@@ -211,30 +211,142 @@ class ListingCard extends Component {
                     <Modal.Header closeButton>
                         <Modal.Title>{this.state.title}</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
-                        URL : {this.state.url}
+                    <Modal.Body className="mBody">
+
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                URL :
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.url}
+                            </div>
+                        </div>
+
                         <br/>
+                        <br/>
+
                         {/*PHOTO: {this.state.image}*/}
-                        <Image src={this.state.image}/>
+                        <Image src={this.state.image} width="300" height="200"/>
                         <br/>
-                        TITLE: {this.state.title}
                         <br/>
-                        ADDRESS: {this.state.address}
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                TITLE:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.title}
+                            </div>
+                        </div>
+
                         <br/>
-                        PRICE: {this.state.price}
                         <br/>
-                        BEDS: {this.state.bed}
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                ADDRESS:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.address}
+                            </div>
+                        </div>
+
                         <br/>
-                        BATH: {this.state.bath}
                         <br/>
-                        AREA: {this.state.area}
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                PRICE:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.price}
+                            </div>
+                        </div>
+
                         <br/>
-                        DISTANCE TO CAMPUS: {this.state.distance_to_campus}
                         <br/>
-                        TYPE: {this.state.type}
+
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                BEDS:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.bed}
+                            </div>
+                        </div>
+
                         <br/>
-                        NEARBY STORES: {this.state.stores.toString()}
                         <br/>
+
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                BATH:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.bath}
+                            </div>
+                        </div>
+
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                AREA:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.area}
+                            </div>
+                        </div>
+
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                DISTANCE TO CAMPUS:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.distance_to_campus}
+                            </div>
+                        </div>
+
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                TYPE:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.type}
+                            </div>
+                        </div>
+
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                NEARBY STORES:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.stores.toString()}
+                            </div>
+                        </div>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.handleClose}>
@@ -267,7 +379,7 @@ class ListingCard extends Component {
                         <Modal.Title>Listing Saved</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        Your Listing has been saved!!!!!!
+                        Your listing has been saved!!!!!!
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="primary" onClick={this.handleCloseConfirm}>
