@@ -179,7 +179,7 @@ module.exports = {
 
 		await makeRequest(PROXY_URL + BASE_URL + DISTANCE + OUTPUT + UNITS + URL_SEPARATOR + ORIGIN
 			+ target.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR + DEST + FIXED_CAMPUS.replace(/ /g, "%20")
-			+ URL_SEPARATOR + API_KEY).then(function(body) {
+			+ URL_SEPARATOR + API_KEY).then(function(body, callback) {
 			console.log("We got here in DistanceQuery at " + (new Date().getTime()));
 			// console.log(body);
 			var response = JSON.parse(body);
@@ -197,10 +197,10 @@ module.exports = {
 		});
 	},
 
-	getNearby: function(address, l) {
+	getNearby: async function(address, l) {
 		console.log("Making Place Search Request at :\n" + PROXY_URL + BASE_URL + PLACE + PLACE_FROM_TEXT + OUTPUT + INPUT + address.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR
 			+ TEXT_QUERY + URL_SEPARATOR + PLACE_FIELDS + URL_SEPARATOR + API_KEY);
-		makeRequest(PROXY_URL + BASE_URL + PLACE + PLACE_FROM_TEXT + OUTPUT + INPUT + address.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR
+		await makeRequest(PROXY_URL + BASE_URL + PLACE + PLACE_FROM_TEXT + OUTPUT + INPUT + address.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR
 			+ TEXT_QUERY + URL_SEPARATOR + PLACE_FIELDS + URL_SEPARATOR + API_KEY).then(async function(body) {
 			console.log("We got here in PlaceSearchQuery at " + (new Date().getTime()));
 			// console.log(body);
