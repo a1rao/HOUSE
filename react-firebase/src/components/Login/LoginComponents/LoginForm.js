@@ -17,7 +17,7 @@ const LoginForm = ({ onSubmit }) => {
 
                         <div className="containerL">
                             <label htmlFor="uname"><b>Email</b></label>
-                            <input type="text" name = "email" placeholder="Enter Valid Email"  required className="inputLogin"/>
+                            <input type="text" name = "email" placeholder="Enter Valid Email" required pattern="\S+" required className="inputLogin"/>
 
                             <label htmlFor="psw"><b>Password</b></label>
                             <input type="password"  name="password" placeholder="Enter Password"  required className="inputLogin"/>
