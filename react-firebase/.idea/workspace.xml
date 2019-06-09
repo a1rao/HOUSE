@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2592616e-3d7d-4baf-b3f5-cb40db4e0775" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" afterDir="false" />
-    </list>
+    <list default="true" id="2592616e-3d7d-4baf-b3f5-cb40db4e0775" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,9 +157,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="59" />
-    <option name="y" value="86" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="25" />
+    <option name="y" value="26" />
     <option name="width" value="1312" />
     <option name="height" value="705" />
   </component>
@@ -359,15 +357,15 @@
       <workItem from="1559419555385" duration="27463000" />
       <workItem from="1559609528491" duration="2552000" />
       <workItem from="1559793994682" duration="18987000" />
-      <workItem from="1560029251606" duration="20147000" />
+      <workItem from="1560029251606" duration="20566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79026000" />
+    <option name="totallyTimeSpent" value="79445000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="86" width="1312" height="705" extended-state="1" />
+    <frame x="59" y="86" width="1312" height="705" extended-state="0" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
