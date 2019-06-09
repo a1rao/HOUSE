@@ -1,21 +1,30 @@
 # HOUSE - Housing Off-Campus University Students Everywhere
 
+Authors: Ashwin Rao, Aneesh Jalan, Umang Sinha, Niyonika Sheth, Jack Rose, Vie Ong, Ethan Lan, Derek Shibata, Julia Markel, Gerard Maggiolino
+
 The purpose of this web app is to help college students find housing.  Consolidating information and deciding where to live can be a hassle— HOUSE aims to facilitate the process by providing an easy way to save listings and make comparisons. Users can create an account and consequently login, retrieve password, and logout.  The main functionality of the app begins with a web scrape: the user inputs a housing listing link to the main scrape bar.  HOUSE then pulls up a “listing card”, which displays concise information about the listing.  Such information includes listing image, price, address, distance to campus, number of bedrooms, number of bathrooms, square footage, listing type, and nearby stores.  The user can save listings in folders as well as add them to the “comparison table”, which allows users to view multiple listings side by side to compare information.  Users can access their folders to view saved listings, as well as sort the listings in the folders by price, distance, and number of bedrooms.
 
 *Test credentials:*
 
+Email: housetesting0000@gmail.com;
+Password: housetesting0
+
 Email:  housetesting2222@gmail.com;
 Password: housetesting2 
+
+Email: housetesting8888@gmail.com;
+Password: housetesting8
 
 Alternatively, register with personal name and email and password.
 
 *Requirements:*
 
-If running on a local server, please install Node and NPM and execute the following before starting the server:
+Internet connection required.
+
+Install Node and NPM and execute the following before starting the server:
     
     npm install cheerio firebase react bootstrap react-bootstrap
 
-If using web domain, no requirements.
 
 Website runs best on Chrome web browser.
 
@@ -24,6 +33,11 @@ Website runs best on Chrome web browser.
 If running on a local server, execute the following:
     
     git clone https://github.com/a1rao/HOUSE.git
+
+Login credentials:
+
+    email: housetesting1111@gmail.com
+    password: housetesting1
     
 If using web domain, no installation needed.
 
@@ -44,4 +58,10 @@ Currently, all users default to having UCSD as their campus. Entering another va
 
 When an account is deleted in the database, that email is no longer usable; a new account cannot use that email, and attempting to login will cause the site to crash.
 
-If an invalid URL is passed, garbage information is displayed.  
+If an invalid URL is passed, garbage information is displayed. 
+
+*Contact Info:*
+
+Ashwin Rao – Project Manager – a1rao@ucsd.edu – 650-919-4781
+
+Aneesh Jalan – Software Development Lead – akjalan@ucsd.edu – 858-214-9338  
