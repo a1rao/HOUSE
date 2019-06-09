@@ -227,7 +227,7 @@ class DisplayFolderContent extends Component{
                                 <Modal.Title>{this.state.l._title} <br/> </Modal.Title>
                             </div>
                             <div className="listURL">
-                                <a href={this.state.l._url}>Listing URL</a>
+                                <a href={this.state.l._url} target="_blank">Listing URL</a>
                             </div>
                         </Modal.Header>
                     </div>

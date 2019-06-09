@@ -208,8 +208,9 @@ class ListingCard extends Component {
                 </Modal>
 
                 <Modal show={this.state.showMain} onHide={this.handleClose}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>{this.state.title}</Modal.Title>
+                    <Modal.Header>
+                        <Modal.Title>{this.state.title}<br/></Modal.Title>
+                        <a href={this.state.url} target="_blank">Listing URL</a>
                     </Modal.Header>
                     <Modal.Body className="mBody">
 
@@ -219,9 +220,6 @@ class ListingCard extends Component {
                                 URL :
                             </div>
 
-                            <div className="mBodyElementContent">
-                                {this.state.url}
-                            </div>
                         </div>
 
                         <br/>
