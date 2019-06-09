@@ -10,6 +10,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import {forEach} from "react-bootstrap/es/utils/ElementChildren";
 import './ListingCard.css';
 import Form from 'react-bootstrap/Form';
+import app from "../../../base";
 
 
 
@@ -52,7 +53,8 @@ class ListingCard extends Component {
             smoking: '',
             pet: '',
             description: '',
-            stores: ''
+            stores: '',
+            buses: ''
         };
         let getFolders = fetchData.getFolderNames.bind(this);
         getFolders();
@@ -68,7 +70,7 @@ class ListingCard extends Component {
         this.setState({folder: event.target.value})
 
         console.log("Folder name: " + this.state.folder)
-    }
+    };
 
     handleClose() {
         this.setState({ showMain: false });
@@ -76,6 +78,7 @@ class ListingCard extends Component {
 
     handleShow() {
         this.setState({ showMain: true });
+        console.log("Closing The Scraping Window");
         this.handleC();
     }
     handleSave = async event =>  {
@@ -106,10 +109,12 @@ class ListingCard extends Component {
     handleS = async event => {
         this.setState({showScraping: true})
 
-        setTimeout(this.handleShow, 7000);
+        // setTimeout(this.handleShow, 7000);                                 REMOVED HERE
 
     }
     handleC = async event => {
+        console.log("Closing The Scraping Window");
+
         this.setState({showScraping: false})
     }
 
@@ -143,6 +148,10 @@ class ListingCard extends Component {
     //
     // }
     handleNewFolder = async event => {
+        let uid = app.auth().currentUser.uid;
+        app.database().ref('users/'+ uid + '/folders/'+ this.state.folder).set({
+            "listing1" :  ""
+        });
         saveData.saveListing(this.state.folder, l.url, l);
         this.handleCloseFolders();
         this.handleShowConfirm();
@@ -155,41 +164,41 @@ class ListingCard extends Component {
 
             if(url.length > 0) {
                 console.log("scraping from " + this.state.url);
-                var listingInfo;
-                listingInfo = await scrape(this.state.url);
-                setTimeout(function() {
-
-                        that.setState({image: listingInfo.photo_ref});
-                        that.setState({title: listingInfo.title});
-                        that.setState({address: listingInfo.address});
-                        that.setState({price: listingInfo.price});
-                        that.setState({bed: listingInfo.bed});
-                        that.setState({bath: listingInfo.bath});
-                        that.setState({area: listingInfo.area});
-                        that.setState({type: listingInfo.type});
-                        that.setState({distance_to_campus: listingInfo.distance_to_campus});
-                        that.setState({contact_name: listingInfo.contact_name});
-                        that.setState({contact_number: listingInfo.contact_number});
-                        that.setState({lease_policy: listingInfo._lease_period});
-                        that.setState({deposit: listingInfo.deposit});
-                        that.setState({parking: listingInfo.parking});
-                        that.setState({smoking: listingInfo.smoking});
-                        that.setState({pet: listingInfo.pet});
-                        that.setState({description: listingInfo._description});
-                        that.setState({stores: listingInfo.grocery_stores});
-
-                        l = listingInfo;
-
-                        console.log(l)
-                        console.log(listingInfo)
-
-                    },7000);
-
+                await scrape(this.state.url, this.obtainListing.bind(this));
             }
 
            // setTimeout(that.handleShow, 5000);
             that.handleS();
     };
+
+    obtainListing(listingInfo) {
+        this.setState({image: listingInfo.photo_ref});
+        this.setState({title: listingInfo.title});
+        this.setState({address: listingInfo.address});
+        this.setState({price: listingInfo.price});
+        this.setState({bed: listingInfo.bed});
+        this.setState({bath: listingInfo.bath});
+        this.setState({area: listingInfo.area});
+        this.setState({type: listingInfo.type});
+        this.setState({distance_to_campus: listingInfo.distance_to_campus});
+        this.setState({contact_name: listingInfo.contact_name});
+        this.setState({contact_number: listingInfo.contact_number});
+        this.setState({lease_policy: listingInfo._lease_period});
+        this.setState({deposit: listingInfo.deposit});
+        this.setState({parking: listingInfo.parking});
+        this.setState({smoking: listingInfo.smoking});
+        this.setState({pet: listingInfo.pet});
+        this.setState({description: listingInfo._description});
+        this.setState({stores: listingInfo.grocery_stores});
+        this.setState({buses: listingInfo.bus_stations});
+
+        l = listingInfo;
+
+        console.log(l)
+        console.log(listingInfo)
+
+        this.handleShow();
+    }
 
     render(){
 
@@ -333,9 +342,23 @@ class ListingCard extends Component {
                             </div>
 
                             <div className="mBodyElementContent">
-                                {this.state.stores.toString()}
+                                {this.state.stores}
                             </div>
                         </div>
+
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                NEARBY BUS STOPS:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.buses}
+                            </div>
+                        </div>
+
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.handleClose}>

@@ -322,6 +322,33 @@ class DisplayFolderContent extends Component{
                                 {this.state.l._type}
                             </div>
                         </div>
+
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                NEARBY STORES:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.l._grocery_stores}
+                            </div>
+                        </div>
+
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                NEARBY BUS STOPS:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.l._bus_stations}
+                            </div>
+                        </div>
+
                         <br/>
                         <br/>
 
@@ -484,7 +511,7 @@ class DisplayFolderContent extends Component{
 
             <div className="backgroundImageContainer">
                 {/*<img src="" />*/}
-                <img src="https://github.com/a1rao/HOUSE/blob/master/react-firebase/src/components/ViewFolder/ViewFolderComponents/background.jpg?raw=true" alt="supp" className="backgroundImage"/>
+                <img src="https://github.com/a1rao/HOUSE/blob/master/react-firebase/src/components/ViewFolder/ViewFolderComponents/background_2.jpg?raw=true" alt="supp" className="backgroundImage"/>
                 <h1 className="title">{folderName}</h1>
 
 

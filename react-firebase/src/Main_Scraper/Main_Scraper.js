@@ -92,7 +92,7 @@ module.exports = class Main_Scraper {
             }
 
             await mapScraper.getDistance(this.l.address, this.l);
-            await mapScraper.getPhotos(this.l.address, this.l);
+            await mapScraper.getNearby(this.l.address, this.l);
 
             // await mapScraper.distance(campus, this.l.address, this.l);
             // await mapScraper.getPhoto(this.l.address, this.l);

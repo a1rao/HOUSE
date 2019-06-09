@@ -1,6 +1,6 @@
 const Main_Scraper = require('./Main_Scraper.js');
 
-module.exports = async function scrape(url) {
+module.exports = async function scrape(url, callback) {
     //console.log("Before calling main() " + new Date().getTime())
     // var ret1 = await main('https://www.rent.com/california/la-jolla-houses/8891-nottingham-pl-4-r2978423');
 
@@ -153,5 +153,7 @@ module.exports = async function scrape(url) {
     // console.log("------------------------- lease_period --------------- " + ret5.lease_period);
     // console.log("------------------------- description --------------- " + ret5.description);
     //}, 10000)
+
+    callback(ret.l);
     return ret.l;
 };

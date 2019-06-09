@@ -1,7 +1,14 @@
 module.exports =  class Listing {
+    get bus_stations() {
+        return this._bus_stations;
+    }
+
+    set bus_stations(value) {
+        this._bus_stations = value;
+    }
     constructor(url, title, address, price, bed, bath, area, type, deposit, contact_name, contact_email, contact_number,
                 distance_to_campus, travel_time, pets, smoking, parking, lease_period, description, int_price, int_bed, int_bath,
-                int_area, photo_name, photo_ref, grocery_stores) {
+                int_area, bus_stations, photo_ref, grocery_stores) {
 
         //console.log("started initializing l at " + new Date().getTime())
         this._url = url;
@@ -27,8 +34,8 @@ module.exports =  class Listing {
         this._int_bed = int_bed;
         this._int_bath = int_bath;
         this._int_area = int_area;
-        this._photo_name = photo_name;
         this._photo_ref = photo_ref;
+        this._bus_stations = bus_stations;
         this._grocery_stores = grocery_stores;
         this._id = '';
 

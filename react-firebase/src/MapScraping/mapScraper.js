@@ -12,8 +12,11 @@ const OUTPUT = "/json?";
 const PLACE_FROM_TEXT  = "/findplacefromtext";
 const NEARBY = "/nearbysearch";
 const LOCATION = "location=";
-const NEARBY_TYPE = "type=supermarket";
-const RADIUS = "radius=2000";
+const NEARBY_MARKET = "type=supermarket";
+const NEARBY_BUS = "type=bus_station";
+const MARKET_RADIUS = "radius=2000";
+const BUS_RADIUS = "radius=500";
+const SORT_DISTANCE = "rankby=distance";
 const PLACE_DETAILS = "/details";
 const PLACE_PHOTO = "/photo?";
 const PHOTO_REF = "photoreference=";
@@ -176,7 +179,7 @@ module.exports = {
 
 		await makeRequest(PROXY_URL + BASE_URL + DISTANCE + OUTPUT + UNITS + URL_SEPARATOR + ORIGIN
 			+ target.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR + DEST + FIXED_CAMPUS.replace(/ /g, "%20")
-			+ URL_SEPARATOR + API_KEY).then(function(body) {
+			+ URL_SEPARATOR + API_KEY).then(function(body, callback) {
 			console.log("We got here in DistanceQuery at " + (new Date().getTime()));
 			// console.log(body);
 			var response = JSON.parse(body);
@@ -194,10 +197,10 @@ module.exports = {
 		});
 	},
 
-	getPhotos: function(address, l) {
+	getNearby: async function(address, l) {
 		console.log("Making Place Search Request at :\n" + PROXY_URL + BASE_URL + PLACE + PLACE_FROM_TEXT + OUTPUT + INPUT + address.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR
 			+ TEXT_QUERY + URL_SEPARATOR + PLACE_FIELDS + URL_SEPARATOR + API_KEY);
-		makeRequest(PROXY_URL + BASE_URL + PLACE + PLACE_FROM_TEXT + OUTPUT + INPUT + address.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR
+		await makeRequest(PROXY_URL + BASE_URL + PLACE + PLACE_FROM_TEXT + OUTPUT + INPUT + address.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR
 			+ TEXT_QUERY + URL_SEPARATOR + PLACE_FIELDS + URL_SEPARATOR + API_KEY).then(async function(body) {
 			console.log("We got here in PlaceSearchQuery at " + (new Date().getTime()));
 			// console.log(body);
@@ -224,17 +227,18 @@ module.exports = {
 						ref = detailedResponse.result.photos[0].photo_reference;
 					}
 
-					var lat = detailedResponse.result.geometry.location.lat;
-					var lng = detailedResponse.result.geometry.location.lng;
-
 					l.photo_ref = (ref === undefined) ? /*PROXY_URL + */"https://github.com/a1rao/HOUSE/blob/master/react-firebase/images/default_listing_image.png?raw=true"
 						: /*PROXY_URL +*/ BASE_URL + PLACE + PLACE_PHOTO + PHOTO_WIDTH + URL_SEPARATOR
 						+ PHOTO_REF + ref + URL_SEPARATOR + API_KEY;
 
 					console.log("Photo reference being used is :\n" + l.photo_ref);
 
-					await getStores(lat, lng, l);
-
+					if(detailedResponse.result.geometry !== undefined) {
+						var lat = detailedResponse.result.geometry.location.lat;
+						var lng = detailedResponse.result.geometry.location.lng;
+						await getStores(lat, lng, l);
+						await getBuses(lat, lng, l);
+					}
 					console.log("Done with Details Search at " + (new Date().getTime()));
 
 					// makeRequest(PROXY_URL + BASE_URL + PLACE + PLACE_PHOTO + PHOTO_WIDTH + URL_SEPARATOR
@@ -308,8 +312,8 @@ async function grocerySearch(lat, lng, l){
 
 async function getStores(lat, lng, l) {
 	await makeRequest(PROXY_URL + BASE_URL + PLACE + NEARBY + OUTPUT + LOCATION + lat + "," + lng
-		+ URL_SEPARATOR + RADIUS + URL_SEPARATOR + NEARBY_TYPE + URL_SEPARATOR + API_KEY).then(function(body) {
-		console.log("We got here in PlaceNearbySearch at " + (new Date().getTime()));
+		+ URL_SEPARATOR + MARKET_RADIUS + URL_SEPARATOR + NEARBY_MARKET + URL_SEPARATOR + API_KEY).then(function(body) {
+		console.log("We got here in PlaceNearbySearchStores at " + (new Date().getTime()));
 
 		var response = JSON.parse(body);
 		console.log(response);
@@ -317,8 +321,8 @@ async function getStores(lat, lng, l) {
 		var stores;
 
 		if(response.results.length === 0) {
-			console.log("Got into the if block in nearby places search. Number of stores found is " + response.results.length);
-			stores = "Grocery Shopping will be a long. No supermarkets found within a 2 km radius.";
+			console.log("Got into the if block in nearby places stores search. Number of stores found is " + response.results.length);
+			stores = "There are no supermarkets within a 2 mile radius.";
 		}
 		else {
 			stores = [];
@@ -331,9 +335,35 @@ async function getStores(lat, lng, l) {
 			}
 		}
 
-		l.grocery_stores = stores;
+		l.grocery_stores = stores.toString().split(",").join(", ");
 		console.log("Set stores at " + (new Date().getTime()));
 
-	})
+	});
 }
 
+async function getBuses(lat, lng, l) {
+	await makeRequest(PROXY_URL + BASE_URL + PLACE + NEARBY + OUTPUT + LOCATION + lat + "," + lng
+		+ URL_SEPARATOR + BUS_RADIUS + URL_SEPARATOR + NEARBY_BUS + URL_SEPARATOR + SORT_DISTANCE + URL_SEPARATOR + API_KEY)
+		.then(function(body) {
+		console.log("We got here in PlaceNearbySearchBuses at " + (new Date().getTime()));
+
+		var response = JSON.parse(body);
+		console.log(response);
+
+		var buses;
+
+		if(response.results.length === 0) {
+			console.log("Got into the if block in nearby places bus stations search. Number of buses found is " + response.results.length);
+			buses = "There are no bus stops within a 2 mile radius.";
+		}
+		else {
+			console.log("Got into the else block in nearby places search. Number of stores found is " + response.results.length);
+
+			buses = response.results[0].name;
+		}
+
+		l.bus_stations = buses;
+		console.log("Set buses at " + (new Date().getTime()));
+
+	});
+}
