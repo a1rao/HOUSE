@@ -1,9 +1,13 @@
+/* AddNewURL.js
+ * Save listing url from Add to Folder Button
+ */
 import React, {Component} from "react";
-import app from "../../../base";
 import saveData from '../../Backend/Database/SaveToDb.js';
 
-// Save listing url from Add To Folder button
-
+/**
+ * Make calls to the database to save the listing to the database
+ * @constructor
+ */
 function SaveListing(){
     // Get user input
     var userInput = document.getElementById("insertURL");
@@ -26,6 +30,7 @@ class AddNewURL extends Component {
 
         return(
             <div>
+                {/*Add Listing to folder clicked*/}
                 <form id = "insertURL">
                     <input
                         name="url"
@@ -39,4 +44,3 @@ class AddNewURL extends Component {
 
 }
 
-export default AddNewURL;

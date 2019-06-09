@@ -62,7 +62,7 @@ module.exports = {
 				var response = JSON.parse(body);
 
 				l.distance_to_campus = response.rows[0].elements[0].distance.text;
-				l.distance = Number(l.distance_to_campus.replace(/[^0-9.]/g, EMPTY));
+				l._distance = Number(l.distance_to_campus.replace(/[^0-9.]/g, EMPTY));
 				l.travel_time = response.rows[0].elements[0].duration.text;
 		}).catch(function(err) {
 			console.log("An error occurred!!");
