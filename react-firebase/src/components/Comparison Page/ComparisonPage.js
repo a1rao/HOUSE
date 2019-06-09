@@ -18,6 +18,7 @@ class ComparisonPage extends Component {
 
         this.state = {
             allIDs: [],
+            showF: true,
             compareIDS: [],
             folders: [],
             eachListing2: [],
@@ -27,7 +28,8 @@ class ComparisonPage extends Component {
             listing3: '',
             listing4: '',
             showFolders: false,
-            showListings: false
+            showListings: false,
+            deleted: false,
         };
 
         let getFolders = fetchData.getFolderNames.bind(this);
@@ -38,6 +40,7 @@ class ComparisonPage extends Component {
 
         let first = fetchData.getComparisonID.bind(this);
         let second = fetchData.getListing.bind(this);
+        this.handleClear = this.handleClear.bind(this);
         //fetchData.getID(fetchData.getListing(),1);
         //this.setState({currentColumn:'1'});
         first(second);
@@ -70,6 +73,9 @@ class ComparisonPage extends Component {
         this.handleShowListings(number, folder);
     }
 
+    handleCloseFetching = async event => {
+        this.setState({showF:false})
+    }
     handleCFolders = async event => {
         this.setState({showFolders: false});
     }
@@ -95,6 +101,18 @@ class ComparisonPage extends Component {
     handleCloseListings = async event => {
         this.setState({showListings: false});
     }
+    handleClear = async  event => {
+        await saveData.removeCompare();
+        this.setState({listing1:''})
+        this.setState({listing2:''})
+        this.setState({listing3:''})
+        this.setState({listing4:''})
+        console.log("listing1: "  + this.state.listing1);
+        console.log("listing2: "  + this.state.listing2);
+
+
+
+    }
 
     handleAddToTable = async (number, listing) => {
         if(number === 1){
@@ -116,6 +134,7 @@ class ComparisonPage extends Component {
         }
         console.log("we are able to select a specific listing : " + listing._address);
         this.handleCloseListings();
+        this.setState({deleted: false})
     }
 
 
@@ -125,6 +144,11 @@ class ComparisonPage extends Component {
 
             <div>
 
+                <Modal show={this.state.showF} onHide={this.handleCloseFetching}>
+                    <Modal.Header>
+                        <Modal.Title>Fetching your Listing</Modal.Title>
+                    </Modal.Header>
+                </Modal>
                 <Modal show={this.state.showFolders} onHide={this.handleCFolders}>
 
                     <Modal.Header closeButton>
@@ -163,26 +187,28 @@ class ComparisonPage extends Component {
                     <thead>
                     <tr>
 
-                        <th>Key</th>
+                        <th>
+                            <Button variant={"secondary"} onClick={this.handleClear}> Clear Table </Button>
+                        </th>
                         <th>
                             <Button variant="primary" onClick={() => this.handleShowFolders(1)}> Add New Listing
                             </Button>
-                            <Button variant="secondary" onClick={() => this.handleRemoveListing(1)}> Remove listing </Button>
+                            {/*<Button variant="secondary" onClick={() => this.handleRemoveListing(1)}> Remove listing </Button>*/}
                         </th>
                         <th>
                             <Button variant="primary" onClick={() => this.handleShowFolders(2)}> Add New Listing
                             </Button>
-                            <Button variant="secondary" onClick={() => this.handleRemoveListing(2)}> Remove listing </Button>
+                            {/*<Button variant="secondary" onClick={() => this.handleRemoveListing(2)}> Remove listing </Button>*/}
                         </th>
                         <th>
                             <Button variant="primary" onClick={() => this.handleShowFolders(3)}> Add New Listing
                             </Button>
-                            <Button variant="secondary" onClick={() => this.handleRemoveListing(3)}> Remove listing </Button>
+                            {/*<Button variant="secondary" onClick={() => this.handleRemoveListing(3)}> Remove listing </Button>*/}
                         </th>
                         <th>
                             <Button variant="primary" onClick={() => this.handleShowFolders(4)}> Add New Listing
                             </Button>
-                            <Button variant="secondary" onClick={() => this.handleRemoveListing(4)}> Remove listing </Button>
+                            {/*<Button variant="secondary" onClick={() => this.handleRemoveListing(4)}> Remove listing </Button>*/}
                         </th>
 
 
@@ -195,10 +221,29 @@ class ComparisonPage extends Component {
                     <tbody>
                     <tr>
                         <td className="tableHead">Image</td>
-                        <td><Image src={this.state.listing1._photo_ref}/> </td>
-                        <td> <Image src={this.state.listing2._photo_ref}/></td>
-                        <td> <Image src={this.state.listing3._photo_ref}/></td>
-                        <td><Image src={this.state.listing4._photo_ref}/> </td>
+                        <td><div className = "mBodyElementImage">
+                            <Image src={this.state.listing1._photo_ref} height={200} width={200}/>
+                        </div>
+                            {/*<Image src={this.state.listing1._photo_ref}/> */}
+                        </td>
+                        <td>
+                            <div className = "mBodyElementImage">
+                                <Image src={this.state.listing2._photo_ref} height={200} width={200}/>
+                            </div>
+                            {/*<Image src={this.state.listing2._photo_ref}/>*/}
+                        </td>
+                        <td>
+                            <div className = "mBodyElementImage">
+                                <Image src={this.state.listing3._photo_ref} height={200} width={200}/>
+                            </div>
+                            {/*<Image src={this.state.listing3._photo_ref}/>*/}
+                        </td>
+                        <td>
+                            <div className = "mBodyElementImage">
+                                <Image src={this.state.listing4._photo_ref} height={200} width={200} />
+                            </div>
+                            {/*<Image src={this.state.listing4._photo_ref}/>*/}
+                        </td>
                     </tr>
                     <tr>
                         <td className="tableHead">Name</td>

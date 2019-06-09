@@ -73,17 +73,18 @@ const func = {
         var listingKey = l._id;
         databaseref.child(listingKey).set({'url':l._url});
     },
-    removeCompare: function (column) {
-        console.log("------------------deleting0000000000000:   " + column);
+    removeCompare: function () {
+        console.log("------------------deleting0000000000000:   ");
+        //var that = this;
         let uid = app.auth().currentUser.uid;
-        let databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + column);
+        let databaseref = app.database().ref('users/' + uid + '/comparisonTable/');
         databaseref.remove().then(function() {
             console.log("listing removed from folder");
         }).catch(function(error) {
             console.log("eat my fucking ass cuz this listing aint getting deleted");
-        })
+        });
+        //that.setState({deleted:true})
     }
-
 };
 
 export default func;
