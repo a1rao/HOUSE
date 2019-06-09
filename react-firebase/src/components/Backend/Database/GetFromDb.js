@@ -181,6 +181,7 @@ const func = {
                 this.setState({listing4:this.state.eachListing2[3]})
             }
 
+            this.setState({showF: false});
         }.bind(this), 100*this.state.compareIDs.length)
 
     }
