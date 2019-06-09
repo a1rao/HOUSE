@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2592616e-3d7d-4baf-b3f5-cb40db4e0775" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrivateRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Folders/createNewFolder/AddNewFolder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Folders/createNewFolder/AddNewFolder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Help Page/HelpPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Help Page/HelpPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ResetPassword/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResetPassword/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main_Scraper/Listing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main_Scraper/Listing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Backend/Sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Backend/Sort.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,55 +21,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="101" column="23" lean-forward="true" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#71#110#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/HomeView.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -89,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Login/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
@@ -101,21 +44,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Backend/Sort.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+            <state relative-caret-position="645">
+              <caret line="43" column="80" selection-start-line="43" selection-start-column="80" selection-end-line="43" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js">
+        <entry file="file://$PROJECT_DIR$/src/Main_Scraper/Listing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main_Scraper/Rentals.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main_Scraper/Rent.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main_Scraper/scrape.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -191,12 +152,14 @@
         <option value="$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordHeader.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/PrivateRoute.js" />
-        <option value="$PROJECT_DIR$/src/components/Backend/Sort.js" />
         <option value="$PROJECT_DIR$/src/components/Folders/createNewFolder/AddNewFolder.js" />
         <option value="$PROJECT_DIR$/src/components/Help Page/HelpPage.js" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeView.js" />
         <option value="$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js" />
         <option value="$PROJECT_DIR$/src/components/Login/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegForm.js" />
+        <option value="$PROJECT_DIR$/src/components/Backend/Sort.js" />
+        <option value="$PROJECT_DIR$/src/Main_Scraper/Listing.js" />
       </list>
     </option>
   </component>
@@ -242,95 +205,7 @@
               <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Backend" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Comparison Page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Folders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Folders" type="462c0819:PsiDirectoryNode" />
-              <item name="createNewFolder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Help Page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Listings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Listings" type="462c0819:PsiDirectoryNode" />
-              <item name="Listing Card" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="NavigationBar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ViewFolder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ViewFolder" type="462c0819:PsiDirectoryNode" />
-              <item name="ViewFolderComponents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MapScraping" type="462c0819:PsiDirectoryNode" />
+              <item name="Main_Scraper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -385,24 +260,24 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93215000" />
+    <option name="totallyTimeSpent" value="94143000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.501006" side_tool="true" weight="0.20468278" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49899396" visible="true" weight="0.17522658" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49899396" visible="true" weight="0.17522658" />
       <window_info id="Structure" order="6" sideWeight="0.501006" side_tool="true" weight="0.20468278" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.503937" side_tool="true" weight="0.28796563" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Messages" order="3" />
       <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.496063" visible="true" weight="0.27077365" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="5" sideWeight="0.496063" visible="true" weight="0.27077365" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.36103153" />
       <window_info anchor="bottom" id="Run" order="8" />
@@ -426,26 +301,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Login/LoginComponents/LoginMain.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Login/LoginComponents/LoginBackground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Login/LoginComponents/LoginFooter.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/Login/LoginComponents/LoginFooter.css" />
-    <entry file="file://$PROJECT_DIR$/src/components/Login/LoginComponents/LoginHeader.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Login/LoginComponents/House logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -473,8 +328,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Register/RegisterComponents/RegForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="45">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -534,9 +389,7 @@
     <entry file="file://$PROJECT_DIR$/src/MapScraping/mapScraper.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main_Scraper/Example.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main_Scraper/Example.js" />
     <entry file="file://$PROJECT_DIR$/src/Main_Scraper/Apartments.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -550,9 +403,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main_Scraper/Craigslist.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main_Scraper/Craigslist.js" />
     <entry file="file://$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordHeader.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -677,21 +528,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Backend/Sort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Folders/createNewFolder/AddNewFolder.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -710,15 +548,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/HomeView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -735,6 +565,38 @@
           <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Backend/Sort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="80" selection-start-line="43" selection-start-column="80" selection-end-line="43" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Register/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main_Scraper/Listing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main_Scraper/Rent.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main_Scraper/Rentals.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main_Scraper/scrape.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
