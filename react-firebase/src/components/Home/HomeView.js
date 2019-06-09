@@ -16,7 +16,7 @@ class HomeView extends Component {
             <div>
 
                 {/*Navigation bar at the top of the screen. */}
-                <NavigationBar/>
+                <NavigationBar />
 
                 <div className="backgroundImageContainer">
                     {/*<img src="./Background_smallerlogo.jpg" alt="a beautiful picture" className="backgroundImage"/>*/}

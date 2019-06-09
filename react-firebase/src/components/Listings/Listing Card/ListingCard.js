@@ -267,7 +267,7 @@ class ListingCard extends Component {
                         <Modal.Title>Listing Saved</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        Your Listing has been saved!!!!!!
+                        Your listing has been saved!!!!!!
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="primary" onClick={this.handleCloseConfirm}>
