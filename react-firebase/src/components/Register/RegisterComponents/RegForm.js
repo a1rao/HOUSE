@@ -41,33 +41,4 @@ const RegForm = ({ onSubmit }) => {
 };
 
 
-/*<div>
-
-<!--  <div className="imgcontainer"> -->
-               <!--     <img src="https://i.ibb.co/z4gWyqf/login-icon.png" alt="login-icon"  className="avatar"/>-->
-               <!-- </div>-->
-
-    <h1>Register</h1>
-    <form onSubmit={onSubmit}>
-        <label>
-            Email
-            <input
-                name="email"
-                type="email"
-                placeholder="Email"
-            />
-        </label>
-        <label>
-            Password
-            <input
-                name="password"
-                type="password"
-                placeholder="Password"
-            />
-        </label>
-        <button type="submit">Register</button>
-    </form>
-</div>*/
-
-
 export default RegForm;

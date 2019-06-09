@@ -1,4 +1,3 @@
-
 .registerForm {
     border-width: 1px;
     border-color: black;
@@ -76,41 +75,3 @@
     text-align: left;
 
 }
-
-/* Change styles for span and cancel button on extra small screens */
-/*@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
-}*/
-
-
-/* UN-USED CODE SEGMENTS */
-
-/* Extra style for the cancel button (red) */
-/*.cancelbtn {
-    width: auto;
-    padding: 10px 30px;
-    margin: 0px 5px;
-    background-color: dodgerblue;
-}*/
-
-/* Center the avatar image inside this container */
-/*.imgcontainer {
-    text-align: center;
-    margin: 0 0 0 0;
-    padding-top: 7px;
-    background-color: #ffff;
-}*/
-
-/* Avatar image */
-/*img.avatar {
-    min-height: 50%;
-    max-height: 200px;
-    border-radius: 50%;
-    height: 100%;
-}*/

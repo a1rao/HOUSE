@@ -1,6 +1,6 @@
 .top {
     width: 100%;
-    top: 0px;
+    margin-top: 0px;
     text-align: center;
     position: fixed;
 }
