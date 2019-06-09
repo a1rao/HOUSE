@@ -228,7 +228,7 @@ class ListingCard extends Component {
                         <br/>
 
                         {/*PHOTO: {this.state.image}*/}
-                        <Image src={this.state.image}/>
+                        <Image src={this.state.image} width="300" height="200"/>
                         <br/>
                         <br/>
 
