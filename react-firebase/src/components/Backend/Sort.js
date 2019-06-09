@@ -30,12 +30,13 @@ const func = {
         }
         // Sort based on distance
         else if(s === "_distance_to_campus") {
+            console.log("We got into the function to sort by distance");
             listings.sort(function (a, b) {
                 if (a._distance > b._distance) {
-                    return -1;
+                    return 1;
                 }
                 if (a._distance < b._distance) {
-                    return 1;
+                    return -1;
                 }
                 return 0;
             });
