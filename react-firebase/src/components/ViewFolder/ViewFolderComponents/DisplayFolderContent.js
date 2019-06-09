@@ -12,6 +12,7 @@ import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/ButtonGroup";
+import Image from "react-bootstrap/Image";
 
 // Display all listing thumbnails from folder that is currently listing1
 // For testing purposes, this folder is:  TEST
@@ -233,14 +234,17 @@ class DisplayFolderContent extends Component{
 
                     <Modal.Body className="mBody">
 
-                        <div className="mBodyElement">
-                            <div className="mBodyElementTitle">
-                                Photo:
-                            </div>
-                            <div className="mBodyElementContent">
-                                {this.state.l._photo_name}
-                            </div>
-                        </div>
+                        {/*<div className="mBodyElement">*/}
+                        {/*    <div className="mBodyElementTitle">*/}
+                        {/*        Photo:*/}
+                        {/*    </div>*/}
+                            {/*<div className="mBodyElementContent">*/}
+                                {/*{this.state.l._photo_name}*/}
+                             <div className = "mBodyElementImage">
+                                <Image src={this.state.l._photo_ref} height={200} />
+                             </div>
+                            {/*</div>*/}
+                        {/*</div>*/}
                         <br/>
                         <br/>
 
