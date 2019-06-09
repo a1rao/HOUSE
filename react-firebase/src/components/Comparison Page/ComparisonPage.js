@@ -5,7 +5,8 @@ import './ComparisonPage.css';
 import Button from "react-bootstrap/Button";
 import fetchData from "../Backend/Database/GetFromDb";
 import Modal from "react-bootstrap/Modal";
-import saveData from "../Backend/Database/SaveToDb"
+import saveData from "../Backend/Database/SaveToDb";
+import Image from 'react-bootstrap/Image';
 
 var allFolders = '';
 var allListings = '';
@@ -194,10 +195,10 @@ class ComparisonPage extends Component {
                     <tbody>
                     <tr>
                         <td className="tableHead">Image</td>
-                        <td> </td>
-                        <td> </td>
-                        <td> </td>
-                        <td> </td>
+                        <td><Image src={this.state.listing1._photo_ref}/> </td>
+                        <td> <Image src={this.state.listing2._photo_ref}/></td>
+                        <td> <Image src={this.state.listing3._photo_ref}/></td>
+                        <td><Image src={this.state.listing4._photo_ref}/> </td>
                     </tr>
                     <tr>
                         <td className="tableHead">Name</td>
@@ -285,7 +286,7 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing4._pets}</td>
                     </tr>
                     <tr>
-                        <td className="tableHead">Distance to Grocery Store</td>
+                        <td className="tableHead">Nearby Grocery Stores</td>
                         <td>{this.state.listing1._grocery_stores}</td>
                         <td>{this.state.listing2._grocery_stores}</td>
                         <td>{this.state.listing3._grocery_stores}</td>
