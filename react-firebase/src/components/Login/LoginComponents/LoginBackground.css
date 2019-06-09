@@ -18,4 +18,6 @@ img.backgroundImage {
     position: fixed;
     top: 75px;
     left: 0;
+
+    z-index: -1;
 }
