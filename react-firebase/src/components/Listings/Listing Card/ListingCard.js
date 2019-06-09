@@ -52,7 +52,8 @@ class ListingCard extends Component {
             smoking: '',
             pet: '',
             description: '',
-            stores: ''
+            stores: '',
+            buses: ''
         };
         let getFolders = fetchData.getFolderNames.bind(this);
         getFolders();
@@ -177,6 +178,7 @@ class ListingCard extends Component {
                         that.setState({pet: listingInfo.pet});
                         that.setState({description: listingInfo._description});
                         that.setState({stores: listingInfo.grocery_stores});
+                        that.setState({buses: listingInfo.bus_stations});
 
                         l = listingInfo;
 
@@ -343,9 +345,23 @@ class ListingCard extends Component {
                             </div>
 
                             <div className="mBodyElementContent">
-                                {this.state.stores.toString()}
+                                {this.state.stores}
                             </div>
                         </div>
+
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                NEARBY BUS STOPS:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.buses}
+                            </div>
+                        </div>
+
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.handleClose}>

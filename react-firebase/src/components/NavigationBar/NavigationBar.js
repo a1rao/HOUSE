@@ -95,6 +95,11 @@ class NavigationBar extends Component {
                             </NavDropdown>
                         </Nav>
 
+                        <div className="bgImage">
+                            <img src="https://i.ibb.co/6yF4X0H/output-onlinepngtools-1.png"
+                                 alt="output-onlinepngtools-1" width={100} height={65} />
+                        </div>
+
                         <div className="searchBarWrapper">
                             <Form inline className="searchBar">
                                 <ListingCard />

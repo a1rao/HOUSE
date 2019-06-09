@@ -322,6 +322,33 @@ class DisplayFolderContent extends Component{
                                 {this.state.l._type}
                             </div>
                         </div>
+
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                NEARBY STORES:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.l._grocery_stores}
+                            </div>
+                        </div>
+
+                        <br/>
+                        <br/>
+
+                        <div className="mBodyElement">
+                            <div className="mBodyElementTitle">
+                                NEARBY BUS STOPS:
+                            </div>
+
+                            <div className="mBodyElementContent">
+                                {this.state.l._bus_stations}
+                            </div>
+                        </div>
+
                         <br/>
                         <br/>
 
