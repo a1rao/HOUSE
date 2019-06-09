@@ -8,7 +8,7 @@ module.exports =  class Listing {
     }
     constructor(url, title, address, price, bed, bath, area, type, deposit, contact_name, contact_email, contact_number,
                 distance_to_campus, travel_time, pets, smoking, parking, lease_period, description, int_price, int_bed, int_bath,
-                int_area, bus_stations, photo_ref, grocery_stores) {
+                int_area, bus_stations, photo_ref, grocery_stores, distance) {
 
         //console.log("started initializing l at " + new Date().getTime())
         this._url = url;
@@ -24,6 +24,7 @@ module.exports =  class Listing {
         this._contact_email = contact_email;
         this._contact_number = contact_number;
         this._distance_to_campus = distance_to_campus;
+        this._distance = distance;
         this._travel_time = travel_time;
         this._pets = pets;
         this._smoking = smoking;
