@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2592616e-3d7d-4baf-b3f5-cb40db4e0775" name="Default Changelist" comment="" />
+    <list default="true" id="2592616e-3d7d-4baf-b3f5-cb40db4e0775" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,13 +19,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="101" column="62" selection-start-line="101" selection-start-column="62" selection-end-line="101" selection-end-column="62" />
+            <state relative-caret-position="40">
+              <caret line="378" selection-start-line="378" selection-end-line="378" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#26#65#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Listings/Listing Card/ListingCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state relative-caret-position="6800">
               <caret line="400" column="34" selection-start-line="400" selection-start-column="34" selection-end-line="400" selection-end-column="34" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -167,13 +170,11 @@
         <option value="$PROJECT_DIR$/src/components/ViewFolder/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js" />
-        <option value="$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js" />
         <option value="$PROJECT_DIR$/src/components/Backend/Sort.js" />
         <option value="$PROJECT_DIR$/src/components/Listings/Listing Card/ListingCard.css" />
         <option value="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.css" />
         <option value="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginBackground.css" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeView.css" />
-        <option value="$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js" />
         <option value="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" />
         <option value="$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.js" />
         <option value="$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.css" />
@@ -182,6 +183,8 @@
         <option value="$PROJECT_DIR$/src/components/Home/HomeView.js" />
         <option value="$PROJECT_DIR$/src/components/Listings/addURL/AddNewURL.js" />
         <option value="$PROJECT_DIR$/src/components/Listings/Listing Card/ListingCard.js" />
+        <option value="$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js" />
+        <option value="$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js" />
       </list>
     </option>
   </component>
@@ -403,15 +406,15 @@
       <workItem from="1559609528491" duration="2552000" />
       <workItem from="1559793994682" duration="18987000" />
       <workItem from="1560029251606" duration="30447000" />
-      <workItem from="1560086526138" duration="3231000" />
+      <workItem from="1560086526138" duration="4510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92557000" />
+    <option name="totallyTimeSpent" value="93836000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -565,16 +568,6 @@
     <entry file="file://$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordHeader.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="101" column="62" selection-start-line="101" selection-start-column="62" selection-end-line="101" selection-end-column="62" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -653,17 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="86" column="16" lean-forward="true" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#84#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5593">
@@ -679,11 +661,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Listings/Listing Card/ListingCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="6800">
           <caret line="400" column="34" selection-start-line="400" selection-start-column="34" selection-end-line="400" selection-end-column="34" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#23#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="86" column="16" lean-forward="true" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#84#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="378" selection-start-line="378" selection-end-line="378" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#26#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
