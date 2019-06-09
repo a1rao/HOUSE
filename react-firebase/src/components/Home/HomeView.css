@@ -16,7 +16,7 @@ img.backgroundImage {
 
     /* Set up positioning */
     position: fixed;
-    top: 100px;
+    top: 75px;
 
     /*z-index: -1;*/
 }
