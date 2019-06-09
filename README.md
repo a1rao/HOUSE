@@ -17,6 +17,8 @@ Register with personal name and email and password
 
 *Requirements: Any requirement or dependency that the application may have. For example if the web app should be run on Chrome then it should be mentioned here.*
 
+Machine must have Chrome installed.
+
 *Installation Instruction: If the application needs to be installed then here should be detailed as how it should be done and. The steps should be detailed and as error proof as possible.*
 
 *How to Run: The instruction on how to run and use the application as concise and simple as possible.*
