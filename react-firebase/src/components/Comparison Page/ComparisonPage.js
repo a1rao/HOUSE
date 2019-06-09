@@ -18,6 +18,7 @@ class ComparisonPage extends Component {
 
         this.state = {
             allIDs: [],
+            showF: true,
             compareIDS: [],
             folders: [],
             eachListing2: [],
@@ -72,6 +73,9 @@ class ComparisonPage extends Component {
         this.handleShowListings(number, folder);
     }
 
+    handleCloseFetching = async event => {
+        this.setState({showF:false})
+    }
     handleCFolders = async event => {
         this.setState({showFolders: false});
     }
@@ -103,6 +107,10 @@ class ComparisonPage extends Component {
         this.setState({listing2:''})
         this.setState({listing3:''})
         this.setState({listing4:''})
+        console.log("listing1: "  + this.state.listing1);
+        console.log("listing2: "  + this.state.listing2);
+
+
 
     }
 
@@ -136,6 +144,11 @@ class ComparisonPage extends Component {
 
             <div>
 
+                <Modal show={this.state.showF} onHide={this.handleCloseFetching}>
+                    <Modal.Header>
+                        <Modal.Title>Fetching your Listing</Modal.Title>
+                    </Modal.Header>
+                </Modal>
                 <Modal show={this.state.showFolders} onHide={this.handleCFolders}>
 
                     <Modal.Header closeButton>
@@ -208,10 +221,29 @@ class ComparisonPage extends Component {
                     <tbody>
                     <tr>
                         <td className="tableHead">Image</td>
-                        <td><Image src={this.state.listing1._photo_ref}/> </td>
-                        <td> <Image src={this.state.listing2._photo_ref}/></td>
-                        <td> <Image src={this.state.listing3._photo_ref}/></td>
-                        <td><Image src={this.state.listing4._photo_ref}/> </td>
+                        <td><div className = "mBodyElementImage">
+                            <Image src={this.state.listing1._photo_ref} height={200} width={200}/>
+                        </div>
+                            {/*<Image src={this.state.listing1._photo_ref}/> */}
+                        </td>
+                        <td>
+                            <div className = "mBodyElementImage">
+                                <Image src={this.state.listing2._photo_ref} height={200} width={200}/>
+                            </div>
+                            {/*<Image src={this.state.listing2._photo_ref}/>*/}
+                        </td>
+                        <td>
+                            <div className = "mBodyElementImage">
+                                <Image src={this.state.listing3._photo_ref} height={200} width={200}/>
+                            </div>
+                            {/*<Image src={this.state.listing3._photo_ref}/>*/}
+                        </td>
+                        <td>
+                            <div className = "mBodyElementImage">
+                                <Image src={this.state.listing4._photo_ref} height={200} width={200} />
+                            </div>
+                            {/*<Image src={this.state.listing4._photo_ref}/>*/}
+                        </td>
                     </tr>
                     <tr>
                         <td className="tableHead">Name</td>
