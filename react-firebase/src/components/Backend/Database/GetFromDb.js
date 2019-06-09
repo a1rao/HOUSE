@@ -4,10 +4,6 @@
 import React, {Component} from 'react';
 import app from "../../../base";
 
-/* To import functions, add this to your file header:
- * import fetchData from '../../Backend/Database/GetFromDb.js';
- */
-
 const func = {
     /**
      * Get IDs of saved listings in database
@@ -113,7 +109,6 @@ const func = {
             dataSnapshot.forEach(childSnapshot => {
                 item = childSnapshot.key;
                 items.push(item)
-                //console.log("key when in getID: " + item);
             });
             if(items.length == 0)
                 items.push(null);
@@ -130,7 +125,6 @@ const func = {
             dataSnapshot.forEach(childSnapshot => {
                 item = childSnapshot.key;
                 items.push(item)
-                console.log("key when in getID: " + item);
             });
             if(items.length == 1)
                 items.push(null);
@@ -144,7 +138,6 @@ const func = {
             dataSnapshot.forEach(childSnapshot => {
                 item = childSnapshot.key;
                 items.push(item)
-                console.log("key when in getID: " + item);
             });
 
             if(items.length === 2)
@@ -169,8 +162,6 @@ const func = {
             this.setState({compareIDs: items});
         });
 
-        console.log("allIds in getId: " + this.state.compareIDs)
-        console.log("length------------------------------`-" + items)
         // Callback function
         setTimeout(() => {cb();}, 1000);
     },
@@ -189,10 +180,8 @@ const func = {
                 let listing = dataSnapshot.val();
                 if (listing != null) { // Ignore null listings aka 'listing1' ;)
                     items.push(listing);
-                    console.log('push:', listing);
                 } else {
                     items.push(null);
-                    console.log('push: null');
                 }
             });
 
@@ -202,8 +191,6 @@ const func = {
         setTimeout(function() {
             console.log("eachlisting in getListign:", items);
             this.setState({eachListing2: items});
-            //this.setState({done : true});
-            console.log("please work: " + this.state.eachListing2);
             if(this.state.eachListing2[0] != null) {
                 this.setState({listing1:this.state.eachListing2[0]})
             }

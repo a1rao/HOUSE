@@ -1,11 +1,13 @@
 import React from 'react';
 import './LoginForm.css';
+import app from "../../../base";
 
-/** Front end for login form
- */
+
+// Sends the email and password to the login event in index.js.
 const LoginForm = ({ onSubmit }) => {
         return (
 
+            // Contains the login form components.
             <div className="loginComponent">
                 <form onSubmit={onSubmit} className="loginForm">
 
@@ -28,35 +30,6 @@ const LoginForm = ({ onSubmit }) => {
             </div>
 
         )
-};/*
-    return (
-        <div>
-            <h1>Login</h1>
-            <form onSubmit={onSubmit}>
-                <label>
-                    Email
-                    <input
-                        name="email"
-                        type="email"
-                        placeholder="Email"
-                    />
-                </label>
-                <label>
-                    Password
-                    <input
-                        name="password"
-                        type="password"
-                        placeholder="Password"
-                    />
-                </label>
-                <button type="submit">Login</button>
-            </form>
-            <h4> Don't have an account? <Link to='/register'> Register now</Link></h4>
-        </div>
-    );
-};*/
-
-
-
+};
 
 export default LoginForm;

@@ -337,7 +337,7 @@ class DisplayFolderContent extends Component{
                         {/*Nearby grocery stores*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                NEARBY STORES:
+                                Nearby Stores:
                             </div>
 
                             <div className="mBodyElementContent">
@@ -351,7 +351,7 @@ class DisplayFolderContent extends Component{
                         {/*Nearby bus stops*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                NEARBY BUS STOPS:
+                                Nearby Bus Stops:
                             </div>
 
                             <div className="mBodyElementContent">

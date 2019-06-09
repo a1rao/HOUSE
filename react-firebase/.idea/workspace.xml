@@ -49,6 +49,7 @@
               <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#84#123#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,7 +103,8 @@
             <state relative-caret-position="277">
               <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#19#58#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,8 +175,6 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js" />
         <option value="$PROJECT_DIR$/src/components/Listings/Listing Card/ListingCard.css" />
-        <option value="$PROJECT_DIR$/src/components/Listings/Listing Card/ListingCard.js" />
-        <option value="$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.css" />
         <option value="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.css" />
         <option value="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginBackground.css" />
         <option value="$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js" />
@@ -259,6 +259,13 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Folders" type="462c0819:PsiDirectoryNode" />
               <item name="createNewFolder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Help Page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
@@ -359,7 +366,7 @@
       <workItem from="1559609528491" duration="2552000" />
       <workItem from="1559793994682" duration="18987000" />
       <workItem from="1560029251606" duration="30447000" />
-      <workItem from="1560086526138" duration="262000" />
+      <workItem from="1560086526138" duration="3231000" />
     </task>
     <servers />
   </component>

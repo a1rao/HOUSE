@@ -16,8 +16,13 @@ class LoginContainer extends Component {
      */
     handleSignIn = async event => {
         event.preventDefault();
+
+        // Takes the elements in the form and saves it to email and password.
         const { email, password } = event.target.elements;
+
         try {
+
+            // Authenticate the user and redirect them to the homepage.
             const user = await app
                 .auth()
                 .signInWithEmailAndPassword(email.value, password.value);
@@ -32,6 +37,8 @@ class LoginContainer extends Component {
 
         return (
 
+
+            // Contains the components inside the login screen including the image, form, and buttons.
             <div className="LoginScreen">
                 <div className="houseLogoContainer">
                     <img src="https://github.com/a1rao/HOUSE/blob/master/react-firebase/src/components/NavigationBar/output-onlinepngtools.png?raw=true" alt="our logo" className="houseLogo"/>
