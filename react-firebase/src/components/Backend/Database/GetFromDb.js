@@ -1,19 +1,25 @@
+/* GetFromDb.js
+ * Contains functions that will perform queries to get information from the database
+ */
 import React, {Component} from 'react';
 import app from "../../../base";
-
-/*
- * Functions that will perform queries to get information from the database
- */
 
 /* To import functions, add this to your file header:
  * import fetchData from '../../Backend/Database/GetFromDb.js';
  */
 
 const func = {
-    // Get IDs of saved listings in
+    /**
+     * Get IDs of saved listings in database
+     * @param cb: callback function to call after getting IDs
+     * @param folderName: name of the folder where listings need to be  retrieved
+     */
     getIDs: function(cb, folderName)
     {
+        // User's ID
         let uid = app.auth().currentUser.uid;
+
+        // Get a reference from database and push the listings ID form database into an array
         let databaseref = app.database().ref('users/' + uid + '/folders/' + folderName)
         databaseref.on('value', dataSnapshot => {
             let items = [];
@@ -22,26 +28,32 @@ const func = {
                 items.push(item);
             });
             this.setState({'allIDs': items});
+
             // Callback function
             setTimeout(() => {cb();}, 1000);
-
         });
     },
 
-    // Get each listing info
+
+    /**
+     * Get each listing's name using listing's ID
+     * @param cb: callback function
+     */
     getAllListings: function(cb)
     {
+        // Store listings name
         let items = [];
-        console.log("allIDs:", this.state.allIDs);
         this.state.allIDs.forEach(id => {
               app.database().ref('listings/' + id).on('value', dataSnapshot => {
                   let listing = dataSnapshot.val();
-                  if (listing != null) { // Ignore null listings aka 'listing1' ;)
+                  if (listing != null) { // Ignore null listings aka 'listing1'
                       items.push(listing);
-                      console.log('push:', listing);
+                      // console.log('push:', listing);
                   }
               });
         });
+
+        // Make sure all listings are pushed into item
         setTimeout(function() {
             console.log("eachlisting in db:", items);
             this.setState({eachListing: items});
@@ -50,8 +62,12 @@ const func = {
 
     },
 
-    // Get user first and last name
+
+    /**
+     * Get user first and last name
+     */
     getName: function() {
+        // User ID
         let uid = app.auth().currentUser.uid;
         this.firebase = app.database().ref('users/' + uid);
         this.firebase.on('value', dataSnapshot => {
@@ -63,9 +79,14 @@ const func = {
         });
     },
 
-    // Get folders
+
+    /**
+     * Get folder's name
+     */
     getFolderNames: function(){
+        // User's ID
         let uid = app.auth().currentUser.uid;
+        // Push folder's name into an array
         this.firebase = app.database().ref('users/' + uid + '/folders/')
         this.firebase.on('value', dataSnapshot => {
             let items =[];
@@ -76,23 +97,33 @@ const func = {
         });
     },
 
+
+    /**
+     * Get listing's ID to be populated in the comparison table
+     * @param cb: Callback function to call after retrieving listing's IDs
+     */
     getComparisonID: function(cb) {
         let items = [];
-        let uid = app.auth().currentUser.uid;
+        let uid = app.auth().currentUser.uid;       // User ID
+
+        // Push listing ID to be compared from database into item
         let databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + 1);
         databaseref.on('value', dataSnapshot => {
             let item ='';
             dataSnapshot.forEach(childSnapshot => {
                 item = childSnapshot.key;
                 items.push(item)
-                console.log("key when in getID: " + item);
+                //console.log("key when in getID: " + item);
             });
             if(items.length == 0)
                 items.push(null);
 
+            // Update state
             this.setState({compareIDs: items});
 
         });
+
+
         databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + 2);
         databaseref.on('value', dataSnapshot => {
             let item ='';
@@ -106,6 +137,7 @@ const func = {
 
             this.setState({compareIDs: items});
         });
+
         databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + 3);
         databaseref.on('value', dataSnapshot => {
             let item ='';
@@ -121,6 +153,8 @@ const func = {
             this.setState({compareIDs: items});
 
         });
+
+
         databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + 4);
         databaseref.on('value', dataSnapshot => {
             let item ='';
@@ -140,17 +174,17 @@ const func = {
         // Callback function
         setTimeout(() => {cb();}, 1000);
     },
+
+
+    // Get user's listings from the database
     getListing: function()
     {
         let items = [];
-        //console.log("allIDs:", this.state.allIDs);
         if(this.state.compareIDs === null) {
             return;
         }
-        console.log("all ids in get listing" + this.state.compareIDs);
-        this.state.compareIDs.forEach(id => {
-            console.log("ids-----------: " + id);
 
+        this.state.compareIDs.forEach(id => {
             app.database().ref('listings/' + id).on('value', dataSnapshot => {
                 let listing = dataSnapshot.val();
                 if (listing != null) { // Ignore null listings aka 'listing1' ;)
@@ -163,6 +197,8 @@ const func = {
             });
 
         });
+
+        // Make sure all information has been retrieved
         setTimeout(function() {
             console.log("eachlisting in getListign:", items);
             this.setState({eachListing2: items});

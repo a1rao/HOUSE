@@ -1,7 +1,7 @@
+/* DisplayFolderContent.js
+ * Display all the listings in a folder
+ */
 import React, {Component} from 'react';
-import app from "../../../base";
-//import ListThumbnail from '../../Listings/ListThumbnail/ListThumbnail.js'
-//import '../../Listings/ListThumbnail/ListThumbnail.css';
 import './DisplayFolderContent.css';
 import fetchData from "../../Backend/Database/GetFromDb";
 import saveData from "../../Backend/Database/SaveToDb"
@@ -10,21 +10,19 @@ import Modal from 'react-bootstrap/Modal';
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
-import DropdownButton from "react-bootstrap/DropdownButton";
-import Dropdown from "react-bootstrap/ButtonGroup";
 import Image from "react-bootstrap/Image";
 
-// Display all listing thumbnails from folder that is currently listing1
-// For testing purposes, this folder is:  TEST
+// The global variables
+var folderName = '';    // Folder's name
+var allFolders = '';    // Array to store all folders
+var sorted = '';        // Parameter to test if sorting is needed
 
-var folderName = '';
-var allFolders = '';
-var sorted = '';
 class DisplayFolderContent extends Component{
 
 
     constructor(props) {
         super(props);
+
         // Store user information
         this.state = {
             showLoading: true,
@@ -44,15 +42,17 @@ class DisplayFolderContent extends Component{
             dropdownOpen: false
         };
 
-        // Get listing id'showScraping
-        // folderName = new NavigationBar(props);
-        // folderName = folderName.returnName();
-
         folderName = localStorage.getItem("viewFolderName");
+
         // Get listing id's
         let first = fetchData.getIDs.bind(this);
         // Get each listing info
         let second = fetchData.getAllListings.bind(this);
+
+        // Make second function call after the first one is done
+        first(second,folderName);
+
+        // All the functions required to render the folder's content
         this.handleCloseLoading = this.handleCloseLoading.bind(this);
         this.printListing = this.printListing.bind(this);
         this.handleCloseListing = this.handleCloseListing.bind(this);
@@ -68,40 +68,46 @@ class DisplayFolderContent extends Component{
         this.setColumn2 = this.setColumn2.bind(this);
         this.setColumn3 = this.setColumn3.bind(this);
         this.setColumn4 = this.setColumn4.bind(this);
-        //this.formatListing = this.formatListing.bind(this);
-        // Make second function call after the first one is done
-        first(second,folderName);
-        console.log("IN DISPLAyFOlder " + folderName)
+
+        // Fetch the data
         let getFolders = fetchData.getFolderNames.bind(this);
         getFolders();
 
     }
 
+    // Read folder's content
     readFolder = async event => {
         event.preventDefault();
         this.setState({folder: event.target.value})
-
-        console.log("Folder name: " + this.state.folder)
     }
 
+    // Set show loading state to false
     handleCloseLoading() {
         this.setState({ showLoading: false })
     }
+
+    // Set state to close the listing card
     handleCloseListing() {
         this.setState( {showListing: false })
     }
+
+    // Set state to close the folders
     handleCloseFolders() {
         this.setState({showFolders: false})
     }
+
+    // Set state to close the column
     handleCloseColumn() {
         this.setState( {showColumn: false})
     }
+
     handleCloseConfirm() {
         this.setState({showConfirm:false});
     }
+
+    // Print the listings
     printListing(listing){
         this.setState({showListing: true})
-       // console.log("DS JVSONVISNDOViNSOIDNVIOSNVD: "+ event)
         this.setState({l : listing})
     }
     handleShowColumn() {
@@ -111,6 +117,8 @@ class DisplayFolderContent extends Component{
     handleShowConfirm() {
         this.setState({showConfirm:true})
     }
+
+    // Show all listings in folders
     handleShowFolders() {
         const all = this.state.folders.map((eachFolder) =>
             <Button variant="outline-success" onClick={() => this.handlePush(eachFolder)}>{eachFolder}</Button>
@@ -119,47 +127,49 @@ class DisplayFolderContent extends Component{
         this.setState({showFolders: true});
         this.handleCloseListing();
     }
-    handleNewFolder = async event => {
-        // saveData.removeListing(folderName, this.state.l);
-        // saveData.saveListing(this.state.folder, this.state.l._url, this.state.l);
 
+    // Create new folders
+    handleNewFolder = async event => {
         saveData.removeAdd(folderName, this.state.folder, this.state.l);
-        console.log(this.state.folder);
         this.handleCloseFolders();
         this.handleShowConfirm();
-
     }
 
     handlePush = async (folder) =>  {
-
-        // saveData.saveListing(folder, this.state.l._url, this.state.l);
-        // saveData.removeListing(folderName, this.state.l);
         saveData.removeAdd(folderName, folder, this.state.l);
         this.handleCloseFolders();
         this.handleShowConfirm();
     }
+
+    // Populate the first column of comparison table
     setColumn1() {
         this.setState({column: 1})
         saveData.saveToCompare('1',this.state.l,this.state.l._url);
         this.handleCloseColumn();
     }
+
+    // Populate the second column of comparison table
     setColumn2() {
         this.setState({column: 2})
         saveData.saveToCompare('2',this.state.l, this.state.l._url);
         this.handleCloseColumn();
     }
+
+    // Populate the fourth column of comparison table
     setColumn3() {
         this.setState({column: 3})
         saveData.saveToCompare('3',this.state.l, this.state.l._url);
         this.handleCloseColumn();
     }
+
+    // Populate the fifth column of comparison table
     setColumn4() {
         this.setState({column: 4});
         saveData.saveToCompare('4',this.state.l, this.state.l._url);
         this.handleCloseColumn();
     }
 
-
+    // Delete the listing from a folder
     deleteListing = event => {
         saveData.removeListing(folderName, this.state.l);
         this.handleCloseListing();
@@ -172,7 +182,7 @@ class DisplayFolderContent extends Component{
         console.log("sort by", s, sorted);
     }
 
-
+    // Drop down of folders
     handleDropdown() {
         this.setState({
             dropdownOpen: !this.state.dropdownOpen
@@ -183,7 +193,6 @@ class DisplayFolderContent extends Component{
 
         // Make sure component one mounting
         if(this.state.done === 0){
-            //console.log("IS 0");
             return (
                 <div>
                     <Modal show ={this.state.showLoading} onHide={this.handleCloseLoading}>
@@ -198,12 +207,9 @@ class DisplayFolderContent extends Component{
             );
         }
 
-        // display each listing in folder TODO
-        // allListings is a list of saved listings in the user'showScraping folder
-        // ERROR: only displays most recent listing with the className: "thumbnail"
-
         const thumbnails = this.state.eachListing.map((listing) =>
 
+            // Show full listing details
             <div className = "allThumbnails">
                 <Button className="listThumbnail" variant="dark" size="sm"  onClick = {() => this.printListing(listing)} >
                     {listing._title}
@@ -221,6 +227,7 @@ class DisplayFolderContent extends Component{
                     Distance to Campus: {listing._distance_to_campus}
                 </Button>
 
+                {/*Close the modal that shows full listing details*/}
                 <Modal show={this.state.showListing} onHide={this.handleCloseListing}>
                     <div className="mHeader">
                         <Modal.Header>
@@ -233,22 +240,15 @@ class DisplayFolderContent extends Component{
                         </Modal.Header>
                     </div>
 
+                    {/*Handle image*/}
                     <Modal.Body className="mBody">
-
-                        {/*<div className="mBodyElement">*/}
-                        {/*    <div className="mBodyElementTitle">*/}
-                        {/*        Photo:*/}
-                        {/*    </div>*/}
-                            {/*<div className="mBodyElementContent">*/}
-                                {/*{this.state.l._photo_name}*/}
-                             <div className = "mBodyElementImage">
-                                <Image src={this.state.l._photo_ref} height={200} />
-                             </div>
-                            {/*</div>*/}
-                        {/*</div>*/}
+                        <div className = "mBodyElementImage">
+                            <Image src={this.state.l._photo_ref} height={200} />
+                        </div>
                         <br/>
                         <br/>
 
+                        {/*listing address*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Address:
@@ -260,6 +260,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*Listing Price*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Price:
@@ -271,6 +272,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*Listing's bedroom */}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Beds:
@@ -282,6 +284,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*Listing's bath*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Bath:
@@ -293,6 +296,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*Listing's square footage*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Area:
@@ -304,6 +308,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*Distance to campus*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Distance to Campus:
@@ -315,6 +320,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*Listing's type*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Type:
@@ -327,6 +333,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*Nearby grocery stores*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 NEARBY STORES:
@@ -340,6 +347,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*Nearby bus stops*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 NEARBY BUS STOPS:
@@ -353,6 +361,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*Deposit needed*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Deposit:
@@ -364,6 +373,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*Listing's lease period*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Lease Period:
@@ -375,6 +385,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*listing's parking availability*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Parking:
@@ -386,6 +397,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*Check if smoking is allowed*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Smoking:
@@ -397,6 +409,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*Number of pets*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Pets:
@@ -408,6 +421,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
+                        {/*Property contact name*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Contact Name:
@@ -419,7 +433,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
-
+                        {/*Listing's email*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Contact Email:
@@ -431,7 +445,7 @@ class DisplayFolderContent extends Component{
                         <br/>
                         <br/>
 
-
+                        {/*More description of the listing*/}
                         <div className="mBodyElementDescription">
                             <div className="mBodyElementTitle">
                                 Description:
@@ -440,10 +454,12 @@ class DisplayFolderContent extends Component{
                                 {this.state.l._description}
                             </div>
                         </div>
+
                         <br/>
                         <br/>
                     </Modal.Body>
 
+                    {/*buttons in searching listing card*/}
                     <Modal.Footer className="mFoot">
                         <Button variant = "success" onClick ={this.handleShowColumn} size="sm">
                             Add to Compare Table
@@ -461,6 +477,7 @@ class DisplayFolderContent extends Component{
                 </Modal>
 
 
+                {/*add to the columns in comparison table*/}
                 <Modal show ={this.state.showColumn} onHide={this.handleCloseColumn}>
                     <Modal.Header closeButton>
                         <Modal.Title>Select a Column</Modal.Title>
@@ -472,12 +489,13 @@ class DisplayFolderContent extends Component{
                         <Button onClick={this.setColumn4}> Column 4</Button>
                     </Modal.Body>
                 </Modal>
+
+                {/*Option to chose folders to popoulate comparison table*/}
                 <Modal show={this.state.showFolders} onHide={this.handleCloseFolders}>
                     <Modal.Header closeButton>
                         <Modal.Title>Select a Folder</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-
                         {allFolders}
                         <br/>
                         <div className="searchBarWrap">
@@ -490,6 +508,9 @@ class DisplayFolderContent extends Component{
                         </div>
                     </Modal.Body>
                 </Modal>
+
+
+                {/*Move the listings to the comparison table*/}
                 <Modal show={this.state.showConfirm} onHide={this.handleCloseConfirm}>
                     <Modal.Header closeButton>
                         <Modal.Title>Listing Moved</Modal.Title>
@@ -508,13 +529,12 @@ class DisplayFolderContent extends Component{
 
         return (
 
-
+            // Display folders and the sorting buttons
             <div className="backgroundImageContainer">
-                {/*<img src="" />*/}
                 <img src="https://github.com/a1rao/HOUSE/blob/master/react-firebase/src/components/ViewFolder/ViewFolderComponents/background_2.jpg?raw=true" alt="supp" className="backgroundImage"/>
                 <h1 className="title">{folderName}</h1>
 
-
+                {/*Sorting buttons*/}
                 <div className="buttonParent">
                     <div className="buttonz">
                         <Button className="sortBar" variant="outline-dark" onClick={() =>this.sort('_price')}>Sort By Price</Button>
@@ -524,11 +544,10 @@ class DisplayFolderContent extends Component{
                     </div>
                 </div>
 
+                {/*Display thumbnails*/}
                 <p>{thumbnails}</p>
             </div>
         );
     }
 }
-
 export default DisplayFolderContent;
-
