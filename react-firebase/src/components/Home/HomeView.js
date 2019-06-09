@@ -3,7 +3,6 @@ import app from "../../base";
 import AddNewURL from '../Listings/addURL/AddNewURL';
 import NavigationBar from '../NavigationBar/NavigationBar';
 import ViewFolder from '../ViewFolder/ViewFolderComponents/DisplayFolderContent.js';
-import ListThumbnail from '../Listings/ListThumbnail/ListThumbnail';
 import ListingCard from '../Listings/Listing Card/ListingCard';
 import '../Login/LoginComponents/LoginBackground.css';
 
@@ -16,7 +15,7 @@ class HomeView extends Component {
             <div>
 
                 {/*Navigation bar at the top of the screen. */}
-                <NavigationBar/>
+                <NavigationBar />
 
                 <div className="backgroundImageContainer">
                     <img src="https://github.com/a1rao/HOUSE/blob/master/react-firebase/src/components/Home/Background_Fixed_Saturation.jpg?raw=true" alt="a beautiful picture" className="backgroundImage"/>

@@ -39,7 +39,7 @@ class App extends Component {
 
       return (
         // Set page depending on authentication
-         <Router>
+         <Router >
                 <div>
                     <PrivateRoute exact path = '/' component = {Home} authenticated={authenticated}/>
                     <Route exact path = '/login' component = {Login}/>

@@ -218,15 +218,20 @@ module.exports = {
 
 					console.log(detailedResponse);
 
-					var ref = detailedResponse.result.photos[0].photo_reference;
+					var ref;
+
+					if(detailedResponse.result.photos !== undefined) {
+						ref = detailedResponse.result.photos[0].photo_reference;
+					}
+
 					var lat = detailedResponse.result.geometry.location.lat;
 					var lng = detailedResponse.result.geometry.location.lng;
 
-					l.photo_ref = /*PROXY_URL +*/ BASE_URL + PLACE + PLACE_PHOTO + PHOTO_WIDTH + URL_SEPARATOR
+					l.photo_ref = (ref === undefined) ? /*PROXY_URL + */"https://github.com/a1rao/HOUSE/blob/master/react-firebase/images/default_listing_image.png?raw=true"
+						: /*PROXY_URL +*/ BASE_URL + PLACE + PLACE_PHOTO + PHOTO_WIDTH + URL_SEPARATOR
 						+ PHOTO_REF + ref + URL_SEPARATOR + API_KEY;
 
-					console.log("Photo reference being used is :\n" + BASE_URL + PLACE + PLACE_PHOTO + PHOTO_WIDTH + URL_SEPARATOR
-						+ PHOTO_REF + ref + URL_SEPARATOR + API_KEY);
+					console.log("Photo reference being used is :\n" + l.photo_ref);
 
 					await getStores(lat, lng, l);
 

@@ -58,7 +58,8 @@ class NavigationBar extends Component {
 
     handleSignOut = async event => {
         event.preventDefault();
-        this.props.history.push("/");
+        this.props.history.push("/login");
+        window.location.reload();
         try {
             app.auth()
                 .signOut().then(function() {
