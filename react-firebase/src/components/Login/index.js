@@ -7,9 +7,14 @@ import Login from './LoginComponents/LoginForm.js';
 import BackGroundImage from './LoginComponents/LoginBackground.js';
 
 
+/**
+ * Container that renders all login components (logo, background, and
+ */
 class LoginContainer extends Component {
-    // Sign in user with Firebase Authentication API
-    handleSignUp = async event => {
+
+    /** Sign in user with Firebase Authentication API
+     */
+    handleSignIn = async event => {
         event.preventDefault();
         const { email, password } = event.target.elements;
         try {
@@ -34,7 +39,7 @@ class LoginContainer extends Component {
 
                 <BackGroundImage className="imageContainer" />
 
-                <Login className="login" onSubmit={this.handleSignUp}/>
+                <Login className="login" onSubmit={this.handleSignIn}/>
 
             </div>
 

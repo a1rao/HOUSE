@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
 import app from "../../../base";
 
-/*
+/** SaveToDb.js
  * Functions that add information to the database
  * Tables: users, listings
  */
 
 const func = {
 
-    // Save scraped data from listing to database
-    // Pushes a unique id into user's folder and to listings folder to identify this listing
+    /** Save scraped data from listing to database
+     * Pushes a unique id into user's folder and to listings folder to identify this listing
+     */
     saveListing: function(selectedFolder, url, l){
 
         // Push listing to folder specified by folder
@@ -24,8 +25,9 @@ const func = {
         databaseref.child(listingKey).set(l);
     },
 
-    // Save selected listing to a column in the compare table
-    // Can be saved as one of four columns
+    /** Save selected listing to a column in the compare table
+     * Can be saved as one of four columns
+     */
     saveToCompare: function(column, l, url) {
         var uid = app.auth().currentUser.uid;
         var databaseref = app.database().ref('users/' + uid + '/comparisonTable/' + column);
@@ -37,8 +39,9 @@ const func = {
 
     },
 
-    // Remove specified listing from database
-    // Delete listing id from user's folder and from listing table
+    /** Remove specified listing from database
+     * Delete listing id from user's folder and from listing table
+     */
     removeListing: function(selectedFolder, l) {
         let uid = app.auth().currentUser.uid;
         let databaseref = app.database().ref('users/' + uid + '/folders/' + selectedFolder + '/' + l._id);
@@ -51,7 +54,7 @@ const func = {
         })
     },
 
-    // Move specified listing from source folder to target folder
+    /** Move specified listing from source folder to target folder*/
     removeAdd: function(source, target,l) {
         let uid = app.auth().currentUser.uid;
         let databaseref = app.database().ref('users/' + uid + '/folders/' + source + '/' + l._id);
@@ -63,7 +66,7 @@ const func = {
         databaseref.child(listingKey).set({'url':l._url});
     },
 
-    // Empty all listings from comparison table
+    /** Empty all listings from comparison table*/
     removeCompare: function () {
         let uid = app.auth().currentUser.uid;
         let databaseref = app.database().ref('users/' + uid + '/comparisonTable/');

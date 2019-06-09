@@ -25,10 +25,10 @@ const func = {
         }
         else if(s === "_distance_to_campus") {
             listings.sort(function (a, b) {
-                if (a._distance_to_campus > b._distance_to_campus) {
+                if (a._distance > b._distance) {
                     return -1;
                 }
-                if (a._distance_to_campus < b._distance_to_campus) {
+                if (a._distance < b._distance) {
                     return 1;
                 }
                 return 0;

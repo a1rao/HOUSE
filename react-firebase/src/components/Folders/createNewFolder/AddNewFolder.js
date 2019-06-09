@@ -3,7 +3,7 @@ import app from '../../../base';
 import './AddNewFolder.css';
 
 
-// Add new folder to database
+/** Add new folder to database*/
 function CreateFolder(){
     // Get user input
     let userInput = document.getElementById("insertName");
@@ -17,8 +17,6 @@ function CreateFolder(){
             "listing1" :  ""
         });
     }
-
-
     // Reset fields
     userInput.reset();
 }
