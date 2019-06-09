@@ -227,7 +227,7 @@ class DisplayFolderContent extends Component{
                                 <Modal.Title>{this.state.l._title} <br/> </Modal.Title>
                             </div>
                             <div className="listURL">
-                                <a href={this.state.l._url}>Listing URL</a>
+                                <a href={this.state.l._url} target="_blank">Listing URL</a>
                             </div>
                         </Modal.Header>
                     </div>
@@ -480,7 +480,9 @@ class DisplayFolderContent extends Component{
         );
 
         return (
-            <div className="grid">
+            <div className="backgroundImageContainer">
+                <img src="" />
+                {/*<img src="http://4designer.t7b.net/files/2017110611/Seamless-housing-background-26650.jpg" alt="supp" className="backgroundImage"/>*/}
                 <h1 className="title">{folderName}</h1>
                 <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_price')}>Sort By Price</Button>
                 <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_area')}>Sort By Area</Button>
