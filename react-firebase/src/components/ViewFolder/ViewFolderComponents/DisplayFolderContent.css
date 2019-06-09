@@ -105,3 +105,11 @@ img.backgroundImage {
 .listURL {
     font-family: 'Oxygen', sans-serif;
 }
+
+.buttonz {
+    display: inline-block;
+}
+
+.buttonParent {
+
+}

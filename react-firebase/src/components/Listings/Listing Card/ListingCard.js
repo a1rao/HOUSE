@@ -214,26 +214,16 @@ class ListingCard extends Component {
                     </Modal.Header>
                     <Modal.Body className="mBody">
 
-
-                        <div className="mBodyElement">
-                            <div className="mBodyElementTitle">
-                                URL :
-                            </div>
-
-                        </div>
-
-                        <br/>
-                        <br/>
-
                         <div className = "mBodyElementImage">
                             <Image src={this.state.image} height={200} />
                         </div>
+
                         <br/>
                         <br/>
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                TITLE:
+                                Title:
                             </div>
 
                             <div className="mBodyElementContent">
@@ -246,7 +236,7 @@ class ListingCard extends Component {
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                ADDRESS:
+                                Address:
                             </div>
 
                             <div className="mBodyElementContent">
@@ -259,7 +249,7 @@ class ListingCard extends Component {
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                PRICE:
+                                Price:
                             </div>
 
                             <div className="mBodyElementContent">
@@ -273,7 +263,7 @@ class ListingCard extends Component {
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                BEDS:
+                                Beds:
                             </div>
 
                             <div className="mBodyElementContent">
@@ -287,7 +277,7 @@ class ListingCard extends Component {
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                BATH:
+                                Bath:
                             </div>
 
                             <div className="mBodyElementContent">
@@ -300,7 +290,7 @@ class ListingCard extends Component {
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                AREA:
+                                Area:
                             </div>
 
                             <div className="mBodyElementContent">
@@ -313,7 +303,7 @@ class ListingCard extends Component {
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                DISTANCE TO CAMPUS:
+                                Distance to Campus:
                             </div>
 
                             <div className="mBodyElementContent">
@@ -326,7 +316,7 @@ class ListingCard extends Component {
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                TYPE:
+                                Type:
                             </div>
 
                             <div className="mBodyElementContent">
@@ -339,7 +329,7 @@ class ListingCard extends Component {
 
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                NEARBY STORES:
+                                Nearby Stores:
                             </div>
 
                             <div className="mBodyElementContent">
