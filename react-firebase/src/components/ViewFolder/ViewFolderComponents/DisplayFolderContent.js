@@ -481,8 +481,8 @@ class DisplayFolderContent extends Component{
 
         return (
             <div className="backgroundImageContainer">
-                <img src="" />
-                {/*<img src="http://4designer.t7b.net/files/2017110611/Seamless-housing-background-26650.jpg" alt="supp" className="backgroundImage"/>*/}
+                {/*<img src="" />*/}
+                <img src="https://github.com/a1rao/HOUSE/blob/master/react-firebase/src/components/ViewFolder/ViewFolderComponents/background.jpg?raw=true" alt="supp" className="backgroundImage"/>
                 <h1 className="title">{folderName}</h1>
                 <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_price')}>Sort By Price</Button>
                 <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_area')}>Sort By Area</Button>
