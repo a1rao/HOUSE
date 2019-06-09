@@ -6,7 +6,7 @@ class BackGroundImage extends React.Component {
 
         return (
             <div className="backgroundImageContainer">
-                <img src="https://i.ibb.co/FBPJSQG/painted-ladies-blur.png" alt="It is blurry" className="backgroundImage"/>
+                <img src="https://i.ibb.co/FBPJSQG/painted-ladies-blur.png" alt="Background image" className="backgroundImage"/>
             </div>
         );
     }

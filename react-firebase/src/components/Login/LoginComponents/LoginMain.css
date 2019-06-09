@@ -1,6 +1,6 @@
 .top {
     width: 100%;
-    top: 0px;
+    margin-top: 0px;
     text-align: center;
     position: fixed;
 }
@@ -14,7 +14,7 @@ img.houseLogo {
     position: fixed;
     top: 8px;
     left: 5px;
-    min-height: 5%;
+    min-height: 18%;
     max-height: 60px;
 }
 
