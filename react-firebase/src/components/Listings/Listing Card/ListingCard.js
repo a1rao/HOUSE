@@ -1,33 +1,37 @@
+/* listingCard.js
+ * Contains code to handel the display od listing card
+ */
+
 import React, {Component} from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
-import NavigationBar from '../../NavigationBar/NavigationBar';
 import FormControl from "react-bootstrap/FormControl";
 import saveData from '../../Backend/Database/SaveToDb.js';
 import fetchData from '../../Backend/Database/GetFromDb';
-import NavDropdown from "react-bootstrap/NavDropdown";
-import {forEach} from "react-bootstrap/es/utils/ElementChildren";
 import './ListingCard.css';
 import Form from 'react-bootstrap/Form';
 import app from "../../../base";
 
 
-
-
-
 const scrape = require('../../../Main_Scraper/scrape');
 
+// Golbal variables
 var l = '';
 var allFolders = '';
+
+
 class ListingCard extends Component {
 
     constructor(props, context) {
         super(props, context);
 
+        // Handle to show the card
         this.handleShow = this.handleShow.bind(this);
+        // Handle to close the card
         this.handleClose = this.handleClose.bind(this);
 
+        // Listings information
         this.state = {
             showMain: false,
             showFolders: false,
@@ -60,11 +64,13 @@ class ListingCard extends Component {
         getFolders();
     }
 
+    // Scrape the url
     readURL = async event => {
         event.preventDefault();
         this.setState({url:event.target.value})
     };
 
+    // Read from a folder
     readFolder = async event => {
         event.preventDefault();
         this.setState({folder: event.target.value})
@@ -72,15 +78,18 @@ class ListingCard extends Component {
         console.log("Folder name: " + this.state.folder)
     };
 
+    // Close listing card
     handleClose() {
         this.setState({ showMain: false });
     }
 
+    // Show listing card
     handleShow() {
         this.setState({ showMain: true });
-        console.log("Closing The Scraping Window");
         this.handleC();
     }
+
+    // Save the listing to a folder
     handleSave = async event =>  {
         this.handleClose();
         this.setState({showFolders: true});
@@ -89,64 +98,46 @@ class ListingCard extends Component {
         );
         allFolders = all;
 
-        // this.state.folders.forEach( function(element) {
-        //     <Button>{element}</Button>
-        // });
     }
+
+    // Close folders
     handleCloseFolders = async event => {
 
         this.setState({showFolders: false})
 
     }
-    handlePush = async (folder) =>  {
 
+    // Push the listing to database
+    handlePush = async (folder) =>  {
         saveData.saveListing(folder, l.url, l);
         console.log("In push")
         console.log(folder);
         this.handleCloseFolders();
         this.handleShowConfirm();
     }
+
+    // Handle the scrap state
     handleS = async event => {
         this.setState({showScraping: true})
-
-        // setTimeout(this.handleShow, 7000);                                 REMOVED HERE
-
     }
-    handleC = async event => {
-        console.log("Closing The Scraping Window");
 
+    // Handle to close the scraping window
+    handleC = async event => {
         this.setState({showScraping: false})
     }
 
+    // Close the window
     handleCloseConfirm = async event => {
         this.setState({showConfirm: false})
-        console.log("i shouldnt be here")
     }
 
+    // Show the details in a window
     handleShowConfirm = async event => {
-
         this.setState({showConfirm: true })
-        console.log("i am here")
     }
 
 
-
-    // updateListingInfo(listInfo) {
-    //
-    //     this.setState({image: 'NA'});
-    //     this.setState({title: listInfo.title});
-    //     this.setState( {address: listInfo.address});
-    //     this.setState({price: listInfo.price});
-    //     this.setState({num_bedrooms: listInfo.bed});
-    //     this.setState({num_bathrooms: listInfo.bath});
-    //     this.setState({distance_to_campus: 'NA'});
-    //     this.setState({lease_policy: listInfo.lease_period});
-    //     this.setState({parking: listInfo.parking});
-    //     this.setState({smoking: listInfo.smoking});
-    //     this.setState({pet_policy: listInfo.pets});
-    //     this.setState({description: listInfo.description});
-    //
-    // }
+    // Handle to add new folders
     handleNewFolder = async event => {
         let uid = app.auth().currentUser.uid;
         app.database().ref('users/'+ uid + '/folders/'+ this.state.folder).set({
@@ -158,6 +149,8 @@ class ListingCard extends Component {
 
     }
 
+
+    // Handle the scraping function
     handleScrape = async event => {
             var that = this;
             let url = this.state.url + "";
@@ -167,11 +160,9 @@ class ListingCard extends Component {
                 console.log("scraping from " + this.state.url);
                 await scrape(this.state.url, this.obtainListing.bind(this));
             }
-
-           // setTimeout(that.handleShow, 5000);
-
     };
 
+    // Set the state of all the listing details
     obtainListing(listingInfo) {
         this.setState({image: listingInfo.photo_ref});
         this.setState({title: listingInfo.title});
@@ -195,35 +186,38 @@ class ListingCard extends Component {
 
         l = listingInfo;
 
-        console.log(l)
-        console.log(listingInfo)
-
         this.handleShow();
     }
 
     render(){
 
-
-
         return (
             <div>
+                {/*Search bar*/}
                 <FormControl type="text" name="url" placeholder="Enter Listing URL" onChange={this.readURL} className="mr-sm-2"/>
 
+                {/*Search button pressed*/}
                 <Button variant="outline-success" onClick={this.handleScrape}>
                     Scrape
                 </Button>
+
+                {/*Modal to handle scraping wait*/}
                 <Modal className="addColor" show={this.state.showScraping} onHide = {this.handleC}>
                     <Modal.Header className="scraping">Scraping your url...</Modal.Header>
                     <Modal.Body className="tip"><b>TIP:</b> You can add listings to the comparison table while viewing the folders!</Modal.Body>
                 </Modal>
 
+                {/*Close the model*/}
                 <Modal show={this.state.showMain} onHide={this.handleClose}>
+
                     <Modal.Header>
                         <Modal.Title>{this.state.title}<br/></Modal.Title>
                         <a href={this.state.url} target="_blank">Listing URL</a>
                     </Modal.Header>
+
                     <Modal.Body className="mBody">
 
+                        {/*listing image*/}
                         <div className = "mBodyElementImage">
                             <Image src={this.state.image} height={200} />
                         </div>
@@ -231,6 +225,7 @@ class ListingCard extends Component {
                         <br/>
                         <br/>
 
+                        {/*listing title*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Title:
@@ -244,6 +239,7 @@ class ListingCard extends Component {
                         <br/>
                         <br/>
 
+                        {/*Listing address*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Address:
@@ -257,11 +253,11 @@ class ListingCard extends Component {
                         <br/>
                         <br/>
 
+                        {/*Listing price*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Price:
                             </div>
-
                             <div className="mBodyElementContent">
                                 {this.state.price}
                             </div>
@@ -271,6 +267,7 @@ class ListingCard extends Component {
                         <br/>
 
 
+                        {/*Listing bedroom details*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Beds:
@@ -284,7 +281,7 @@ class ListingCard extends Component {
                         <br/>
                         <br/>
 
-
+                        {/*Listing bath details*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Bath:
@@ -298,6 +295,7 @@ class ListingCard extends Component {
                         <br/>
                         <br/>
 
+                        {/*Listing square footage*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Area:
@@ -311,6 +309,7 @@ class ListingCard extends Component {
                         <br/>
                         <br/>
 
+                        {/*Listing distance to campus*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Distance to Campus:
@@ -324,6 +323,7 @@ class ListingCard extends Component {
                         <br/>
                         <br/>
 
+                        {/*listing type*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Type:
@@ -337,6 +337,7 @@ class ListingCard extends Component {
                         <br/>
                         <br/>
 
+                        {/*nearby grocery*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 Nearby Stores:
@@ -350,6 +351,7 @@ class ListingCard extends Component {
                         <br/>
                         <br/>
 
+                        {/*Nearby bus stops*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
                                 NEARBY BUS STOPS:
@@ -361,6 +363,8 @@ class ListingCard extends Component {
                         </div>
 
                     </Modal.Body>
+
+                    {/*Handle close and save listing */}
                     <Modal.Footer>
                         <Button variant="secondary" onClick={this.handleClose}>
                             Close
@@ -370,6 +374,8 @@ class ListingCard extends Component {
                         </Button>
                     </Modal.Footer>
                 </Modal>
+
+                {/*Show all the folders*/}
                 <Modal show={this.state.showFolders} onHide={this.handleCloseFolders}>
                     <Modal.Header closeButton>
                         <Modal.Title>Select a Folder</Modal.Title>
@@ -387,6 +393,8 @@ class ListingCard extends Component {
                         </div>
                     </Modal.Body>
                 </Modal>
+
+                {/*Modal to interact with user*/}
                 <Modal show ={this.state.showConfirm} onHide={this.handleCloseConfirm}>
                     <Modal.Header closeButton>
                         <Modal.Title>Listing Saved</Modal.Title>
