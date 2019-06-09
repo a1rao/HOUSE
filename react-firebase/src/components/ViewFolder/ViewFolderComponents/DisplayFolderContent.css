@@ -13,7 +13,7 @@
     display: block;
     text-align: center;
     font-family: 'Oxygen', sans-serif;
-    padding-top: 20px;
+    padding-top: 0px;
 
 }
 
@@ -41,8 +41,8 @@ img.backgroundImage {
 
     /* Set up positioning */
     position: fixed;
-    top: 75px;
-    left: 0;
+    top: 0px;
+    /*left: 0;*/
 }
 
 
