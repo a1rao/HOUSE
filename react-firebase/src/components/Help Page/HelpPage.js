@@ -21,8 +21,7 @@ class HelpPage extends Component {
                     Once expanded, you will see a few items:
                 </p>
                 <p>
-                    The first one, "Home", is right below your name. Pressing this will bring you to the home page,
-                    where you can enter new urls for the website to scrape (see Home Page).
+                    The first one, "Home", is right below your name. Pressing this will bring you to the home page.
                 </p>
                 <p>
                     The second, "Compare", will bring you to the comparison page, where you can compare multiple
@@ -35,7 +34,7 @@ class HelpPage extends Component {
                 </p>
                 <p>
                     Under this, you will see an option to "Enter Listing URL". Typing a valid URL into here and pressing
-                    search will allow you to see the information from a listing in the URL.
+                    "Scrape" will allow you to see the information from a listing in the URL.
                 </p>
                 <p>
                     Lastly, you will see the "Need Help?" link, which brought you to this page, and the Logout button,
@@ -43,24 +42,22 @@ class HelpPage extends Component {
 
                 </p>
 
-                <b>Home Page</b>
-                <p>
-                    Once you are on the Home page, (see Navigation Bar)
-                </p>
-
                 <b>Comparing Listings</b>
                 <p>
                     Once you are on the Comparison Page (see Navigation Bar), you will be able to view listings side by
-                    side in a table view. The "Sort By" button will trigger a dropdown button, which will allow you to
-                    sort the listings by different details of the listings. By pressing the "Add New Listing" button, you
-                    will be able to add different listings to the table to compare.
+                    side in a table view. There are various different fields that will display in a grid-view. By
+                    pressing the "Add New Listing" button, you will be able to add different listings to the table to
+                    compare. You can then pick any listing in your folders. You can remove a listing from the comparison
+                    by clicking "Remove Listing".
                 </p>
 
                 <b>Folder Viewer</b>
                 <p>
                     Once you are in the Folder Viewer (see Navigation Bar), you will be able to see the listings in the
                     folder you selected. The listings that are in the folder will be viewable in small windows, showing
-                    important info (ie price, square footage, etc.).
+                    important info (ie price, square footage, etc.). You will be able to click the different "Sort By"
+                    options to sort it by price, bedrooms, etc. In addition, you can click on the listings to see more
+                    information.
                 </p>
             </div>
 
