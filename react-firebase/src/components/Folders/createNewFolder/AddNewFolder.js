@@ -1,9 +1,12 @@
+/*  AddNewFolder.js
+ *  Create a new folders and add listings in it
+ */
 import React, {Component} from "react";
 import app from '../../../base';
 import './AddNewFolder.css';
 
 
-// Add new folder to database
+/** Add new folder to database*/
 function CreateFolder(){
     // Get user input
     let userInput = document.getElementById("insertName");
@@ -17,8 +20,6 @@ function CreateFolder(){
             "listing1" :  ""
         });
     }
-
-
     // Reset fields
     userInput.reset();
 }
@@ -29,6 +30,7 @@ class AddNewFolder extends Component {
        render() {
 
         return(
+            // Record the name of folder from user
             <div className="newFolder">
                 <form id="insertName"  className={"enterNameForm"}>
                     <input

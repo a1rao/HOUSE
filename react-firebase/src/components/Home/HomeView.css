@@ -6,7 +6,7 @@
 
 img.backgroundImage {
     /* Set up height / width res */
-    bmin-height: 100%;
+    min-height: 100%;
     min-width: 1024px;
 
 
@@ -18,5 +18,4 @@ img.backgroundImage {
     position: fixed;
     top: 75px;
 
-    /*z-index: -1;*/
 }

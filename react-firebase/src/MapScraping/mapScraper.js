@@ -53,6 +53,8 @@ module.exports = {
 	 */
 	getDistance: async function(target, l) {
 
+
+		// Makes request to get the distance from the listing address to the college campus.
 		await makeRequest(PROXY_URL + BASE_URL + DISTANCE + OUTPUT + UNITS + URL_SEPARATOR + ORIGIN
 			+ target.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR + DEST + FIXED_CAMPUS.replace(/ /g, "%20")
 			+ URL_SEPARATOR + API_KEY).then(function(body, callback) {
@@ -76,6 +78,9 @@ module.exports = {
 	 * @returns {Promise<void>}
 	 */
 	getAdditionalInformation: async function(address, l) {
+
+
+		// Makes a request to get the photos, bus stops, and grocery stores.
 		await makeRequest(PROXY_URL + BASE_URL + PLACE + PLACE_FROM_TEXT + OUTPUT + INPUT
 			+ address.replace(/ /g, "%20").replace(/,/g, "") + URL_SEPARATOR
 			+ TEXT_QUERY + URL_SEPARATOR + PLACE_FIELDS + URL_SEPARATOR + API_KEY)
@@ -125,6 +130,8 @@ module.exports = {
  */
 async function getStores(lat, lng, l) {
 
+
+	// Makes the request for the grocery stores.
 	await makeRequest(PROXY_URL + BASE_URL + PLACE + NEARBY + OUTPUT + LOCATION + lat + "," + lng
 		+ URL_SEPARATOR + MARKET_RADIUS + URL_SEPARATOR + NEARBY_MARKET + URL_SEPARATOR + API_KEY).then(function(body) {
 
@@ -157,6 +164,8 @@ async function getStores(lat, lng, l) {
  */
 async function getBuses(lat, lng, l) {
 
+
+	// Makes the request to get the closest bus station.
 	await makeRequest(PROXY_URL + BASE_URL + PLACE + NEARBY + OUTPUT + LOCATION + lat + "," + lng
 		+ URL_SEPARATOR + BUS_RADIUS + URL_SEPARATOR + NEARBY_BUS + URL_SEPARATOR + SORT_DISTANCE + URL_SEPARATOR + API_KEY)
 		.then(function(body) {

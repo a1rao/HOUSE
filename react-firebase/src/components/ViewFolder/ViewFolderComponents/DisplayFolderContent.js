@@ -135,6 +135,7 @@ class DisplayFolderContent extends Component{
         this.handleShowConfirm();
     }
 
+    // Move listing to different folder
     handlePush = async (folder) =>  {
         saveData.removeAdd(folderName, folder, this.state.l);
         this.handleCloseFolders();
@@ -336,7 +337,7 @@ class DisplayFolderContent extends Component{
                         {/*Nearby grocery stores*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                NEARBY STORES:
+                                Nearby Stores:
                             </div>
 
                             <div className="mBodyElementContent">
@@ -350,7 +351,7 @@ class DisplayFolderContent extends Component{
                         {/*Nearby bus stops*/}
                         <div className="mBodyElement">
                             <div className="mBodyElementTitle">
-                                NEARBY BUS STOPS:
+                                Nearby Bus Stops:
                             </div>
 
                             <div className="mBodyElementContent">
@@ -551,4 +552,3 @@ class DisplayFolderContent extends Component{
     }
 }
 export default DisplayFolderContent;
-
