@@ -14,8 +14,8 @@ const NEARBY = "/nearbysearch";
 const LOCATION = "location=";
 const NEARBY_MARKET = "type=supermarket";
 const NEARBY_BUS = "type=bus_station";
-const MARKET_RADIUS = "radius=2000";
-const BUS_RADIUS = "radius=500";
+const MARKET_RADIUS = "radius=3219";
+const BUS_RADIUS = "radius=805";
 const SORT_DISTANCE = "rankby=distance";
 const PLACE_DETAILS = "/details";
 const PLACE_PHOTO = "/photo?";
@@ -311,6 +311,8 @@ async function grocerySearch(lat, lng, l){
 }
 
 async function getStores(lat, lng, l) {
+	console.log(PLACE + NEARBY + OUTPUT + LOCATION + lat + "," + lng
+		+ URL_SEPARATOR + MARKET_RADIUS + URL_SEPARATOR + NEARBY_MARKET + URL_SEPARATOR + API_KEY);
 	await makeRequest(PROXY_URL + BASE_URL + PLACE + NEARBY + OUTPUT + LOCATION + lat + "," + lng
 		+ URL_SEPARATOR + MARKET_RADIUS + URL_SEPARATOR + NEARBY_MARKET + URL_SEPARATOR + API_KEY).then(function(body) {
 		console.log("We got here in PlaceNearbySearchStores at " + (new Date().getTime()));
@@ -342,6 +344,8 @@ async function getStores(lat, lng, l) {
 }
 
 async function getBuses(lat, lng, l) {
+	console.log(BASE_URL + PLACE + NEARBY + OUTPUT + LOCATION + lat + "," + lng
+		+ URL_SEPARATOR + BUS_RADIUS + URL_SEPARATOR + NEARBY_BUS + URL_SEPARATOR + SORT_DISTANCE + URL_SEPARATOR + API_KEY);
 	await makeRequest(PROXY_URL + BASE_URL + PLACE + NEARBY + OUTPUT + LOCATION + lat + "," + lng
 		+ URL_SEPARATOR + BUS_RADIUS + URL_SEPARATOR + NEARBY_BUS + URL_SEPARATOR + SORT_DISTANCE + URL_SEPARATOR + API_KEY)
 		.then(function(body) {
@@ -354,7 +358,7 @@ async function getBuses(lat, lng, l) {
 
 		if(response.results.length === 0) {
 			console.log("Got into the if block in nearby places bus stations search. Number of buses found is " + response.results.length);
-			buses = "There are no bus stops within a 2 mile radius.";
+			buses = "There are no bus stops within a 0.5 mile radius.";
 		}
 		else {
 			console.log("Got into the else block in nearby places search. Number of stores found is " + response.results.length);
