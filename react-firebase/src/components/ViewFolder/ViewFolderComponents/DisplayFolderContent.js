@@ -507,14 +507,23 @@ class DisplayFolderContent extends Component{
         );
 
         return (
+
+
             <div className="backgroundImageContainer">
                 {/*<img src="" />*/}
                 <img src="https://github.com/a1rao/HOUSE/blob/master/react-firebase/src/components/ViewFolder/ViewFolderComponents/background_2.jpg?raw=true" alt="supp" className="backgroundImage"/>
                 <h1 className="title">{folderName}</h1>
-                <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_price')}>Sort By Price</Button>
-                <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_area')}>Sort By Area</Button>
-                <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_distance_to_campus')}>Sort By Distance</Button>
-                <Button className="sortBar" variant="outline-info" onClick={() =>this.sort('_bed')}>Sort By Beds</Button>
+
+
+                <div className="buttonParent">
+                    <div className="buttonz">
+                        <Button className="sortBar" variant="outline-dark" onClick={() =>this.sort('_price')}>Sort By Price</Button>
+                        <Button className="sortBar" variant="outline-dark" onClick={() =>this.sort('_area')}>Sort By Area</Button>
+                        <Button className="sortBar" variant="outline-dark" onClick={() =>this.sort('_distance_to_campus')}>Sort By Distance</Button>
+                        <Button className="sortBar" variant="outline-dark" onClick={() =>this.sort('_bed')}>Sort By Beds</Button>
+                    </div>
+                </div>
+
                 <p>{thumbnails}</p>
             </div>
         );
