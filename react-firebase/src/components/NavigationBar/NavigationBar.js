@@ -50,7 +50,6 @@ class NavigationBar extends Component {
 
     // Save the name of a folder into database and set folderName
     saveName(folder) {
-        //event.preventDefault();
         localStorage.setItem("viewFolderName", folder);
         folderName =  folder;
     }
@@ -60,7 +59,7 @@ class NavigationBar extends Component {
         return folderName;
     }
 
-    // Handle ecent when user logs out
+    // Handle sign out using Authentication API
     handleSignOut = async event => {
         event.preventDefault();
         // Force user to return to login page

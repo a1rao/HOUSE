@@ -135,6 +135,7 @@ class DisplayFolderContent extends Component{
         this.handleShowConfirm();
     }
 
+    // Move listing to different folder
     handlePush = async (folder) =>  {
         saveData.removeAdd(folderName, folder, this.state.l);
         this.handleCloseFolders();
@@ -551,4 +552,3 @@ class DisplayFolderContent extends Component{
     }
 }
 export default DisplayFolderContent;
-
