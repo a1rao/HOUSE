@@ -162,13 +162,14 @@ class ListingCard extends Component {
             var that = this;
             let url = this.state.url + "";
 
+            that.handleS();
             if(url.length > 0) {
                 console.log("scraping from " + this.state.url);
                 await scrape(this.state.url, this.obtainListing.bind(this));
             }
 
            // setTimeout(that.handleShow, 5000);
-            that.handleS();
+
     };
 
     obtainListing(listingInfo) {
