@@ -534,7 +534,7 @@ class DisplayFolderContent extends Component{
                 <img src="https://github.com/a1rao/HOUSE/blob/master/react-firebase/src/components/ViewFolder/ViewFolderComponents/background_2.jpg?raw=true" alt="supp" className="backgroundImage"/>
                 <h1 className="title">{folderName}</h1>
 
-                // Sorting buttons
+                {/*Sorting buttons*/}
                 <div className="buttonParent">
                     <div className="buttonz">
                         <Button className="sortBar" variant="outline-dark" onClick={() =>this.sort('_price')}>Sort By Price</Button>
@@ -544,7 +544,7 @@ class DisplayFolderContent extends Component{
                     </div>
                 </div>
 
-                // Display thumbnails
+                {/*Display thumbnails*/}
                 <p>{thumbnails}</p>
             </div>
         );
