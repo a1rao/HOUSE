@@ -380,7 +380,7 @@
       <workItem from="1559609528491" duration="2552000" />
       <workItem from="1559793994682" duration="18987000" />
       <workItem from="1560029251606" duration="30447000" />
-      <workItem from="1560086526138" duration="3231000" />
+      <workItem from="1560086526138" duration="4510000" />
     </task>
     <servers />
   </component>
@@ -388,8 +388,7 @@
     <option name="totallyTimeSpent" value="93215000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -689,7 +688,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

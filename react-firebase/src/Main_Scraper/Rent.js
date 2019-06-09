@@ -67,6 +67,9 @@ module.exports = async function scrapeRent(url, l)  {
             l.description = $('div.vxm57',html).text();
 
             // If certain information was not found, set it to default value
+            if(l.title === EMPTY) {
+                l.title = DEFAULT_VALUE;
+            }
             if(l.address === EMPTY) {
                 l.address = DEFAULT_VALUE;
             }
@@ -94,11 +97,17 @@ module.exports = async function scrapeRent(url, l)  {
             if(l.int_area === EMPTY) {
                 l.int_area = DEFAULT_VALUE;
             }
+            if(l.deposit === EMPTY) {
+                l.deposit = DEFAULT_VALUE;
+            }
             if(l.type === EMPTY) {
                 l.type = DEFAULT_VALUE;
             }
             if(l.contact_name === EMPTY) {
                 l.contact_name = DEFAULT_VALUE;
+            }
+            if(l.contact_email === EMPTY) {
+                l.contact_email = DEFAULT_VALUE;
             }
             if(l.contact_number === EMPTY) {
                 l.contact_number = DEFAULT_VALUE;

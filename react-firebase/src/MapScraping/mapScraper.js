@@ -11,7 +11,7 @@ const LOCATION = "location=";
 const NEARBY_MARKET = "type=supermarket";
 const NEARBY_BUS = "type=bus_station";
 const MARKET_RADIUS = "radius=3219";
-const BUS_RADIUS = "radius=805";
+const BUS_RADIUS = "radius=1610";
 const SORT_DISTANCE = "rankby=distance";
 const PLACE_DETAILS = "/details";
 const PLACE_PHOTO = "/photo?";

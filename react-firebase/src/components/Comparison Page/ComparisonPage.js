@@ -1,3 +1,6 @@
+/* ComparisonPage.js
+ * The code to handle the comparison table
+ */
 import React, {Component} from 'react';
 import Table from 'react-bootstrap/Table';
 import NavigationBar from '../NavigationBar/NavigationBar';
@@ -8,14 +11,17 @@ import Modal from "react-bootstrap/Modal";
 import saveData from "../Backend/Database/SaveToDb";
 import Image from 'react-bootstrap/Image';
 
-var allFolders = '';
-var allListings = '';
+// Global variable
+var allFolders = '';    // Store all folders
+var allListings = '';   // Store all listing in the folders
+
 
 class ComparisonPage extends Component {
 
     constructor(props) {
         super(props);
 
+        // listing information
         this.state = {
             allIDs: [],
             showF: true,
@@ -32,107 +38,108 @@ class ComparisonPage extends Component {
             deleted: false,
         };
 
+        // Get all folders of users form db
         let getFolders = fetchData.getFolderNames.bind(this);
         getFolders();
 
+        // Get folder ID
         this._getIDs = fetchData.getIDs.bind(this);
+        // Get listings from folders
         this._getListings = fetchData.getAllListings.bind(this);
 
+        // Get ID of listings to be compared
         let first = fetchData.getComparisonID.bind(this);
+        // Get listing fo the ID retrieved
         let second = fetchData.getListing.bind(this);
         this.handleClear = this.handleClear.bind(this);
-        //fetchData.getID(fetchData.getListing(),1);
-        //this.setState({currentColumn:'1'});
-        first(second);
-        // this.setState({currentColumn:'2'});
-        // first(second, 2);
-        // this.setState({currentColumn:'3'});
-        // first(second, 3);
-        // this.setState({currentColumn:'4'});
-        // first(second, 4);
 
+        // Call second after first
+        first(second);
     }
 
-    handleRemoveListing = async number => {
-        saveData.removeCompare(number);
-    };
-
-
+    // State to show folders
     handleShowFolders = async number =>{
         this.setState({showFolders: true});
         const all = this.state.folders.map((eachFolder) =>
             <Button variant="outline-success" onClick={() => this.handleCloseFolders(number, eachFolder)}>{eachFolder}</Button>
         );
         allFolders = all;
-
         this.setState({ showMain: true });
     }
 
+    // Close the folder selection page
     handleCloseFolders = async (number, folder) =>{
         this.setState({showFolders: false});
         this.handleShowListings(number, folder);
     }
 
+    // Close the fetch window
     handleCloseFetching = async event => {
         this.setState({showF:false})
     }
+
+    // Handle folder confirmation
     handleCFolders = async event => {
         this.setState({showFolders: false});
     }
 
+    // Show the listings to users
     handleShowListings = async (number, folder) => {
-        console.log(folder);
         await this._getIDs(this._getListings, folder);
 
-
+        // Make sure alllistings are retrieved
         setTimeout(() => {
 
-            console.log(this.state.allIDs);
-            console.log(this.state.eachListing);
             const all = this.state.eachListing.map((listing) =>
                 <Button variant="outline-success" onClick={() => this.handleAddToTable(number, listing)}>{listing._title}</Button>
             );
+            // Store all listings
             allListings = all;
             this.setState({showListings: true});
         }, 1000 + 100*this.state.allIDs.length);
 
     }
 
+    // Close the listing window
     handleCloseListings = async event => {
         this.setState({showListings: false});
     }
+
+    // Clear the comparison pages
     handleClear = async  event => {
         await saveData.removeCompare();
         this.setState({listing1:''})
         this.setState({listing2:''})
         this.setState({listing3:''})
         this.setState({listing4:''})
-        console.log("listing1: "  + this.state.listing1);
-        console.log("listing2: "  + this.state.listing2);
-
-
-
     }
 
+    // Add to column in the table
     handleAddToTable = async (number, listing) => {
+        // Column 1
         if(number === 1){
             this.setState({listing1: listing});
             saveData.saveToCompare('1',listing,listing._url);
-
         }
+
+        // Column 2
         else if(number === 2) {
             this.setState({listing2: listing});
             saveData.saveToCompare('2',listing,listing._url);
         }
+
+        // Column 3
         else if(number === 3) {
             this.setState({listing3: listing});
             saveData.saveToCompare('3',listing,listing._url);
         }
+
+        // Column 4
         else{
             this.setState({listing4: listing});
             saveData.saveToCompare('4',listing,listing._url);
         }
-        console.log("we are able to select a specific listing : " + listing._address);
+
         this.handleCloseListings();
         this.setState({deleted: false})
     }
@@ -143,12 +150,14 @@ class ComparisonPage extends Component {
         return (
 
             <div>
-
+                {/*Loading modal*/}
                 <Modal show={this.state.showF} onHide={this.handleCloseFetching}>
                     <Modal.Header>
                         <Modal.Title>Fetching your Listing</Modal.Title>
                     </Modal.Header>
                 </Modal>
+
+                {/*Close button for folder selection modal*/}
                 <Modal show={this.state.showFolders} onHide={this.handleCFolders}>
 
                     <Modal.Header closeButton>
@@ -159,7 +168,7 @@ class ComparisonPage extends Component {
                     </Modal.Body>
                 </Modal>
 
-
+                {/*Modal to select listing */}
                 <Modal show={this.state.showListings} onHide={this.handleCloseListings}>
                     <Modal.Header closeButton>
                         <Modal.Title>Select a Listing</Modal.Title>
@@ -171,34 +180,27 @@ class ComparisonPage extends Component {
 
                 <NavigationBar/>
 
-                {/*<Table striped bordered hover size="lg">*/}
-                {/*    <thead>*/}
-                {/*    <th>*/}
-                {/*        <tr>Key</tr>*/}
-                {/*        <tr>Name</tr>*/}
-                {/*    </th>*/}
-
-                {/*    <th>{this.state.t1}</th>*/}
-
-                {/*    </thead>*/}
-                {/*</Table>*/}
-
+                {/*Comparison table*/}
                 <Table striped bordered hover size="lg">
                     <thead>
-                    <tr>
+                        <tr>
                             <th>
+                                {/*Clear table*/}
                                 <div className="buttonParent">
                                     <Button variant={"secondary"} onClick={this.handleClear}
                                             className="buttonz"> Clear Table </Button>
-                                </div>
+                                    </div>
                             </th>
 
+                            {/*CHange listing of column 1*/}
                             <th>
                                 <div className="buttonParent">
                                     <Button variant="primary" onClick={() => this.handleShowFolders(1)}
                                             className="buttonz"> Change Listing </Button>
                                 </div>
                             </th>
+
+                            {/*Change listing of column 2*/}
                             <th>
                                 <div className="buttonParent">
                                     <Button variant="primary" onClick={() => this.handleShowFolders(2)}
@@ -206,12 +208,15 @@ class ComparisonPage extends Component {
                                 </div>
                             </th>
 
+                            {/*Change listing of column 3*/}
                             <th>
                                 <div className="buttonParent">
                                     <Button variant="primary" onClick={() => this.handleShowFolders(3)}
                                             className="buttonz"> Change Listing </Button>
                                 </div>
                             </th>
+
+                            {/*Change listing of column 4*/}
                             <th>
                                 <div className="buttonParent">
                                     <Button variant="primary" onClick={() => this.handleShowFolders(4)}
@@ -219,39 +224,38 @@ class ComparisonPage extends Component {
                                 </div>
                             </th>
 
-
-
-
-
                     </tr>
+
                     </thead>
+
+                    {/*Populate table*/}
                     <tbody>
+
+                    {/*Image for each column*/}
                     <tr>
                         <td className="tableHead">Image</td>
                         <td><div className = "mBodyElementImage">
                             <Image src={this.state.listing1._photo_ref} height={200} width={200}/>
                         </div>
-                            {/*<Image src={this.state.listing1._photo_ref}/> */}
                         </td>
                         <td>
                             <div className = "mBodyElementImage">
                                 <Image src={this.state.listing2._photo_ref} height={200} width={200}/>
                             </div>
-                            {/*<Image src={this.state.listing2._photo_ref}/>*/}
                         </td>
                         <td>
                             <div className = "mBodyElementImage">
                                 <Image src={this.state.listing3._photo_ref} height={200} width={200}/>
                             </div>
-                            {/*<Image src={this.state.listing3._photo_ref}/>*/}
                         </td>
                         <td>
                             <div className = "mBodyElementImage">
                                 <Image src={this.state.listing4._photo_ref} height={200} width={200} />
                             </div>
-                            {/*<Image src={this.state.listing4._photo_ref}/>*/}
                         </td>
                     </tr>
+
+                    {/*Listing title field for each column*/}
                     <tr>
                         <td className="tableHead">Name</td>
                         <td>{this.state.listing1._title}</td>
@@ -259,6 +263,8 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing3._title}</td>
                         <td>{this.state.listing4._title}</td>
                     </tr>
+
+                    {/*listing address for each column*/}
                     <tr>
                         <td className="tableHead">Address</td>
                         <td>{this.state.listing1._address}</td>
@@ -266,6 +272,8 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing3._address}</td>
                         <td>{this.state.listing4._address}</td>
                     </tr>
+
+                    {/*Listing price field for each column*/}
                     <tr>
                         <td className="tableHead">Price</td>
                         <td>{this.state.listing1._price}</td>
@@ -273,6 +281,8 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing3._price}</td>
                         <td>{this.state.listing4._price}</td>
                     </tr>
+
+                    {/*Listing's distance to campus for each column*/}
                     <tr>
                         <td className="tableHead">Distance to Campus</td>
                         <td>{this.state.listing1._distance_to_campus}</td>
@@ -280,6 +290,17 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing3._distance_to_campus}</td>
                         <td>{this.state.listing4._distance_to_campus}</td>
                     </tr>
+
+                    {/*Listing's transit time to campus*/}
+                    <tr>
+                        <td className="tableHead">Transit Time to Campus (by Bus)</td>
+                        <td>{this.state.listing1._travel_time}</td>
+                        <td>{this.state.listing2._travel_time}</td>
+                        <td>{this.state.listing3._travel_time}</td>
+                        <td>{this.state.listing4._travel_time}</td>
+                    </tr>
+
+                    {/*listing's bedroom detail for each column*/}
                     <tr>
                         <td className="tableHead">Number of Bedrooms</td>
                         <td>{this.state.listing1._bed}</td>
@@ -287,6 +308,8 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing3._bed}</td>
                         <td>{this.state.listing4._bed}</td>
                     </tr>
+
+                    {/*Listing's bath detail for each column*/}
                     <tr>
                         <td className="tableHead">Number of Bathrooms</td>
                         <td>{this.state.listing1._bath}</td>
@@ -294,6 +317,8 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing3._bath}</td>
                         <td>{this.state.listing4._bath}</td>
                     </tr>
+
+                    {/*Listing's square footage field for each column*/}
                     <tr>
                         <td className="tableHead">Square Footage</td>
                         <td>{this.state.listing1._area}</td>
@@ -301,6 +326,8 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing3._area}</td>
                         <td>{this.state.listing4._area}</td>
                     </tr>
+
+                    {/*listing's type field for each column*/}
                     <tr>
                         <td className="tableHead">Type</td>
                         <td>{this.state.listing1._type}</td>
@@ -308,6 +335,8 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing3._type}</td>
                         <td>{this.state.listing4._type}</td>
                     </tr>
+
+                    {/*Listing's parking field for each column*/}
                     <tr>
                         <td className="tableHead">Parking Policy</td>
                         <td>{this.state.listing1._parking}</td>
@@ -315,6 +344,8 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing3._parking}</td>
                         <td>{this.state.listing4._parking}</td>
                     </tr>
+
+                    {/*Listing's lease period for each column*/}
                     <tr>
                         <td className="tableHead">Lease Period</td>
                         <td>{this.state.listing1._lease_period}</td>
@@ -322,6 +353,8 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing3._lease_period}</td>
                         <td>{this.state.listing4._lease_period}</td>
                     </tr>
+
+                    {/*listing's smoking policy for each column*/}
                     <tr>
                         <td className="tableHead">Smoking Policy</td>
                         <td>{this.state.listing1._smoking}</td>
@@ -330,6 +363,7 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing4._smoking}</td>
                     </tr>
 
+                    {/*Listing's pets policy for each column*/}
                     <tr>
                         <td className="tableHead">Pets Policy</td>
                         <td>{this.state.listing1._pets}</td>
@@ -337,6 +371,8 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing3._pets}</td>
                         <td>{this.state.listing4._pets}</td>
                     </tr>
+
+                    {/*Listing's grocery store for each column*/}
                     <tr>
                         <td className="tableHead">Nearby Grocery Stores</td>
                         <td>{this.state.listing1._grocery_stores}</td>
@@ -344,22 +380,14 @@ class ComparisonPage extends Component {
                         <td>{this.state.listing3._grocery_stores}</td>
                         <td>{this.state.listing4._grocery_stores}</td>
                     </tr>
-                    {/*<tr>*/}
-                    {/*    <td className="tableHead">Distance to Bus Stop</td>*/}
-                    {/*    <td>{this.state.selected._}</td>*/}
 
-                    {/*</tr>*/}
-                    {/*<tr>*/}
-                    {/*    <td className="tableHead">Driving Time to Campus</td>*/}
-
-                    {/*</tr>*/}
-
+                    {/*Listing's bus stops for each column*/}
                     <tr>
-                        <td className="tableHead">Transit Time to Campus</td>
-                        <td>{this.state.listing1._travel_time}</td>
-                        <td>{this.state.listing2._travel_time}</td>
-                        <td>{this.state.listing3._travel_time}</td>
-                        <td>{this.state.listing4._travel_time}</td>
+                        <td className="tableHead">Nearest Bus Stop</td>
+                        <td>{this.state.listing1._bus_stations}</td>
+                        <td>{this.state.listing2._bus_stations}</td>
+                        <td>{this.state.listing3._bus_stations}</td>
+                        <td>{this.state.listing4._bus_stations}</td>
                     </tr>
                     </tbody>
                 </Table>
