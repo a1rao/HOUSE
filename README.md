@@ -16,6 +16,7 @@ Alternatively, register with personal name and email and password.
 *Requirements:*
 
 If running on a local server, please install Node and NPM and execute the following before starting the server:
+    
     npm install cheerio firebase react bootstrap react-bootstrap
 
 If using web domain, no requirements.
