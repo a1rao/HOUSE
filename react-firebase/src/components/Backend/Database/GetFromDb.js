@@ -158,6 +158,7 @@ const func = {
                     console.log('push:', listing);
                 } else {
                     items.push(null);
+                    console.log('push: null');
                 }
             });
 
