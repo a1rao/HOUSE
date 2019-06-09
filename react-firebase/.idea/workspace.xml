@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2592616e-3d7d-4baf-b3f5-cb40db4e0775" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginBackground.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginBackground.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginBackground.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginBackground.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginFooter.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginFooter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginHeader.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginComponents/LoginMain.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegBackground.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegBackground.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegBackground.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegBackground.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegFooter.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegFooter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegHeader.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ResetPassword/ResetPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResetPassword/ResetPassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordFooter.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordFooter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordHeader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ResetPassword/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResetPassword/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,37 +21,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Register/RegisterComponents/RegBackground.css">
+        <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+            <state relative-caret-position="630">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordHeader.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordBackground.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="75">
+              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Register/RegisterComponents/RegForm.js">
+        <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state>
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,7 +87,6 @@
         <option value="$PROJECT_DIR$/src/Main_Scraper/Rent.js" />
         <option value="$PROJECT_DIR$/src/components/ViewFolder/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js" />
         <option value="$PROJECT_DIR$/src/components/Comparison Page/ComparisonPage.js" />
         <option value="$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js" />
         <option value="$PROJECT_DIR$/src/components/Backend/Sort.js" />
@@ -122,7 +95,6 @@
         <option value="$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.css" />
         <option value="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.css" />
         <option value="$PROJECT_DIR$/src/components/NavigationBar/NavigationBar.js" />
-        <option value="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeView.js" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeView.css" />
         <option value="$PROJECT_DIR$/src/components/Register/RegisterComponents/RegForm.css" />
@@ -138,6 +110,8 @@
         <option value="$PROJECT_DIR$/src/components/Register/index.js" />
         <option value="$PROJECT_DIR$/src/components/ResetPassword/index.js" />
         <option value="$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordHeader.css" />
+        <option value="$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js" />
+        <option value="$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js" />
       </list>
     </option>
   </component>
@@ -221,28 +195,6 @@
               <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Register" type="462c0819:PsiDirectoryNode" />
-              <item name="RegisterComponents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ResetPassword" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-firebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-firebase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="ViewFolder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -311,7 +263,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84910000" />
+    <option name="totallyTimeSpent" value="86483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
@@ -353,13 +305,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Listings/Listing Card/ListingCard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/HOUSE logo.png" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/HOUSEhomepage.JPG" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/HomepageBackground.jpg">
@@ -384,26 +329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-977">
           <caret line="211" column="45" selection-start-line="211" selection-start-column="45" selection-end-line="211" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
-          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -469,16 +394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="115" column="35" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Login/LoginComponents/LoginForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -500,13 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="35" selection-start-line="35" selection-end-line="46" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -605,16 +513,6 @@
         <state relative-caret-position="-783" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Register/RegisterComponents/RegForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordFooter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -626,15 +524,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordFooter.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordBackground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordBackground.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -682,6 +571,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordHeader.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordBackground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Register/RegisterComponents/RegForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Register/RegisterComponents/RegBackground.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -689,8 +600,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ResetPassword/ResetPasswordHeader.css">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/GetFromDb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1481">
+          <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7644">
+          <caret line="531" selection-start-line="531" selection-end-line="531" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ViewFolder/ViewFolderComponents/DisplayFolderContent.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Backend/Database/SaveToDb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

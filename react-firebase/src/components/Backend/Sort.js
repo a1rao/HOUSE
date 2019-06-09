@@ -1,5 +1,3 @@
-
-
 // Sort by price
 const func = {
     sortPrice: function (listings, s) {

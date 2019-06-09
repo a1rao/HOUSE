@@ -529,14 +529,6 @@ class DisplayFolderContent extends Component{
         );
     }
 }
-// <DropdownButton className="sortBar" title="Sort By" id="dropdown-basic-button" variant="outline-info">
-//                     <Dropdown.Item href="#/action-1">Price</Dropdown.Item>
-//                 </DropdownButton>
 
-//                <DropdownButton id="dropdown-basic-button" title="Dropdown button">
-//                     <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-//                     <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-//                     <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-//                 </DropdownButton>
 export default DisplayFolderContent;
 
