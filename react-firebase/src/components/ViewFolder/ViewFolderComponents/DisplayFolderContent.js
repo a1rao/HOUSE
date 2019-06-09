@@ -203,6 +203,7 @@ class DisplayFolderContent extends Component{
         // ERROR: only displays most recent listing with the className: "thumbnail"
 
         const thumbnails = this.state.eachListing.map((listing) =>
+
             <div className = "allThumbnails">
                 <Button className="listThumbnail" variant="dark" size="sm"  onClick = {() => this.printListing(listing)} >
                     {listing._title}
@@ -502,7 +503,6 @@ class DisplayFolderContent extends Component{
                         </Button>
                     </Modal.Footer>
                 </Modal>
-
             </div>
         );
 

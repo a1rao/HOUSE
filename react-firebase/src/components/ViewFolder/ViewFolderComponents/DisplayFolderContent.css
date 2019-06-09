@@ -4,8 +4,10 @@
 }
 
 .allThumbnails{
-    display: inline-block;
+   /*display: inline-block;*/
+    display: inline-flex;
     padding: 30px 25px;
+    margin: 1%;
 
 }
 
