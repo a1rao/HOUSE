@@ -43,7 +43,7 @@ class NavigationBar extends Component {
     }
 
     /*componentWillUnmount() {
-        this.firebaseRef.off();
+         this.firebaseRef.off();
     }*/
 
     saveName(folder) {

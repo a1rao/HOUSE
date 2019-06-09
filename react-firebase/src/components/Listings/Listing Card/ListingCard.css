@@ -5,7 +5,7 @@
 .addColor {
     color: lavender;
 }
-.tip{
+.tip {
     font-family: Serif;
     font-size: large;
     color: #2e2e85;
@@ -18,4 +18,107 @@
     font-size: xx-large;
     color: #0d0d26;
     text-shadow: 3px 2px #d8ecf3;
+}
+
+.allThumbnails{
+    display: inline-block;
+    padding: 30px 25px;
+
+}
+
+.title{
+    display: block;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    padding-top: 20px;
+
+}
+
+.sortBar{
+    display: inline-block;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.backgroundImageContainer {
+    /* position: relative;*/
+    background-size: cover;
+    height: 100%;
+
+}
+
+img.backgroundImage {
+    /* Set up height / width res */
+    bmin-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+
+    /* Set up positioning */
+    position: fixed;
+    top: 75px;
+    left: 0;
+}
+
+
+.grid {
+    margin-left: 6%;
+}
+
+.mTitle {
+    margin: 0 auto;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+
+}
+
+.mBodyElement {
+    font-family: 'Oxygen', sans-serif;
+    width: 50%;
+    margin: 0 auto;
+    border: solid 2px midnightblue;
+}
+
+.mBodyElementTitle {
+    text-align: center;
+}
+
+.mBodyElementContent {
+    text-align: center;
+    font-weight: normal;
+}
+
+.mBody {
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+}
+
+.mBodyElementDescription {
+    font-family: 'Oxygen', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    border: solid 2px midnightblue;
+}
+
+.mFoot {
+    width: auto;
+}
+
+.mBodyElementTitle {
+    text-align: center;
+}
+.mBodyElementImage {
+    text-align: center;
+
+}
+
+.mBodyElementContent {
+    text-align: center;
+    font-weight: normal;
+}
+
+.listURL {
+    font-family: 'Oxygen', sans-serif;
 }
